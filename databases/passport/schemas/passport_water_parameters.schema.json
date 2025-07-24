@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_water_parameters",
+  "title": "Характеристики пластовой воды",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата измерения",
+      "type": "string"
+    },
+    "viscosity_surface": {
+      "title": "Вязкость воды на поверхности",
+      "type": "number"
+    },
+    "viscosity_reservoir": {
+      "title": "Вязкость воды в пласте",
+      "type": "number"
+    },
+    "density": {
+      "title": "Плотность",
+      "type": "number"
+    },
+    "alkalinity": {
+      "title": "Щелочность",
+      "type": "number"
+    },
+    "hardness": {
+      "title": "Жесткость",
+      "type": "number"
+    },
+    "dry_residue": {
+      "title": "Сухой остаток",
+      "type": "number"
+    },
+    "ratio_Cl": {
+      "title": "Содержание хлоридов",
+      "type": "number"
+    },
+    "ratio_SO4": {
+      "title": "Содержание сульфатов",
+      "type": "number"
+    },
+    "ratio_CO3": {
+      "title": "Содержание карбонатов",
+      "type": "number"
+    },
+    "ratio_Na": {
+      "title": "Содержание натрия",
+      "type": "number"
+    },
+    "ratio_Ca": {
+      "title": "Содержание кальция",
+      "type": "number"
+    },
+    "ratio_Mg": {
+      "title": "Содержание магния",
+      "type": "number"
+    }
+  }
+}

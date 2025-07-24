@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza2/ovpbaza2_cdng",
+    "title": "ЦДНГ",
+    "description": "Цех добычи нефти и газа",
+    "type": "object",
+    "properties": {
+      "cdng": {
+        "title": "ЦДНГ",
+        "description": "Цех добычи нефти и газа",
+        "$comment": "ОSUBDIV71",
+        "type": "number"
+      },
+      "well": {
+        "title": "Скважины",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "/databases/ovpbaza2/ovpbaza2_well"
+        }
+      }
+    }
+  }

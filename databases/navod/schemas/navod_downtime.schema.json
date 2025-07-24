@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_downtime",
+    "title": "Простой",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "well_stop_date": {
+        "title": "Дата остановки скважины",
+        "description": "",
+        "type": "string"
+      },
+      "start_date":{
+        "title":"Дата пуска",
+        "description":"",
+        "type":"string"
+      },
+      "downtime_reason_code":{
+        "title":"Код причины простоя",
+        "description":"",
+        "type":"number"
+      },
+      "sign_for_water_pipe_downtime_kms":{
+        "title":"Признак простоя по водоводу КНС",
+        "description":"",
+        "type":"number"
+      }
+    }
+  }

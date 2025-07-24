@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_root",
+  "title": "БД PRISS",
+  "description": "",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/priss/priss_ngdu"
+  }
+}

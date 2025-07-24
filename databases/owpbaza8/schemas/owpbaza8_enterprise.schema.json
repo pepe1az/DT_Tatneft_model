@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza8/owpbaza8_enterprise",
+    "title": "Предприятие",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "enterprise_code": {
+            "title": "Код предприятия",
+            "description": "Код предприятия",
+            "type": "number"
+        },
+        "enterprise_name": {
+            "title": "Наименование предприятия",
+            "description": "Наименование предприятия",
+            "type": "string"
+        },
+        "month":{
+        "title": "Месяц",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "/databases/owpbaza8/owpbaza8_month"
+            }
+        }
+    }
+}

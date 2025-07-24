@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_project",
+  "$comment": "",
+  "title": "Проектные показатели разработки",
+  "description": "Плановые показатели добычи, закачки и скважинного фонда",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата утверждения",
+      "type": "string"
+    },
+    "max_oil_recovery": {
+      "title": "Максимальная добыча нефти",
+      "type": "number"
+    },
+    "max_liquid_recovery": {
+      "title": "Максимальная добыча жидкости",
+      "type": "number"
+    },
+    "year_max_recovery": {
+      "title": "Год достижения максимальной добычи",
+      "type": "number"
+    },
+    "production_well_inventory": {
+      "title": "Фонд скважин эксплуатационный",
+      "type": "number"
+    },
+    "injection_well_inventory": {
+      "title": "Фонд скважин нагнетательный",
+      "type": "number"
+    },
+    "monitoring_well_inventory": {
+      "title": "Фонд скважин контрольный и наблюдательный",
+      "type": "number"
+    },
+    "standby_well_inventory": {
+      "title": "Фонд скважин резервных",
+      "type": "number"
+    },
+    "peak_production_well_count": {
+      "title": "Колличество эксплуатационных скважин при выходе на максимальную добычу",
+      "type": "number"
+    },
+    "drilling_pattern_density": {
+      "title": "Плотность сетки с учётом эксп. и нагнетательных скважин в зоне разбуривания",
+      "type": "number"
+    },
+    "Net_Pay_Well_Pattern_Density": {
+      "title": "Плотность сетки с учётом эксп. и нагнетательных скважин в конт. нефтеносности",
+      "type": "number"
+    },
+    "well_spacing_density": {
+      "title": "Плотность сетки в зоне разбуривания с учётом эксплуатационных скважин",
+      "type": "number"
+    },
+    "average_well_rate": {
+      "title": "Средний дебит 1 эксплуатационной скважины при максимальной добыче",
+      "type": "number"
+    },
+    "max_water_injectivity": {
+      "title": "Приемистость воды 1 нагнетательной скважины при максимальной закачке",
+      "type": "number"
+    },
+    "recoverable_reserves_per_well": {
+      "title": "Суммарная добыча извлекаемых запасов на 1 скважину",
+      "type": "number"
+    },
+    "waterflood_system": {
+      "title": "Система заводнения",
+      "type": "number"
+    },
+    "primary_production_method": {
+      "title": "Основной способ эксплуатации",
+      "type": "number"
+    },
+    "oil_recovery_factor": {
+      "title": "Коэффициент нефтеотдачи",
+      "type": "number"
+    }
+
+  }
+}

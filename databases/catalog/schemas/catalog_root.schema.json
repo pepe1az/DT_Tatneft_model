@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_root",
+  "title": "БД Каталог",
+  "description": "Данные о конструкции скважин, геологических условиях, обработки пластов",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/catalog/catalog_ngdu"
+  }
+}

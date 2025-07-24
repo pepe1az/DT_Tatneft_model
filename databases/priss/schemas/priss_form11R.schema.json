@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form11R",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "reservoir": {
+      "title": "Пласт",
+      "description": "",
+      "type": "number"
+    },
+    "roof_pressure": {
+      "title": "Давление на кровле",
+      "description": "",
+      "type": "number"
+    },
+    "owc_pressure": {
+      "title": "Давление на уровне ВНК",
+      "description": "Давление на уровне водонефтяного контакта",
+      "type": "number"
+    },
+    "fluid_density": {
+      "title": "Плотность жидкости по горизонту",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

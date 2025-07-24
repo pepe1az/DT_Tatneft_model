@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_yearmonth_recovery",
+  "title": "Год, месяц",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "godmes": {
+      "title": "Год, месяц",
+      "description": "",
+      "type": "number"
+    },
+    "rabota": {
+      "$ref": "/databases/nakop/nakop_work_recovery"
+    },
+    "prostoi": {
+      "$ref": "/databases/nakop/nakop_downtime_recovery"
+    }
+  }
+}

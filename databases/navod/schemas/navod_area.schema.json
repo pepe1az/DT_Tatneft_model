@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_area",
+    "title": "Площадь",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "date_and_time_of_measurement_taking": {
+        "title": "Дата и время снятия замера",
+        "description": "",
+        "type": "string"
+      },
+      "area_by_cartogram":{
+        "title":"Площадь по картограмме ",
+        "description":"",
+        "type":"number"
+      }
+    }
+  }

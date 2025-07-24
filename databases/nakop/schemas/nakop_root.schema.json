@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_root",
+  "title": "БД НАКОП",
+  "description": "Сведения об историко-справочной информации по добыче нефти и закачке воды по месяцам с начала года и разработки, отражает состояние разработки нефтяных месторождении, площадей",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/nakop/nakop_ngdu"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_gtm_recovery",
+  "title": "ГТМ",
+  "description": "Геолого-Технические Мероприятия",
+  "type": "object",
+  "properties": {
+    "type": {
+      "title": "Вид ГТМ",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_code": {
+      "title": "Код пласта (горизонта)",
+      "description": "",
+      "type": "number"
+    },
+    "end_date": {
+      "title": "Дата окончания ГТМ",
+      "description": "Дата окончания Геолого-Технических Мероприятий",
+      "type": "number"
+    },
+    "oil_debit_before": {
+      "title": "Дебит нефти до ГТМ",
+      "description": "Дебит нефти до Геолого-Технических Мероприятий",
+      "type": "number"
+    },
+    "water_cut_before": {
+      "title": "Процент воды до ГТМ",
+      "description": "Процент воды до до Геолого-Технических Мероприятий",
+      "type": "number"
+    },
+    "effectiveness_end_date": {
+      "title": "Дата окончания эффективности ГТМ",
+      "description": "Дата окончания эффективности Геолого-Технических Мероприятий",
+      "type": "number"
+    },
+    "effect": {
+        "$ref": "/databases/nakop/nakop_effect_recovery"
+    }
+  }
+}

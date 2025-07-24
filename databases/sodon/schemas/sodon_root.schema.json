@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_root",
+  "$comment": "Оригинал: СОДОН",
+  "title": "БД СОДОН",
+  "description": "Информация по эксплуатации нефтяных скважин, сведения о простоях и мероприятиях",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/sodon/sodon_ngdu"
+  }
+}

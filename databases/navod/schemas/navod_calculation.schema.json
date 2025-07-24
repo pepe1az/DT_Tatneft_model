@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_calculation",
+    "title": "Расчёт",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "reagent_type": {
+        "title": "Вид реагента",
+        "description": "",
+        "type": "number"
+      },
+      "reagent_injection_quantity": {
+        "title": "Количество закачики реагента ",
+        "description": "",
+        "type": "number"
+      },
+        "reagent_injection_time ": {
+        "title": "Время закачки реагента",
+        "description": "",
+        "type": "string"
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_inhib",
+    "title": "Защита трубопроводов ингибированием",
+    "description": "Внутренние защиты трубопроводов ингибированием",
+    "type": "object",
+    "properties": {
+      "inhibitor_application_start_date": {
+        "title": "Дата начала применения ингибитора",
+        "description": "",
+        "$comment": "DATE 35",
+        "type": "number"
+      },
+      "inhibitor_type": {
+        "title": "Вид ингибитора",
+        "description": "",
+        "$comment": "FORM 17",
+        "type": "number"
+      },
+      "inhibitor_specific_consumption": {
+        "title": "Удельный расход ингибитора",
+        "description": "",
+        "$comment": "EXPENS 11",
+        "type": "number"
+      },
+      "inhibitor_dosing_frequency_type": {
+        "title": "Признак периодичности подачи ингибитора",
+        "description": "",
+        "$comment": "SIGN 37",
+        "type": "number"
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_ngdu",
+  "title": "НГДУ",
+  "description": "Административная единица, контролирующая ряд скважин",
+  "type": "object",
+  "properties": {
+    "ngdu": {
+      "title": "НГДУ",
+      "description": "Нефтегазодобывающее  Управление",
+      "type": "integer"
+    },
+    "well_recovery": {
+      "title": "Скважина, добыча",
+      "description": "Данные о добыче из скважин, подконтрольных данной административной единице",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_well_recovery"
+      }
+    },
+    "well_injection": {
+      "title": "Скважина, закачка",
+      "description": "Данные о закачке в скважин, подконтрольных данной административной единице",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_well_injection"
+      }
+    }
+  }
+}

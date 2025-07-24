@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_well_repair_plan",
+  "$comment": "Оригинал: ПЛАН",
+  "title": "План ремонтов скважин",
+  "description": "Плановые показатели по ремонтам скважин",
+  "type": "object",
+  "properties": {
+    "month": {
+      "title": "Месяц",
+      "description": "",
+      "$comment": "Оригинал: Месяц, MONTH, X(2), 2, PLANSEG",
+      "type": "string"
+    },
+    "year": {
+      "title": "Год",
+      "description": "",
+      "$comment": "Оригинал: Год, YEAR, 9(2), 2",
+      "type": "number"
+    },
+    "workshop_ppn_krs": {
+      "title": "Цех ППН и КРС (ЦТРС)",
+      "description": "код",
+      "$comment": "Оригинал: Цех ППН и КРС (ЦТРС), SHOP2, X(2), 2",
+      "type": "string"
+    },
+    "work_type": {
+      "title": "Вид работы",
+      "description": "код",
+      "$comment": "Оригинал: Вид работы, FORM7Ø, 9(3), 2",
+      "type": "number"
+    },
+    "planned_repairs_oil_wells": {
+      "title": "Плановое кол-во ремонтов по нефтяным скважинам",
+      "description": "шт",
+      "$comment": "Оригинал: Плановое кол-во ремонтов по нефтяным скважинам, ØUANTI17, 9(2), 2",
+      "type": "number"
+    },
+    "planned_repairs_injection_wells": {
+      "title": "Плановое кол-во ремонтов по нагнетательным скважинам",
+      "description": "шт",
+      "$comment": "Оригинал: Плановое кол-во ремонтов по нагнетательным скважинам, ØUANTI18, 9(2), 2",
+      "type": "number"
+    }
+  }
+}

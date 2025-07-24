@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_effect_injection",
+  "title": "Эффект закачки",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата (год, месяц)",
+      "description": "",
+      "type": "string"
+    },
+    "additional_injection": {
+      "title": "Дополнительно закачано",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_materials",
+  "title": "Материалы, использованные на КРС",
+  "description": "Данные о материалах, использованных при капитальном ремонте скважин",
+  "type": "object",
+  "properties": {
+    "materials_used_in_krs": {
+      "title": "Материалы, использованные на КРС",
+      "description": "",
+      "$comment": "FORM76",
+      "type": "number"
+    },
+    "perforation_end_depth_after_repair": {
+      "title": "Глубина конца интервала перфорации после ремонта",
+      "description": "",
+      "$comment": "QUANTI",
+      "type": "number"
+    }
+  }
+}

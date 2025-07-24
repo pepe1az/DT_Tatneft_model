@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_ngdu",
+  "title": "НГДУ",
+  "description": "Административная единица, контролирующая ряд скважин",
+  "type": "object",
+  "properties": {
+    "ngdu_cex": {
+      "title": "НГДУ, Цех",
+      "description": "нефтегазодобывающее управление",
+      "type": "number"
+    },
+    "last_update_date": {
+      "title": "Дата последней корректировки",
+      "description": "",
+      "type": "number"
+    },
+      "well": {
+      "title": "Скважины",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_well"
+      }
+    }
+  }
+}

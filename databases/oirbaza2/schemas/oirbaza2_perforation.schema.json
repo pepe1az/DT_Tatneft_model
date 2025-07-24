@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_perforation",
+  "title": "Данные по перфорации скважины",
+  "description": "Информация о перфорации скважины после ремонта",
+  "type": "object",
+  "properties": {
+    "perforation_start_depth_after_repair": {
+      "title": "Глубина начала интервала перфорации после ремонта",
+      "description": "",
+      "$comment": "SPACE1",
+      "type": "number"
+    },
+    "perforation_end_depth_after_repair": {
+      "title": "Глубина конца интервала перфорации после ремонта",
+      "description": "",
+      "$comment": "SPACE2",
+      "type": "number"
+    },
+    "perforation_type": {
+      "title": "Тип перфорации",
+      "description": "",
+      "$comment": "TYPE71",
+      "type": "number"
+    },
+    "perforation_density": {
+      "title": "Плотность перфорации",
+      "description": "",
+      "$comment": "QUANTI16",
+      "type": "number"
+    },
+    "horizon": {
+      "title": "Горизонт",
+      "description": "",
+      "$comment": "HORIZON",
+      "type": "number"
+    },
+    "bed": {
+      "title": "Пласт",
+      "description": "",
+      "$comment": "BED",
+      "type": "number"
+    }
+  }
+}

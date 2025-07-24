@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_plast_recovery",
+  "title": "Пласт, добыча",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "code": {
+      "title": "Код пласта",
+      "description": "",
+      "type": "string"
+    },
+    "field": {
+      "title": "Месторождение",
+      "description": "",
+      "type": "string"
+    },
+    "area": {
+      "title": "Площадь",
+      "description": "",
+      "type": "string"
+    },
+    "zone": {
+      "title": "Участок",
+      "description": "",
+      "type": "string"
+    },
+    "block": {
+      "title": "Блок",
+      "description": "",
+      "type": "string"
+    },
+    "ngdu_code": {
+      "title": "Код НГДУ",
+      "description": "",
+      "type": "string"
+    },
+    "lens_number": {
+      "title": "Номер линзы",
+      "description": "",
+      "type": "string"
+    },
+    "reservoir_type_code": {
+      "title": "Код типа коллектора",
+      "description": "",
+      "type": "string"
+    },
+    "modification_flag": {
+      "title": "Признак изменения пласта",
+      "description": "",
+      "type": "string"
+    },
+    "waterType": {
+      "title": "Вид добываемой воды",
+      "description": "",
+      "type": "string"
+    },
+    "oilDensity": {
+      "title": "Плотность нефти",
+      "description": "",
+      "type": "number"
+    },
+    "decemberWaterCut": {
+      "title": "Процент воды в декабре",
+      "description": "",
+      "type": "number"
+    },
+    "decemberOilDebit": {
+      "title": "Дебит нефти в декабре",
+      "description": "",
+      "type": "number"
+    },
+    "totalOilProduced": {
+      "title": "Добыто нефти с начала эксплуатации",
+      "description": "",
+      "type": "number"
+    },
+    "totalWaterProduced": {
+      "title": "Добыто воды с начала эксплуатации (Т)",
+      "description": "",
+      "type": "number"
+    },
+    "totalWaterVolume": {
+      "title": "Добыто воды с начала эксплуатации",
+      "description": "",
+      "type": "number"
+    },
+    "dobmes": {
+        "$ref": "/databases/nakop/nakop_monthly_production_recovery"
+    }
+  }
+}

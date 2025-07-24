@@ -1,0 +1,61 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_water_pipeline_and_kms",
+    "title": "Кнс, водовод",
+    "description": "Кустовая насосная станция, водовод",
+    "type": "object",
+    "properties": {
+      "monitoring_well_number": {
+        "title": "Номер КНС, водовода",
+        "description": "",
+        "type": "number"
+      },
+      "monitoring_well_type":{
+        "title":"Тип КНС",
+        "description":"",
+        "type":"number"
+      },
+      "conditional_number_monitoring_well": {
+        "title": "Условный номер КНС, водовода",
+        "description": "",
+        "type": "number"
+      },
+      "date_of_last_adjustment": {
+        "title": "Дата последней корректировки",
+        "description": "",
+        "type": "string"
+      },
+      "shift": {
+        "title": "Смена",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_shift"
+        }
+      },
+      "agent": {
+        "title": "Агент",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_agent"
+        }
+      },
+      "area": {
+        "title": "Площадь",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_area"
+        }
+      },
+      "water_pipeline": {
+        "title": "Водовод",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_water_pipeline"
+        }
+      }
+    }
+  }

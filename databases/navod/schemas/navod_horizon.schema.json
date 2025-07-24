@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_horizon",
+    "title": "Горизонт",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "horizon_code": {
+        "title": "Код горизонта",
+        "description": "",
+        "type": "string"
+      },
+      "flooding_type":{
+        "title":"Вид заводнения",
+        "description":"",
+        "type":"number"
+      },
+      "injection_row_code": {
+        "title": "Код нагнетательнго ряда",
+        "description": "",
+        "type": "number"
+      },
+      "horizont_acceptability": {
+        "title": "Приемлимость по горизонту",
+        "description": "",
+        "type": "number"
+      },
+      "reservoir": {
+        "title": "Пласт",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_reservoir"
+        }
+      },
+      "outflow": {
+        "title": "Излив",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_outflow"
+        }
+      },
+      "opz": {
+        "title": "ОПЗ",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_opz"
+        }
+      }
+    }
+  }

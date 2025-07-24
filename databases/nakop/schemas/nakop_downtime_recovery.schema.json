@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_downtime_recovery",
+  "title": "Простой",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "downtime_code": {
+      "title": "Код причины простоя",
+      "description": "",
+      "type": "number"
+    },
+    "downtime_Duration": {
+      "title": "Время простоя по данной причине",
+      "description": "",
+      "type": "number"
+    },
+    "downtime_end_date": {
+      "title": "Дата конца простоя",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

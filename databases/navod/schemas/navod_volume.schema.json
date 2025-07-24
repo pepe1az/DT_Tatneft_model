@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_volume",
+    "title": "Объём",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "agent_tupe": {
+        "title": "Вид агента",
+        "description": "",
+        "type": "number"
+      },
+      "working_time_per_month":{
+        "title":"Время работы за месяц",
+        "description":"",
+        "type":"number"
+      },
+      "uploaded_per_month": {
+        "title": "Закачено за месяц",
+        "description": "",
+        "type": "number"
+      },
+        "measurement": {
+        "title": "Замер",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_measurement"
+        }
+      },
+      "calculation": {
+        "title": "Расчёт",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_calculation"
+        }
+      }
+    }
+  }

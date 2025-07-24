@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_oil_parameters",
+  "$comment": "",
+  "title": "Характеристики нефти",
+  "description": "Физико-химические характеристики нефти",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата измерения",
+      "type": "string"
+    },
+    "density_surface": {
+      "title": "Плотность поверхностной нефти",
+      "type": "number"
+    },
+    "density_reservoir": {
+      "title": "Плотность пластовой нефти",
+      "type": "number"
+    },
+    "viscosity_surface": {
+      "title": "Вязкость поверхностной нефти",
+      "type": "number"
+    },
+    "viscosity_reservoir": {
+      "title": "Вязкость пластовой нефти",
+      "type": "number"
+    },
+    "ratio_paraphine": {
+      "title": "Содержание парафинов",
+      "type": "number"
+    },
+    "ratio_resin": {
+      "title": "Содержание акцизных смол",
+      "type": "number"
+    },
+    "ratio_asphaltene": {
+      "title": "Содержание асфальтенов",
+      "type": "number"
+    },
+    "ratio_sulfur": {
+      "title": "Содержание серы",
+      "type": "number"
+    },
+    "fraction_100": {
+      "title": "Выход светлых фракций, до 100°C",
+      "type": "number"
+    },
+    "fraction_200": {
+      "title": "Выход светлых фракций, до 200°C",
+      "type": "number"
+    },
+    "fraction_300": {
+      "title": "Выход светлых фракций, до 300°C",
+      "type": "number"
+    },
+    "volume_coef": {
+      "title": "Объёмный коэффициент",
+      "type": "number"
+    },
+    "gas_saturation": {
+      "title": "Газонасыщенность",
+      "type": "number"
+    },
+    "pressure_of_saturation": {
+      "title": "Давление насыщения",
+      "type": "number"
+    }
+  }
+}

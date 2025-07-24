@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_effect_recovery",
+  "title": "Эффект",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата (год, месяц)",
+      "description": "",
+      "type": "number"
+    },
+    "additional_oil": {
+      "title": "Дополнительно добыто нефти ±",
+      "description": "",
+      "type": "number"
+    },
+    "water_reduction": {
+      "title": "Уменьшение отбора воды ±",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

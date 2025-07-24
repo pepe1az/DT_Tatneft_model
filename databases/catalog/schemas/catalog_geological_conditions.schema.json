@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_geological_conditions",
+  "title": "Геологические условия",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "roof_depth": {
+      "title": "Глубина залегания кровли пластов",
+      "description": "",
+      "type": "number"
+    },
+    "bottom_depth": {
+      "title": "Глубина залегания подошвы пластов",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_type": {
+      "title": "Тип коллектора",
+      "description": "",
+      "type": "string"
+    },
+    "oil_saturation_thickness": {
+      "title": "Нефтенасыщенная мощность",
+      "description": "",
+      "type": "number"
+    },
+    "water_saturation_thickness": {
+      "title": "Водонасыщенная мощность",
+      "description": "",
+      "type": "number"
+    },
+    "initial_oil_water_contact": {
+      "title": "Абсол. отм. нач. верхней нефтеносной конструкции",
+      "description": "",
+      "$comment": "PP6",
+      "type": "number"
+    },
+    "porosity": {
+      "title": "Пористость",
+      "description": "",
+      "type": "number"
+    },
+    "permeability": {
+      "title": "Проницаемость",
+      "description": "",
+      "type": "number"
+    },
+    "hydraulic_conductivity": {
+      "title": "Гидропроводность",
+      "description": "",
+      "type": "number"
+    },
+    "piezoconductivity": {
+      "title": "Пьезопроводность",
+      "description": "",
+      "type": "number"
+    },
+    "carbonate_content": {
+      "title": "Карбонатность",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_oil_saturation": {
+      "title": "Нефтенасыщенность пласта",
+      "description": "",
+      "type": "number"
+    },
+    "water_breakthrough_date": {
+      "title": "Дата подвода воды",
+      "description": "",
+      "$comment": "PP13",
+      "type": "string"
+    },
+    "water_type": {
+      "title": "Вид добываемой воды",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

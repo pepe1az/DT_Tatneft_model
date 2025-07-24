@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_mode",
+    "title": "Режим",
+    "description": "Сведения об изменении режима",
+    "type": "object",
+    "properties": {
+      "pipeline_operation_change_date": {
+        "title": "Дата изменения работы трубопровода",
+        "description": "",
+        "$comment": "DATE 38, K 1, 9(6), 6",
+        "type": "number"
+      },
+      "pipeline_performance": {
+        "title": "Производительность трубопровода, м3/сут.",
+        "description": "",
+        "$comment": "PRODUCT 6",
+        "type": "number"
+      },
+      "pipeline_pressure": {
+        "title": "Давление в трубопроводе, кг/см2",
+        "description": "",
+        "$comment": "PRESS 20",
+        "type": "number"
+      }
+    }
+  }

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_gas_parameters",
+  "title": "Характеристики попутного газа",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата измерения",
+      "description": "",
+      "type": "string"
+    },
+    "specific_gravity_air": {
+      "title": "Удельный вес по воздуху",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_C1": {
+      "title": "Объёмная доля метана",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_C2": {
+      "title": "Объёмная доля этана",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_C3": {
+      "title": "Объёмная доля пропана",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_C4": {
+      "title": "Объёмная доля бутана",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_C5": {
+      "title": "Объёмная доля пентана",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_CO2": {
+      "title": "Объёмная доля углекислоты",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_H2S": {
+      "title": "Объёмная доля сероводорода",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_N2": {
+      "title": "Объёмная доля азота",
+      "description": "",
+      "type": "number"
+    },
+    "ratio_He": {
+      "title": "Объёмная доля гелия",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

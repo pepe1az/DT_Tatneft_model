@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_reservoir",
+  "title": "Пласт",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "pt1": {
+      "title": "Поле PT1",
+      "description": "",
+      "type": "number"
+    },
+    "pt2": {
+      "title": "Поле PT2",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_type": {
+      "title": "Тип коллектора",
+      "description": "",
+      "type": "string"
+    },
+    "formation_fluid_flow_rate": {
+      "title": "Дебит жидкости пласта",
+      "description": "",
+      "type": "number"
+    },
+    "water_cut_percentage": {
+      "title": "Процент обводненности пласта",
+      "description": "",
+      "type": "number"
+    },
+    "produced_water_type": {
+      "title": "Вид добываемой воды",
+      "description": "",
+      "type": "string"
+    },
+    "water_density": {
+      "title": "Плотность воды",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_change_sign": {
+      "title": "Признак изменения пласта",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

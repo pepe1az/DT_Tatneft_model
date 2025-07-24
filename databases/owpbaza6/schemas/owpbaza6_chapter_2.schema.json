@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_2",
+  "title": "Раздел 2",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "entry_code ":{
+        "title":"Код записи",
+        "description":"",
+        "type":"number"
+    },
+    "work_duration_hours":{
+        "title":"Продолжительность работ (час.)",
+        "description":"",
+        "type":"number"
+    },
+    "work_duration_minutes":{
+        "title":"Продолжительность работ (мин.)",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_kns",
+    "title": "КНС",
+    "description": "Кустовая насосная станция",
+    "type": "object",
+    "properties": {
+      "segment_formation_date": {
+        "title": "Дата формирования сегмента",
+        "description": "",
+        "type": "string"
+      },
+      "number_kns_and_water_pipeline":{
+        "title":"Номер КНС, водовода",
+        "description":"",
+        "type":"number"
+      },
+      "injectivity": {
+        "title": "Приёмистость",
+        "description": "",
+        "type": "number"
+      },
+      "segment_closing_date": {
+        "title": "Дата закрытия сегмента",
+        "description": "",
+        "type": "string"
+     }
+    }
+  }

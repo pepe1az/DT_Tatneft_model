@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form14",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "research_type_date": {
+      "title": "Вид исследования, дата исследования скважины",
+      "description": "",
+      "type": "string"
+    },
+    "info_receipt_date": {
+      "title": "Дата поступления информации",
+      "description": "",
+      "type": "string"
+    },
+    "liquid_rate": {
+      "title": "Дебит жидкости при исследовании",
+      "description": "Приемистость",
+      "type": "number"
+    },
+    "water_cut": {
+      "title": "Процент обводненности (объем)",
+      "description": "",
+      "type": "number"
+    },
+    "water_density": {
+      "title": "Плотность воды",
+      "description": "",
+      "type": "number"
+    },
+    "power": {
+      "title": "Мощность",
+      "description": "",
+      "type": "number"
+    },
+    "device_number": {
+      "title": "Номер прибора при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "note": {
+      "title": "Примечание",
+      "description": "",
+      "type": "number"
+    },
+    "researcher": {
+      "title": "Исследователь",
+      "description": "",
+      "type": "number"
+    },
+     "form14D": {
+      "title": "Форма 14D",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form14D"
+      }
+    },
+     "form14A": {
+      "title": "Форма 14A",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form14A"
+      }
+    }
+  }
+}

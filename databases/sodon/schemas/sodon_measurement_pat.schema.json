@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_measurement_pat",
+  "title": "Замер ПАТ",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "measurement_date": {
+      "title": "Дата замера",
+      "description": "",
+      "type": "string"
+    },
+    "liquid_flow_rate": {
+      "title": "Дебит жидкости",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

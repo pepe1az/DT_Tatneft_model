@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza1/oirbaza1_geotech_activity",
+  "title": "Пласт",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "repair_completion_date": {
+      "title": "Дата окончания ремонта (проведения ГТМ) год, месяц, число",
+      "description": "",
+      "$comment":"DATE43",
+      "type": "string"
+    },
+    "GTM_type_and_code": {
+      "title": "Вид ГТМ, код",
+      "description": "Вид Геолого-технических мероприятий, код",
+      "$comment":"FORM70",
+      "type": "integer"
+    },
+    "layer_on_which_it_is_carried_out_GTM": {
+      "title": "Пласт, на котором проведён ГТМ, код",
+      "description": "Пласт на котором проведены Геолого-технические мероприятия, код",
+      "$comment":"BED",
+      "type": "integer"
+    },
+    "upper_perforation_interval": {
+      "title": "Верхний интервал перфорации, на котором проведён ГТМ, м",
+      "description": "Верхний интервал перфорации, на котором проведёны Геолого-технические мероприятия",
+      "$comment":"SPACE1",
+      "type": "number"
+    },
+    "lower_perforation_interval": {
+      "title": "Нижний интервал перфорации, на котором проведён ГТМ, м",
+      "description": "Верхний интервал перфорации, на котором проведёны Геолого-технические мероприятия",
+      "$comment":"SPACE2",
+      "type": "number"
+    },
+    "relative_growth_of_oil_production": {
+      "title": "Относит. прирост дебита нефти от проведения ГТМ, доли",
+      "description": "Относительный прирост дебита нефти от проведения Геолого-технических мероприятий",
+      "$comment":"INCREM1",
+      "type": "number"
+    },
+    "relative_decrease_in_oil_flow_rate": {
+      "title": "Относит. уменьшение обвод. жидк. от проведения ГТМ, доли",
+      "description": "Относительное уменьшение обводнённости жидкости от проведения Геолого-технических мероприятий, доли",
+      "$comment":"REDUCT2",
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oiobaza2/oiobaza2_ngdu",
+  "title": "НГДУ",
+  "description": "Административная единица, контролирующая ряд скважин",
+  "type": "object",
+  "properties": {
+    "ngdu": {
+      "title": "НГДУ",
+      "description": "Нефтегазодобывающее управление",
+      "type": "string"
+    },
+    "cdng_cppd": {
+      "title": "ЦДНГ, ЦППД",
+      "description": "Цех добычи нефти и газа, цех поддержания пластового давления",
+      "type": "string"
+    },
+    "wells": {
+      "title": "Скважины",
+      "description": "Скважины, подконтрольные данной административной единице",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/oiobaza2/oiobaza2_well"
+      }
+    }
+  }
+} 

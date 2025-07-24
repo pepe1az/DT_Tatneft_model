@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza1/ovpbaza1_well",
+    "title": "Скважина",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "well_number": {
+        "title": "Номер скважины",
+        "description": "",
+        "$comment": "NAME",
+        "type": "number"
+      },
+      "field": {
+        "title": "Месторождение",
+        "description": "",
+        "type": "number"
+      },
+      "square":{
+        "title": "Площадь",
+        "description": "",
+        "type": "number"
+      },
+      "repairs": {
+        "title": "Ремонты",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/ovpbaza1/ovpbaza1_date_nach"
+        }
+      }
+    }
+  }

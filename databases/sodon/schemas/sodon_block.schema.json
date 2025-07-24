@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_block",
+  "title": "Блок",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "object_name": {
+      "title": "Объект (месторождение, площадь, участок, блок)",
+      "description": "",
+      "type": "string"
+    },
+    "ngdu": {
+      "title": "НГДУ",
+      "description": "",
+      "type": "string"
+    },
+    "liquid_distribution_percentage": {
+      "title": "Процент распределения жидкости из блока в данном горизонте",
+      "description": "Процент распределения жидкости из блока (участка, площади, месторождения) в данном горизонте",
+      "type": "number"
+    }
+  }
+}

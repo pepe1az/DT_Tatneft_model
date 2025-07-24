@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_gtm",
+  "title": "ГТМ",
+  "description": "Геолого-технические мероприятия",
+  "type": "object",
+  "properties": {
+    "gtm_end_date_type": {
+      "title": "Дата конца проведения ГТМ, вид ГТМ",
+      "description": "",
+      "type": "string"
+    },
+    "layer_code": {
+      "title": "Код пласта/горизонта/",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

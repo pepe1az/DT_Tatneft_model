@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_well_2",
+    "title": "Скважина",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "well_number": {
+            "title": "Номер скажины",
+            "description": "",
+            "$comment": "NAME",
+            "type": "string"
+        },
+        "ogpd_number": {
+            "title": "Номер ЦДНГ",
+            "description": "Номер цеха по добыче нефти и газа",
+            "$comment": "SHOP1",
+            "type": "number"
+        },
+        "repair_work_type": {
+            "title": "Вид работы",
+            "description": "",
+            "$comment": "FORMT70",
+            "type": "number"
+        },
+        "lift_type": {
+            "title": "Тип подъемника",
+            "description": "",
+            "$comment": "TYPE",
+            "type": "number"
+        },
+        "work_start": {
+            "title": "Начало работы",
+            "description": "Начало работы  (год, мес, число, часы)",
+            "$comment": "DATE71",
+            "type": "number"
+        },
+        "work_end": {
+            "title": "Конец  работы",
+            "description": "Конец работы  (год, мес, число, часы)",
+            "$comment": "DATE72",
+            "type": "number"
+        },        
+        "type_of_work2":{      
+            "title": "Вид работы",
+            "description": "",
+            "type": "array",
+            "items":{
+                "$ref": "/databases/owpbaza4/owpbaza4_type_of_work_2"
+            }
+        }
+    }
+}

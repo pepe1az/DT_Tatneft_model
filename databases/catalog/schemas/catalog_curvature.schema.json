@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_curvature",
+  "$comment": "",
+  "title": "Кривизна скважины",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "curvature": {
+      "title": "Кривизна",
+      "description": "",
+      "type": "number"
+    },
+    "curvature_depth": {
+      "title": "Глубина расположения",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

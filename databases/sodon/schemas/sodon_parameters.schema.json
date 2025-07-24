@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_parameters",
+  "title": "Параметры",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "parameter_measurement_date": {
+      "title": "Дата замера параметра",
+      "description": "",
+      "type": "string"
+    },
+    "well_id": {
+      "title": "Условный номер скважины",
+      "description": "",
+      "type": "string"
+    },
+    "feeder_number": {
+      "title": "Номер фидера",
+      "description": "",
+      "type": "string"
+    },
+    "gathering_object_type": {
+      "title": "Тип объекта сбора",
+      "description": "",
+      "type": "string"
+    },
+    "gathering_object_number": {
+      "title": "Номер объекта сбора",
+      "description": "",
+      "type": "string"
+    },
+    "cdng_team_number": {
+      "title": "Номер участка, бригады ЦДНГ",
+      "description": "",
+      "type": "string"
+    },
+    "wellhead_state": {
+      "title": "Состояние устья скважины",
+      "description": "",
+      "type": "string"
+    },
+    "casing_state": {
+      "title": "Состояние эксплуатационной колонны скважины",
+      "description": "",
+      "type": "string"
+    },
+    "polished_rod_stroke_length": {
+      "title": "Длины хода полированного штока",
+      "description": "",
+      "$comment": "перевод?",
+      "type": "number"
+    },
+    "balance_head_stroke_count": {
+      "title": "Число качаний головки балансира",
+      "description": "",
+      "type": "number"
+    },
+    "prs_team_number": {
+      "title": "Номер бригады ПРС",
+      "description": "",
+      "type": "string"
+    },
+    "vrb_grb_number": {
+      "title": "Номер ВРБ или ГРБ",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

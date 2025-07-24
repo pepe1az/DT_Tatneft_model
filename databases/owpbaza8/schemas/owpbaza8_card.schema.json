@@ -1,0 +1,99 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza8/owpbaza8_card",
+    "title": "Карта",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "equipment_outage_number": {
+            "type": "number",
+            "title": "Номер отключения",
+            "description": ""
+        },
+        "outage_card_number": {
+            "type": "number",
+            "title": "Номер карты отключения",
+            "description": ""
+        },
+        "outage_date": {
+            "type": "number",
+            "title": "Дата отключения (год, мес, число)",
+            "description": ""
+        },
+        "outage_time": {
+            "type": "number",
+            "title": "Время отключения",
+            "description": ""
+        },
+        "downtime_duration": {
+            "type": "number",
+            "title": "Продолжительность времени отказавшего эл/обор.",
+            "description": ""
+        },
+        "outage_object_code": {
+            "type": "number",
+            "title": "Отключенная электроустановка или объект, на котором произошло откл. эл/обор.",
+            "description": ""
+        },
+        "outage_type_code": {
+            "type": "number",
+            "title": "Вид отключения осн. эл/обор.",
+            "description": ""
+        },
+        "failed_equipment_type_code": {
+            "type": "integer",
+            "title": "Вид отказавшего эл/обор.",
+            "description": ""
+        },
+        "rated_voltage_kv": {
+            "type": "number",
+            "title": "Номинальное напряжение отказавшего эл/обор.",
+            "description": "."
+        },
+        "installation_site_code": {
+            "type": "number",
+            "title": "Место установки отказавшего эл/обор.",
+            "description": ""
+        },
+        "failed_units_count": {
+            "type": "number",
+            "title": "Количество отказавшего эл/обор.",
+            "description": ""
+        },
+        "failed_component_type_code": {
+            "type": "number",
+            "title": "Вид узла отказавшего эл/обор.",
+            "description": ""
+        },
+        "operational_violation_code": {
+            "title": "Вид нарушения норм режима работы отказавлшего эл/обор.",
+            "type": "number",
+            "description": ""
+        },
+        "failure_nature_code": {
+            "type": "number",
+            "title": "Характер отказа ",
+            "description": ""
+        },
+        "failure_cause_code": {
+            "type": "number",
+            "title": "Причина отказа",
+            "description": ""
+        },
+        "responsible_code": {
+            "type": "number",
+            "title": "Виновный в отказе",
+            "description": ""
+        },
+        "energy_shortage_kwh": {
+            "title": "Недопуск эл/энергии по причине отказа",
+            "type": "number",
+            "description": ""
+        },
+        "oil_production_loss_tonnes": {
+            "type": "number",
+            "title": "Недобор нефти по причине отказа",
+            "description": ""
+        }
+    }
+}

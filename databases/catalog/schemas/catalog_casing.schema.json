@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_casing",
+  "title": "Колонна",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "installation_date": {
+      "title": "Дата установки",
+      "description": "",
+      "type": "string"
+    },
+    "casing_code": {
+      "title": "Код колонны",
+      "description": "",
+      "type": "string"
+    },
+    "casing_diameter": {
+      "title": "Диаметр колонны",
+      "description": "",
+      "type": "number"
+    },
+    "descent_depth": {
+      "title": "Глубина спуска",
+      "description": "",
+      "type": "number"
+    },
+    "strength_category": {
+      "title": "Категория прочности",
+      "description": "",
+      "type": "string"
+    },
+    "wall_thickness": {
+      "title": "Толщина стенки",
+      "description": "",
+      "type": "number"
+    },
+    "casing_top_depth": {
+      "title": "Верх колонны-летучки",
+      "description": "",
+      "type": "number"
+    },
+    "casing_material": {
+      "title": "Материал колонны-летучки",
+      "description": "",
+      "type": "string"
+    },
+    "tubing_cementing": {
+      "$ref": "/databases/catalog/catalog_tubing_cementing"
+    }
+  }
+}

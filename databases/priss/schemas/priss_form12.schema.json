@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form12",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "research_type_date": {
+      "title": "Вид исследования, дата исследования скважины",
+      "description": "",
+      "type": "string"
+    },
+    "info_receipt_date": {
+      "title": "Дата поступления информации",
+      "description": "",
+      "type": "string"
+    },
+    "device_coefficient": {
+      "title": "Коэффициент прибора при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "device_type": {
+      "title": "Тип прибора",
+      "description": "",
+      "type": "number"
+    },
+    "note": {
+      "title": "Примечание",
+      "description": "",
+      "type": "number"
+    },
+    "researcher": {
+      "title": "Исследователь",
+      "description": "",
+      "type": "number"
+    },
+     "form12D": {
+      "title": "Форма 12D",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form12D"
+      }
+    },
+     "form12R": {
+      "title": "Форма 12R",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form12R"
+      }
+    }
+  }
+}

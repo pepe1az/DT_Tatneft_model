@@ -1,0 +1,83 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_well_3",
+    "title": "Скважина переходящая",
+    "description": "Скважина, которая проходит через несколько горизонтов или пластов с разными характеристиками",
+    "type": "object",
+    "properties": {
+        "well_number": {
+            "title": "Номер скажины",
+            "description": "",
+            "$comment": "NAME",
+            "type": "number"
+        },
+        "ogpd_number": {
+            "title": "Номер ЦДНГ",
+            "description": "Номер цеха по добыче нефти и газа",
+            "$comment": "SHOP1",
+            "type": "number"
+        },
+        "brigade_number": {
+            "title": "Номер бригады",
+            "description": "",
+            "$comment": "NUMBER7",
+            "type": "number"
+        },
+        "repair_type": {
+            "title": "Вид ремонта",
+            "description": "",
+            "$comment": "FORM6",
+            "type": "number"
+        },
+        "well_operation_before_repair": {
+            "title": "Способ эксплуатации до ремонта",
+            "description": "Способ эксплуатации скважины до ремонта",
+            "$comment": "WAY11",
+            "type": "number"
+        },
+        "repair_start": {
+            "title": "Начало ремонта",
+            "description": "Начало ремонта (год, мес, число, часы)",
+            "$comment": "DATE71",
+            "type": "number"
+        },
+        "repair_end": {
+            "title": "Конец  ремонта",
+            "description": "Конец ремонта (год, мес, число, часы)",
+            "$comment": "DATE72",
+            "type": "number"
+        },
+        "repair_repeat": {
+            "title": "Повторность ремонта",
+            "description": "Повторность ремонта скважины",
+            "$comment": "SIGN42",
+            "type": "number"
+        },
+        "repair_work_type": {
+            "title": "Вид работы",
+            "description": "",
+            "$comment": "FORMT70",
+            "type": "number"
+        },
+        "shifts_quantity": {
+            "title": "Количество вахт",
+            "description": "Количество вахт",
+            "$comment": "QUANT148",
+            "type": "number"
+        },
+        "lift_type": {
+            "title": "Тип подъемника",
+            "description": "",
+            "$comment": "TYPE",
+            "type": "number"
+        },
+        "type_of_work3":{
+            "title":"Вид работы",
+            "description":"",
+            "type":"array",
+            "items":{
+            "$ref": "/databases/owpbaza4/owpbaza4_type_of_work_3"
+            }
+        }
+    }
+}

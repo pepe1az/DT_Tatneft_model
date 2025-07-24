@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_root",
+  "title": "БД OWPBAZA6",
+  "description": "Учётно-отчётная информация по трудовым и материальным затратам выездных ремонтных бригад ПРЦЭО",
+  "type": "array",
+  "items": {
+    "$id": "/databases/owpbaza6/owpbaza6_enterprise",
+    "title": "Предприятие",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "enterprise": {
+        "title": "Предприятие",
+        "description": "",
+        "type": "number"
+      },
+      "month": {
+        "title": "Месяц",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/owpbaza6/owpbaza6_month",
+          "title": "Месяц",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "month": {
+              "title": "Месяц",
+              "description": "",
+              "type": "number"
+            },
+            "subdivision": {
+              "title": "Подразделение",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/owpbaza6/owpbaza6_subdivision",
+                "title": "Подразделение",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "subdivision": {
+                    "title": "Подразделение",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "equipment": {
+                    "title": "Оборудование",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/owpbaza6/owpbaza6_equipment",
+                      "title": "Оборудование",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "equipment_name": {
+                          "title": "Наименование оборудования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "manufacturer_serial_number": {
+                          "title": "Заводской номер оборудования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "inventory_number": {
+                          "title": "Инвентарный номер оборудования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "installation_location": {
+                          "title": "Место установки",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "repair_team_number": {
+                          "title": "Номер ремонтной бригады",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "repair_team_unit_number": {
+                          "title": "Номер звена ремонтной бригады",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "equipment_repair_type": {
+                          "title": "Вид ремонта оборудования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "equipment_movement_type": {
+                          "title": "Вид движения оборудования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "equipment_shutdown_date_for_repair": {
+                          "title": "Дата остановки оборудования на ремонт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "repair_start_date": {
+                          "title": "Дата начала ремонта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "repair_end_date": {
+                          "title": "Дата окончания ремонта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "equipment_restart_date_after_repair": {
+                          "title": "Дата запуска после ремонта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "ground_equipment_repair_reason": {
+                          "title": "Причина выхода наземного оборудования в ремонт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "chapter_1": {
+                          "title": "Раздел 1",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_1",
+                            "title": "Раздел 1",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "entry_code ": {
+                                "title": "Код записи",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "worker_grade": {
+                                "title": "Разряд рабочего",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "worker_id_number": {
+                                "title": "Табличный номер рабочего",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "chapter_2": {
+                          "title": "Раздел 2",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_2",
+                            "title": "Раздел 2",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "entry_code ": {
+                                "title": "Код записи",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "work_duration_hours": {
+                                "title": "Продолжительность работ (час.)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "work_duration_minutes": {
+                                "title": "Продолжительность работ (мин.)",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "chapter_3": {
+                          "title": "Раздел 3",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_3",
+                            "title": "Раздел 3",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "work_type_completed ": {
+                                "title": "Вид выполненной работы",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "chapter_4": {
+                          "title": "Раздел 4",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_4",
+                            "title": "Раздел 4",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "unit_name ": {
+                                "title": "Наименование детали, узла",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "unit_quantity": {
+                                "title": "Количество деталей, узлов",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "chapter_5": {
+                          "title": "Раздел 5",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_5",
+                            "title": "Раздел 5",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "material_name ": {
+                                "title": "Наименование материала",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "material_quantity": {
+                                "title": "Количество материала",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "chapter_6": {
+                          "title": "Раздел 6",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza6/owpbaza6_chapter_6",
+                            "title": "Раздел 6",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "entry_code ": {
+                                "title": "Код записи",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "special_equipment_work_duration": {
+                                "title": "Продолжительность работы спецтехники",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

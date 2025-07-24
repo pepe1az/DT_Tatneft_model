@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_well",
+  "title": "Скважина",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "well_number": {
+      "title": "Номер скважины, дата формирования сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "variety": {
+      "title": "Разновидность",
+      "description": "",
+      "type": "string"
+    },
+    "category": {
+      "title": "Категория",
+      "description": "",
+      "type": "string"
+    },
+    "state": {
+      "title": "Состояния",
+      "description": "",
+      "type": "string"
+    },
+    "operation_method": {
+      "title": "Способ эксплуатации",
+      "description": "",
+      "type": "string"
+    },
+    "pump_type": {
+      "title": "Тип насоса",
+      "description": "",
+      "type": "string"
+    },
+    "commissioning_date_from_drilling": {
+      "title": "Дата ввода скважины из бурения",
+      "description": "",
+      "$comment": "перевод?",
+      "type": "string"
+    },
+    "commissioning_date_or_conservation_liquidation": {
+      "title": "Дата ввода скважины или из б/д (или ввода в консервацию или ликвидацию)",
+      "description": "",
+      "type": "string"
+    },
+    "inclination_sign": {
+      "title": "Признак наклонности скважины",
+      "description": "",
+      "type": "number"
+    },
+    "operating_time": {
+      "title": "Время работы",
+      "description": "",
+      "type": "number"
+    },
+    "segment_closure_date": {
+      "title": "Дата закрытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "downtimes": {
+      "title": "Простои",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_downtime"
+      }
+    },
+    "gtms": {
+      "title": "ГТМ",
+      "description": "Геолого-технические мероприятия",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_gtm"
+      }
+    },
+    "parameters": {
+      "title": "Параметры",
+      "description": "Параметры замера?",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_parameters"
+      }
+    },
+    "time": {
+      "$ref": "/databases/sodon/sodon_time"
+    },
+    "horizon": {  
+      "$ref": "/databases/sodon/sodon_horizon"
+    },
+    "measurement_pat": {
+      "title": "Замеры ПАТ",
+      "description": "Замер дебита",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_measurement_pat"
+      }
+    },
+    "water_cut_pat": {
+      "title": "Обводненность",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_water_cut"
+      }
+    }
+  }
+} 

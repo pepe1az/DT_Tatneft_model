@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza1/oirbaza1_cdng",
+  "title": "ЦДНГ",
+  "description": "Цех добычи нефти и газа",
+  "type": "object",
+  "properties": {
+    "cdng": {
+      "title": "ЦДНГ",
+      "description": "Цех добычи нефти и газа",
+      "type": "string"
+    },
+    "wells": {
+      "title": "Скважины",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/oirbaza1/oirbaza1_well"
+      }
+    }
+  }
+}

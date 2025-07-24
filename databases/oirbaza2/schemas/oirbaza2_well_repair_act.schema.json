@@ -1,0 +1,181 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/oirbaza2/oirbaza2_well_repair_act",
+    "title": "Акт ремонта скважины",
+    "description": "Документ учета ремонтных работ на скважине",
+    "type": "object",
+    "properties": {
+      "key_ngdu_cdng_month": {
+        "title": "Сцепленный ключ-НГДУ, ЦДНГ, месяц",
+        "description": "",
+        "$comment": "ADRES",
+        "type": "string"
+      },
+      "workshop_ppn_krs": {
+        "title": "Цех ППН и КРС (ЦТРС)",
+        "description": "",
+        "$comment": "SHOP2",
+        "type": "string"
+      },
+      "well_number": {
+        "title": "Номер скважины",
+        "description": "",
+        "$comment": "NAME",
+        "type": "string"
+      },
+      "work_type": {
+        "title": "Вид работы",
+        "description": "",
+        "$comment": "FORM70",
+        "type": "number"
+      },
+      "repair_start_year": {
+        "title": "Год начала ремонта",
+        "description": "",
+        "$comment": "YEAR1",
+        "type": "string"
+      },
+      "repair_start_month": {
+        "title": "Месяц начала ремонта",
+        "description": "",
+        "$comment": "MONTH1",
+        "type": "string"
+      },
+      "repair_start_day": {
+        "title": "Число начала ремонта",
+        "description": "",
+        "$comment": "DAY1",
+        "type": "string"
+      },
+      "repair_end_year": {
+        "title": "Год конца ремонта",
+        "description": "",
+        "$comment": "YEAR1",
+        "type": "string"
+      },
+      "repair_end_month": {
+        "title": "Месяц конца ремонта",
+        "description": "",
+        "$comment": "MONTH1",
+        "type": "string"
+      },
+      "repair_end_day": {
+        "title": "Число конца ремонта",
+        "description": "",
+        "$comment": "DAY1",
+        "type": "string"
+      },
+      "operation_method_after_repair": {
+        "title": "Способ эксплуатации после ремонта",
+        "description": "",
+        "$comment": "WAY12",
+        "type": "number"
+      },
+      "artificial_slaughter_after_repair": {
+        "title": "Искусственный забой после ремонта",
+        "description": "",
+        "$comment": "FACE2",
+        "type": "number"
+      },
+      "conductor_diameter_after_repair": {
+        "title": "Диаметр кондуктора после ремонта",
+        "description": "",
+        "$comment": "DIAM02",
+        "type": "number"
+      },
+      "conductor_length_after_repair": {
+        "title": "Длина кондуктора после ремонта",
+        "description": "",
+        "$comment": "LENGTN02",
+        "type": "number"
+      },
+      "height_cement_lift_behind_conductor": {
+        "title": "Высота подъема цемента за кондуктором после ремонта",
+        "description": "",
+        "$comment": "HEIGHT2",
+        "type": "number"
+      },
+      "production_casing_diameter_after_repair": {
+        "title": "Диаметр эксплуатационной колонны после ремонта",
+        "description": "",
+        "$comment": "DIAM01",
+        "type": "number"
+      },
+      "production_casing_length_after_repair": {
+        "title": "Длина эксплуатационной колонны после ремонта",
+        "description": "",
+        "$comment": "LENGTN01",
+        "type": "number"
+      },
+      "height_cement_lift_behind_production_casing": {
+        "title": "Высота подъема цемента за эксплуатационной колонной после ремонта",
+        "description": "",
+        "$comment": "HEIGHT1",
+        "type": "number"
+      },
+      "inner_additional_casing_diameter_after_repair": {
+        "title": "Диаметр внутренней дополнительной колонны или летучки после ремонта",
+        "description": "",
+        "$comment": "DIAM22",
+        "type": "number"
+      },
+      "top_depth_additional_casing_after_repair": {
+        "title": "Глубина до верха дополнительной колонны или летучки после ремонта",
+        "description": "",
+        "$comment": "DEPTH03",
+        "type": "number"
+      },
+      "bottom_depth_additional_casing_after_repair": {
+        "title": "Глубина до низа дополнительной колонны или летучки после ремонта",
+        "description": "",
+        "$comment": "DEPTH04",
+        "type": "number"
+      },
+      "material_additional_casing_after_repair": {
+        "title": "Материал колонны – летучки после ремонта",
+        "description": "",
+        "$comment": "MATERIAL",
+        "type": "number"
+      },
+      "rotor_altitude_after_repair": {
+        "title": "Альтитуда стола ротора",
+        "description": "",
+        "$comment": "ALITIT1",
+        "type": "number"
+      },
+      "clutch_altitude_after_repair": {
+        "title": "Альтитуда муфты после ремонта",
+        "description": "",
+        "$comment": "ALITIT2",
+        "type": "number"
+      },
+      "flange_altitude_after_repair": {
+        "title": "Альтитуда фланца после ремонта",
+        "description": "",
+        "$comment": "ALITIT3",
+        "type": "number"
+      },
+      "uncleanable_well_depth_after_repair": {
+        "title": "Глубина скважины, которую нельзя очистить",
+        "description": "",
+        "$comment": "DEPTH07",
+        "type": "number"
+      },
+      "perforsg": {
+        "title": "Данные по перфорации скважины",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/oirbaza2/oirbaza2_perforation"
+      },
+      "materseg": {
+        "title": "Акт ремонта скважины",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/oirbaza2/oirbaza2_materials"
+        }
+      }
+    }
+  }
+}

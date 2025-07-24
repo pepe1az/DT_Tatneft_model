@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_enterprise",
+  "title": "Предприятие",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "enterprise":{
+        "title":"Предприятие",
+        "description":"",
+        "type":"number"
+    },
+    "month":{
+        "title": "Месяц",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "/databases/owpbaza6/owpbaza6_month"
+      }
+    }
+  }
+}

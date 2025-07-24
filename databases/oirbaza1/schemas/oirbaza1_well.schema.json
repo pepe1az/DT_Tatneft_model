@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza1/oirbaza1_well",
+  "title": "Скважина",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "well": {
+      "title": "Номер скважины",
+      "description": "",
+      "type": "string"
+    },
+    "bottom_hole_x": {
+      "title": "Координата забоя – X, м",
+      "description": "",
+      "type": "integer"
+    },
+    "bottom_hole_y": {
+      "title": "Координата забоя – Y, м",
+      "description": "",
+      "type": "integer"
+    },
+    "wellbore_diameter": {
+      "title": "Диаметр пробуренного ствола, мм",
+      "description": "",
+      "type": "integer"
+    },
+    "drilled_total_depth": {
+      "title": "Забой пробуренный, м",
+      "description": "",
+      "type": "integer"
+    },
+    "artificial_bottom": {
+      "title": "Забой искусственный (текущий), м",
+      "description": "",
+      "type": "number"
+    },
+    "maximum_wellbore_curvature": {
+      "title": "Максимальная кривизна по стволу скважины, градус",
+      "description": "",
+      "type": "number"
+    },
+    "maximum_curvature_in_perforation_interval": {
+      "title": "Максимальная кривизна в интервале перфорации, градус",
+      "description": "",
+      "type": "number"
+    },
+    "vugular_porosity_in_pay_zone": {
+      "title": "Кавернозность в интервале продуктивных пластов, %",
+      "type": "integer"
+    },
+    "drilling_completion_fluid": {
+      "title": "Жидкость, на которой был вскрыт продуктивный пласт при бурении",
+      "description": "",
+      "type": "integer"
+    },
+    "completion_fluid_density": {
+      "title": "Плотность жидкости, на которой был вскрыт пласт",
+      "description": "",
+      "type": "number"
+    },
+    "completion_fluid_filtration": {
+      "title": "Водоотдача жидкости, на которой был вскрыт пласт",
+      "description": "",
+      "type": "number"
+    },
+    "cement_ring_condition_above_reservoir_top": {
+      "title": "Состояние цементного кольца выше кровли продуктивных пластов",
+      "description": "",
+      "type": "integer"
+    },
+    "cement_ring_condition_between_perforation_intervals": {
+      "title": "Состояние цементного кольца между интервалами перфорации",
+      "description": "",
+      "type": "integer"
+    },
+    "cement_ring_condition_below_reservoir_bottom": {
+      "title": "Состояние цементного кольца ниже подошвы продуктивных пластов",
+      "description": "",
+      "type": "integer"
+    },
+    "casing_condition": {
+      "title": "Состояние эксплуатационной колонны",
+      "description": "",
+      "type": "integer"
+    },
+    "wellhead_condition": {
+      "title": "Состояние устья скважины",
+      "description": "",
+      "type": "integer"
+    },
+    "equivalent_wellbore_radius": {
+      "title": "Приведенный радиус скважины",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_oil_phase_permeability": {
+      "title": "Проницаемость фазовая пласта, по нефти",
+      "description": "",
+      "type": "integer"
+    },
+    "reservoir_water_phase_permeability": {
+      "title": "Проницаемость фазовая пласта, по воде",
+      "description": "",
+      "type": "integer"
+    },
+    "oil_water_interfacial_tension_at_reservoir_conditions": {
+      "title": "Поверхностное натяжение на границе нефть-вода в пластовых условиях",
+      "description": "",
+      "type": "number"
+    },
+    "bottomhole_temperature": {
+      "title": "Температура забойная",
+      "description": "",
+      "type": "number"
+    },
+    "productivity_index": {
+      "title": "Коэффициент продуктивности",
+      "description": "",
+      "type": "number"
+    },
+    "productivity_index_measurement_date": {
+      "title": "Дата замера коэффициента продуктивности",
+      "description": "",
+      "type": "string"
+    },
+    "oil_production_rate_previous_month": {
+      "title": "Дебит нефти за предыдущий месяц",
+      "description": "",
+      "type": "number"
+    },
+    "water_cut_volume_fraction": {
+      "title": "Обводнённость, объёмная",
+      "description": "",
+      "type": "integer"
+    },
+    "water_density": {
+      "title": "Плотность воды",
+      "description": "",
+      "type": "number"
+    },
+    "produced_water_type": {
+      "title": "Вид добываемой воды",
+      "description": "",
+      "type": "integer"
+    },
+    "optimal_water_cut_volume_fraction": {
+      "title": "Оптимальная обводнённость, объёмная",
+      "description": "",
+      "type": "integer"
+    },
+    "initial_reservoir_pressure": {
+      "title": "Давление пластовое начальное",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_pressure_at_reservoir_top": {
+      "title": "Давление пластовое, на кровлю пласта",
+      "description": "",
+      "type": "integer"
+    },
+    "reservoir_pressure_measurement_date": {
+      "title": "Дата замера пластового давления",
+      "description": "",
+      "type": "string"
+    },
+    "bottomhole_pressure_at_reservoir_top": {
+      "title": "Давление забойное на кровлю пласта",
+      "description": "",
+      "type": "number"
+    },
+    "bottomhole_pressure_measurement_date": {
+      "title": "Дата замера забойного давления",
+      "description": "",
+      "type": "string"
+    },
+    "optimal_bottomhole_pressure": {
+      "title": "Оптимальное забойное давление",
+      "description": "",
+      "type": "number"
+    },
+    "static_level_from_wellhead": {
+      "title": "Уровень статический от устья",
+      "description": "",
+      "type": "number"
+    },
+    "static_level_measurement_date": {
+      "title": "Дата замера статического уровня",
+      "description": "",
+      "type": "string"
+    },
+    "dynamic_level_from_wellhead": {
+      "title": "Динамический уровень от устья",
+      "description": "",
+      "type": "number"
+    },
+    "dynamic_level_measurement_date": {
+      "title": "Дата замера динамического уровня",
+      "description": "",
+      "type": "string"
+    },
+    "maximum_depth_of_tubing_equipment_and_instruments": {
+      "title": "Глубина прохождения труб, оборудования, приборов (максимальная)",
+      "description": "",
+      "type": "integer"
+    },
+    "equipment_left_in_wellbore_after_accident": {
+      "title": "Оборудование, предметы, оставленные в стволе скважины после аварии",
+      "description": "",
+      "type": "integer"
+    },
+    "depth_of_top_equipment_left_in_well_after_accident": {
+      "title": "Глубина расположения верха оборуд., оставленного в скважине в результате аварии",
+      "description": "",
+      "type": "number"
+    },
+    "depth_of_bottom_equipment_left_in_well_after_accident": {
+      "title": "Глубина расположения низа оборуд. оставленного в скважине в результате аварии",
+      "description": "",
+      "type": "number"
+    },
+    "well_depth_below_which_bottomhole_cannot_be_cleared": {
+      "title": "Глубина скважины, ниже которой нельзя очистить забой",
+      "description": "",
+      "type": "number"
+    },
+    "plasts": {
+      "title": "Пласты",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/oirbaza1/oirbaza1_plast"
+      }
+    },
+    "geotech_activities": {
+      "title": "ГТМ",
+      "description": "Геолого-технические мероприятия",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/oirbaza1/oirbaza1_geotech_activity"
+      }
+    }
+  }
+}

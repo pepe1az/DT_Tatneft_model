@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form13",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "research_type_date": {
+      "title": "Вид исследования, дата исследования скважины",
+      "description": "",
+      "type": "string"
+    },
+    "info_receipt_date": {
+      "title": "Дата поступления информации",
+      "description": "",
+      "type": "string"
+    },
+    "downtime_duration": {
+      "title": "Время простоя при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "pump_strokes": {
+      "title": "Число качаний",
+      "description": "",
+      "type": "number"
+    },
+    "stroke_length": {
+      "title": "Длина хода плунжера",
+      "description": "",
+      "type": "number"
+    },
+    "measured_level": {
+      "title": "Уровень, замеренный при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "annulus_pressure": {
+      "title": "Давление затрубное, замеренное при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "note": {
+      "title": "Примечание",
+      "description": "",
+      "type": "number"
+    },
+    "researcher": {
+      "title": "Исследователь",
+      "description": "",
+      "type": "number"
+    },
+     "form13R": {
+      "title": "Форма 13R",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form13R"
+      }
+    }
+  }
+}

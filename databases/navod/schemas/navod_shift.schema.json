@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_shift",
+    "title": "Смена",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "device_change_date": {
+        "title": "Дата смены прибора",
+        "description": "",
+        "type": "string"
+      },
+      "flow_meter_type":{
+        "title":"Тип расходомера",
+        "description":"",
+        "type":"number"
+      },
+      "flow_meter_coefficient": {
+        "title": "Коэффициент расходомера",
+        "description": "",
+        "type": "number"
+      }
+    }
+  }

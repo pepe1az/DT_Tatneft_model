@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_work_injection",
+  "title": "Работа",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "monthly_work_hours": {
+      "title": "Время работы за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_tech_hours": {
+      "title": "Время технологических ограничений, за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_downtime_hours": {
+      "title": "Время простоя за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "well_head_pressure": {
+      "title": "Давление на устье скважин",
+      "description": "",
+      "type": "number"
+    },
+    "pump_discharge_pressure": {
+      "title": "Давление на выкиде насоса",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

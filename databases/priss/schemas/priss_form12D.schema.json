@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form12D",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "measurement_depth": {
+      "title": "Глубина замера при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "pulse_count": {
+      "title": "Количество импульсов прибора при исследовании",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

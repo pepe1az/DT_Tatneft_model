@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_gtm",
+    "title": "ГТМ",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "gtm_end_date_and_gtm_type": {
+        "title": "Дата окончания ГТМ, вид ГТМ",
+        "description": "",
+        "type": "string"
+      },
+      "layer":{
+        "title":"Пласт(горизонт)",
+        "description":"",
+        "type":"number"
+      }
+    }
+  }

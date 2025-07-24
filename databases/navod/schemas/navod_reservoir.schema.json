@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_reservoir",
+    "title": "Пласт",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "reservoir_code": {
+        "title": "Код пласта",
+        "description": "",
+        "type": "number"
+      },
+      "lens_number":{
+        "title":"Номер линзы",
+        "description":"",
+        "type":"number"
+      },
+      "collector_type": {
+        "title": "Тип коллектора",
+        "description": "",
+        "type": "number"
+      },
+      "injectivity": {
+        "title": "Приёмистость",
+        "description": "",
+        "type": "number"
+      },
+      "reservoir_outflow_percentage": {
+        "title": "Процент оттока в пласте",
+        "description": "",
+        "type": "number"
+      },
+      "fluid_migration_rate_to_another_horizon":{
+        "title":"Процент ухода жидкости в другой горизонт",
+        "description":"",
+        "type":"number"
+      },
+      "another_horizon_code": {
+        "title": "Код другого горизонта",
+        "description": "",
+        "type": "number"
+      },
+      "reservoir_alteration_signature": {
+        "title": "Признак изменения пласта",
+        "description": "",
+        "type": "number"
+      },
+      "top_marker": {
+        "title": "Признак верха",
+        "description": "",
+        "type": "number"
+      }
+    }
+  }

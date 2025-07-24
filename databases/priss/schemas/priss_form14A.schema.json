@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form14A",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "reservoir": {
+      "title": "Пласт",
+      "description": "",
+      "type": "number"
+    },
+    "inclination_angle": {
+      "title": "Угол наклона i при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "segment_a": {
+      "title": "Отрезок А при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "near_wellbore_conductivity": {
+      "title": "Гидропроводность призабойной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "near_wellbore_permeability": {
+      "title": "Проницаемость призабойной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "near_wellbore_diffusivity": {
+      "title": "Пьезопроводность призабойной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "near_wellbore_effective_radius": {
+      "title": "Приведенный радиус скважины призабойной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "near_wellbore_productivity_index": {
+      "title": "Коэффициент продуктивности призабойной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "kvd_inclination_angle": {
+      "title": "Угол наклона при исследовании КВД(КВУ)",
+      "description": "",
+      "type": "number"
+    },
+    "kvd_segment_a": {
+      "title": "Отрезок А при исследовании КВД(КВУ)",
+      "description": "",
+      "type": "number"
+    },
+    "conductivity": {
+      "title": "Гидропроводность",
+      "description": "",
+      "type": "number"
+    },
+    "permeability": {
+      "title": "Проницаемость",
+      "description": "",
+      "type": "number"
+    },
+    "diffusivity": {
+      "title": "Пьезопроводность",
+      "description": "",
+      "type": "number"
+    },
+    "effective_radius": {
+      "title": "Приведенный радиус скважины",
+      "description": "",
+      "type": "number"
+    },
+    "productivity_index": {
+      "title": "Коэффициент продуктивности",
+      "description": "",
+      "type": "number"
+    },
+    "annular_area": {
+      "title": "Площадь кольцевого сечения",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

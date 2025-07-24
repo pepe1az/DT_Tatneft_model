@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_root",
+  "title": "БД ПАСПОРТ",
+  "description": "Свойства флюидов и пород, запасы нефти и темпы отбора",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/passport/passport_object"
+  }
+}

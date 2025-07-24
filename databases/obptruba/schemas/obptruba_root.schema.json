@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_root",
+    "title": "БД Трубопровод",
+    "description": "База содержит информацию по учету, анализу и состоянию трубопроводов для задач планирования и проведения мероприятий по защите трубопроводов от коррозии, об их ликвидации или замене",
+    "type": "array",
+    "items": {
+      "$ref": "/databases/obptruba/obptruba_ngdu"
+    }
+  }

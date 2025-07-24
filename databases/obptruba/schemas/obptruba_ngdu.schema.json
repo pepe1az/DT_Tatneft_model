@@ -1,0 +1,111 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "enterprise": {
+        "title": "Предприятие",
+        "description": "",
+        "$comment": "ENTERPR 1",
+        "type": "number"
+      },
+      "ceh": {
+        "title": "Цех",
+        "description": "",
+        "$comment": "SHOP 2",
+        "type": "number"
+      },
+      "pipeline_obj_type": {
+        "title": "Вид объекта трубопровода",
+        "description": "",
+        "$comment": "FORM 44",
+        "type": "number"
+      },
+      "pipeline_obj_begin_num": {
+        "title": "Номер объекта в начале трубопровода",
+        "description": "",
+        "$comment": "NUMBER 66",
+        "type": "number"
+      },
+      "pipeline_obj_end_type": {
+        "title": "Вид объекта в конце трубопровода",
+        "description": "",
+        "$comment": "FORM 46",
+        "type": "number"
+      },
+      "pipeline_obj_end_num": {
+        "title": "Номер объекта в конце трубопровода",
+        "description": "",
+        "$comment": "NUMBER 76",
+        "type": "number"
+      },
+      "pipeline_num_schema": {
+        "title": "Номер трубопровода по схеме",
+        "description": "",
+        "$comment": "NUMBER 64",
+        "type": "number"
+      },
+      "pipeline_num_inventory": {
+        "title": "Номер трубопровода (инвентарный)",
+        "description": "",
+        "$comment": "NUMBER 65",
+        "type": "number"
+      },
+      "pipeline_operating_conditions": {
+        "title": "Условия работы трубопровода",
+        "description": "",
+        "$comment": "CONDIT 1",
+        "type": "number"
+      },
+      "state": {
+        "title": "Состояние трубопроводов",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_state"
+        }
+      },
+      "catod": {
+        "title": "Катодная защита трубопроводов",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_catod"
+        }
+      },
+      "coatings": {
+        "title": "Защита трубопроводов покрытиями",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_coatings"
+        }
+      },
+      "inhib": {
+        "title": "Защита трубопроводов ингибированием",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_inhib"
+        }
+      },
+      "mode": {
+        "title": "Режим",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_mode"
+        }
+      },
+      "agent": {
+        "title": "Транспортируемая среда",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/obptruba/obptruba_agent"
+        }
+      }
+    }
+  }

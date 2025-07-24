@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Месячные показатели",
+  "$id": "/databases/passport/passport_mespok",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "integer",
+      "title": "Дата (год, месяц)",
+      "description": ""
+    },
+    "oilProductionPerPeriod": {
+      "type": "number",
+      "title": "Добыча нефти за период",
+      "description": ""
+    },
+    "oilProductionPerPeriodIncludingInjection": {
+      "type": "number",
+      "title": "Добыча нефти в т.ч. из нагнетат",
+      "description": ""
+    },
+    "waterProductionPeriod": {
+      "type": "number",
+      "title": "Добыча воды за период",
+      "description": ""
+    },
+    "liquidProductionInPlastConditionsPeriod": {
+      "type": "number",
+      "title": "Добыча жидкости в пластовых условиях за период",
+      "description": ""
+    },
+    "gasProductionPerPeriod": {
+      "type": "integer",
+      "title": "Добыча газа за период",
+      "description": ""
+    },
+    "waterPumpedPerPeriod": {
+      "type": "number",
+      "title": "Воды за период",
+      "description": ""
+    },
+    "waterPumpedInContourPerPeriod": {
+      "type": "number",
+      "title": "Внутриконтурная жидкость в пластовых условиях",
+      "description": ""
+    },
+    "WaterPumpedInPlastConditionsPerPeriod": {
+      "type": "number",
+      "title": "Внутриконтурная жидкость в пластовых условиях",
+      "description": ""
+    },
+    "fundWellExploitationTotalDrilled": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: всего пробурено",
+      "description": ""
+    },
+    "fundWellExploitationFund": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: фонд",
+      "description": ""
+    },
+    "fundWellExploitationFountain": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: фонтан",
+      "description": ""
+    },
+    "fundWellExploitationEcn": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ЭЦН",
+      "description": ""
+    },
+    "fundWellExploitationShgn": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ШГН",
+      "description": ""
+    },
+    "fundWellExploitationGasLift": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: газлифт",
+      "description": ""
+    },
+    "fundWellExploitationFundShort": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: фонд",
+      "description": ""
+    },
+    "fundWellExploitationLiquidation": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ликвидации",
+      "description": ""
+    },
+    "fundWellExploitationDrilling": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: бурения",
+      "description": ""
+    },
+    "fundWellExploitationLiquidated": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ликвидировано",
+      "description": ""
+    },
+    "fundWellExploitationOtherHorizons": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: другие горизонты",
+      "description": ""
+    },
+    "fundWellExploitationInConservation": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: в консервации",
+      "description": ""
+    },
+    "fundWellExploitationObservations": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: наблюдательные",
+      "description": ""
+    },
+    "fundWellExploitationPassedForPumping": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: передано под закачку",
+      "description": ""
+    },
+    "injectionWellTotalDrilled": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: всего пробурено",
+      "description": ""
+    },
+    "injectionWellIncludingWellPumping": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в том числе под закачкой",
+      "description": ""
+    },
+    "injectionWellTechincalReasonStops": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: остановки по технологическим причинам",
+      "description": ""
+    },
+    "injectionWellInactiveWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в бездействии",
+      "description": ""
+    },
+    "injectionWellInLiquidationWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в ликвидации",
+      "description": ""
+    },
+    "injectionWellInConservationWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в консервации",
+      "description": ""
+    },
+    "injectionWellOtherHorizonsWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: другие горизонты",
+      "description": ""
+    },
+    "injectionWellOil": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: нефть",
+      "description": ""
+    },
+    "injectionWellPostExploitationDevelopment": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: освоение после эксплуатации",
+      "description": ""
+    },
+    "injectionWellLiquidatedWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: ликвидировано",
+      "description": ""
+    },
+    "injectionWellControlWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: контрольные",
+      "description": ""
+    },
+    "wellsWithdrawnFromDrillingOperational": {
+      "type": "integer",
+      "title": "Вывод скважин из бурения: эксплуатационных",
+      "description": ""
+    },
+    "wellsWithdrawnFromDrillingInjection": {
+      "type": "integer",
+      "title": "Вывод скважин из бурения: нагнетательных",
+      "description": ""
+    },
+    "activeWellFundDecrease": {
+      "type": "integer",
+      "title": "Выбыло из действующего фонда эксплуатационных скважин",
+      "description": ""
+    },
+    "observationAndPjezometricWells": {
+      "type": "integer",
+      "title": "Количество наблюдательных и пьезометрических скважин",
+      "description": ""
+    },
+    "averageWellProductionOil": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: нефти",
+      "description": ""
+    },
+    "averageWellProductionLiquid": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: жидкости",
+      "description": ""
+    },
+    "averageWellFountainOilProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: фонтан. нефти",
+      "description": ""
+    },
+    "averageWellFountainLiquidProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: фонтан. Жидкости",
+      "description": ""
+    },
+    "averageWellEcnOilProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: ЭЦН нефти",
+      "description": ""
+    },
+    "averageWellEcnLiquidProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: ЭЦН жидкости",
+      "description": ""
+    },
+    "averageWellShgnOilProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: ШГН нефти",
+      "description": ""
+    },
+    "averageWellShgnEndProduction": {
+      "type": "number",
+      "title": "Средний дебит одной скважины: ШТН жидкости",
+      "description": ""
+    },
+    "wellWorkingWithWaterTotal": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: всего",
+      "description": ""
+    },
+    "wellWorkingWithWaterUpTo2Percent": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: в т.ч. до 2%",
+      "description": ""
+    },
+    "wellWorkingWithWaterFrom2To20Percent": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: от 2% до 20%",
+      "description": ""
+    },
+    "wellWorkingWithWaterFrom20To50Percent": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: от 20% до 50%",
+      "description": ""
+    },
+    "wellWorkingWithWaterFrom50To90Percent": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: от 50% до 90%",
+      "description": ""
+    },
+    "wellWorkingWithWaterOver90Percent": {
+      "type": "integer",
+      "title": "Количество скважин работающих с водой: больше 90%",
+      "description": ""
+    },
+    "initialContourPressure": {
+      "type": "number",
+      "title": "Средневзвешенный пласт давления в начальном контуре нефтеснасн. В зоне отбора",
+      "description": ""
+    },
+    "inContourPressure": {
+      "type": "number",
+      "title": "Средневзвешенный пласт давления в зоне отбора",
+      "description": ""
+    }
+  }
+}

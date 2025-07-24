@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza3/ovpbaza3_well",
+    "title": "Скважина",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "well_number": {
+        "title": "Номер скважины",
+        "description": "",
+        "$comment": "NAME",
+        "type": "number"
+      },
+      "repairs_count": {
+        "title": "Количество ремонтов",
+        "description": "",
+        "$comment": "KOLREM",
+        "type": "number"
+      },
+      "repairs": {
+        "title": "Ремонты",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/ovpbaza3/ovpbaza3_repair"
+        }
+      }
+    }
+  }

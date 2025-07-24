@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza2/ovpbaza2_equipment_type",
+    "title": "Вид оборудования",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "record_code": {
+        "title": "Код записи",
+        "description": "",
+        "$comment": "KODZAP",
+        "type": "number"
+      },
+      "code": {
+        "title": "Код, значение",
+        "description": "",
+        "$comment": "KODZNACH",
+        "type": "number"
+      }
+    }
+  }

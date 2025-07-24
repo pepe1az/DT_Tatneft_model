@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza8/owpbaza8_root",
+  "$comment": "Оригинал: owpbaza8",
+  "title": "БД OWPBAZA8",
+  "description": "Отключенияя основного электрооборудования по объектам с указанием причин отключений",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/owpbaza8/owpbaza8_enterprise"
+  }
+}

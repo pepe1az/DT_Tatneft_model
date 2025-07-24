@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "type": "number"
+      },
+      "date_of_last_calculation":{
+        "title":"Дата последнего расчёта",
+        "description":"",
+        "type":"number"
+      },
+      "hydrogen": {
+        "title": "Кнс, водовод",
+        "description": "Кустовая насосная станция, водовод",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_water_pipeline_and_kms"
+        }
+      },
+      "well": {
+        "title": "Скважина",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_well"
+        }
+      },
+      "distribution": {
+        "title": "Распределение",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_distribution"
+        }
+      }
+    }
+  }

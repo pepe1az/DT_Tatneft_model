@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_well",
+  "title": "Скважины",
+  "description": "",
+  "type": "object",
+  "properties": {
+     "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "type": "string"
+    },
+    "segment_open_date": {
+      "title": "Дата открытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "operation_method": {
+      "title": "Способ эксплуатации",
+      "description": "",
+      "type": "number"
+    },
+    "category": {
+      "title": "Категория",
+      "description": "",
+      "type": "number"
+    },
+    "state": {
+      "title": "Состояние",
+      "description": "",
+      "type": "number"
+    },
+    "type": {
+      "title": "Разновидность",
+      "description": "",
+      "type": "number"
+    },
+    "rotary_table_altitude": {
+      "title": "Алтитуда стола ротора",
+      "description": "",
+      "type": "number"
+    },
+    "coordinate_x": {
+      "title": "Координата X",
+      "description": "",
+      "type": "number"
+    },
+    "coordinate_y": {
+      "title": "Координата Y",
+      "description": "",
+      "type": "number"
+    },
+    "segment_close_date": {
+      "title": "Дата закрытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+      "horizon": {
+      "title": "Газ",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_horizon"
+      }
+    },
+      "form11": {
+      "title": "Форма 11",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form11"
+      }
+    },
+      "form12": {
+      "title": "Форма 12",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form12"
+      }
+    },
+      "form13": {
+      "title": "Форма 13",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form13"
+      }
+    },
+      "form14": {
+      "title": "Форма 14",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form14"
+      }
+    },
+      "form15": {
+      "title": "Форма 15",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form15"
+      }
+    },
+      "form17": {
+      "title": "Форма 17",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form17"
+      }
+    }
+  }
+}

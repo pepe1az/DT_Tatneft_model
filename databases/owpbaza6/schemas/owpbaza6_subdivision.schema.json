@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_subdivision",
+  "title": "Подразделение",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "subdivision":{
+        "title":"Подразделение",
+        "description":"",
+        "type":"number"
+    },
+    "equipment":{
+        "title": "Оборудование",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_equipment"
+      }
+    }
+  }
+}

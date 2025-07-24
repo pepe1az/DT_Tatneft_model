@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_plast",
+  "title": "Пласт",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "segment_open_date": {
+      "title": "Пласт, дата открытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "roof_depth": {
+      "title": "Глубина залегания кровли пласта",
+      "description": "",
+      "type": "number"
+    },
+    "base_depth": {
+      "title": "Глубина залегания подошвы пласта",
+      "description": "",
+      "type": "number"
+    },
+    "effective_thickness": {
+      "title": "Эффективная мощность пласта",
+      "description": "",
+      "type": "number"
+    },
+    "perf_interval_from": {
+      "title": "Интервал перфорации от",
+      "description": "",
+      "type": "number"
+    },
+    "perf_interval_to": {
+      "title": "Интервал перфорации до",
+      "description": "",
+      "type": "number"
+    },
+    "porosity": {
+      "title": "Пористость",
+      "description": "",
+      "type": "number"
+    },
+    "segment_close_date": {
+      "title": "Дата закрытия сегмента",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

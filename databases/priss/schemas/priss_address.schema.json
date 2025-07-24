@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_address",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "field": {
+      "title": "Месторождение",
+      "description": "",
+      "type": "number"
+    },
+    "area": {
+      "title": "Площадь",
+      "description": "",
+      "type": "number"
+    },
+    "section": {
+      "title": "Участок",
+      "description": "",
+      "type": "number"
+    },
+    "block": {
+      "title": "блок",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

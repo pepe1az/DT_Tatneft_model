@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_month",
+  "title": "Месяц",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "month":{
+        "title":"Месяц",
+        "description":"",
+        "type":"number"
+    },
+    "subdivision":{
+        "title": "Подразделение",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_subdivision"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_6",
+  "title": "Раздел 6",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "entry_code ":{
+        "title":"Код записи",
+        "description":"",
+        "type":"number"
+    },
+    "special_equipment_work_duration":{
+        "title":"Продолжительность работы спецтехники",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

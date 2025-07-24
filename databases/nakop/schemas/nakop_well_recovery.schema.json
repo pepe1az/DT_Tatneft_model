@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_well_recovery",
+  "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
+  "title": "Скважина",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "segment_number": {
+      "title": "Номер сегмента",
+      "description": "",
+      "type": "number"
+    },
+    "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "type": "string"
+    },
+    "variety": {
+      "title": "Разновидность",
+      "description": "",
+      "type": "string"
+    },
+    "category": {
+      "title": "Категория",
+      "description": "",
+      "type": "string"
+    },
+    "status": {
+      "title": "Состояние",
+      "description": "",
+      "type": "string"
+    },
+    "operation_method": {
+      "title": "Способ эксплуатации",
+      "description": "",
+      "type": "string"
+    },
+    "pump_type": {
+      "title": "Тип насоса",
+      "description": "",
+      "type": "string"
+    },
+    "drilling_start_date": {
+      "title": "Дата ввода скв. из бурения",
+      "description": "",
+      "type": "string"
+    },
+    "reactivation_date": {
+      "title": "Дата ввода скв. новых и из бездействия",
+      "description": "",
+      "type": "string"
+    },
+    "plast": {
+        "$ref": "/databases/nakop/nakop_plast_recovery"
+    },
+    "godmes": {
+        "$ref": "/databases/nakop/nakop_yearmonth_recovery"
+    },
+    "gtm": {
+        "$ref": "/databases/nakop/nakop_gtm_recovery"
+    }
+  }
+}

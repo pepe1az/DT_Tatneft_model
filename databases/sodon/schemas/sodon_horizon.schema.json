@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_horizon",
+  "title": "Горизонт",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "horizon_code": {
+      "title": "Код горизонта",
+      "description": "",
+      "type": "number"
+    },
+    "oil_density_horizon": {
+      "title": "Плотность нефти по горизонт",
+      "description": "",
+      "type": "number"
+    },
+    "water_density_horizon_regime": {
+      "title": "Плотность воды по горизонту режимная",
+      "description": "",
+      "type": "number"
+    },
+    "water_cut_horizon_regime": {
+      "title": "Процент обводненности по горизонту режимн",
+      "description": "",
+      "type": "number"
+    },
+    "gas_factor": {
+      "title": "Газовый фактор",
+      "description": "",
+      "type": "number"
+    },
+    "hydrogen_sulfide_content": {
+      "title": "Содержание сероводорода в нефти",
+      "description": "",
+      "type": "number"
+    },
+    "horizon_liquid_production": {
+      "title": "Дебит жидкости горизонта",
+      "description": "",
+      "type": "number"
+    },
+    "oil_production_month_to_date": {
+      "title": "Добыча нефти с начала месяца",
+      "description": "",
+      "type": "number"
+    },
+    "water_production_month_to_date": {
+      "title": "Добыча воды с начала месяца",
+      "description": "",
+      "type": "number"
+    },
+    "water_density_calculated": {
+      "title": "Плотность воды расчетная",
+      "description": "",
+      "type": "number"
+    },
+    "water_cut_calculated": {
+      "title": "Процент обводненности расчетный",
+      "description": "",
+      "type": "number"
+    },
+    "horizon_association_indicator": {
+      "title": "Признак приобщенности горизонта",
+      "description": "",
+      "type": "number"
+    },
+    "working_agent_consumption_regime": {
+      "title": "Расход рабочего агента по технологическому режиму",
+      "description": "",
+      "type": "number"
+    },
+    "block": {
+      "$ref": "/databases/sodon/sodon_block"
+    },
+    "reservoir": {
+      "$ref": "/databases/sodon/sodon_reservoir"
+    },
+    "measurement": {
+      "title": "Замеры",
+      "description": "Замеры дебита",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_measurement"
+      }
+    },
+    "water_cut": {
+      "title": "Обводненность ПАТ",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_obvodpat"
+      }
+    },
+    "gas": {
+      "title": "Газ",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_gas"
+      }
+    }
+  }
+} 

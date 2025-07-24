@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_mode",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+     "segment_open_date": {
+      "title": "Дата открытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "oil_water_rate": {
+      "title": "Дебит нефти (воды)",
+      "description": "Контрольная приемистость",
+      "type": "number"
+    },
+    "water_density": {
+      "title": "Плотность воды по горизонту",
+      "description": "",
+      "type": "number"
+    },
+    "water_cut": {
+      "title": "Процент воды (объемный)",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

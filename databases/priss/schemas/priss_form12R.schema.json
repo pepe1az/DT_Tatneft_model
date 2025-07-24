@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form12R",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "reservoir": {
+      "title": "Пласт",
+      "description": "",
+      "type": "number"
+    },
+    "fluid_data": {
+      "title": "Дебит жидкости по пласту",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

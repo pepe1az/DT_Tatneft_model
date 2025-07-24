@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_outflow",
+    "title": "Излив",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "agent_tupe_and_date": {
+        "title": "Вид агента, дата",
+        "description": "",
+        "type": "string"
+      },
+      "volume_of_spills_per_month":{
+        "title":"Объём изливов за месяц",
+        "description":"",
+        "type":"number"
+      }
+    }
+  }

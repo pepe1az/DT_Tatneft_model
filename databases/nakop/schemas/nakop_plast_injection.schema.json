@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_plast_injection",
+  "title": "Пласт, закачка",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "code": {
+      "title": "Код пласта",
+      "description": "",
+      "type": "number"
+    },
+    "field": {
+      "title": "Месторождение",
+      "description": "",
+      "type": "number"
+    },
+    "area": {
+      "title": "Площадь",
+      "description": "",
+      "type": "number"
+    },
+    "zone": {
+      "title": "Участок",
+      "description": "",
+      "type": "number"
+    },
+    "block": {
+      "title": "Блок",
+      "description": "",
+      "type": "number"
+    },
+    "agent_type": {
+      "title": "Вид агента",
+      "description": "",
+      "type": "number"
+    },
+    "ngdu_code": {
+      "title": "Код НГДУ",
+      "description": " Код нефтегазодобывающего  управления",
+      "type": "number"
+    },
+    "agent_injection_start_date": {
+      "title": "Дата начала закачки агента",
+      "description": "",
+      "type": "number"
+    },
+    "lens_number": {
+      "title": "Номер линзы",
+      "description": "",
+      "type": "number"
+    },
+    "reservoir_type_code": {
+      "title": "Код типа коллектора",
+      "description": "",
+      "type": "number"
+    },
+    "modification_flag": {
+      "title": "Признак изменения пласта",
+      "description": "",
+      "type": "number"
+    },
+    "december_observation": {
+      "title": "Приемистость в декабре",
+      "description": "",
+      "type": "number"
+    },
+    "total_injection": {
+      "title": "Закачано с начала разработки",
+      "description": "",
+      "type": "number"
+    },
+    "total_overflows": {
+      "title": "Изливы с начала разработки",
+      "description": "",
+      "type": "number"
+    },
+    "total_returns": {
+      "title": "Оттоки с начала разработки",
+      "description": "",
+      "type": "number"
+    },
+    "technical_task": {
+      "title": "Технологическая задача с начала разработки",
+      "description": "",
+      "type": "number"
+    },
+    "reagent_type": {
+      "title": "Вид реагента",
+      "description": "",
+      "type": "number"
+    },
+    "total_reagent_used": {
+      "title": "Вид реагента",
+      "description": "",
+      "type": "number"
+    },
+    "sakmes": {
+      "title": "Закачка за месяц",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_sakmec_injection"
+      }
+    }
+  }
+}

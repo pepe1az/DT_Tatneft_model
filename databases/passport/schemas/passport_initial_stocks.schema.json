@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_initial_stocks",
+  "title": "Начальные запасы нефти",
+  "description": "Утвержденные геологические и извлекаемые запасы нефти",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата утверждения",
+      "description":"",
+      "type": "string"
+    },
+    "geological_ABC": {
+      "title": "Геологические запасы, категория A+B+C",
+      "description":"",
+      "type": "number"
+    },
+    "geological_AB": {
+      "title": "Геологические запасы, категория A+B",
+      "description":"",
+      "type": "number"
+    },
+    "retrievable_ABC": {
+      "title": "Извлекаемые запасы, категория A+B+C",
+      "description":"",
+      "type": "number"
+    },
+    "retrievable_AB": {
+      "title": "Извлекаемые запасы, категория A+B",
+      "description":"",
+      "type": "number"
+    },
+    "retrievable_C2": {
+      "title": "Извлекаемые запасы, категория C2",
+      "description":"",
+      "type": "number"
+    },
+    "accepted_oil_recovery": {
+      "title": "Принятый коэффициент нефтеотдачи",
+      "description":"",
+      "type": "number"
+    }
+  }
+}

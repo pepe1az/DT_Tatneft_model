@@ -1,0 +1,665 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_root",
+  "title": "БД НАКОП",
+  "description": "Сведения об историко-справочной информации по добыче нефти и закачке воды по месяцам с начала года и разработки, отражает состояние разработки нефтяных месторождении, площадей",
+  "type": "array",
+  "items": {
+    "$id": "/databases/nakop/nakop_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее  Управление",
+        "type": "integer"
+      },
+      "well_recovery": {
+        "title": "Скважина, добыча",
+        "description": "Данные о добыче из скважин, подконтрольных данной административной единице",
+        "type": "array",
+        "items": {
+          "$id": "/databases/nakop/nakop_well_recovery",
+          "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
+          "title": "Скважина",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "segment_number": {
+              "title": "Номер сегмента",
+              "description": "",
+              "type": "number"
+            },
+            "well_number": {
+              "title": "Номер скважины",
+              "description": "",
+              "type": "string"
+            },
+            "variety": {
+              "title": "Разновидность",
+              "description": "",
+              "type": "string"
+            },
+            "category": {
+              "title": "Категория",
+              "description": "",
+              "type": "string"
+            },
+            "status": {
+              "title": "Состояние",
+              "description": "",
+              "type": "string"
+            },
+            "operation_method": {
+              "title": "Способ эксплуатации",
+              "description": "",
+              "type": "string"
+            },
+            "pump_type": {
+              "title": "Тип насоса",
+              "description": "",
+              "type": "string"
+            },
+            "drilling_start_date": {
+              "title": "Дата ввода скв. из бурения",
+              "description": "",
+              "type": "string"
+            },
+            "reactivation_date": {
+              "title": "Дата ввода скв. новых и из бездействия",
+              "description": "",
+              "type": "string"
+            },
+            "plast": {
+              "$id": "/databases/nakop/nakop_plast_recovery",
+              "title": "Пласт, добыча",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "code": {
+                  "title": "Код пласта",
+                  "description": "",
+                  "type": "string"
+                },
+                "field": {
+                  "title": "Месторождение",
+                  "description": "",
+                  "type": "string"
+                },
+                "area": {
+                  "title": "Площадь",
+                  "description": "",
+                  "type": "string"
+                },
+                "zone": {
+                  "title": "Участок",
+                  "description": "",
+                  "type": "string"
+                },
+                "block": {
+                  "title": "Блок",
+                  "description": "",
+                  "type": "string"
+                },
+                "ngdu_code": {
+                  "title": "Код НГДУ",
+                  "description": "",
+                  "type": "string"
+                },
+                "lens_number": {
+                  "title": "Номер линзы",
+                  "description": "",
+                  "type": "string"
+                },
+                "reservoir_type_code": {
+                  "title": "Код типа коллектора",
+                  "description": "",
+                  "type": "string"
+                },
+                "modification_flag": {
+                  "title": "Признак изменения пласта",
+                  "description": "",
+                  "type": "string"
+                },
+                "waterType": {
+                  "title": "Вид добываемой воды",
+                  "description": "",
+                  "type": "string"
+                },
+                "oilDensity": {
+                  "title": "Плотность нефти",
+                  "description": "",
+                  "type": "number"
+                },
+                "decemberWaterCut": {
+                  "title": "Процент воды в декабре",
+                  "description": "",
+                  "type": "number"
+                },
+                "decemberOilDebit": {
+                  "title": "Дебит нефти в декабре",
+                  "description": "",
+                  "type": "number"
+                },
+                "totalOilProduced": {
+                  "title": "Добыто нефти с начала эксплуатации",
+                  "description": "",
+                  "type": "number"
+                },
+                "totalWaterProduced": {
+                  "title": "Добыто воды с начала эксплуатации (Т)",
+                  "description": "",
+                  "type": "number"
+                },
+                "totalWaterVolume": {
+                  "title": "Добыто воды с начала эксплуатации",
+                  "description": "",
+                  "type": "number"
+                },
+                "dobmes": {
+                  "$id": "/databases/nakop/nakop_monthly_production_recovery",
+                  "title": "Месячная добыча",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "title": "Год месяц",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "density": {
+                      "title": "Плотность",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "oil_produced": {
+                      "title": "Добыто нефти за месяц",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "water_produced": {
+                      "title": "Добыто воды за месяц (м³)",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "gas_produced": {
+                      "title": "Добыто газа за месяц",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            },
+            "godmes": {
+              "$id": "/databases/nakop/nakop_yearmonth_recovery",
+              "title": "Год, месяц",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "godmes": {
+                  "title": "Год, месяц",
+                  "description": "",
+                  "type": "number"
+                },
+                "rabota": {
+                  "$id": "/databases/nakop/nakop_work_recovery",
+                  "title": "Работа",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "monthly_work_hours": {
+                      "title": "Время работы за месяц",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "monthly_accumulation_hours": {
+                      "title": "Время накопления за месяц",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "monthly_downtime_hours": {
+                      "title": "Время простоя за месяц",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                },
+                "prostoi": {
+                  "$id": "/databases/nakop/nakop_downtime_recovery",
+                  "title": "Простой",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "downtime_code": {
+                      "title": "Код причины простоя",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "downtime_Duration": {
+                      "title": "Время простоя по данной причине",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "downtime_end_date": {
+                      "title": "Дата конца простоя",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            },
+            "gtm": {
+              "$id": "/databases/nakop/nakop_gtm_recovery",
+              "title": "ГТМ",
+              "description": "Геолого-Технические Мероприятия",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "title": "Вид ГТМ",
+                  "description": "",
+                  "type": "number"
+                },
+                "reservoir_code": {
+                  "title": "Код пласта (горизонта)",
+                  "description": "",
+                  "type": "number"
+                },
+                "end_date": {
+                  "title": "Дата окончания ГТМ",
+                  "description": "Дата окончания Геолого-Технических Мероприятий",
+                  "type": "number"
+                },
+                "oil_debit_before": {
+                  "title": "Дебит нефти до ГТМ",
+                  "description": "Дебит нефти до Геолого-Технических Мероприятий",
+                  "type": "number"
+                },
+                "water_cut_before": {
+                  "title": "Процент воды до ГТМ",
+                  "description": "Процент воды до до Геолого-Технических Мероприятий",
+                  "type": "number"
+                },
+                "effectiveness_end_date": {
+                  "title": "Дата окончания эффективности ГТМ",
+                  "description": "Дата окончания эффективности Геолого-Технических Мероприятий",
+                  "type": "number"
+                },
+                "effect": {
+                  "$id": "/databases/nakop/nakop_effect_recovery",
+                  "title": "Эффект",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "title": "Дата (год, месяц)",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_oil": {
+                      "title": "Дополнительно добыто нефти ±",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "water_reduction": {
+                      "title": "Уменьшение отбора воды ±",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "well_injection": {
+        "title": "Скважина, закачка",
+        "description": "Данные о закачке в скважин, подконтрольных данной административной единице",
+        "type": "array",
+        "items": {
+          "$id": "/databases/nakop/nakop_well_injection",
+          "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
+          "title": "Скважина",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "segment_number": {
+              "title": "Номер сегмента",
+              "description": "",
+              "type": "number"
+            },
+            "well_number": {
+              "title": "Номер скважины",
+              "description": "",
+              "type": "string"
+            },
+            "variety": {
+              "title": "Разновидность",
+              "description": "",
+              "type": "number"
+            },
+            "category": {
+              "title": "Категория",
+              "description": "",
+              "type": "number"
+            },
+            "status": {
+              "title": "Состояние",
+              "description": "",
+              "type": "number"
+            },
+            "injection_method": {
+              "title": "Способ закачки",
+              "description": "",
+              "type": "number"
+            },
+            "drilling_start_date": {
+              "title": "Дата ввода скв. из бурения",
+              "description": "",
+              "type": "number"
+            },
+            "reactivation_date": {
+              "title": "Дата ввода скв. новых и из бездействия",
+              "description": "",
+              "type": "number"
+            },
+            "plast": {
+              "title": "Пласт",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/nakop/nakop_plast_injection",
+                "title": "Пласт, закачка",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "title": "Код пласта",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "field": {
+                    "title": "Месторождение",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "area": {
+                    "title": "Площадь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "zone": {
+                    "title": "Участок",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "block": {
+                    "title": "Блок",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "agent_type": {
+                    "title": "Вид агента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "ngdu_code": {
+                    "title": "Код НГДУ",
+                    "description": " Код нефтегазодобывающего  управления",
+                    "type": "number"
+                  },
+                  "agent_injection_start_date": {
+                    "title": "Дата начала закачки агента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "lens_number": {
+                    "title": "Номер линзы",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "reservoir_type_code": {
+                    "title": "Код типа коллектора",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "modification_flag": {
+                    "title": "Признак изменения пласта",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "december_observation": {
+                    "title": "Приемистость в декабре",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "total_injection": {
+                    "title": "Закачано с начала разработки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "total_overflows": {
+                    "title": "Изливы с начала разработки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "total_returns": {
+                    "title": "Оттоки с начала разработки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "technical_task": {
+                    "title": "Технологическая задача с начала разработки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "reagent_type": {
+                    "title": "Вид реагента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "total_reagent_used": {
+                    "title": "Вид реагента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "sakmes": {
+                    "title": "Закачка за месяц",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/nakop/nakop_sakmec_injection",
+                      "title": "Закачка за месяц",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "date": {
+                          "title": "Год месяц",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "monthly_injection": {
+                          "title": "Закачено за месяц",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "monthly_overflows": {
+                          "title": "Изливы за месяц",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "monthly_returns": {
+                          "title": "Оттоки за месяц",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "monthly_tech_injection": {
+                          "title": "Технология. Закачка за месяц",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_type": {
+                          "title": "Вид реагента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_volume": {
+                          "title": "Количество закачиваемого реагента за месяц",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "godmes": {
+              "title": "Месячные показатели",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/nakop/nakop_yearmonth_injection",
+                "title": "Год, месяц",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "godmes": {
+                    "title": "Год, месяц",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "rabota": {
+                    "$id": "/databases/nakop/nakop_work_injection",
+                    "title": "Работа",
+                    "description": "",
+                    "type": "object",
+                    "properties": {
+                      "monthly_work_hours": {
+                        "title": "Время работы за месяц",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "monthly_tech_hours": {
+                        "title": "Время технологических ограничений, за месяц",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "monthly_downtime_hours": {
+                        "title": "Время простоя за месяц",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "well_head_pressure": {
+                        "title": "Давление на устье скважин",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "pump_discharge_pressure": {
+                        "title": "Давление на выкиде насоса",
+                        "description": "",
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "prostoi": {
+                    "$id": "/databases/nakop/nakop_downtime_injection",
+                    "title": "Простой",
+                    "description": "",
+                    "type": "object",
+                    "properties": {
+                      "downtime_code": {
+                        "title": "Код причины простоя",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "downtime_Duration": {
+                        "title": "Время простоя по данной причине",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "unaccounted_downtime": {
+                        "title": "Недозакачка по данной причине",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "downtime_end_date": {
+                        "title": "Дата конца простоя",
+                        "description": "",
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "gtm": {
+              "title": "ГТМ",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/nakop/nakop_gtm_injection",
+                "title": "ГТМ",
+                "description": "Геолого-Технические Мероприятия",
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "title": "Вид ГТМ",
+                    "description": "Вид Геолого-Технических Мероприятий",
+                    "type": "number"
+                  },
+                  "reservoir_code": {
+                    "title": "Код пласта (горизонта)",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "end_date": {
+                    "title": "Дата окончания ГТМ",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "pre_gtm_status": {
+                    "title": "Приемистость скважины перед ГТМ",
+                    "description": "Приемистость скважины перед Геолого-Техническими Мероприятиями",
+                    "type": "number"
+                  },
+                  "effectiveness_end_date": {
+                    "title": "Дата окончания эффективности ГТМ",
+                    "description": "Дата окончания эффективности Геолого-Техническимих Мероприятиямий",
+                    "type": "number"
+                  },
+                  "effect": {
+                    "title": "Эффект закачки",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/nakop/nakop_effect_injection",
+                      "title": "Эффект закачки",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "date": {
+                          "title": "Дата (год, месяц)",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "additional_injection": {
+                          "title": "Дополнительно закачано",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_root",
+  "$comment": "Оригинал: СОДОН",
+  "title": "БД СОДОН",
+  "description": "Информация по эксплуатации нефтяных скважин, сведения о простоях и мероприятиях",
+  "type": "array",
+  "items": {
+    "$id": "/databases/sodon/sodon_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu_cdng_field_area": {
+        "title": "НГДУ, ЦДНГ, месторождение, площадь. ЦДНГ",
+        "description": "Нефтегазодобывающее управление, цех добычи нефти и газа",
+        "type": "string"
+      },
+      "date_of_last_update": {
+        "title": "Дата последней корректировки",
+        "description": "",
+        "type": "string"
+      },
+      "well": {
+        "$id": "/databases/sodon/sodon_well",
+        "title": "Скважина",
+        "description": "",
+        "type": "object",
+        "properties": {
+          "well_number": {
+            "title": "Номер скважины, дата формирования сегмента",
+            "description": "",
+            "type": "string"
+          },
+          "variety": {
+            "title": "Разновидность",
+            "description": "",
+            "type": "string"
+          },
+          "category": {
+            "title": "Категория",
+            "description": "",
+            "type": "string"
+          },
+          "state": {
+            "title": "Состояния",
+            "description": "",
+            "type": "string"
+          },
+          "operation_method": {
+            "title": "Способ эксплуатации",
+            "description": "",
+            "type": "string"
+          },
+          "pump_type": {
+            "title": "Тип насоса",
+            "description": "",
+            "type": "string"
+          },
+          "commissioning_date_from_drilling": {
+            "title": "Дата ввода скважины из бурения",
+            "description": "",
+            "$comment": "перевод?",
+            "type": "string"
+          },
+          "commissioning_date_or_conservation_liquidation": {
+            "title": "Дата ввода скважины или из б/д (или ввода в консервацию или ликвидацию)",
+            "description": "",
+            "type": "string"
+          },
+          "inclination_sign": {
+            "title": "Признак наклонности скважины",
+            "description": "",
+            "type": "number"
+          },
+          "operating_time": {
+            "title": "Время работы",
+            "description": "",
+            "type": "number"
+          },
+          "segment_closure_date": {
+            "title": "Дата закрытия сегмента",
+            "description": "",
+            "type": "string"
+          },
+          "downtimes": {
+            "title": "Простои",
+            "description": "",
+            "type": "array",
+            "items": {
+              "$id": "/databases/sodon/sodon_downtime",
+              "title": "Простой",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "downtime_start_date": {
+                  "title": "Дата начала простоя",
+                  "description": "",
+                  "type": "string"
+                },
+                "downtime_end_date": {
+                  "title": "Дата конца простоя",
+                  "description": "",
+                  "type": "string"
+                },
+                "downtime_reason": {
+                  "title": "Причина простоя скважины",
+                  "description": "",
+                  "type": "string"
+                },
+                "well_stop_indicator": {
+                  "title": "Признак останова по скважине",
+                  "description": "",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "gtms": {
+            "title": "ГТМ",
+            "description": "Геолого-технические мероприятия",
+            "type": "array",
+            "items": {
+              "$id": "/databases/sodon/sodon_gtm",
+              "title": "ГТМ",
+              "description": "Геолого-технические мероприятия",
+              "type": "object",
+              "properties": {
+                "gtm_end_date_type": {
+                  "title": "Дата конца проведения ГТМ, вид ГТМ",
+                  "description": "",
+                  "type": "string"
+                },
+                "layer_code": {
+                  "title": "Код пласта/горизонта/",
+                  "description": "",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "parameters": {
+            "title": "Параметры",
+            "description": "Параметры замера?",
+            "type": "array",
+            "items": {
+              "$id": "/databases/sodon/sodon_parameters",
+              "title": "Параметры",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "parameter_measurement_date": {
+                  "title": "Дата замера параметра",
+                  "description": "",
+                  "type": "string"
+                },
+                "well_id": {
+                  "title": "Условный номер скважины",
+                  "description": "",
+                  "type": "string"
+                },
+                "feeder_number": {
+                  "title": "Номер фидера",
+                  "description": "",
+                  "type": "string"
+                },
+                "gathering_object_type": {
+                  "title": "Тип объекта сбора",
+                  "description": "",
+                  "type": "string"
+                },
+                "gathering_object_number": {
+                  "title": "Номер объекта сбора",
+                  "description": "",
+                  "type": "string"
+                },
+                "cdng_team_number": {
+                  "title": "Номер участка, бригады ЦДНГ",
+                  "description": "",
+                  "type": "string"
+                },
+                "wellhead_state": {
+                  "title": "Состояние устья скважины",
+                  "description": "",
+                  "type": "string"
+                },
+                "casing_state": {
+                  "title": "Состояние эксплуатационной колонны скважины",
+                  "description": "",
+                  "type": "string"
+                },
+                "polished_rod_stroke_length": {
+                  "title": "Длины хода полированного штока",
+                  "description": "",
+                  "$comment": "перевод?",
+                  "type": "number"
+                },
+                "balance_head_stroke_count": {
+                  "title": "Число качаний головки балансира",
+                  "description": "",
+                  "type": "number"
+                },
+                "prs_team_number": {
+                  "title": "Номер бригады ПРС",
+                  "description": "",
+                  "type": "string"
+                },
+                "vrb_grb_number": {
+                  "title": "Номер ВРБ или ГРБ",
+                  "description": "",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "time": {
+            "$id": "/databases/sodon/sodon_time",
+            "title": "Время",
+            "description": "",
+            "type": "object",
+            "properties": {
+              "operation_date": {
+                "title": "Дата работы",
+                "description": "",
+                "type": "number"
+              },
+              "monthly_operating_hours": {
+                "title": "Время работы с начала месяца",
+                "description": "",
+                "type": "number"
+              },
+              "monthly_accumulated_production_time": {
+                "title": "Время накопления с начала месяца",
+                "description": "",
+                "type": "number"
+              },
+              "monthly_downtime_hours": {
+                "title": "Время простоя с начала месяца",
+                "description": "",
+                "type": "number"
+              }
+            }
+          },
+          "horizon": {
+            "$id": "/databases/sodon/sodon_horizon",
+            "title": "Горизонт",
+            "description": "",
+            "type": "object",
+            "properties": {
+              "horizon_code": {
+                "title": "Код горизонта",
+                "description": "",
+                "type": "number"
+              },
+              "oil_density_horizon": {
+                "title": "Плотность нефти по горизонт",
+                "description": "",
+                "type": "number"
+              },
+              "water_density_horizon_regime": {
+                "title": "Плотность воды по горизонту режимная",
+                "description": "",
+                "type": "number"
+              },
+              "water_cut_horizon_regime": {
+                "title": "Процент обводненности по горизонту режимн",
+                "description": "",
+                "type": "number"
+              },
+              "gas_factor": {
+                "title": "Газовый фактор",
+                "description": "",
+                "type": "number"
+              },
+              "hydrogen_sulfide_content": {
+                "title": "Содержание сероводорода в нефти",
+                "description": "",
+                "type": "number"
+              },
+              "horizon_liquid_production": {
+                "title": "Дебит жидкости горизонта",
+                "description": "",
+                "type": "number"
+              },
+              "oil_production_month_to_date": {
+                "title": "Добыча нефти с начала месяца",
+                "description": "",
+                "type": "number"
+              },
+              "water_production_month_to_date": {
+                "title": "Добыча воды с начала месяца",
+                "description": "",
+                "type": "number"
+              },
+              "water_density_calculated": {
+                "title": "Плотность воды расчетная",
+                "description": "",
+                "type": "number"
+              },
+              "water_cut_calculated": {
+                "title": "Процент обводненности расчетный",
+                "description": "",
+                "type": "number"
+              },
+              "horizon_association_indicator": {
+                "title": "Признак приобщенности горизонта",
+                "description": "",
+                "type": "number"
+              },
+              "working_agent_consumption_regime": {
+                "title": "Расход рабочего агента по технологическому режиму",
+                "description": "",
+                "type": "number"
+              },
+              "block": {
+                "$id": "/databases/sodon/sodon_block",
+                "title": "Блок",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "object_name": {
+                    "title": "Объект (месторождение, площадь, участок, блок)",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "ngdu": {
+                    "title": "НГДУ",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "liquid_distribution_percentage": {
+                    "title": "Процент распределения жидкости из блока в данном горизонте",
+                    "description": "Процент распределения жидкости из блока (участка, площади, месторождения) в данном горизонте",
+                    "type": "number"
+                  }
+                }
+              },
+              "reservoir": {
+                "$id": "/databases/sodon/sodon_reservoir",
+                "title": "Пласт",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "pt1": {
+                    "title": "Поле PT1",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "pt2": {
+                    "title": "Поле PT2",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "reservoir_type": {
+                    "title": "Тип коллектора",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "formation_fluid_flow_rate": {
+                    "title": "Дебит жидкости пласта",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "water_cut_percentage": {
+                    "title": "Процент обводненности пласта",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "produced_water_type": {
+                    "title": "Вид добываемой воды",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "water_density": {
+                    "title": "Плотность воды",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "reservoir_change_sign": {
+                    "title": "Признак изменения пласта",
+                    "description": "",
+                    "type": "string"
+                  }
+                }
+              },
+              "measurement": {
+                "title": "Замеры",
+                "description": "Замеры дебита",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/sodon/sodon_measurement",
+                  "title": "Замер",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "measurement_date": {
+                      "title": "Дата замера",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "liquid_flow_rate": {
+                      "title": "Дебит жидкости",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "water_cut": {
+                "title": "Обводненность ПАТ",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/sodon/sodon_obvodpat",
+                  "title": "Обводненность ПАТ",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "measurement_date": {
+                      "title": "Дата замера",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "water_cut_percentage": {
+                      "title": "Процент обводненности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "Water_density_by_measurement": {
+                      "title": "Плотность воды по замеру",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "gas": {
+                "title": "Газ",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/sodon/sodon_gas",
+                  "title": "Газ",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "measurement_date": {
+                      "title": "Дата замера",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "working_agent_flow_rate": {
+                      "title": "Расход рабочего агента по замеру",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "working_pressure": {
+                      "title": "Рабочее давление",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "measurement_pat": {
+            "title": "Замеры ПАТ",
+            "description": "Замер дебита",
+            "type": "array",
+            "items": {
+              "$id": "/databases/sodon/sodon_measurement_pat",
+              "title": "Замер ПАТ",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "measurement_date": {
+                  "title": "Дата замера",
+                  "description": "",
+                  "type": "string"
+                },
+                "liquid_flow_rate": {
+                  "title": "Дебит жидкости",
+                  "description": "",
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "water_cut_pat": {
+            "title": "Обводненность",
+            "description": "",
+            "type": "array",
+            "items": {
+              "$id": "/databases/sodon/sodon_water_cut",
+              "title": "Обводненность",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "measurement_date": {
+                  "title": "Дата замера",
+                  "description": "",
+                  "type": "string"
+                },
+                "volumetric_water_cut": {
+                  "title": "Процент обводненности объемный",
+                  "description": "",
+                  "type": "number"
+                },
+                "water_density_measurement": {
+                  "title": "Плотность воды по замеру",
+                  "description": "",
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      },
+      "distribution": {
+        "title": "Распределение",
+        "description": "Распределение добычи нефти и воды",
+        "type": "array",
+        "items": {
+          "$id": "/databases/sodon/sodon_distribution",
+          "title": "Распределение",
+          "description": "Распределение добычи нефти и воды по участкам",
+          "type": "object",
+          "properties": {
+            "development_object": {
+              "title": "Объект разработки месторождения ",
+              "description": "Объект разработки месторождения (горизонт, месторождение, площадь, участок, блок, номер участка добычи)",
+              "type": "string"
+            },
+            "oil_production_month": {
+              "title": "Добыча нефти с начала месяца",
+              "description": "",
+              "type": "number"
+            },
+            "water_production_month": {
+              "title": "Добыча воды с начала месяца",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

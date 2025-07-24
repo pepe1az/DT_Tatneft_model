@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form14D",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "measurement_interval": {
+      "title": "Интервал замера во времени",
+      "description": "",
+      "type": "number"
+    },
+    "depth_pressure": {
+      "title": "Давление на глубине замера (уровень)",
+      "description": "",
+      "type": "number"
+    },
+    "annulus_pressure": {
+      "title": "Давление затрубное при исследовании",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

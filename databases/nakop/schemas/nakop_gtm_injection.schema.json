@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_gtm_injection",
+  "title": "ГТМ",
+  "description": "Геолого-Технические Мероприятия",
+  "type": "object",
+  "properties": {
+    "type": {
+      "title": "Вид ГТМ",
+      "description": "Вид Геолого-Технических Мероприятий",
+      "type": "number"
+    },
+    "reservoir_code": {
+      "title": "Код пласта (горизонта)",
+      "description": "",
+      "type": "number"
+    },
+    "end_date": {
+      "title": "Дата окончания ГТМ",
+      "description": "",
+      "type": "number"
+    },
+    "pre_gtm_status": {
+      "title": "Приемистость скважины перед ГТМ",
+      "description": "Приемистость скважины перед Геолого-Техническими Мероприятиями",
+      "type": "number"
+    },
+    "effectiveness_end_date": {
+      "title": "Дата окончания эффективности ГТМ",
+      "description": "Дата окончания эффективности Геолого-Техническимих Мероприятиямий",
+      "type": "number"
+    },
+    "effect": {
+      "title": "Эффект закачки",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_effect_injection"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_coatings",
+    "title": "Защита трубопроводов покрытиями",
+    "description": "Внутренние защиты трубопроводов покрытиями",
+    "type": "object",
+    "properties": {
+      "internal_coating_application_date": {
+        "title": "Дата нанесения внутреннего покрытия",
+        "description": "",
+        "$comment": "DATE 82",
+        "type": "number"
+      },
+      "operation_start_date": {
+        "title": "Дата начала эксплуатации",
+        "description": "",
+        "$comment": "DATE 83",
+        "type": "number"
+      },
+      "internal_coating_type": {
+        "title": "Вид покрытия внутренней поверхности",
+        "description": "",
+        "$comment": "FORM 40",
+        "type": "number"
+      },
+      "coating_application_method": {
+        "title": "Способ нанесения покрытия",
+        "description": "",
+        "$comment": "WAY 14",
+        "type": "number"
+      },
+      "coating_composition": {
+        "title": "Состав, схема покрытия",
+        "description": "",
+        "$comment": "COMPOS 01",
+        "type": "number"
+      },
+      "coating_producer": {
+        "title": "Предприятие, производившее покрытие",
+        "description": "",
+        "$comment": "ENTERPR 8",
+        "type": "number"
+      }
+    }
+  }

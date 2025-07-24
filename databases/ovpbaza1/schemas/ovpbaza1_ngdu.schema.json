@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza1/ovpbaza1_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "$comment": "NGDU",
+        "type": "number"
+      },
+      "cdng": {
+        "$ref": "/databases/ovpbaza1/ovpbaza1_cdng"
+      }
+    }
+  }

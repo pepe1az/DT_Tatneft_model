@@ -1,0 +1,93 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_agent",
+    "title": "Транспортируемая среда",
+    "description": "Сведения об изменении транспортируемой среды и назначения трубопроводов",
+    "type": "object",
+    "properties": {
+      "pipeline_medium_change_date": {
+        "title": "Дата изменения транспортируемой среды",
+        "description": "",
+        "$comment": "DATE 36",
+        "type": "number"
+      },
+      "pipeline_medium_type": {
+        "title": "Вид транспортируемой среды и назначение трубопровода",
+        "description": "",
+        "$comment": "FORM 24",
+        "type": "number"
+      },
+      "medium_temperature": {
+        "title": "Температура транспортируемой среды, °С",
+        "description": "Характеристика транспортируемой среды - температура °С",
+        "$comment": "TEMPER 4",
+        "type": "number"
+      },
+      "medium_density": {
+        "title": "Плотность транспортируемой среды, г/см3",
+        "description": "Характеристика транспортируемой среды - плотность г/см3",
+        "$comment": "DENSIT 15",
+        "type": "number"
+      },
+      "medium_ph_value": {
+        "title": "pH (водородный показатель)",
+        "description": "Характеристика транспортируемой среды - pH (водородный показатель)",
+        "$comment": "PROOF 2",
+        "type": "number"
+      },
+      "medium_h2s_concentration": {
+        "title": "Содержание H2S, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание H2S, мг/л",
+        "$comment": "CONTEN 04",
+        "type": "number"
+      },
+      "medium_co2_concentration": {
+        "title": "Содержание CO2, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание CO2, мг/л",
+        "$comment": "CONTEN 05",
+        "type": "number"
+      },
+      "medium_o2_concentration": {
+        "title": "Содержание O2, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание O2, мг/л",
+        "$comment": "CONTEN 12",
+        "type": "number"
+      },
+      "medium_weighted_particles_count": {
+        "title": "КВЧ (количество взвешенных частиц)",
+        "description": "Характеристика транспортируемой среды - КВЧ (количество взвешенных частиц)",
+        "$comment": "CONTEN 06",
+        "type": "number"
+      },
+      "medium_total_iron_content": {
+        "title": "Содержание железа общего, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание железа общего, мг/л",
+        "$comment": "CONTEN 10",
+        "type": "number"
+      },
+      "medium_oil_product_content": {
+        "title": "Содержание нефтепродуктов, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание нефтепродуктов, мг/л",
+        "$comment": "CONTEN 11",
+        "type": "number"
+      },
+      "medium_water_content_percent": {
+        "title": "Процент воды",
+        "description": "Характеристика транспортируемой среды - Процент воды",
+        "$comment": "PERSEN 10",
+        "type": "number"
+      },
+      "medium_paraffin_content": {
+        "title": "Содержание парафинов",
+        "description": "Характеристика транспортируемой среды - Содержание парафинов",
+        "$comment": "CONTEN 03",
+        "type": "number"
+      },
+      "medium_mineral_salts_content": {
+        "title": "Содержание минеральных солей, мг/л",
+        "description": "Характеристика транспортируемой среды - Содержание минеральных солей, мг/л",
+        "$comment": "CONTEN 07",
+        "type": "number"
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_opz",
+    "$comment": "ОПЗ",
+    "title": "Обработка призабойной зоны",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "object": {
+        "title": "Объект",
+        "description": "КНС +горизонт + месторождение + площадь + участок + блок + вид агента",
+        "type": "string"
+      },
+      "ngdu":{
+        "title":"НГДУ",
+        "description":"Нефтегазодобывающее управление",
+        "type":"number"
+      }
+    }
+  }

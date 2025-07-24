@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_work_recovery",
+  "title": "Работа",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "monthly_work_hours": {
+      "title": "Время работы за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_accumulation_hours": {
+      "title": "Время накопления за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_downtime_hours": {
+      "title": "Время простоя за месяц",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

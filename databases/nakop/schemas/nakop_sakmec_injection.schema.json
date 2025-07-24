@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_sakmec_injection",
+  "title": "Закачка за месяц",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Год месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_injection": {
+      "title": "Закачено за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_overflows": {
+      "title": "Изливы за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_returns": {
+      "title": "Оттоки за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_tech_injection": {
+      "title": "Технология. Закачка за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "reagent_type": {
+      "title": "Вид реагента",
+      "description": "",
+      "type": "number"
+    },
+    "reagent_volume": {
+      "title": "Количество закачиваемого реагента за месяц",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

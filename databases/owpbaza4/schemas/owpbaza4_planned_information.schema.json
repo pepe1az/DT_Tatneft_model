@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_planned_information",
+    "title": "Плановые сведения",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "brigade_number": {
+            "title": "Номер бригады",
+            "description": "",
+            "$comment": "NUMBER7",
+            "type": "number"
+        },
+        "brigade_work_schedule_code": {
+            "title": "Код графика работы БТРС",
+            "description": "Код графика работы бригады по текущему ремонту скважин",
+            "$comment": "GRAFBRIG",
+            "type": "number"
+        },
+        "lifts_number": {
+            "title": "Количество подъемников",
+            "description": "",
+            "$comment": "QUANT147",
+            "type": "number"
+        },
+        "shifts_quantity": {
+            "title": "Количество вахт",
+            "description": "",
+            "$comment": "QUANT148",
+            "type": "number"
+        },
+        "well_servicings": {
+            "title": "Текущие ремонты",
+            "description": "",
+            "$comment": "QUANT149",
+            "type": "number"
+        },
+        "workovers": {
+            "title": "Капитальные ремонты",
+            "description": "",
+            "$comment": "QUANT150",
+            "type": "number"
+        }
+    }
+}

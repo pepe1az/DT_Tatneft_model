@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_time",
+  "title": "Время",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "operation_date": {
+      "title": "Дата работы",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_operating_hours": {
+      "title": "Время работы с начала месяца",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_accumulated_production_time": {
+      "title": "Время накопления с начала месяца",
+      "description": "",
+      "type": "number"
+    },
+    "monthly_downtime_hours": {
+      "title": "Время простоя с начала месяца",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

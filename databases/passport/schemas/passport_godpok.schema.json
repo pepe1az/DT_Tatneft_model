@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GODPOK (Годовые показатели разработки)",
+  "$id": "/databases/passport/passport_godpok",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "integer",
+      "title": "Дата (год, месяц)",
+      "description":""
+    },
+    "projectOilProduction": {
+      "type": "number",
+      "title": "Проектная добыча нефти",
+      "description":""
+    },
+    "actualOilProduction": {
+      "type": "number",
+      "title": "Фактическая добыча нефти",
+      "description":""
+    },
+    "oilProductionSinceStart": {
+      "type": "number",
+      "title": "Добыча нефти с начала работ",
+      "description":""
+    },
+    "waterProductionAnnual": {
+      "type": "number",
+      "title": "Добыча воды за год",
+      "description":""
+    },
+    "waterProductionSinceStart": {
+      "type": "number",
+      "title": "Добыча воды с начала разработки",
+      "description":""
+    },
+    "liquidProductionAnnual": {
+      "type": "number",
+      "title": "Добыча жидкости за год",
+      "description":""
+    },
+    "liquidProductionSinceStart": {
+      "type": "number",
+      "title": "Добыча жидкости с начала разработки",
+      "description":""
+    },
+    "gasProductionAnnual": {
+      "type": "number",
+      "title": "Добыча газа за год",
+      "description":""
+    },
+    "technologicalPumping": {
+      "type": "integer",
+      "title": "Технологическая закачка воды",
+      "description":""
+    },
+    "productivePumping": {
+      "type": "integer",
+      "title": "Производительная закачка воды",
+      "description":""
+    },
+    "developmentTechnologicalPumping": {
+      "type": "integer",
+      "title": "Разработки технологическая закачка воды",
+      "description":""
+    },
+    "developmentProductivePumping": {
+      "type": "integer",
+      "title": "Разработки производительности закачка воды",
+      "description":""
+    },
+    "fundWellExploitationOfProject": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: проекту",
+      "description":""
+    },
+    "fundWellExploitationActualWells": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: фактически",
+      "description":""
+    },
+    "fundWellExploitationWorkingWells": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: действующий",
+      "description":""
+    },
+    "fundWellExploitationFund": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: фонд",
+      "description":""
+    },
+    "fundWellExploitationLiquidation": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ликвидации",
+      "description":""
+    },
+    "fundWellExploitationDrilling": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: бурения",
+      "description":""
+    },
+    "fundWellExploitationLiquidated": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: ликвидировано",
+      "description":""
+    },
+    "fundWellExploitationOtherHorizons": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: другие горизонты",
+      "description": ""
+    },
+    "fundWellExploitationConservation": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: в консервации",
+      "description": ""
+    },
+    "fundWellExploitationObservable": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: наблюдательные",
+      "description":""
+    },
+    "fundWellExploitationForPumping": {
+      "type": "integer",
+      "title": "Фонд эксплуатационных скважин: закачку",
+      "description":""
+    },
+    "injectionWellExploitationOfProject": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: проекту",
+      "description":""
+    },
+    "injectionWellExploitationActualWells": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: фактически",
+      "description":""
+    },
+    "injectionWellExploitationIncludingPumping": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в том числе под закачкой",
+      "description":""
+    },
+    "injectionWellExploitationTechnicalReason": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: технологическим причинам",
+      "description":""
+    },
+    "injectionWellExploitationOil": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: нефть",
+      "description":""
+    },
+    "injectionWellExploitationInIdleAndConservation": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: в бездействии и в консервации",
+      "description":""
+    },
+    "injectionWellExploitationOtherHorizons": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: другие горизонты",
+      "description":""
+    },
+    "injectionWellExploitationLiquidation": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: ликвидации",
+      "description":""
+    },
+    "injectionWellExploitationObservable": {
+      "type": "integer",
+      "title": "Фонд нагнетательных скважин: наблюдательных",
+      "description":""
+    },
+    "wellsWithdrawnOperational": {
+      "type": "integer",
+      "title": "Вывод скважин из бурения: эксплуатационных",
+      "description":""
+    },
+    "wellsWithdrawnInjection": {
+      "type": "integer",
+      "title": "Вывод скважин из бурения: нагнетательных",
+      "description":""
+    },
+    "activeFundDecrease": {
+      "type": "integer",
+      "title": "Выбыло за год из эксплуатации скважин из действующего фонда",
+      "description":""
+    },
+    "observationPjezometricWells": {
+      "type": "integer",
+      "title": "Количество наблюдательных и пьезометрических скважин",
+      "description":""
+    },
+    "averageWellProduction": {
+      "type": "integer",
+      "title": "Средний дебит 1 новой эксплуатационной скважины",
+      "description":""
+    },
+    "weightedAverageInitialContourPressure": {
+      "type": "number",
+      "title": "Средневзвешенное пластовое давление в начальном контуре нефтеносн",
+      "description":""
+    },
+    "weightedAverageAreaPressure": {
+      "type": "number",
+      "title": "Средневзвешенное пластовое давление по площади",
+      "description":""
+    },
+    "dailyAverageOilPressure": {
+      "type": "number",
+      "title": "Среднесуточный дебит одной скважины: нефти",
+      "description":""
+    },
+    "dailyAverageLiquidPressure": {
+      "type": "number",
+      "title": "Среднесуточный дебит одной скважины: жидкости",
+      "description":""
+    }
+  }
+}

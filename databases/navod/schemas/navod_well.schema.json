@@ -1,0 +1,107 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_well",
+    "title": "Скважина",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "well_number_and_date_of_formation": {
+        "title": "Номер скважины, дата формирования",
+        "description": "",
+        "type": "string"
+      },
+      "segment":{
+        "title":"Сегмент",
+        "description":"",
+        "type":"number"
+      },
+      "variety": {
+        "title": "Разновидность",
+        "description": "",
+        "type": "number"
+      },
+      "category": {
+        "title": "Категория",
+        "description": "",
+        "type": "number"
+      },
+      "state": {
+        "title": "Состояние",
+        "description": "",
+        "type": "number"
+      },
+      "download_method": {
+        "title": "Способ закачки",
+        "description": "",
+        "type": "number"
+      },
+      "injectivity": {
+        "title": "Приёмистость",
+        "description": "",
+        "type": "number"
+      },
+      "date_of_well_input_from_drilling": {
+        "title": "Дата ввода скважины из бурения",
+        "description": "",
+        "type": "string"
+      },
+      "date_of_commissioning_of_a_new_well_or_from_inactivity": {
+        "title": "Дата ввода новой скважины или из бездействия",
+        "description": "",
+        "type": "string"
+      },
+      "segment_opening_date": {
+        "title": "Дата открытия сегмента",
+        "description": "",
+        "type": "number"
+      },
+      "kns": {
+        "title": "Сегмент КНС",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_kns"
+        }
+      },
+      "downtime": {
+        "title": "Простой",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_downtime"
+        }
+      },
+      "gtm": {
+        "title": "Сегмент ГТМ",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_gtm"
+        }
+      },
+      "horizon": {
+        "title": "Горизонт",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_horizon"
+        }
+      },
+      "volume": {
+        "title": "Объём",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_volume"
+        }
+      },
+      "well_characteristics": {
+        "title": "Объём",
+        "description": "",
+        "type": "array",
+        "items": {
+        "$ref": "/databases/navod/navod_well_characteristics"
+        }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_state",
+    "$comment": "Оригинал: SOST",
+    "title": "Состояние трубопроводов",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "pipeline_commissioning_date": {
+        "title": "Дата ввода трубопровода в эксплуатацию",
+        "description": "",
+        "$comment": "Оригинал: Дата ввода трубопровода в эксплуатацию, DATE 37, C5, 9(4), 4",
+        "type": "number"
+      },
+      "pipeline_carrying_amount": {
+        "title": "Стоимость трубопровода балансовая, руб.",
+        "description": "",
+        "$comment": "Оригинал: Стоимость трубопровода балансовая, руб., COST 25, C6, 9(8), 8",
+        "type": "number"
+      },
+      "pipeline_lenght": {
+        "title": "Длина трубопровода, м",
+        "description": "",
+        "$comment": "Оригинал: Длина трубопровода, м, LENGHT 29, C7, 9(5), 5",
+        "type": "number"
+      },
+      "pipeline_diameter": {
+        "title": "Диаметр трубопровода, мм",
+        "description": "",
+        "$comment": "Оригинал: Диаметр трубопровода, мм, DIAM 25, C8, 9(4), 4",
+        "type": "number"
+      },
+      "pipeline_wall_thickness": {
+        "title": "Толщина стенки трубопровода, мм",
+        "description": "",
+        "$comment": "Оригинал: Толщина стенки трубопровода, мм, TAICKN 10, C9, 9(2), 2",
+        "type": "number"
+      },
+      "pipeline_start_elevation": {
+        "title": "Геодезическая отметка в начале трубопровода",
+        "description": "",
+        "$comment": "Оригинал: Геодезическая отметка в начале трубопровода, NOTE 3, C10, 999T99, 5",
+        "type": "number"
+      },
+      "pipeline_end_elevation": {
+        "title": "Геодезическая отметка в конце трубопровода",
+        "description": "",
+        "$comment": "Оригинал: Геодезическая отметка в конце трубопровода, NOTE 4, C10, 999T99, 5",
+        "type": "number"
+      },
+      "pipeline_laying_depth": {
+        "title": "Глубина укладки трубопровода, см",
+        "description": "",
+        "$comment": "Оригинал: Глубина укладки трубопровода, см, DEPTH 47, C12, 99, 2",
+        "type": "number"
+      },
+      "pipeline_material": {
+        "title": "Материал труб трубопровода",
+        "description": "",
+        "$comment": "Оригинал: Материал труб трубопровода, MATER 01, C13, 9, 1",
+        "type": "number"
+      },
+      "pipe_joint_type": {
+        "title": "Вид соединения труб",
+        "description": "",
+        "$comment": "Оригинал: Вид соединения труб, FORM 46, CI4, 9, 1",
+        "type": "number"
+      },
+      "external_coating_type": {
+        "title": "Вид защиты наружной поверхности",
+        "description": "",
+        "$comment": "Оригинал: Вид защиты наружной поверхности, FORM 39, CI5, 9, 1",
+        "type": "number"
+      }
+    }
+  }

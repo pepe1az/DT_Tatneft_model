@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form17",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "research_type_date": {
+      "title": "Вид исследования, дата исследования скважины",
+      "description": "",
+      "type": "string"
+    },
+    "info_receipt_date": {
+      "title": "Дата поступления информации",
+      "description": "",
+      "type": "string"
+    },
+    "measurement_depth": {
+      "title": "Глубина замера",
+      "description": "",
+      "type": "number"
+    },
+    "template_diameter": {
+      "title": "Диаметр шаблона",
+      "description": "",
+      "type": "number"
+    },
+    "note": {
+      "title": "Примечание",
+      "description": "",
+      "type": "number"
+    },
+    "researcher": {
+      "title": "Исследователь",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

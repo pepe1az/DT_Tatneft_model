@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_brigada_2",
+    "title": "Технар. Бриг. ПЗР",
+    "description": "Бригада подготовительно-заключительных работ",
+    "type": "object",
+    "properties": {
+        "brigade_shifts_number": {
+            "title": "Номер бригады-вахты",
+            "description": "",
+            "$comment": "BRGWAXT",
+            "type": "number"
+        },
+        "well2":{
+            "title": "Скважина №",
+            "description": "",
+            "type": "array",
+            "items":{
+                "$ref": "/databases/owpbaza4/owpbaza4_well_2"
+            }
+        }
+    }
+}

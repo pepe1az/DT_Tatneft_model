@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza1/oirbaza1_plast",
+  "title": "Пласт",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "plast": {
+      "title": "Код пласта",
+      "description": "",
+      "type": "string"
+    },
+    "top_depth": {
+      "title": "Глубина залегания кровли, м",
+      "description": "",
+      "$comment":"DEPTH31",
+      "type": "number"
+    },
+    "base_depth": {
+      "title": "Глубина залегания подошвы, м",
+      "description": "",
+      "$comment":"DEPTH32",
+      "type": "number"
+    },
+    "net_oil_saturated_thickness": {
+      "title": "Мощность пласта эффективная, нефтенасыщенная, м",
+      "description": "",
+      "$comment":"POWER02",
+      "type": "number"
+    },
+    "reservoir_type_code": {
+      "title": "Тип коллектора, код",
+      "description": "",
+      "$comment":"TYPE18",
+      "type": "integer"
+    },
+    "transmissibility": {
+      "title": "Гидропроводность, дсм/сп",
+      "description": "",
+      "$comment":"HYDRO1",
+      "type": "number"
+    },
+    "permeability": {
+      "title": "Проницаемость, мд",
+      "description": "",
+      "$comment":"PERM01",
+      "type": "integer"
+    },
+    "porosity": {
+      "title": "Пористость, %",
+      "description": "",
+      "$comment":"POROS",
+      "type": "number"
+    },
+    "predicted_oil_rate_from_unperforated_zone": {
+      "title": "Прогнозируемый дебит нефти с неперфорированного пласта, т/сут",
+      "description": "",
+      "$comment":"DISCH13",
+      "type": "number"
+    },
+    "perforation_top_interval": {
+      "title": "Верхний интервал перфорации, м",
+      "description": "",
+      "$comment":"SPACE1",
+      "type": "number"
+    },
+    "perforation_bottom_interval": {
+      "title": "Нижний интервал перфорации, м",
+      "description": "",
+      "$comment":"SPACE2",
+      "type": "number"
+    },
+    "perforation_type": {
+      "title": "Тип перфоратора, код",
+      "description": "",
+      "$comment":"TYPE71",
+      "type": "integer"
+    },
+    "perforation_density": {
+      "title": "Плотность перфорации, отв/м",
+      "description": "",
+      "$comment":"QUANT116",
+      "type": "integer"
+    },
+    "distance_to_current_OGC": {
+      "title": "Расстояние от скважины до текущего контура нефтеносности, м",
+      "description": "",
+      "$comment":"DISTAN02",
+      "type": "integer"
+    },
+    "absolute_depth_to_current_OWC": {
+      "title": "Отметка, абсолютная, до текущего положения ВНК, м",
+      "description": "",
+      "$comment":"NOTE01",
+      "type": "number"
+    },
+    "oil_production_rate": {
+      "title": "Дебит нефти, т/сут",
+      "description": "",
+      "$comment":"DISCH10",
+      "type": "number"
+    },
+    "water_cut ": {
+      "title": "Обводнённость, объёмная, %",
+      "description": "",
+      "$comment":"PERSEN09",
+      "type": "number"
+    },
+    "water_density": {
+      "title": "Плотность воды, г/см3",
+      "description": "",
+      "$comment":"DENSIT13",
+      "type": "number"
+    },
+    "produced_water_type_code": {
+      "title": "Вид добываемой воды, код",
+      "description": "",
+      "$comment":"NATURE2",
+      "type": "integer"
+    },
+    "cumulative_oil_production": {
+      "title": "Добыто нефти с начала разработки, т",
+      "description": "",
+      "$comment":"OUTPUT20",
+      "type": "integer"
+    },
+    "forecast_cumulative_oil_production": {
+      "title": "Прогнозируемая добыча нефти с начала разработки, т",
+      "description": "",
+      "$comment":"OUTPUT04",
+      "type": "integer"
+    }
+  }
+}

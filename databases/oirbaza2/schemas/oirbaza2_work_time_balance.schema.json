@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_work_time_balance",
+  "title": "Баланс рабочего времени",
+  "description": "Учёт рабочего времени по операциям капитального ремонта скважин и подъёма нефти на поверхность",
+  "type": "object",
+  "properties": {
+    "month": {
+      "title": "Месяц (с пульта)",
+      "description": "",
+      "$comment": "MONTH",
+      "type": "number"
+    },
+    "workshop_ppn_krs": {
+      "title": "Цех ПНП и КРС",
+      "description": "",
+      "$comment": "SHOP2",
+      "type": "string"
+    },
+    "hoist_type": {
+      "title": "Подъемник (тип)",
+      "description": "",
+      "$comment": "TYPE25",
+      "type": "number"
+    },
+    "ngdu": {
+      "title": "НГДУ",
+      "description": "Нефтегазодобывающее управление",
+      "$comment": "NGDU",
+      "type": "number"
+    },
+    "krs_team_number": {
+      "title": "Номер бригады КРС",
+      "description": "Номер бригады капитального ремонта скважин",
+      "$comment": "NUMBER07 ",
+      "type": "number"
+    },
+    "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "$comment": "NAME",
+      "type": "string"
+    },
+    "krs_work_type": {
+      "title": "Вид работ при КРС",
+      "description": "",
+      "$comment": "FORM7Ø",
+      "type": "number"
+    },
+    "repair_number": {
+      "title": "Номер ремонта",
+      "description": "",
+      "$comment": "NUMBERØ5,",
+      "type": "number"
+    },
+    "operation_type": {
+      "title": "Вид операции",
+      "description": "",
+      "$comment": "FORM74",
+      "type": "number"
+    },
+    "operation_time": {
+      "title": "Время, затраченное на операцию",
+      "description": "",
+      "$comment": "TIME35",
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_object",
+  "$comment": "",
+  "title": "Объект",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "field": {
+      "title": "Месторождение",
+      "description": "",
+      "type": "string"
+    },
+    "area": {
+      "title": "Площадь",
+      "description": "",
+      "type": "string"
+    },
+    "horizon": {
+      "title": "Горизонт",
+      "description": "",
+      "type": "string"
+    },
+    "discovery_date": {
+      "title": "Дата открытия",
+      "description": "",
+      "type": "string"
+    },
+    "industrial_development_order_date": {
+      "title": "Дата и № приказа о вводе в промышленную разработку",
+      "description": "",
+      "type": "string"
+    },
+    "operation_start_date": {
+      "title": "Дата начала эксплуатации",
+      "description": "",
+      "type": "string"
+    },
+    "exploratory_drilling_start_date": {
+      "title": "Дата начала эксплуатационного бурения",
+      "description": "",
+      "type": "string"
+    },
+    "flooding_start_date": {
+      "title": "Дата начала заводнения",
+      "description": "",
+      "type": "string"
+    },
+    "reservoir": {
+      "title": "Залежи",
+      "description": "Параметры залежей",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_reservoir"
+      }
+    },
+    "oil_parameters": {
+      "title": "Параметры нефти",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_oil_parameters"
+      }
+    },
+    "gas_parameters": {
+      "title": "Параметры газа",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_gas_parameters"
+      }
+    },
+    "water_parameters": {
+      "title": "Параметры воды",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_water_parameters"
+      }
+    },
+    "current_stocks": {
+      "title": "Текущие запасы",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_current_stocks"
+      }
+    },
+    "initial_stocks": {
+      "title": "Начальные запасы",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_initial_stocks"
+      }
+    },
+    "annual_development_indicators": {
+      "title": "Годовые показатели разработки",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_godpok"
+      }
+    },
+    "monthly_indicators": {
+      "title": "Месячные показатели",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_mespok"
+      }
+    },
+    "project": {
+      "title": "Проектные показатели разработки",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/passport/passport_project"
+      }
+    }
+  }
+}

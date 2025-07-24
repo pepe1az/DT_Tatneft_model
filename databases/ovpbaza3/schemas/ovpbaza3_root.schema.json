@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza3/ovpbaza3_root",
+    "title": "БД OVPBAZA3",
+    "description": "Историческая информация по текущему ремонту скважин (ТРС) с разбиением по скважинам",
+    "type": "array",
+    "items": {
+      "$ref": "/databases/ovpbaza3/ovpbaza3_ngdu"
+    }
+  }

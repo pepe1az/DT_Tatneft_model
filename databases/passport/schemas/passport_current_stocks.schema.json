@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_current_stocks",
+  "title": "Текущие запасы нефти",
+  "description": "Динамика изменения запасов нефти на отчетную дату",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата",
+      "description": "",
+      "type": "string"
+    },
+    "geological_ABC": {
+      "title": "Остаточные геологические запасы, категория A+B+C",
+      "description": "",
+      "type": "number"
+    },
+    "geological_AB": {
+      "title": "Остаточные геологические запасы, категория A+B",
+      "description": "",
+      "type": "number"
+    },
+    "retrievable_ABC": {
+      "title": "Остаточные извлекаемые запасы, категория A+B+C",
+      "description": "",
+      "type": "number"
+    },
+    "retrievable_AB": {
+      "title": "Остаточные извлекаемые запасы, категория A+B",
+      "description": "",
+      "type": "number"
+    },
+    "retrievable_C2": {
+      "title": "Остаточные извлекаемые запасы, категория C2",
+      "description": "",
+      "type": "number"
+    },
+    "current_oil_recovery": {
+      "title": "Текущий коэффициент нефтеотдачи",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_completed_well_repairs",
+  "title": "Завершённые ремонты скважин",
+  "description": "Данные о завершённых ремонтных работах на скважинах",
+  "type": "object",
+  "properties": {
+    "month": {
+      "title": "Месяц",
+      "description": "",
+      "$comment": "MONTH",
+      "type": "string"
+    },
+    "year": {
+      "title": "Год",
+      "description": "",
+      "$comment": "YEAR",
+      "type": "number"
+    },
+    "workshop_ppn_krs": {
+      "title": "Цех ППН и КРС (ЦТРС)",
+      "description": "",
+      "$comment": "SHOP2",
+      "type": "string"
+    },
+    "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "$comment": "NAME",
+      "type": "string"
+    },
+    "category": {
+      "title": "Категория",
+      "description": "",
+      "$comment": "CATEGOR1",
+      "type": "number"
+    },
+    "work_type": {
+      "title": "Вид работы",
+      "description": "",
+      "$comment": "FORM70",
+      "type": "number"
+    },
+    "repair_method": {
+      "title": "Способ ремонта",
+      "description": "",
+      "$comment": "WAY06",
+      "type": "number"
+    },
+    "repair_materials": {
+      "title": "Материалы ремонта",
+      "description": "",
+      "$comment": "FORM76",
+      "type": "number"
+    },
+    "planned_repair_duration": {
+      "title": "Плановая продолжительность ремонта",
+      "description": "",
+      "$comment": "DURAT15",
+      "type": "number"
+    },
+    "actual_repair_duration": {
+      "title": "Фактическая продолжительность ремонта",
+      "description": "",
+      "$comment": "DURAT16",
+      "type": "number"
+    },
+    "actual_repair_cost": {
+      "title": "Фактическая стоимость ремонта",
+      "description": "",
+      "$comment": "COST24",
+      "type": "number"
+    },
+    "ngdu_or_customer": {
+      "title": "НГДУ или заказчик",
+      "description": "",
+      "$comment": "NGDU",
+      "type": "string"
+    }
+  }
+}

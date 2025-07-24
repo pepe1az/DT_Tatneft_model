@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_obvodpat",
+  "title": "Обводненность ПАТ",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "measurement_date": {
+      "title": "Дата замера",
+      "description": "",
+      "type": "string"
+    },
+    "water_cut_percentage": {
+      "title": "Процент обводненности",
+      "description": "",
+      "type": "number"
+    },
+    "Water_density_by_measurement": {
+      "title": "Плотность воды по замеру",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

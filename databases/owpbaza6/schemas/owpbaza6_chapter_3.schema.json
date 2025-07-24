@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_3",
+  "title": "Раздел 3",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "work_type_completed ":{
+        "title":"Вид выполненной работы",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form15RD",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "conductivity": {
+      "title": "Гидропроводность",
+      "description": "",
+      "type": "number"
+    },
+    "permeability": {
+      "title": "Проницаемость",
+      "description": "",
+      "type": "number"
+    },
+    "productivity_index": {
+      "title": "Коэффициент продуктивности (приемистость)",
+      "description": "",
+      "type": "number"
+    },
+    "fluid_density": {
+      "title": "Плотность жидкости по горизонту",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

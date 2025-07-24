@@ -1,0 +1,654 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/navod/navod_root",
+  "$comment": "",
+  "title": "БД НАВОД",
+  "description": "Отражает работу нагнетательных скважин, дает сведения о закачке реагентов, простоях водоводов и проведенных технических мероприятиях",
+  "type": "array",
+  "items": {
+    "$id": "/databases/navod/navod_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "type": "number"
+      },
+      "date_of_last_calculation": {
+        "title": "Дата последнего расчёта",
+        "description": "",
+        "type": "number"
+      },
+      "hydrogen": {
+        "title": "Кнс, водовод",
+        "description": "Кустовая насосная станция, водовод",
+        "type": "array",
+        "items": {
+          "$id": "/databases/navod/navod_water_pipeline_and_kms",
+          "title": "Кнс, водовод",
+          "description": "Кустовая насосная станция, водовод",
+          "type": "object",
+          "properties": {
+            "monitoring_well_number": {
+              "title": "Номер КНС, водовода",
+              "description": "",
+              "type": "number"
+            },
+            "monitoring_well_type": {
+              "title": "Тип КНС",
+              "description": "",
+              "type": "number"
+            },
+            "conditional_number_monitoring_well": {
+              "title": "Условный номер КНС, водовода",
+              "description": "",
+              "type": "number"
+            },
+            "date_of_last_adjustment": {
+              "title": "Дата последней корректировки",
+              "description": "",
+              "type": "string"
+            },
+            "shift": {
+              "title": "Смена",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_shift",
+                "title": "Смена",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "device_change_date": {
+                    "title": "Дата смены прибора",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "flow_meter_type": {
+                    "title": "Тип расходомера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "flow_meter_coefficient": {
+                    "title": "Коэффициент расходомера",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "agent": {
+              "title": "Агент",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_agent",
+                "title": "Агент",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "agent_download_start_date": {
+                    "title": "Дата начала закачки агента",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "agent_type": {
+                    "title": "Тип агента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "pump_outlet_pressure": {
+                    "title": "Давление на выкиде насоса",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "agent_download_end_date": {
+                    "title": "Дата окончания выкачки агента",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "reagent": {
+                    "title": "Реагент",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_reagent",
+                      "title": "Реагент",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "start_date": {
+                          "title": "Дата начала",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "agent_type": {
+                          "title": "Вид агента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_type": {
+                          "title": "Вид реагента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_concentration": {
+                          "title": "Концетрация реагента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "specific_gravity_of_reagent": {
+                          "title": "Удельный вес реагента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "end_date": {
+                          "title": "Дата конца",
+                          "description": "",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "area": {
+              "title": "Площадь",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_area",
+                "title": "Площадь",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "date_and_time_of_measurement_taking": {
+                    "title": "Дата и время снятия замера",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "area_by_cartogram": {
+                    "title": "Площадь по картограмме ",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "water_pipeline": {
+              "title": "Водовод",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_water_pipeline",
+                "title": "Водовод",
+                "description": "",
+                "type": "object",
+                "water_pipeline_start_date": {
+                  "agent_tupe": {
+                    "title": "Дата пуска водовода",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "water_pipeline_measurement_date": {
+                    "title": "Дата замера по водоводу",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "watere_pipeline_number": {
+                    "title": "Номер водовода",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "sign_of_downtime_in_a_well_or_water_pipeline": {
+                    "title": "Признак простоя по скважине или водовода",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "well": {
+        "title": "Скважина",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/navod/navod_well",
+          "title": "Скважина",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "well_number_and_date_of_formation": {
+              "title": "Номер скважины, дата формирования",
+              "description": "",
+              "type": "string"
+            },
+            "segment": {
+              "title": "Сегмент",
+              "description": "",
+              "type": "number"
+            },
+            "variety": {
+              "title": "Разновидность",
+              "description": "",
+              "type": "number"
+            },
+            "category": {
+              "title": "Категория",
+              "description": "",
+              "type": "number"
+            },
+            "state": {
+              "title": "Состояние",
+              "description": "",
+              "type": "number"
+            },
+            "download_method": {
+              "title": "Способ закачки",
+              "description": "",
+              "type": "number"
+            },
+            "injectivity": {
+              "title": "Приёмистость",
+              "description": "",
+              "type": "number"
+            },
+            "date_of_well_input_from_drilling": {
+              "title": "Дата ввода скважины из бурения",
+              "description": "",
+              "type": "string"
+            },
+            "date_of_commissioning_of_a_new_well_or_from_inactivity": {
+              "title": "Дата ввода новой скважины или из бездействия",
+              "description": "",
+              "type": "string"
+            },
+            "segment_opening_date": {
+              "title": "Дата открытия сегмента",
+              "description": "",
+              "type": "number"
+            },
+            "kns": {
+              "title": "Сегмент КНС",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_kns",
+                "title": "КНС",
+                "description": "Кустовая насосная станция",
+                "type": "object",
+                "properties": {
+                  "segment_formation_date": {
+                    "title": "Дата формирования сегмента",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "number_kns_and_water_pipeline": {
+                    "title": "Номер КНС, водовода",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "injectivity": {
+                    "title": "Приёмистость",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "segment_closing_date": {
+                    "title": "Дата закрытия сегмента",
+                    "description": "",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "downtime": {
+              "title": "Простой",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_downtime",
+                "title": "Простой",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "well_stop_date": {
+                    "title": "Дата остановки скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "start_date": {
+                    "title": "Дата пуска",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "downtime_reason_code": {
+                    "title": "Код причины простоя",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "sign_for_water_pipe_downtime_kms": {
+                    "title": "Признак простоя по водоводу КНС",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "gtm": {
+              "title": "Сегмент ГТМ",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_gtm",
+                "title": "ГТМ",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "gtm_end_date_and_gtm_type": {
+                    "title": "Дата окончания ГТМ, вид ГТМ",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "layer": {
+                    "title": "Пласт(горизонт)",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "horizon": {
+              "title": "Горизонт",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_horizon",
+                "title": "Горизонт",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "horizon_code": {
+                    "title": "Код горизонта",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "flooding_type": {
+                    "title": "Вид заводнения",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "injection_row_code": {
+                    "title": "Код нагнетательнго ряда",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "horizont_acceptability": {
+                    "title": "Приемлимость по горизонту",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "reservoir": {
+                    "title": "Пласт",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_reservoir",
+                      "title": "Пласт",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir_code": {
+                          "title": "Код пласта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "lens_number": {
+                          "title": "Номер линзы",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "collector_type": {
+                          "title": "Тип коллектора",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "injectivity": {
+                          "title": "Приёмистость",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reservoir_outflow_percentage": {
+                          "title": "Процент оттока в пласте",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "fluid_migration_rate_to_another_horizon": {
+                          "title": "Процент ухода жидкости в другой горизонт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "another_horizon_code": {
+                          "title": "Код другого горизонта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reservoir_alteration_signature": {
+                          "title": "Признак изменения пласта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "top_marker": {
+                          "title": "Признак верха",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "outflow": {
+                    "title": "Излив",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_outflow",
+                      "title": "Излив",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "agent_tupe_and_date": {
+                          "title": "Вид агента, дата",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "volume_of_spills_per_month": {
+                          "title": "Объём изливов за месяц",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "opz": {
+                    "title": "ОПЗ",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_opz",
+                      "$comment": "ОПЗ",
+                      "title": "Обработка призабойной зоны",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "object": {
+                          "title": "Объект",
+                          "description": "КНС +горизонт + месторождение + площадь + участок + блок + вид агента",
+                          "type": "string"
+                        },
+                        "ngdu": {
+                          "title": "НГДУ",
+                          "description": "Нефтегазодобывающее управление",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "volume": {
+              "title": "Объём",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_volume",
+                "title": "Объём",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "agent_tupe": {
+                    "title": "Вид агента",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "working_time_per_month": {
+                    "title": "Время работы за месяц",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "uploaded_per_month": {
+                    "title": "Закачено за месяц",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "measurement": {
+                    "title": "Замер",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_measurement",
+                      "title": "Замер",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "measurement_date": {
+                          "title": "Дата замера",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "measured_injectivity": {
+                          "title": "Приёмистость по замерам",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "wellhead_injection_pressure": {
+                          "title": "Давление на устье нагнетательной скважины",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "calculation": {
+                    "title": "Расчёт",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/navod/navod_calculation",
+                      "title": "Расчёт",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reagent_type": {
+                          "title": "Вид реагента",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_injection_quantity": {
+                          "title": "Количество закачики реагента ",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "reagent_injection_time ": {
+                          "title": "Время закачки реагента",
+                          "description": "",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "well_characteristics": {
+              "title": "Объём",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/navod/navod_well_characteristics",
+                "title": "Характеристики скважины",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "date_of_measurement_of_parameters": {
+                    "title": "Дата замера параметров",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "wellhead_condition": {
+                    "title": "Состояние устья скважины",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "object": {
+                    "title": "Объект",
+                    "description": "месторождение + площадь + участок + блок",
+                    "type": "number"
+                  },
+                  "well_category": {
+                    "title": "Категория скважины",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "condition_of_the_production_column": {
+                    "title": "Состояние эксплуатационной колонны",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "distribution": {
+        "title": "Распределение",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/navod/navod_distribution",
+          "title": "Распределение",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "object": {
+              "title": "Объект",
+              "description": "(КНС, горизонт, месторождение, площадь, участок, блок, вид агента)",
+              "type": "string"
+            },
+            "injection_volume": {
+              "title": "Объём закачки",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

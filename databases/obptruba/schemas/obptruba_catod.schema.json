@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/obptruba/obptruba_catod",
+    "title": "Катодная защита трубопроводов",
+    "description": "Наружные катодные защиты трубопроводов",
+    "type": "object",
+    "properties": {
+      "cathodic_protection_modification_date": {
+        "title": "Дата изменения катодной защиты",
+        "description": "",
+        "$comment": "ОDATE 81",
+        "type": "number"
+      },
+      "cathodic_protection_type": {
+        "title": "Вид катодной защиты",
+        "description": "",
+        "$comment": "FORM 80",
+        "type": "number"
+      },
+      "protection_current": {
+        "title": "Защитный ток, ампер",
+        "description": "",
+        "$comment": "AMPER",
+        "type": "number"
+      }
+    }
+  }

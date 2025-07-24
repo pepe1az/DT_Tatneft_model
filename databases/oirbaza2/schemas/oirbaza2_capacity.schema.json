@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/oirbaza2/oirbaza2_capacity",
+    "title": "Показатели мощности",
+    "description": "Данные о мощности цеха ПНП и КРС",
+    "type": "object",
+    "properties": {
+      "month": {
+        "title": "Месяц",
+        "description": "",
+        "$comment": "MONTH",
+        "type": "string"
+      },
+      "year": {
+        "title": "Год",
+        "description": "",
+        "$comment": "YEAR",
+        "type": "number"
+      },
+      "workshop_ppn_krs": {
+        "title": "Цех ПНП и КРС (ЦТРС)",
+        "description": "Цех подъёма нефти на поверхность и капитального ремонта скважин (цех технического ремонта скважин)",
+        "$comment": "SHOP2",
+        "type": "string"
+      },
+      "capacity_ppnp_krs": {
+        "title": "Мощность цеха ПНП и КРС (ЦТРС)",
+        "description": "Мощность цеха подъёма нефти на поверхность и капитального ремонта скважин (цех технического ремонта скважин)",
+        "$comment": "KODSEG",
+        "type": "number"
+      },
+      "capacity_indicators_ppnp_krs": {
+        "title": "Показатели мощности цеха ПНП и КРС",
+        "description": "",
+        "$comment": "POKAZSEX",
+        "type": "number"
+      }
+    }
+}

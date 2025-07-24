@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_reagent",
+    "title": "Реагент",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "start_date": {
+        "title": "Дата начала",
+        "description": "",
+        "type": "string"
+      },
+      "agent_type":{
+        "title":"Вид агента",
+        "description":"",
+        "type":"number"
+      },
+      "reagent_type": {
+        "title": "Вид реагента",
+        "description": "",
+        "type": "number"
+      },
+      "reagent_concentration": {
+        "title": "Концетрация реагента",
+        "description": "",
+        "type": "number"
+      },
+      "specific_gravity_of_reagent": {
+        "title": "Удельный вес реагента",
+        "description": "",
+        "type": "number"
+      },
+      "end_date": {
+        "title": "Дата конца",
+        "description": "",
+        "type": "string"
+      }
+    }
+  }

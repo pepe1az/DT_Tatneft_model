@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_equipment",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "segment_open_date": {
+      "title": "Дата открытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "casing_diameter": {
+      "title": "Диаметр эксплуатационной колонны",
+      "description": "",
+      "type": "number"
+    },
+    "tubing_avg_diameter": {
+      "title": "Диаметр НКТ (средний)",
+      "description": "",
+      "type": "number"
+    },
+    "pump_type": {
+      "title": "Тип насоса",
+      "description": "",
+      "type": "number"
+    },
+    "pump_depth": {
+      "title": "Глубина спуска насоса",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

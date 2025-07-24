@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_horizon",
+  "title": "Горизонт",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "horizon": {
+      "title": "Горизонт",
+      "description": "",
+      "$comment": "H1",
+      "type": "number"
+    },
+    "reservoir": {
+      "title": "Пласт",
+      "description": "",
+      "type": "number"
+    },
+    "geological_conditions": {
+      "$ref": "/databases/catalog/catalog_geological_conditions"
+    },
+    "reservoir_treatments": {
+      "title": "Записи обработки резервуаров",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/catalog/catalog_tank_treatment"
+      }
+    }
+  }
+}

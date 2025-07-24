@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/sodon/sodon_distribution",
+    "title": "Распределение",
+    "description": "Распределение добычи нефти и воды по участкам",
+    "type": "object",
+    "properties": {
+      "development_object": {
+        "title": "Объект разработки месторождения ",
+        "description": "Объект разработки месторождения (горизонт, месторождение, площадь, участок, блок, номер участка добычи)",
+        "type": "string"
+      },
+      "oil_production_month": {
+        "title": "Добыча нефти с начала месяца",
+        "description": "",
+        "type": "number"
+      },
+      "water_production_month": {
+        "title": "Добыча воды с начала месяца",
+        "description": "",
+        "type": "number"
+      }
+    }
+  }
+  

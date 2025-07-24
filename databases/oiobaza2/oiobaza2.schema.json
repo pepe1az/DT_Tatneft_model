@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oiobaza2/oiobaza2_root",
+  "title": "БД Эксплуатация",
+  "description": "Сведения об эксплуатации нефтяных и нагнетательных скважин",
+  "type": "array",
+  "items": {
+    "$id": "/databases/oiobaza2/oiobaza2_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "type": "string"
+      },
+      "cdng_cppd": {
+        "title": "ЦДНГ, ЦППД",
+        "description": "Цех добычи нефти и газа, цех поддержания пластового давления",
+        "type": "string"
+      },
+      "wells": {
+        "title": "Скважины",
+        "description": "Скважины, подконтрольные данной административной единице",
+        "type": "array",
+        "items": {
+          "$id": "/databases/oiobaza2/oiobaza2_well",
+          "title": "Скважина",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "well_number": {
+              "title": "Номер скважины",
+              "description": "",
+              "type": "number"
+            },
+            "field": {
+              "title": "Месторождение",
+              "description": "",
+              "type": "string"
+            },
+            "area": {
+              "title": "Площадь",
+              "description": "",
+              "$comment": "Корректен ли перевод?",
+              "type": "string"
+            },
+            "horizon": {
+              "title": "Горизонт",
+              "description": "",
+              "type": "string"
+            },
+            "operation_parameters": {
+              "title": "Параметры эксплуатации",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/oiobaza2/oiobaza2_operation_parameters",
+                "title": "Параметры эксплуатации скважины",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "title": "Дата",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "operation_type": {
+                    "title": "Способ эксплуатации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "fitting_diameter": {
+                    "title": "Диаметр штуцера, мм",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "operation_days": {
+                    "title": "Число дней эксплуатации",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "oil_production": {
+                    "title": "Добыча нефти, т",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "water_production": {
+                    "title": "Добыча воды, т",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "water_production_volume": {
+                    "title": "Добыча воды, м3",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "water_cut": {
+                    "title": "Процент обводнённости",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

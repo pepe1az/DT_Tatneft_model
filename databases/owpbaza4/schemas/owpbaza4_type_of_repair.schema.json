@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_type_of_repair",
+    "title": "Вид ремонта",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "repair_type_code": {
+            "title": "Код вида ремонта",
+            "description": "",
+            "$comment": "FORM6",
+            "type": "number"
+        },
+        "brigada1":{
+            "title": "Бригада №",
+            "description": "",
+            "type": "array",
+            "items": {
+            "$ref": "/databases/owpbaza4/owpbaza4_brigada_1"
+            }
+        }
+    }
+}

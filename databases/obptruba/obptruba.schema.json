@@ -1,0 +1,394 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/obptruba/obptruba_root",
+  "title": "БД Трубопровод",
+  "description": "База содержит информацию по учету, анализу и состоянию трубопроводов для задач планирования и проведения мероприятий по защите трубопроводов от коррозии, об их ликвидации или замене",
+  "type": "array",
+  "items": {
+    "$id": "/databases/obptruba/obptruba_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "enterprise": {
+        "title": "Предприятие",
+        "description": "",
+        "$comment": "ENTERPR 1",
+        "type": "number"
+      },
+      "ceh": {
+        "title": "Цех",
+        "description": "",
+        "$comment": "SHOP 2",
+        "type": "number"
+      },
+      "pipeline_obj_type": {
+        "title": "Вид объекта трубопровода",
+        "description": "",
+        "$comment": "FORM 44",
+        "type": "number"
+      },
+      "pipeline_obj_begin_num": {
+        "title": "Номер объекта в начале трубопровода",
+        "description": "",
+        "$comment": "NUMBER 66",
+        "type": "number"
+      },
+      "pipeline_obj_end_type": {
+        "title": "Вид объекта в конце трубопровода",
+        "description": "",
+        "$comment": "FORM 46",
+        "type": "number"
+      },
+      "pipeline_obj_end_num": {
+        "title": "Номер объекта в конце трубопровода",
+        "description": "",
+        "$comment": "NUMBER 76",
+        "type": "number"
+      },
+      "pipeline_num_schema": {
+        "title": "Номер трубопровода по схеме",
+        "description": "",
+        "$comment": "NUMBER 64",
+        "type": "number"
+      },
+      "pipeline_num_inventory": {
+        "title": "Номер трубопровода (инвентарный)",
+        "description": "",
+        "$comment": "NUMBER 65",
+        "type": "number"
+      },
+      "pipeline_operating_conditions": {
+        "title": "Условия работы трубопровода",
+        "description": "",
+        "$comment": "CONDIT 1",
+        "type": "number"
+      },
+      "state": {
+        "title": "Состояние трубопроводов",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_state",
+          "$comment": "Оригинал: SOST",
+          "title": "Состояние трубопроводов",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "pipeline_commissioning_date": {
+              "title": "Дата ввода трубопровода в эксплуатацию",
+              "description": "",
+              "$comment": "Оригинал: Дата ввода трубопровода в эксплуатацию, DATE 37, C5, 9(4), 4",
+              "type": "number"
+            },
+            "pipeline_carrying_amount": {
+              "title": "Стоимость трубопровода балансовая, руб.",
+              "description": "",
+              "$comment": "Оригинал: Стоимость трубопровода балансовая, руб., COST 25, C6, 9(8), 8",
+              "type": "number"
+            },
+            "pipeline_lenght": {
+              "title": "Длина трубопровода, м",
+              "description": "",
+              "$comment": "Оригинал: Длина трубопровода, м, LENGHT 29, C7, 9(5), 5",
+              "type": "number"
+            },
+            "pipeline_diameter": {
+              "title": "Диаметр трубопровода, мм",
+              "description": "",
+              "$comment": "Оригинал: Диаметр трубопровода, мм, DIAM 25, C8, 9(4), 4",
+              "type": "number"
+            },
+            "pipeline_wall_thickness": {
+              "title": "Толщина стенки трубопровода, мм",
+              "description": "",
+              "$comment": "Оригинал: Толщина стенки трубопровода, мм, TAICKN 10, C9, 9(2), 2",
+              "type": "number"
+            },
+            "pipeline_start_elevation": {
+              "title": "Геодезическая отметка в начале трубопровода",
+              "description": "",
+              "$comment": "Оригинал: Геодезическая отметка в начале трубопровода, NOTE 3, C10, 999T99, 5",
+              "type": "number"
+            },
+            "pipeline_end_elevation": {
+              "title": "Геодезическая отметка в конце трубопровода",
+              "description": "",
+              "$comment": "Оригинал: Геодезическая отметка в конце трубопровода, NOTE 4, C10, 999T99, 5",
+              "type": "number"
+            },
+            "pipeline_laying_depth": {
+              "title": "Глубина укладки трубопровода, см",
+              "description": "",
+              "$comment": "Оригинал: Глубина укладки трубопровода, см, DEPTH 47, C12, 99, 2",
+              "type": "number"
+            },
+            "pipeline_material": {
+              "title": "Материал труб трубопровода",
+              "description": "",
+              "$comment": "Оригинал: Материал труб трубопровода, MATER 01, C13, 9, 1",
+              "type": "number"
+            },
+            "pipe_joint_type": {
+              "title": "Вид соединения труб",
+              "description": "",
+              "$comment": "Оригинал: Вид соединения труб, FORM 46, CI4, 9, 1",
+              "type": "number"
+            },
+            "external_coating_type": {
+              "title": "Вид защиты наружной поверхности",
+              "description": "",
+              "$comment": "Оригинал: Вид защиты наружной поверхности, FORM 39, CI5, 9, 1",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "catod": {
+        "title": "Катодная защита трубопроводов",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_catod",
+          "title": "Катодная защита трубопроводов",
+          "description": "Наружные катодные защиты трубопроводов",
+          "type": "object",
+          "properties": {
+            "cathodic_protection_modification_date": {
+              "title": "Дата изменения катодной защиты",
+              "description": "",
+              "$comment": "ОDATE 81",
+              "type": "number"
+            },
+            "cathodic_protection_type": {
+              "title": "Вид катодной защиты",
+              "description": "",
+              "$comment": "FORM 80",
+              "type": "number"
+            },
+            "protection_current": {
+              "title": "Защитный ток, ампер",
+              "description": "",
+              "$comment": "AMPER",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "coatings": {
+        "title": "Защита трубопроводов покрытиями",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_coatings",
+          "title": "Защита трубопроводов покрытиями",
+          "description": "Внутренние защиты трубопроводов покрытиями",
+          "type": "object",
+          "properties": {
+            "internal_coating_application_date": {
+              "title": "Дата нанесения внутреннего покрытия",
+              "description": "",
+              "$comment": "DATE 82",
+              "type": "number"
+            },
+            "operation_start_date": {
+              "title": "Дата начала эксплуатации",
+              "description": "",
+              "$comment": "DATE 83",
+              "type": "number"
+            },
+            "internal_coating_type": {
+              "title": "Вид покрытия внутренней поверхности",
+              "description": "",
+              "$comment": "FORM 40",
+              "type": "number"
+            },
+            "coating_application_method": {
+              "title": "Способ нанесения покрытия",
+              "description": "",
+              "$comment": "WAY 14",
+              "type": "number"
+            },
+            "coating_composition": {
+              "title": "Состав, схема покрытия",
+              "description": "",
+              "$comment": "COMPOS 01",
+              "type": "number"
+            },
+            "coating_producer": {
+              "title": "Предприятие, производившее покрытие",
+              "description": "",
+              "$comment": "ENTERPR 8",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "inhib": {
+        "title": "Защита трубопроводов ингибированием",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_inhib",
+          "title": "Защита трубопроводов ингибированием",
+          "description": "Внутренние защиты трубопроводов ингибированием",
+          "type": "object",
+          "properties": {
+            "inhibitor_application_start_date": {
+              "title": "Дата начала применения ингибитора",
+              "description": "",
+              "$comment": "DATE 35",
+              "type": "number"
+            },
+            "inhibitor_type": {
+              "title": "Вид ингибитора",
+              "description": "",
+              "$comment": "FORM 17",
+              "type": "number"
+            },
+            "inhibitor_specific_consumption": {
+              "title": "Удельный расход ингибитора",
+              "description": "",
+              "$comment": "EXPENS 11",
+              "type": "number"
+            },
+            "inhibitor_dosing_frequency_type": {
+              "title": "Признак периодичности подачи ингибитора",
+              "description": "",
+              "$comment": "SIGN 37",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "mode": {
+        "title": "Режим",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_mode",
+          "title": "Режим",
+          "description": "Сведения об изменении режима",
+          "type": "object",
+          "properties": {
+            "pipeline_operation_change_date": {
+              "title": "Дата изменения работы трубопровода",
+              "description": "",
+              "$comment": "DATE 38, K 1, 9(6), 6",
+              "type": "number"
+            },
+            "pipeline_performance": {
+              "title": "Производительность трубопровода, м3/сут.",
+              "description": "",
+              "$comment": "PRODUCT 6",
+              "type": "number"
+            },
+            "pipeline_pressure": {
+              "title": "Давление в трубопроводе, кг/см2",
+              "description": "",
+              "$comment": "PRESS 20",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "agent": {
+        "title": "Транспортируемая среда",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/obptruba/obptruba_agent",
+          "title": "Транспортируемая среда",
+          "description": "Сведения об изменении транспортируемой среды и назначения трубопроводов",
+          "type": "object",
+          "properties": {
+            "pipeline_medium_change_date": {
+              "title": "Дата изменения транспортируемой среды",
+              "description": "",
+              "$comment": "DATE 36",
+              "type": "number"
+            },
+            "pipeline_medium_type": {
+              "title": "Вид транспортируемой среды и назначение трубопровода",
+              "description": "",
+              "$comment": "FORM 24",
+              "type": "number"
+            },
+            "medium_temperature": {
+              "title": "Температура транспортируемой среды, °С",
+              "description": "Характеристика транспортируемой среды - температура °С",
+              "$comment": "TEMPER 4",
+              "type": "number"
+            },
+            "medium_density": {
+              "title": "Плотность транспортируемой среды, г/см3",
+              "description": "Характеристика транспортируемой среды - плотность г/см3",
+              "$comment": "DENSIT 15",
+              "type": "number"
+            },
+            "medium_ph_value": {
+              "title": "pH (водородный показатель)",
+              "description": "Характеристика транспортируемой среды - pH (водородный показатель)",
+              "$comment": "PROOF 2",
+              "type": "number"
+            },
+            "medium_h2s_concentration": {
+              "title": "Содержание H2S, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание H2S, мг/л",
+              "$comment": "CONTEN 04",
+              "type": "number"
+            },
+            "medium_co2_concentration": {
+              "title": "Содержание CO2, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание CO2, мг/л",
+              "$comment": "CONTEN 05",
+              "type": "number"
+            },
+            "medium_o2_concentration": {
+              "title": "Содержание O2, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание O2, мг/л",
+              "$comment": "CONTEN 12",
+              "type": "number"
+            },
+            "medium_weighted_particles_count": {
+              "title": "КВЧ (количество взвешенных частиц)",
+              "description": "Характеристика транспортируемой среды - КВЧ (количество взвешенных частиц)",
+              "$comment": "CONTEN 06",
+              "type": "number"
+            },
+            "medium_total_iron_content": {
+              "title": "Содержание железа общего, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание железа общего, мг/л",
+              "$comment": "CONTEN 10",
+              "type": "number"
+            },
+            "medium_oil_product_content": {
+              "title": "Содержание нефтепродуктов, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание нефтепродуктов, мг/л",
+              "$comment": "CONTEN 11",
+              "type": "number"
+            },
+            "medium_water_content_percent": {
+              "title": "Процент воды",
+              "description": "Характеристика транспортируемой среды - Процент воды",
+              "$comment": "PERSEN 10",
+              "type": "number"
+            },
+            "medium_paraffin_content": {
+              "title": "Содержание парафинов",
+              "description": "Характеристика транспортируемой среды - Содержание парафинов",
+              "$comment": "CONTEN 03",
+              "type": "number"
+            },
+            "medium_mineral_salts_content": {
+              "title": "Содержание минеральных солей, мг/л",
+              "description": "Характеристика транспортируемой среды - Содержание минеральных солей, мг/л",
+              "$comment": "CONTEN 07",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

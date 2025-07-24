@@ -1,0 +1,935 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_root",
+  "title": "БД PRISS",
+  "description": "",
+  "type": "array",
+  "items": {
+    "$id": "/databases/priss/priss_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu_cex": {
+        "title": "НГДУ, Цех",
+        "description": "нефтегазодобывающее управление",
+        "type": "number"
+      },
+      "last_update_date": {
+        "title": "Дата последней корректировки",
+        "description": "",
+        "type": "number"
+      },
+      "well": {
+        "title": "Скважины",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/priss/priss_well",
+          "title": "Скважины",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "well_number": {
+              "title": "Номер скважины",
+              "description": "",
+              "type": "string"
+            },
+            "segment_open_date": {
+              "title": "Дата открытия сегмента",
+              "description": "",
+              "type": "string"
+            },
+            "operation_method": {
+              "title": "Способ эксплуатации",
+              "description": "",
+              "type": "number"
+            },
+            "category": {
+              "title": "Категория",
+              "description": "",
+              "type": "number"
+            },
+            "state": {
+              "title": "Состояние",
+              "description": "",
+              "type": "number"
+            },
+            "type": {
+              "title": "Разновидность",
+              "description": "",
+              "type": "number"
+            },
+            "rotary_table_altitude": {
+              "title": "Алтитуда стола ротора",
+              "description": "",
+              "type": "number"
+            },
+            "coordinate_x": {
+              "title": "Координата X",
+              "description": "",
+              "type": "number"
+            },
+            "coordinate_y": {
+              "title": "Координата Y",
+              "description": "",
+              "type": "number"
+            },
+            "segment_close_date": {
+              "title": "Дата закрытия сегмента",
+              "description": "",
+              "type": "string"
+            },
+            "horizon": {
+              "title": "Газ",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_horizon",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "horizon_code": {
+                    "title": "Горизонт",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "segment_open_date": {
+                    "title": "Дата открытия сегмента",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "supply_contour_radius": {
+                    "title": "Радиус условного контура питания",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "wellbore_extension_to_horizon": {
+                    "title": "Удлинение ствола скважины до продуктивного горизонта",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "segment_close_date": {
+                    "title": "Дата закрытия сегмента",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "address": {
+                    "title": "Адрес",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_address",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "field": {
+                          "title": "Месторождение",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "area": {
+                          "title": "Площадь",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "section": {
+                          "title": "Участок",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "block": {
+                          "title": "блок",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "equipment": {
+                    "title": "Оборудование",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_equipment",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "segment_open_date": {
+                          "title": "Дата открытия сегмента",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "casing_diameter": {
+                          "title": "Диаметр эксплуатационной колонны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "tubing_avg_diameter": {
+                          "title": "Диаметр НКТ (средний)",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pump_type": {
+                          "title": "Тип насоса",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pump_depth": {
+                          "title": "Глубина спуска насоса",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "mode": {
+                    "title": "Режим",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_mode",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "segment_open_date": {
+                          "title": "Дата открытия сегмента",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "oil_water_rate": {
+                          "title": "Дебит нефти (воды)",
+                          "description": "Контрольная приемистость",
+                          "type": "number"
+                        },
+                        "water_density": {
+                          "title": "Плотность воды по горизонту",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "water_cut": {
+                          "title": "Процент воды (объемный)",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "plast": {
+                    "title": "Пласт",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_plast",
+                      "title": "Пласт",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "segment_open_date": {
+                          "title": "Пласт, дата открытия сегмента",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "roof_depth": {
+                          "title": "Глубина залегания кровли пласта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "base_depth": {
+                          "title": "Глубина залегания подошвы пласта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "effective_thickness": {
+                          "title": "Эффективная мощность пласта",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "perf_interval_from": {
+                          "title": "Интервал перфорации от",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "perf_interval_to": {
+                          "title": "Интервал перфорации до",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "porosity": {
+                          "title": "Пористость",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "segment_close_date": {
+                          "title": "Дата закрытия сегмента",
+                          "description": "",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form11": {
+              "title": "Форма 11",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form11",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "downtime_duration": {
+                    "title": "Время простоя при исследовании",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "measurement_depth": {
+                    "title": "Глубина замера при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "depth_pressure": {
+                    "title": "Давление на глубине замера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "buffer_pressure": {
+                    "title": "Давление на устье буферное замеренное при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "annulus_pressure": {
+                    "title": "Давление на устье затрубное замеренное при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "device_number": {
+                    "title": "Номер прибора при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "form11R": {
+                    "title": "Форма 11R",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form11R",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir": {
+                          "title": "Пласт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "roof_pressure": {
+                          "title": "Давление на кровле",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "owc_pressure": {
+                          "title": "Давление на уровне ВНК",
+                          "description": "Давление на уровне водонефтяного контакта",
+                          "type": "number"
+                        },
+                        "fluid_density": {
+                          "title": "Плотность жидкости по горизонту",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form12": {
+              "title": "Форма 12",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form12",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "device_coefficient": {
+                    "title": "Коэффициент прибора при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "device_type": {
+                    "title": "Тип прибора",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "form12D": {
+                    "title": "Форма 12D",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form12D",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "measurement_depth": {
+                          "title": "Глубина замера при исследовании",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pulse_count": {
+                          "title": "Количество импульсов прибора при исследовании",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "form12R": {
+                    "title": "Форма 12R",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form12R",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir": {
+                          "title": "Пласт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "fluid_data": {
+                          "title": "Дебит жидкости по пласту",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form13": {
+              "title": "Форма 13",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form13",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "downtime_duration": {
+                    "title": "Время простоя при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "pump_strokes": {
+                    "title": "Число качаний",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "stroke_length": {
+                    "title": "Длина хода плунжера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "measured_level": {
+                    "title": "Уровень, замеренный при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "annulus_pressure": {
+                    "title": "Давление затрубное, замеренное при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "form13R": {
+                    "title": "Форма 13R",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form13R",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir": {
+                          "title": "Пласт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "roof_pressure": {
+                          "title": "Давление на кровле",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "owc_pressure": {
+                          "title": "Давление на уровне ВНК",
+                          "description": "Давление на уровне водонефтяного контакта",
+                          "type": "number"
+                        },
+                        "pump_intake_pressure": {
+                          "title": "Давление на приеме насоса",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "liquid_rate": {
+                          "title": "Дебит жидкости",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "fluid_density": {
+                          "title": "Плотность жидкости по горизонту",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form14": {
+              "title": "Форма 14",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form14",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "liquid_rate": {
+                    "title": "Дебит жидкости при исследовании",
+                    "description": "Приемистость",
+                    "type": "number"
+                  },
+                  "water_cut": {
+                    "title": "Процент обводненности (объем)",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "water_density": {
+                    "title": "Плотность воды",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "power": {
+                    "title": "Мощность",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "device_number": {
+                    "title": "Номер прибора при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "form14D": {
+                    "title": "Форма 14D",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form14D",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "measurement_interval": {
+                          "title": "Интервал замера во времени",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "depth_pressure": {
+                          "title": "Давление на глубине замера (уровень)",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "annulus_pressure": {
+                          "title": "Давление затрубное при исследовании",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "form14A": {
+                    "title": "Форма 14A",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form14A",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir": {
+                          "title": "Пласт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "inclination_angle": {
+                          "title": "Угол наклона i при исследовании",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "segment_a": {
+                          "title": "Отрезок А при исследовании",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "near_wellbore_conductivity": {
+                          "title": "Гидропроводность призабойной зоны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "near_wellbore_permeability": {
+                          "title": "Проницаемость призабойной зоны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "near_wellbore_diffusivity": {
+                          "title": "Пьезопроводность призабойной зоны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "near_wellbore_effective_radius": {
+                          "title": "Приведенный радиус скважины призабойной зоны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "near_wellbore_productivity_index": {
+                          "title": "Коэффициент продуктивности призабойной зоны",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "kvd_inclination_angle": {
+                          "title": "Угол наклона при исследовании КВД(КВУ)",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "kvd_segment_a": {
+                          "title": "Отрезок А при исследовании КВД(КВУ)",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "conductivity": {
+                          "title": "Гидропроводность",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "permeability": {
+                          "title": "Проницаемость",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "diffusivity": {
+                          "title": "Пьезопроводность",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "effective_radius": {
+                          "title": "Приведенный радиус скважины",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "productivity_index": {
+                          "title": "Коэффициент продуктивности",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "annular_area": {
+                          "title": "Площадь кольцевого сечения",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form15": {
+              "title": "Форма 15",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form15",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "downtime_duration": {
+                    "title": "Время простоя при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "measurement_depth": {
+                    "title": "Глубина замера при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "measured_level": {
+                    "title": "Уровень, замеренный при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "depth_pressure": {
+                    "title": "Давление на глубине замера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "oil_rate": {
+                    "title": "Дебит нефти (приемистость)",
+                    "$comment": "Оригинал: Дебит нефти (приемистость), U7, 9(4)т9",
+                    "type": "number"
+                  },
+                  "buffer_pressure": {
+                    "title": "Давление на устье буферное замеренное при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "annulus_pressure": {
+                    "title": "Давление на устье затрубное замеренное при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "choke_diameter": {
+                    "title": "Диаметр штуцера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "device_number": {
+                    "title": "Номер прибора при исследовании",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "form15R": {
+                    "title": "Форма 15R",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form15R",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "reservoir": {
+                          "title": "Пласт",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "roof_pressure": {
+                          "title": "Давление на кровле",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "owc_pressure": {
+                          "title": "Давление на уровне ВНК",
+                          "description": "Давлнение на уровне водонефтяного контакта",
+                          "type": "number"
+                        },
+                        "pump_intake_pressure": {
+                          "title": "Давление на приеме насоса",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  "form15D": {
+                    "title": "Форма 15D",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/priss/priss_form15RD",
+                      "title": "",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "conductivity": {
+                          "title": "Гидропроводность",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "permeability": {
+                          "title": "Проницаемость",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "productivity_index": {
+                          "title": "Коэффициент продуктивности (приемистость)",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "fluid_density": {
+                          "title": "Плотность жидкости по горизонту",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "form17": {
+              "title": "Форма 17",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/priss/priss_form17",
+                "title": "",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "research_type_date": {
+                    "title": "Вид исследования, дата исследования скважины",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "info_receipt_date": {
+                    "title": "Дата поступления информации",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "measurement_depth": {
+                    "title": "Глубина замера",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "template_diameter": {
+                    "title": "Диаметр шаблона",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "note": {
+                    "title": "Примечание",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "researcher": {
+                    "title": "Исследователь",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

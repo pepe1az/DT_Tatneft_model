@@ -1,0 +1,71 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/ovpbaza3/ovpbaza3_repair",
+    "title": "Номер ремонта",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "repair_number": {
+        "title": "Номер ремонта",
+        "description": "",
+        "$comment": "NUMBEREM",
+        "type": "number"
+      },
+      "operation_mode_before_repair": {
+        "title": "Способ эксплуатации до ремонта",
+        "description": "",
+        "$comment": "WAY11",
+        "type": "number"
+      },
+      "operation_mode_after_repair": {
+        "title": "Способ эксплуатации после ремонта",
+        "description": "",
+        "$comment": "WAY12",
+        "type": "number"
+      },
+      "repair_start_date": {
+        "title": "Дата начала ремонта",
+        "description": "",
+        "$comment": "DATE71",
+        "type": "number"
+      },
+      "repair_end_date": {
+        "title": "Дата завершения ремонта",
+        "description": "",
+        "$comment": "DATE72",
+        "type": "number"
+      },
+      "operation_mode_after_repair_1": {
+        "title": "Вид работы",
+        "description": "",
+        "$comment": "FORM71",
+        "type": "number"
+      },
+      "operation_mode_after_repair_2": {
+        "title": "Вид работы",
+        "description": "",
+        "$comment": "FORM72",
+        "type": "number"
+      },
+      "operation_mode_after_repair_3": {
+        "title": "Вид работы",
+        "description": "",
+        "$comment": "FORM73",
+        "type": "number"
+      },
+      "repair_reason": {
+        "title": "Причина ремонта",
+        "description": "",
+        "$comment": "CAUSE",
+        "type": "number"
+      },
+      "equipment_type": {
+        "title": "Вид оборудования",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$ref": "/databases/ovpbaza3/ovpbaza3_equipment_type"
+        }
+      }
+    }
+  }

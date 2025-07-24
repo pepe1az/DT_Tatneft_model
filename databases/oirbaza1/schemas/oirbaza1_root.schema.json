@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza1/oirbaza1_root",
+  "title": "БД OIRBAZA1",
+  "description": "Данные для задач планирования ГТМ, оптимизации работ скважин, расчета оптимального забойного давления и управления разработкой",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/oirbaza1/oirbaza1_ngdu"
+  }
+}

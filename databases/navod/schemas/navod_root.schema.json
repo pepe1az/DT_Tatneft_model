@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_root",
+    "$comment": "",
+    "title": "БД НАВОД",
+    "description": "Отражает работу нагнетательных скважин, дает сведения о закачке реагентов, простоях водоводов и проведенных технических мероприятиях",
+    "type": "array",
+    "items": {
+      "$ref": "/databases/navod/navod_ngdu"
+    }
+  }

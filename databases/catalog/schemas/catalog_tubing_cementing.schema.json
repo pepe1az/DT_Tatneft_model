@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_tubing_cementing",
+  "title": "Цементирование эксплутационной колонны",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "cement_slurry_density": {
+      "title": "Удельный вес цементного раствора",
+      "description": "",
+      "type": "number"
+    },
+    "spacer_fluid_density": {
+      "title": "Удельный вес продавочной жидкости",
+      "description": "",
+      "type": "number"
+    },
+    "max_pressure_at_plug_seat": {
+      "title": "Максимальное давление в момент посадки пробки",
+      "description": "",
+      "type": "number"
+    },
+    "cemented_bottom_position": {
+      "title": "Расположение зацементированного низа",
+      "description": "",
+      "type": "number"
+    },
+    "cement_column_lift_height": {
+      "title": "Высота подъема цем. колонны за экспл. кол. от башмака",
+      "description": "",
+      "type": "number"
+    },
+    "sealing_check_method": {
+      "title": "Способ определения герметичности вкопанной колонны",
+      "description": "",
+      "$comment": "CC6",
+      "type": "string"
+    },
+    "pressure_test_value": {
+      "title": "Давление опресовки",
+      "description": "",
+      "type": "number"
+    },
+    "level_reduction_depth": {
+      "title": "Глубина снижения уровня",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

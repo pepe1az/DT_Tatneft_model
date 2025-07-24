@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_form11",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "research_type_date": {
+      "title": "Вид исследования, дата исследования скважины",
+      "description": "",
+      "type": "string"
+    },
+    "info_receipt_date": {
+      "title": "Дата поступления информации",
+      "description": "",
+      "type": "string"
+    },
+    "downtime_duration": {
+      "title": "Время простоя при исследовании",
+      "description": "",
+      "type": "string"
+    },
+    "measurement_depth": {
+      "title": "Глубина замера при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "depth_pressure": {
+      "title": "Давление на глубине замера",
+      "description": "",
+      "type": "number"
+    },
+    "buffer_pressure": {
+      "title": "Давление на устье буферное замеренное при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "annulus_pressure": {
+      "title": "Давление на устье затрубное замеренное при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "device_number": {
+      "title": "Номер прибора при исследовании",
+      "description": "",
+      "type": "number"
+    },
+    "note": {
+      "title": "Примечание",
+      "description": "",
+      "type": "number"
+    },
+    "researcher": {
+      "title": "Исследователь",
+      "description": "",
+      "type": "number"
+    },
+     "form11R": {
+      "title": "Форма 11R",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_form11R"
+      }
+    }
+  }
+}

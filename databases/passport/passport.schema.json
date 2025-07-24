@@ -1,0 +1,1048 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_root",
+  "title": "БД ПАСПОРТ",
+  "description": "Свойства флюидов и пород, запасы нефти и темпы отбора",
+  "type": "array",
+  "items": {
+    "$id": "/databases/passport/passport_object",
+    "$comment": "",
+    "title": "Объект",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "field": {
+        "title": "Месторождение",
+        "description": "",
+        "type": "string"
+      },
+      "area": {
+        "title": "Площадь",
+        "description": "",
+        "type": "string"
+      },
+      "horizon": {
+        "title": "Горизонт",
+        "description": "",
+        "type": "string"
+      },
+      "discovery_date": {
+        "title": "Дата открытия",
+        "description": "",
+        "type": "string"
+      },
+      "industrial_development_order_date": {
+        "title": "Дата и № приказа о вводе в промышленную разработку",
+        "description": "",
+        "type": "string"
+      },
+      "operation_start_date": {
+        "title": "Дата начала эксплуатации",
+        "description": "",
+        "type": "string"
+      },
+      "exploratory_drilling_start_date": {
+        "title": "Дата начала эксплуатационного бурения",
+        "description": "",
+        "type": "string"
+      },
+      "flooding_start_date": {
+        "title": "Дата начала заводнения",
+        "description": "",
+        "type": "string"
+      },
+      "reservoir": {
+        "title": "Залежи",
+        "description": "Параметры залежей",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_reservoir",
+          "$comment": "Оригинал: ZALEG",
+          "title": "Характеристики залежи",
+          "description": "Геолого-физические характеристики залежи",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата",
+              "description": "Дата (год, месяц, число)",
+              "type": "string"
+            },
+            "reservoir_base_average_depth": {
+              "title": "Средняя глубина залегания подошвы пласта",
+              "description": "",
+              "type": "number"
+            },
+            "average_power_general": {
+              "title": "Средняя мощность общая",
+              "description": "",
+              "type": "number"
+            },
+            "average_power_effective": {
+              "title": "Средняя мощность эффективная",
+              "description": "",
+              "type": "number"
+            },
+            "average_power_oil_saturated": {
+              "title": "Средняя мощность нефтенасыщенная",
+              "description": "",
+              "type": "number"
+            },
+            "water_oil_contact_initial": {
+              "title": "Начальная отметка водно-нефтяного контакта",
+              "description": "",
+              "type": "number"
+            },
+            "porosity": {
+              "title": "Проницаемость",
+              "description": "",
+              "type": "number"
+            },
+            "permeability": {
+              "title": "Проницаемость",
+              "description": "",
+              "type": "number"
+            },
+            "area_oil_bearing": {
+              "title": "Площадь нефтеносная",
+              "description": "",
+              "type": "number"
+            },
+            "area_water_oil_bearing": {
+              "title": "Площадь водо-нефтеносной зоны",
+              "description": "",
+              "type": "number"
+            },
+            "oil_saturation": {
+              "title": "Нефтенасыщенность",
+              "description": "",
+              "type": "number"
+            },
+            "pressure_initial": {
+              "title": "Начальное пластовое давление приведённое к водно-нефтяному контакту",
+              "description": "",
+              "type": "number"
+            },
+            "pressure_saturated": {
+              "title": "Давление насыщенной нефти",
+              "description": "",
+              "type": "number"
+            },
+            "pressure_frontal": {
+              "title": "Давление фронтальное",
+              "description": "",
+              "type": "number"
+            },
+            "temperature": {
+              "title": "Температура пласта",
+              "description": "",
+              "type": "number"
+            },
+            "collector_type": {
+              "title": "Тип коллектора",
+              "description": "",
+              "type": "string"
+            },
+            "oil_conversion_factor": {
+              "title": "Переводной коэффициент нефти",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "oil_parameters": {
+        "title": "Параметры нефти",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_oil_parameters",
+          "$comment": "",
+          "title": "Характеристики нефти",
+          "description": "Физико-химические характеристики нефти",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата измерения",
+              "type": "string"
+            },
+            "density_surface": {
+              "title": "Плотность поверхностной нефти",
+              "type": "number"
+            },
+            "density_reservoir": {
+              "title": "Плотность пластовой нефти",
+              "type": "number"
+            },
+            "viscosity_surface": {
+              "title": "Вязкость поверхностной нефти",
+              "type": "number"
+            },
+            "viscosity_reservoir": {
+              "title": "Вязкость пластовой нефти",
+              "type": "number"
+            },
+            "ratio_paraphine": {
+              "title": "Содержание парафинов",
+              "type": "number"
+            },
+            "ratio_resin": {
+              "title": "Содержание акцизных смол",
+              "type": "number"
+            },
+            "ratio_asphaltene": {
+              "title": "Содержание асфальтенов",
+              "type": "number"
+            },
+            "ratio_sulfur": {
+              "title": "Содержание серы",
+              "type": "number"
+            },
+            "fraction_100": {
+              "title": "Выход светлых фракций, до 100°C",
+              "type": "number"
+            },
+            "fraction_200": {
+              "title": "Выход светлых фракций, до 200°C",
+              "type": "number"
+            },
+            "fraction_300": {
+              "title": "Выход светлых фракций, до 300°C",
+              "type": "number"
+            },
+            "volume_coef": {
+              "title": "Объёмный коэффициент",
+              "type": "number"
+            },
+            "gas_saturation": {
+              "title": "Газонасыщенность",
+              "type": "number"
+            },
+            "pressure_of_saturation": {
+              "title": "Давление насыщения",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "gas_parameters": {
+        "title": "Параметры газа",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_gas_parameters",
+          "title": "Характеристики попутного газа",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата измерения",
+              "description": "",
+              "type": "string"
+            },
+            "specific_gravity_air": {
+              "title": "Удельный вес по воздуху",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_C1": {
+              "title": "Объёмная доля метана",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_C2": {
+              "title": "Объёмная доля этана",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_C3": {
+              "title": "Объёмная доля пропана",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_C4": {
+              "title": "Объёмная доля бутана",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_C5": {
+              "title": "Объёмная доля пентана",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_CO2": {
+              "title": "Объёмная доля углекислоты",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_H2S": {
+              "title": "Объёмная доля сероводорода",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_N2": {
+              "title": "Объёмная доля азота",
+              "description": "",
+              "type": "number"
+            },
+            "ratio_He": {
+              "title": "Объёмная доля гелия",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "water_parameters": {
+        "title": "Параметры воды",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_water_parameters",
+          "title": "Характеристики пластовой воды",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата измерения",
+              "type": "string"
+            },
+            "viscosity_surface": {
+              "title": "Вязкость воды на поверхности",
+              "type": "number"
+            },
+            "viscosity_reservoir": {
+              "title": "Вязкость воды в пласте",
+              "type": "number"
+            },
+            "density": {
+              "title": "Плотность",
+              "type": "number"
+            },
+            "alkalinity": {
+              "title": "Щелочность",
+              "type": "number"
+            },
+            "hardness": {
+              "title": "Жесткость",
+              "type": "number"
+            },
+            "dry_residue": {
+              "title": "Сухой остаток",
+              "type": "number"
+            },
+            "ratio_Cl": {
+              "title": "Содержание хлоридов",
+              "type": "number"
+            },
+            "ratio_SO4": {
+              "title": "Содержание сульфатов",
+              "type": "number"
+            },
+            "ratio_CO3": {
+              "title": "Содержание карбонатов",
+              "type": "number"
+            },
+            "ratio_Na": {
+              "title": "Содержание натрия",
+              "type": "number"
+            },
+            "ratio_Ca": {
+              "title": "Содержание кальция",
+              "type": "number"
+            },
+            "ratio_Mg": {
+              "title": "Содержание магния",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "current_stocks": {
+        "title": "Текущие запасы",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_current_stocks",
+          "title": "Текущие запасы нефти",
+          "description": "Динамика изменения запасов нефти на отчетную дату",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата",
+              "description": "",
+              "type": "string"
+            },
+            "geological_ABC": {
+              "title": "Остаточные геологические запасы, категория A+B+C",
+              "description": "",
+              "type": "number"
+            },
+            "geological_AB": {
+              "title": "Остаточные геологические запасы, категория A+B",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_ABC": {
+              "title": "Остаточные извлекаемые запасы, категория A+B+C",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_AB": {
+              "title": "Остаточные извлекаемые запасы, категория A+B",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_C2": {
+              "title": "Остаточные извлекаемые запасы, категория C2",
+              "description": "",
+              "type": "number"
+            },
+            "current_oil_recovery": {
+              "title": "Текущий коэффициент нефтеотдачи",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "initial_stocks": {
+        "title": "Начальные запасы",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_initial_stocks",
+          "title": "Начальные запасы нефти",
+          "description": "Утвержденные геологические и извлекаемые запасы нефти",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата утверждения",
+              "description": "",
+              "type": "string"
+            },
+            "geological_ABC": {
+              "title": "Геологические запасы, категория A+B+C",
+              "description": "",
+              "type": "number"
+            },
+            "geological_AB": {
+              "title": "Геологические запасы, категория A+B",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_ABC": {
+              "title": "Извлекаемые запасы, категория A+B+C",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_AB": {
+              "title": "Извлекаемые запасы, категория A+B",
+              "description": "",
+              "type": "number"
+            },
+            "retrievable_C2": {
+              "title": "Извлекаемые запасы, категория C2",
+              "description": "",
+              "type": "number"
+            },
+            "accepted_oil_recovery": {
+              "title": "Принятый коэффициент нефтеотдачи",
+              "description": "",
+              "type": "number"
+            }
+          }
+        }
+      },
+      "annual_development_indicators": {
+        "title": "Годовые показатели разработки",
+        "description": "",
+        "type": "array",
+        "items": {
+          "title": "GODPOK (Годовые показатели разработки)",
+          "$id": "/databases/passport/passport_godpok",
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "integer",
+              "title": "Дата (год, месяц)",
+              "description": ""
+            },
+            "projectOilProduction": {
+              "type": "number",
+              "title": "Проектная добыча нефти",
+              "description": ""
+            },
+            "actualOilProduction": {
+              "type": "number",
+              "title": "Фактическая добыча нефти",
+              "description": ""
+            },
+            "oilProductionSinceStart": {
+              "type": "number",
+              "title": "Добыча нефти с начала работ",
+              "description": ""
+            },
+            "waterProductionAnnual": {
+              "type": "number",
+              "title": "Добыча воды за год",
+              "description": ""
+            },
+            "waterProductionSinceStart": {
+              "type": "number",
+              "title": "Добыча воды с начала разработки",
+              "description": ""
+            },
+            "liquidProductionAnnual": {
+              "type": "number",
+              "title": "Добыча жидкости за год",
+              "description": ""
+            },
+            "liquidProductionSinceStart": {
+              "type": "number",
+              "title": "Добыча жидкости с начала разработки",
+              "description": ""
+            },
+            "gasProductionAnnual": {
+              "type": "number",
+              "title": "Добыча газа за год",
+              "description": ""
+            },
+            "technologicalPumping": {
+              "type": "integer",
+              "title": "Технологическая закачка воды",
+              "description": ""
+            },
+            "productivePumping": {
+              "type": "integer",
+              "title": "Производительная закачка воды",
+              "description": ""
+            },
+            "developmentTechnologicalPumping": {
+              "type": "integer",
+              "title": "Разработки технологическая закачка воды",
+              "description": ""
+            },
+            "developmentProductivePumping": {
+              "type": "integer",
+              "title": "Разработки производительности закачка воды",
+              "description": ""
+            },
+            "fundWellExploitationOfProject": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: проекту",
+              "description": ""
+            },
+            "fundWellExploitationActualWells": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: фактически",
+              "description": ""
+            },
+            "fundWellExploitationWorkingWells": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: действующий",
+              "description": ""
+            },
+            "fundWellExploitationFund": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: фонд",
+              "description": ""
+            },
+            "fundWellExploitationLiquidation": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ликвидации",
+              "description": ""
+            },
+            "fundWellExploitationDrilling": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: бурения",
+              "description": ""
+            },
+            "fundWellExploitationLiquidated": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ликвидировано",
+              "description": ""
+            },
+            "fundWellExploitationOtherHorizons": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: другие горизонты",
+              "description": ""
+            },
+            "fundWellExploitationConservation": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: в консервации",
+              "description": ""
+            },
+            "fundWellExploitationObservable": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: наблюдательные",
+              "description": ""
+            },
+            "fundWellExploitationForPumping": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: закачку",
+              "description": ""
+            },
+            "injectionWellExploitationOfProject": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: проекту",
+              "description": ""
+            },
+            "injectionWellExploitationActualWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: фактически",
+              "description": ""
+            },
+            "injectionWellExploitationIncludingPumping": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в том числе под закачкой",
+              "description": ""
+            },
+            "injectionWellExploitationTechnicalReason": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: технологическим причинам",
+              "description": ""
+            },
+            "injectionWellExploitationOil": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: нефть",
+              "description": ""
+            },
+            "injectionWellExploitationInIdleAndConservation": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в бездействии и в консервации",
+              "description": ""
+            },
+            "injectionWellExploitationOtherHorizons": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: другие горизонты",
+              "description": ""
+            },
+            "injectionWellExploitationLiquidation": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: ликвидации",
+              "description": ""
+            },
+            "injectionWellExploitationObservable": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: наблюдательных",
+              "description": ""
+            },
+            "wellsWithdrawnOperational": {
+              "type": "integer",
+              "title": "Вывод скважин из бурения: эксплуатационных",
+              "description": ""
+            },
+            "wellsWithdrawnInjection": {
+              "type": "integer",
+              "title": "Вывод скважин из бурения: нагнетательных",
+              "description": ""
+            },
+            "activeFundDecrease": {
+              "type": "integer",
+              "title": "Выбыло за год из эксплуатации скважин из действующего фонда",
+              "description": ""
+            },
+            "observationPjezometricWells": {
+              "type": "integer",
+              "title": "Количество наблюдательных и пьезометрических скважин",
+              "description": ""
+            },
+            "averageWellProduction": {
+              "type": "integer",
+              "title": "Средний дебит 1 новой эксплуатационной скважины",
+              "description": ""
+            },
+            "weightedAverageInitialContourPressure": {
+              "type": "number",
+              "title": "Средневзвешенное пластовое давление в начальном контуре нефтеносн",
+              "description": ""
+            },
+            "weightedAverageAreaPressure": {
+              "type": "number",
+              "title": "Средневзвешенное пластовое давление по площади",
+              "description": ""
+            },
+            "dailyAverageOilPressure": {
+              "type": "number",
+              "title": "Среднесуточный дебит одной скважины: нефти",
+              "description": ""
+            },
+            "dailyAverageLiquidPressure": {
+              "type": "number",
+              "title": "Среднесуточный дебит одной скважины: жидкости",
+              "description": ""
+            }
+          }
+        }
+      },
+      "monthly_indicators": {
+        "title": "Месячные показатели",
+        "description": "",
+        "type": "array",
+        "items": {
+          "title": "Месячные показатели",
+          "$id": "/databases/passport/passport_mespok",
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "integer",
+              "title": "Дата (год, месяц)",
+              "description": ""
+            },
+            "oilProductionPerPeriod": {
+              "type": "number",
+              "title": "Добыча нефти за период",
+              "description": ""
+            },
+            "oilProductionPerPeriodIncludingInjection": {
+              "type": "number",
+              "title": "Добыча нефти в т.ч. из нагнетат",
+              "description": ""
+            },
+            "waterProductionPeriod": {
+              "type": "number",
+              "title": "Добыча воды за период",
+              "description": ""
+            },
+            "liquidProductionInPlastConditionsPeriod": {
+              "type": "number",
+              "title": "Добыча жидкости в пластовых условиях за период",
+              "description": ""
+            },
+            "gasProductionPerPeriod": {
+              "type": "integer",
+              "title": "Добыча газа за период",
+              "description": ""
+            },
+            "waterPumpedPerPeriod": {
+              "type": "number",
+              "title": "Воды за период",
+              "description": ""
+            },
+            "waterPumpedInContourPerPeriod": {
+              "type": "number",
+              "title": "Внутриконтурная жидкость в пластовых условиях",
+              "description": ""
+            },
+            "WaterPumpedInPlastConditionsPerPeriod": {
+              "type": "number",
+              "title": "Внутриконтурная жидкость в пластовых условиях",
+              "description": ""
+            },
+            "fundWellExploitationTotalDrilled": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: всего пробурено",
+              "description": ""
+            },
+            "fundWellExploitationFund": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: фонд",
+              "description": ""
+            },
+            "fundWellExploitationFountain": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: фонтан",
+              "description": ""
+            },
+            "fundWellExploitationEcn": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ЭЦН",
+              "description": ""
+            },
+            "fundWellExploitationShgn": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ШГН",
+              "description": ""
+            },
+            "fundWellExploitationGasLift": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: газлифт",
+              "description": ""
+            },
+            "fundWellExploitationFundShort": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: фонд",
+              "description": ""
+            },
+            "fundWellExploitationLiquidation": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ликвидации",
+              "description": ""
+            },
+            "fundWellExploitationDrilling": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: бурения",
+              "description": ""
+            },
+            "fundWellExploitationLiquidated": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: ликвидировано",
+              "description": ""
+            },
+            "fundWellExploitationOtherHorizons": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: другие горизонты",
+              "description": ""
+            },
+            "fundWellExploitationInConservation": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: в консервации",
+              "description": ""
+            },
+            "fundWellExploitationObservations": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: наблюдательные",
+              "description": ""
+            },
+            "fundWellExploitationPassedForPumping": {
+              "type": "integer",
+              "title": "Фонд эксплуатационных скважин: передано под закачку",
+              "description": ""
+            },
+            "injectionWellTotalDrilled": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: всего пробурено",
+              "description": ""
+            },
+            "injectionWellIncludingWellPumping": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в том числе под закачкой",
+              "description": ""
+            },
+            "injectionWellTechincalReasonStops": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: остановки по технологическим причинам",
+              "description": ""
+            },
+            "injectionWellInactiveWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в бездействии",
+              "description": ""
+            },
+            "injectionWellInLiquidationWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в ликвидации",
+              "description": ""
+            },
+            "injectionWellInConservationWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: в консервации",
+              "description": ""
+            },
+            "injectionWellOtherHorizonsWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: другие горизонты",
+              "description": ""
+            },
+            "injectionWellOil": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: нефть",
+              "description": ""
+            },
+            "injectionWellPostExploitationDevelopment": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: освоение после эксплуатации",
+              "description": ""
+            },
+            "injectionWellLiquidatedWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: ликвидировано",
+              "description": ""
+            },
+            "injectionWellControlWells": {
+              "type": "integer",
+              "title": "Фонд нагнетательных скважин: контрольные",
+              "description": ""
+            },
+            "wellsWithdrawnFromDrillingOperational": {
+              "type": "integer",
+              "title": "Вывод скважин из бурения: эксплуатационных",
+              "description": ""
+            },
+            "wellsWithdrawnFromDrillingInjection": {
+              "type": "integer",
+              "title": "Вывод скважин из бурения: нагнетательных",
+              "description": ""
+            },
+            "activeWellFundDecrease": {
+              "type": "integer",
+              "title": "Выбыло из действующего фонда эксплуатационных скважин",
+              "description": ""
+            },
+            "observationAndPjezometricWells": {
+              "type": "integer",
+              "title": "Количество наблюдательных и пьезометрических скважин",
+              "description": ""
+            },
+            "averageWellProductionOil": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: нефти",
+              "description": ""
+            },
+            "averageWellProductionLiquid": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: жидкости",
+              "description": ""
+            },
+            "averageWellFountainOilProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: фонтан. нефти",
+              "description": ""
+            },
+            "averageWellFountainLiquidProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: фонтан. Жидкости",
+              "description": ""
+            },
+            "averageWellEcnOilProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: ЭЦН нефти",
+              "description": ""
+            },
+            "averageWellEcnLiquidProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: ЭЦН жидкости",
+              "description": ""
+            },
+            "averageWellShgnOilProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: ШГН нефти",
+              "description": ""
+            },
+            "averageWellShgnEndProduction": {
+              "type": "number",
+              "title": "Средний дебит одной скважины: ШТН жидкости",
+              "description": ""
+            },
+            "wellWorkingWithWaterTotal": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: всего",
+              "description": ""
+            },
+            "wellWorkingWithWaterUpTo2Percent": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: в т.ч. до 2%",
+              "description": ""
+            },
+            "wellWorkingWithWaterFrom2To20Percent": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: от 2% до 20%",
+              "description": ""
+            },
+            "wellWorkingWithWaterFrom20To50Percent": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: от 20% до 50%",
+              "description": ""
+            },
+            "wellWorkingWithWaterFrom50To90Percent": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: от 50% до 90%",
+              "description": ""
+            },
+            "wellWorkingWithWaterOver90Percent": {
+              "type": "integer",
+              "title": "Количество скважин работающих с водой: больше 90%",
+              "description": ""
+            },
+            "initialContourPressure": {
+              "type": "number",
+              "title": "Средневзвешенный пласт давления в начальном контуре нефтеснасн. В зоне отбора",
+              "description": ""
+            },
+            "inContourPressure": {
+              "type": "number",
+              "title": "Средневзвешенный пласт давления в зоне отбора",
+              "description": ""
+            }
+          }
+        }
+      },
+      "project": {
+        "title": "Проектные показатели разработки",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/passport/passport_project",
+          "$comment": "",
+          "title": "Проектные показатели разработки",
+          "description": "Плановые показатели добычи, закачки и скважинного фонда",
+          "type": "object",
+          "properties": {
+            "date": {
+              "title": "Дата утверждения",
+              "type": "string"
+            },
+            "max_oil_recovery": {
+              "title": "Максимальная добыча нефти",
+              "type": "number"
+            },
+            "max_liquid_recovery": {
+              "title": "Максимальная добыча жидкости",
+              "type": "number"
+            },
+            "year_max_recovery": {
+              "title": "Год достижения максимальной добычи",
+              "type": "number"
+            },
+            "production_well_inventory": {
+              "title": "Фонд скважин эксплуатационный",
+              "type": "number"
+            },
+            "injection_well_inventory": {
+              "title": "Фонд скважин нагнетательный",
+              "type": "number"
+            },
+            "monitoring_well_inventory": {
+              "title": "Фонд скважин контрольный и наблюдательный",
+              "type": "number"
+            },
+            "standby_well_inventory": {
+              "title": "Фонд скважин резервных",
+              "type": "number"
+            },
+            "peak_production_well_count": {
+              "title": "Колличество эксплуатационных скважин при выходе на максимальную добычу",
+              "type": "number"
+            },
+            "drilling_pattern_density": {
+              "title": "Плотность сетки с учётом эксп. и нагнетательных скважин в зоне разбуривания",
+              "type": "number"
+            },
+            "Net_Pay_Well_Pattern_Density": {
+              "title": "Плотность сетки с учётом эксп. и нагнетательных скважин в конт. нефтеносности",
+              "type": "number"
+            },
+            "well_spacing_density": {
+              "title": "Плотность сетки в зоне разбуривания с учётом эксплуатационных скважин",
+              "type": "number"
+            },
+            "average_well_rate": {
+              "title": "Средний дебит 1 эксплуатационной скважины при максимальной добыче",
+              "type": "number"
+            },
+            "max_water_injectivity": {
+              "title": "Приемистость воды 1 нагнетательной скважины при максимальной закачке",
+              "type": "number"
+            },
+            "recoverable_reserves_per_well": {
+              "title": "Суммарная добыча извлекаемых запасов на 1 скважину",
+              "type": "number"
+            },
+            "waterflood_system": {
+              "title": "Система заводнения",
+              "type": "number"
+            },
+            "primary_production_method": {
+              "title": "Основной способ эксплуатации",
+              "type": "number"
+            },
+            "oil_recovery_factor": {
+              "title": "Коэффициент нефтеотдачи",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_water_pipeline",
+    "title": "Водовод",
+    "description": "",
+    "type": "object",
+    "water_pipeline_start_date": {
+      "agent_tupe": {
+        "title": "Дата пуска водовода",
+        "description": "",
+        "type": "string"
+      },
+      "water_pipeline_measurement_date":{
+        "title":"Дата замера по водоводу",
+        "description":"",
+        "type":"number"
+      },
+      "watere_pipeline_number": {
+        "title": "Номер водовода",
+        "description": "",
+        "type": "number"
+      },
+      "sign_of_downtime_in_a_well_or_water_pipeline": {
+        "title": "Признак простоя по скважине или водовода",
+        "description": "",
+        "type": "number"
+      }
+    }
+  }

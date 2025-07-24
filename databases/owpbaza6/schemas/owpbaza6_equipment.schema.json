@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_equipment",
+  "title": "Оборудование",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "equipment_name":{
+        "title":"Наименование оборудования",
+        "description":"",
+        "type":"number"
+    },
+    "manufacturer_serial_number":{
+        "title":"Заводской номер оборудования",
+        "description":"",
+        "type":"number"
+    },
+    "inventory_number":{
+        "title":"Инвентарный номер оборудования",
+        "description":"",
+        "type":"number"
+    },
+    "installation_location":{
+        "title":"Место установки",
+        "description":"",
+        "type":"number"
+    },
+    "repair_team_number":{
+        "title":"Номер ремонтной бригады",
+        "description":"",
+        "type":"number"
+    },
+    "repair_team_unit_number":{
+        "title":"Номер звена ремонтной бригады",
+        "description":"",
+        "type":"number"
+    },
+    "equipment_repair_type":{
+        "title":"Вид ремонта оборудования",
+        "description":"",
+        "type":"number"
+    },
+    "equipment_movement_type":{
+        "title":"Вид движения оборудования",
+        "description":"",
+        "type":"number"
+    },
+    "equipment_shutdown_date_for_repair":{
+        "title":"Дата остановки оборудования на ремонт",
+        "description":"",
+        "type":"number"
+    },
+    "repair_start_date":{
+        "title":"Дата начала ремонта",
+        "description":"",
+        "type":"number"
+    },
+    "repair_end_date":{
+        "title":"Дата окончания ремонта",
+        "description":"",
+        "type":"number"
+    },
+    "equipment_restart_date_after_repair":{
+        "title":"Дата запуска после ремонта",
+        "description":"",
+        "type":"number"
+    },
+    "ground_equipment_repair_reason":{
+        "title":"Причина выхода наземного оборудования в ремонт",
+        "description":"",
+        "type":"number"
+    },
+
+    "chapter_1":{
+        "title": "Раздел 1",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_1"
+      }
+    },
+    "chapter_2":{
+        "title": "Раздел 2",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_2"
+      }
+    },
+    "chapter_3":{
+        "title": "Раздел 3",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_3"
+      }
+    },
+    "chapter_4":{
+        "title": "Раздел 4",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_4"
+      }
+    },
+    "chapter_5":{
+        "title": "Раздел 5",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_5"
+      }
+    },
+    "chapter_6":{
+        "title": "Раздел 6",
+        "description": "",
+        "type": "array",
+        "items": {
+            "$ref": "/databases/owpbaza6/owpbaza6_chapter_6"
+      }
+    }
+  }
+}

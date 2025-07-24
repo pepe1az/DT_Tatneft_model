@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/priss/priss_horizon",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+      "horizon_code": {
+      "title": "Горизонт",
+      "description": "",
+      "type": "number"
+    },
+    "segment_open_date": {
+      "title": "Дата открытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+    "supply_contour_radius": {
+      "title": "Радиус условного контура питания",
+      "description": "",
+      "type": "number"
+    },
+    "wellbore_extension_to_horizon": {
+      "title": "Удлинение ствола скважины до продуктивного горизонта",
+      "description": "",
+      "type": "number"
+    },
+    "segment_close_date": {
+      "title": "Дата закрытия сегмента",
+      "description": "",
+      "type": "string"
+    },
+      "address": {
+      "title": "Адрес",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_address"
+      }
+    },
+      "equipment": {
+      "title": "Оборудование",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_equipment"
+      }
+    },
+      "mode": {
+      "title": "Режим",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_mode"
+      }
+    },
+      "plast": {
+      "title": "Пласт",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/priss/priss_plast"
+      }
+    }
+  }
+}

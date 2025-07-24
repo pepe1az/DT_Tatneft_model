@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_4",
+  "title": "Раздел 4",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "unit_name ":{
+        "title":"Наименование детали, узла",
+        "description":"",
+        "type":"number"
+    },
+    "unit_quantity":{
+        "title":"Количество деталей, узлов",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

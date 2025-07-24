@@ -1,0 +1,467 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_root",
+  "title": "БД Каталог",
+  "description": "Данные о конструкции скважин, геологических условиях, обработки пластов",
+  "type": "array",
+  "items": {
+    "$id": "/databases/catalog/catalog_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "type": "string"
+      },
+      "cdng_cppd": {
+        "title": "ЦДНГ, ЦППД",
+        "description": "Цех добычи нефти и газа, цех поддержания пластового давления",
+        "type": "string"
+      },
+      "wells": {
+        "title": "Скважины",
+        "description": "Скважины, подконтрольные данной административной единице",
+        "type": "array",
+        "items": {
+          "$id": "/databases/catalog/catalog_well",
+          "title": "Скважина",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "well_number": {
+              "title": "Номер скважины",
+              "description": "",
+              "type": "number"
+            },
+            "field": {
+              "title": "Месторождение",
+              "description": "",
+              "type": "string"
+            },
+            "area": {
+              "title": "Площадь",
+              "description": "",
+              "$comment": "Корректен ли перевод?",
+              "type": "string"
+            },
+            "enterprise_urb_ubr": {
+              "title": "Предприятие пробуренной скважины",
+              "description": "Установка разведовочного бурения / Управление буровых работ",
+              "$comment": "СК4",
+              "type": "string"
+            },
+            "well_drill_category": {
+              "title": "Категория скважины",
+              "description": "",
+              "$comment": "СК5",
+              "type": "number"
+            },
+            "entry_date": {
+              "title": "Дата ввода в эксплуатацию",
+              "description": "",
+              "type": "string"
+            },
+            "area_nature": {
+              "title": "Характер местности",
+              "description": "",
+              "type": "string"
+            },
+            "neighbour_drill_count": {
+              "title": "Количество соседних скважин",
+              "description": "",
+              "type": "number"
+            },
+            "drilled_slaughter": {
+              "title": "Забой пробуренный",
+              "description": "",
+              "type": "string"
+            },
+            "artificial_slaughter": {
+              "title": "Забой искусственный",
+              "description": "",
+              "type": "string"
+            },
+            "slaughter_deviation": {
+              "title": "Отклонение забоя от устья",
+              "description": "",
+              "type": "number"
+            },
+            "azimuth_deviation": {
+              "title": "Азимут отклонения",
+              "description": "",
+              "type": "number"
+            },
+            "trunk_extension": {
+              "title": "Удлинение ствола до прод. горизонта",
+              "description": "",
+              "$comment": "уточнить название и ключ",
+              "type": "number"
+            },
+            "x_coords": {
+              "title": "Координаты забоя X",
+              "description": "",
+              "type": "number"
+            },
+            "y_coords": {
+              "title": "Координаты забоя Y",
+              "description": "",
+              "type": "number"
+            },
+            "rotor_altitude": {
+              "title": "Альтитуда от отопа ротора",
+              "description": "",
+              "$comment": "уточнить 'отоп'",
+              "type": "number"
+            },
+            "clutch_altitude": {
+              "title": "Альтитуда муфты",
+              "description": "",
+              "type": "number"
+            },
+            "flange_altitude": {
+              "title": "Альтитуда фланца",
+              "description": "",
+              "type": "number"
+            },
+            "drilled_wellbore_diameter": {
+              "title": "Диаметр пробуренного ствола скважины",
+              "description": "",
+              "type": "number"
+            },
+            "fluid_name": {
+              "title": "Наименование жидкости на которой вскрыт горизонт",
+              "description": "",
+              "type": "string"
+            },
+            "fluid_specific_weight": {
+              "title": "Удельный вес жидкости",
+              "description": "",
+              "type": "number"
+            },
+            "water_loss": {
+              "title": "Водоотдача",
+              "description": "",
+              "$comment": "уточнить корректность перевода",
+              "type": "number"
+            },
+            "horizons": {
+              "title": "Горизонты",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/catalog/catalog_horizon",
+                "title": "Горизонт",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "horizon": {
+                    "title": "Горизонт",
+                    "description": "",
+                    "$comment": "H1",
+                    "type": "number"
+                  },
+                  "reservoir": {
+                    "title": "Пласт",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "geological_conditions": {
+                    "$id": "/databases/catalog/catalog_geological_conditions",
+                    "title": "Геологические условия",
+                    "description": "",
+                    "type": "object",
+                    "properties": {
+                      "roof_depth": {
+                        "title": "Глубина залегания кровли пластов",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "bottom_depth": {
+                        "title": "Глубина залегания подошвы пластов",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "reservoir_type": {
+                        "title": "Тип коллектора",
+                        "description": "",
+                        "type": "string"
+                      },
+                      "oil_saturation_thickness": {
+                        "title": "Нефтенасыщенная мощность",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "water_saturation_thickness": {
+                        "title": "Водонасыщенная мощность",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "initial_oil_water_contact": {
+                        "title": "Абсол. отм. нач. верхней нефтеносной конструкции",
+                        "description": "",
+                        "$comment": "PP6",
+                        "type": "number"
+                      },
+                      "porosity": {
+                        "title": "Пористость",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "permeability": {
+                        "title": "Проницаемость",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "hydraulic_conductivity": {
+                        "title": "Гидропроводность",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "piezoconductivity": {
+                        "title": "Пьезопроводность",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "carbonate_content": {
+                        "title": "Карбонатность",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "reservoir_oil_saturation": {
+                        "title": "Нефтенасыщенность пласта",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "water_breakthrough_date": {
+                        "title": "Дата подвода воды",
+                        "description": "",
+                        "$comment": "PP13",
+                        "type": "string"
+                      },
+                      "water_type": {
+                        "title": "Вид добываемой воды",
+                        "description": "",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "reservoir_treatments": {
+                    "title": "Записи обработки резервуаров",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/catalog/catalog_tank_treatment",
+                      "title": "Обработка пластов",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "operation_date": {
+                          "title": "Дата проведения работ",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "perforation_interval_1": {
+                          "title": "Интервал обработки (перфорации) пластов",
+                          "description": "",
+                          "$comment": "P2",
+                          "type": "number"
+                        },
+                        "perforation_interval_2": {
+                          "title": "Интервал обработки (перфорации) пластов",
+                          "description": "",
+                          "$comment": "P3",
+                          "type": "number"
+                        },
+                        "operation_type": {
+                          "title": "Вид проводимых работ",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "perforator_type": {
+                          "title": "Тип перфоратора",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "perforation_density": {
+                          "title": "Плотность перфорации",
+                          "description": "",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "casings": {
+              "title": "Колонны",
+              "description": "Ориентация колонн в пласте",
+              "type": "array",
+              "items": {
+                "$id": "/databases/catalog/catalog_casing",
+                "title": "Колонна",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "installation_date": {
+                    "title": "Дата установки",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "casing_code": {
+                    "title": "Код колонны",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "casing_diameter": {
+                    "title": "Диаметр колонны",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "descent_depth": {
+                    "title": "Глубина спуска",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "strength_category": {
+                    "title": "Категория прочности",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "wall_thickness": {
+                    "title": "Толщина стенки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "casing_top_depth": {
+                    "title": "Верх колонны-летучки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "casing_material": {
+                    "title": "Материал колонны-летучки",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "tubing_cementing": {
+                    "$id": "/databases/catalog/catalog_tubing_cementing",
+                    "title": "Цементирование эксплутационной колонны",
+                    "description": "",
+                    "type": "object",
+                    "properties": {
+                      "cement_slurry_density": {
+                        "title": "Удельный вес цементного раствора",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "spacer_fluid_density": {
+                        "title": "Удельный вес продавочной жидкости",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "max_pressure_at_plug_seat": {
+                        "title": "Максимальное давление в момент посадки пробки",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "cemented_bottom_position": {
+                        "title": "Расположение зацементированного низа",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "cement_column_lift_height": {
+                        "title": "Высота подъема цем. колонны за экспл. кол. от башмака",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "sealing_check_method": {
+                        "title": "Способ определения герметичности вкопанной колонны",
+                        "description": "",
+                        "$comment": "CC6",
+                        "type": "string"
+                      },
+                      "pressure_test_value": {
+                        "title": "Давление опресовки",
+                        "description": "",
+                        "type": "number"
+                      },
+                      "level_reduction_depth": {
+                        "title": "Глубина снижения уровня",
+                        "description": "",
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "well_construction": {
+              "title": "Конструкция скважины",
+              "description": "Характеристики колонн",
+              "type": "array",
+              "items": {
+                "$id": "/databases/catalog/catalog_well_construction",
+                "title": "Конструкция скважин",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "casing_code": {
+                    "title": "Код колонны",
+                    "description": "",
+                    "type": "string"
+                  },
+                  "casing_diameter": {
+                    "title": "Диаметр колонны",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "setting_depth": {
+                    "title": "Глубина спуска",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "wall_thickness": {
+                    "title": "Толщина стенки",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "cement_ring_lift_height": {
+                    "title": "Высота подъема цем. кольца от башмака колонны",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "curvature": {
+              "title": "Кривизна скважины",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/catalog/catalog_curvature",
+                "$comment": "",
+                "title": "Кривизна скважины",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "curvature": {
+                    "title": "Кривизна",
+                    "description": "",
+                    "type": "number"
+                  },
+                  "curvature_depth": {
+                    "title": "Глубина расположения",
+                    "description": "",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

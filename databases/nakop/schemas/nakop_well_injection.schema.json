@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_well_injection",
+  "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
+  "title": "Скважина",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "segment_number": {
+      "title": "Номер сегмента",
+      "description": "",
+      "type": "number"
+    },
+    "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "type": "string"
+    },
+    "variety": {
+      "title": "Разновидность",
+      "description": "",
+      "type": "number"
+    },
+    "category": {
+      "title": "Категория",
+      "description": "",
+      "type": "number"
+    },
+    "status": {
+      "title": "Состояние",
+      "description": "",
+      "type": "number"
+    },
+    "injection_method": {
+      "title": "Способ закачки",
+      "description": "",
+      "type": "number"
+    },
+    "drilling_start_date": {
+      "title": "Дата ввода скв. из бурения",
+      "description": "",
+      "type": "number"
+    },
+    "reactivation_date": {
+      "title": "Дата ввода скв. новых и из бездействия",
+      "description": "",
+      "type": "number"
+    },
+    "plast": {
+      "title": "Пласт",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_plast_injection"
+      }
+    },
+    "godmes": {
+      "title": "Месячные показатели",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_yearmonth_injection"
+      }
+    },
+    "gtm": {
+      "title": "ГТМ",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/nakop/nakop_gtm_injection"
+      }
+    }
+  }
+}

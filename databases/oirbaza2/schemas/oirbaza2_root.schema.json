@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/oirbaza2/oirbaza2_root",
+    "title": "БД OIRBAZA2",
+    "description": "Отдел инженерных расчетов для комплекса задач'Учет и отчетность в капитальном ремонте скважин'",
+    "type": "array",
+    "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_upnp"
+    }
+  }

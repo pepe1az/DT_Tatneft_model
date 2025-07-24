@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/passport/passport_reservoir",
+  "$comment": "Оригинал: ZALEG",
+  "title": "Характеристики залежи",
+  "description": "Геолого-физические характеристики залежи",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Дата",
+      "description": "Дата (год, месяц, число)",
+      "type": "string"
+    },
+    "reservoir_base_average_depth": {
+      "title": "Средняя глубина залегания подошвы пласта",
+      "description": "",
+      "type": "number"
+    },
+    "average_power_general": {
+      "title": "Средняя мощность общая",
+      "description": "",
+      "type": "number"
+    },
+    "average_power_effective": {
+      "title": "Средняя мощность эффективная",
+      "description": "",
+      "type": "number"
+    },
+    "average_power_oil_saturated": {
+      "title": "Средняя мощность нефтенасыщенная",
+      "description": "",
+      "type": "number"
+    },
+    "water_oil_contact_initial": {
+      "title": "Начальная отметка водно-нефтяного контакта",
+      "description": "",
+      "type": "number"
+    },
+    "porosity": {
+      "title": "Проницаемость",
+      "description": "",
+      "type": "number"
+    },
+    "permeability": {
+      "title": "Проницаемость",
+      "description": "",
+      "type": "number"
+    },
+    "area_oil_bearing": {
+      "title": "Площадь нефтеносная",
+      "description": "",
+      "type": "number"
+    },
+    "area_water_oil_bearing": {
+      "title": "Площадь водо-нефтеносной зоны",
+      "description": "",
+      "type": "number"
+    },
+    "oil_saturation": {
+      "title": "Нефтенасыщенность",
+      "description": "",
+      "type": "number"
+    },
+    "pressure_initial": {
+      "title": "Начальное пластовое давление приведённое к водно-нефтяному контакту",
+      "description": "",
+      "type": "number"
+    },
+    "pressure_saturated": {
+      "title": "Давление насыщенной нефти",
+      "description": "",
+      "type": "number"
+    },
+    "pressure_frontal": {
+      "title": "Давление фронтальное",
+      "description": "",
+      "type": "number"
+    },
+    "temperature": {
+      "title": "Температура пласта",
+      "description": "",
+      "type": "number"
+    },
+    "collector_type": {
+      "title": "Тип коллектора",
+      "description": "",
+      "type": "string"
+    },
+    "oil_conversion_factor": {
+      "title": "Переводной коэффициент нефти",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

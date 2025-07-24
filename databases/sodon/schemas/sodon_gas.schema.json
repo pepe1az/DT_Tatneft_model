@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_gas",
+  "title": "Газ",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "measurement_date": {
+      "title": "Дата замера",
+      "description": "",
+      "type": "string"
+    },
+    "working_agent_flow_rate": {
+      "title": "Расход рабочего агента по замеру",
+      "description": "",
+      "type": "number"
+    },
+    "working_pressure": {
+      "title": "Рабочее давление",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

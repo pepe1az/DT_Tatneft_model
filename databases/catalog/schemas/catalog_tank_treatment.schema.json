@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/catalog/catalog_tank_treatment",
+  "title": "Обработка пластов",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "operation_date": {
+      "title": "Дата проведения работ",
+      "description": "",
+      "type": "number"
+    },     
+    "perforation_interval_1": {
+      "title": "Интервал обработки (перфорации) пластов",
+      "description": "",
+      "$comment": "P2",
+      "type": "number"
+    },
+    "perforation_interval_2": {
+      "title": "Интервал обработки (перфорации) пластов",
+      "description": "",
+      "$comment": "P3",
+      "type": "number"
+    },
+    "operation_type": {
+      "title": "Вид проводимых работ",
+      "description": "",
+      "type": "string"
+    },
+    "perforator_type": {
+      "title": "Тип перфоратора",
+      "description": "",
+      "type": "string"
+    },
+    "perforation_density": {
+      "title": "Плотность перфорации",
+      "description": "",
+      "type": "number"
+    }
+  }
+}
+    

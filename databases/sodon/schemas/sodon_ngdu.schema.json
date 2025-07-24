@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_ngdu",
+  "title": "НГДУ",
+  "description": "Административная единица, контролирующая ряд скважин",
+  "type": "object",
+  "properties": {
+    "ngdu_cdng_field_area": {
+      "title": "НГДУ, ЦДНГ, месторождение, площадь. ЦДНГ",
+      "description": "Нефтегазодобывающее управление, цех добычи нефти и газа",
+      "type": "string"
+    },
+    "date_of_last_update": {
+      "title": "Дата последней корректировки",
+      "description": "",
+      "type": "string"
+    },
+    "well": {
+      "$ref": "/databases/sodon/sodon_well"
+    },
+    "distribution": {
+      "title": "Распределение",
+      "description": "Распределение добычи нефти и воды",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/sodon/sodon_distribution"
+      }
+    }
+  }
+}

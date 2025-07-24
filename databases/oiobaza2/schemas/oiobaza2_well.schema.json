@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oiobaza2/oiobaza2_well",
+  "title": "Скважина",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "well_number": {
+      "title": "Номер скважины",
+      "description": "",
+      "type": "number"
+    },
+    "field": {
+      "title": "Месторождение",
+      "description": "",
+      "type": "string"
+    },
+    "area": {
+      "title": "Площадь",
+      "description": "",
+      "$comment": "Корректен ли перевод?",
+      "type": "string"
+    },
+    "horizon": {
+      "title": "Горизонт",
+      "description": "",
+      "type": "string"
+    },
+    "operation_parameters": {
+      "title": "Параметры эксплуатации",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "/databases/oiobaza2/oiobaza2_operation_parameters"
+      }
+    }
+  }
+}

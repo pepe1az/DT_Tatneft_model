@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_root",
+    "$comment": "Оригинал: OWPBAZA4",
+    "title": "БД OWPBAZA4",
+    "description": "Месячные сведения о трудозатратах в текущем и капитальном ремонтах скважин",
+    "type": "array",
+    "items": {
+        "$ref": "/databases/owpbaza4/owpbaza4_ngdu"
+    }
+}

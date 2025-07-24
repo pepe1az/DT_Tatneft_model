@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/nakop/nakop_monthly_production_recovery",
+  "title": "Месячная добыча",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Год месяц",
+      "description": "",
+      "type": "number"
+    },
+    "density": {
+      "title": "Плотность",
+      "description": "",
+      "type": "number"
+    },
+    "oil_produced": {
+      "title": "Добыто нефти за месяц",
+      "description": "",
+      "type": "number"
+    },
+    "water_produced": {
+      "title": "Добыто воды за месяц (м³)",
+      "description": "",
+      "type": "number"
+    },
+    "gas_produced": {
+      "title": "Добыто газа за месяц",
+      "description": "",
+      "type": "number"
+    }
+  }
+}

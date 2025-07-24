@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_5",
+  "title": "Раздел 5",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "material_name ":{
+        "title":"Наименование материала",
+        "description":"",
+        "type":"number"
+    },
+    "material_quantity":{
+        "title":"Количество материала",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

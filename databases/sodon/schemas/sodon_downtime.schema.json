@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/sodon/sodon_downtime",
+  "title": "Простой",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "downtime_start_date": {
+      "title": "Дата начала простоя",
+      "description": "",
+      "type": "string"
+    },
+    "downtime_end_date": {
+      "title": "Дата конца простоя",
+      "description": "",
+      "type": "string"
+    },
+    "downtime_reason": {
+      "title": "Причина простоя скважины",
+      "description": "",
+      "type": "string"
+    },
+    "well_stop_indicator": {
+      "title": "Признак останова по скважине",
+      "description": "",
+      "type": "string"
+    }
+  }
+}

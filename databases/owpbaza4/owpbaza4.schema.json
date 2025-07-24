@@ -1,0 +1,507 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza4/owpbaza4_root",
+  "$comment": "Оригинал: OWPBAZA4",
+  "title": "БД OWPBAZA4",
+  "description": "Месячные сведения о трудозатратах в текущем и капитальном ремонтах скважин",
+  "type": "array",
+  "items": {
+    "$id": "/databases/owpbaza4/owpbaza4_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "$comment": "НГДУ",
+        "type": "number"
+      },
+      "periplan": {
+        "title": "Квартал месяц",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/owpbaza4/owpbaza4_rescheduling",
+          "title": "Период планирования",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "quarter_month": {
+              "title": "Квартал-месяц",
+              "description": "",
+              "$comment": "NVNAMES",
+              "type": "number"
+            },
+            "well_servicing_duration": {
+              "title": "Плановая продолжит. текущего ремонта",
+              "description": "",
+              "$comment": "DURAT03",
+              "type": "string"
+            },
+            "workover_duration": {
+              "title": "Плановая продолжит. кап-ремонта",
+              "description": "",
+              "$comment": "DURAT15",
+              "type": "string"
+            },
+            "well_servicing_stay_duration": {
+              "title": "Плановая продолжит. пребывания скважин в текущем ремонте",
+              "description": "",
+              "$comment": "DURAT04",
+              "type": "number"
+            },
+            "workover_stay_duration": {
+              "title": "Плановая продолжит. пребывания скважин в кап-ремонте",
+              "description": "Плановая продолжительность пребывания скважин в капитальном ремонте",
+              "$comment": "DURAT05",
+              "type": "number"
+            },
+            "oilwell_service_crew_quantity": {
+              "title": "Количество бригад по ТРС",
+              "description": "Количество бригад по текущему ремонту скважин",
+              "$comment": "QUANT151",
+              "type": "number"
+            },
+            "workover_crew_quantity": {
+              "title": "Количество бригад по КРС",
+              "description": "Количество бригад по капитальному ремонту скважин",
+              "$comment": "QUANT152",
+              "type": "number"
+            },
+            "well_servicing_prepost_works_crew_quantity": {
+              "title": "Количество бригад ПЗР по ТРС",
+              "description": "Количество бригад подготовительно-заключительных работ по текущему ремонту скважин",
+              "$comment": "QUANT153",
+              "type": "number"
+            },
+            "workover_prepost_works_crew_quantity": {
+              "title": "Количество бригад ПЗР по КРС",
+              "description": "Количество бригад подготовительно-заключительных работ по капитальному ремонту скважин",
+              "$comment": "QUANT154",
+              "type": "number"
+            },
+            "oilwell_service_crew_staff_number": {
+              "title": "Численность персонала бригад ТРС",
+              "description": "Численность персонала бригад текущему ремонту скважин",
+              "$comment": "NUMBER27",
+              "type": "number"
+            },
+            "workover_crew_staff_number": {
+              "title": "Численность персонала бригад КРС",
+              "description": "Численность персонала бригад капитальному ремонту скважин",
+              "$comment": "NUMBER29",
+              "type": "number"
+            },
+            "well_servicing_prepost_works_crew_staff_number": {
+              "title": "Численность персонала бригад ПЗР по ТРС",
+              "description": "Численность персонала бригад подготовительно-заключительных работ по текущему ремонту скважин",
+              "$comment": "NUMBER28",
+              "type": "number"
+            },
+            "workover_prepost_works_crew_staff_number": {
+              "title": "Численность персонала бригад ПЗР по КРС",
+              "description": "Численность персонала бригад подготовительно-заключительных работ по капитальному ремонту скважин",
+              "$comment": "NUMBER30",
+              "type": "number"
+            },
+            "type_of_repair": {
+              "title": "Вид ремонта",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/owpbaza4/owpbaza4_type_of_repair",
+                "title": "Вид ремонта",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "repair_type_code": {
+                    "title": "Код вида ремонта",
+                    "description": "",
+                    "$comment": "FORM6",
+                    "type": "number"
+                  },
+                  "brigada1": {
+                    "title": "Бригада №",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/owpbaza4/owpbaza4_brigada_1",
+                      "title": "Бригада",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "brigade_number": {
+                          "title": "Номер бригады",
+                          "description": "",
+                          "$comment": "NUMBER7",
+                          "type": "number"
+                        },
+                        "well1": {
+                          "title": "Скважина №",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza4/owpbaza4_well_1",
+                            "title": "Скважина",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "well_number": {
+                                "title": "Номер скажины",
+                                "description": "",
+                                "$comment": "NAME",
+                                "type": "number"
+                              },
+                              "ogpd_number": {
+                                "title": "Номер ЦДНГ",
+                                "description": "Номер цеха по добыче нефти и газа",
+                                "$comment": "SHOP1",
+                                "type": "number"
+                              },
+                              "well_operation_before_repair": {
+                                "title": "Способ эксплуатации до ремонта",
+                                "description": "Способ эксплуатации скважины до ремонта",
+                                "$comment": "WAY11",
+                                "type": "number"
+                              },
+                              "repair_start": {
+                                "title": "Начало ремонта",
+                                "description": "Начало ремонта (год, мес, число, часы)",
+                                "$comment": "DATE71",
+                                "type": "number"
+                              },
+                              "repair_end": {
+                                "title": "Конец  ремонта",
+                                "description": "Конец ремонта (год, мес, число, часы)",
+                                "$comment": "DATE72",
+                                "type": "number"
+                              },
+                              "repair_repeat": {
+                                "title": "Повторность ремонта",
+                                "description": "Повторность ремонта скважины",
+                                "$comment": "SIGN42",
+                                "type": "number"
+                              },
+                              "repair_work_type": {
+                                "title": "Вид работы",
+                                "description": "",
+                                "$comment": "FORMT70",
+                                "type": "number"
+                              },
+                              "shifts_quantity": {
+                                "title": "Количество вахт",
+                                "description": "Количество вахт",
+                                "$comment": "QUANT148",
+                                "type": "number"
+                              },
+                              "lift_type": {
+                                "title": "Тип подъемника",
+                                "description": "",
+                                "$comment": "TYPE25",
+                                "type": "number"
+                              },
+                              "type_of_work_1": {
+                                "title": "Вид работы",
+                                "description": "",
+                                "type": "array",
+                                "items": {
+                                  "$id": "/databases/owpbaza4/owpbaza4_type_of_work_1",
+                                  "title": "Вид работы",
+                                  "description": "",
+                                  "type": "object",
+                                  "properties": {
+                                    "recording_code": {
+                                      "title": "Код записи",
+                                      "description": "",
+                                      "$comment": "KODZAP",
+                                      "type": "number"
+                                    },
+                                    "actual_operations_duration": {
+                                      "title": "Фактическая продолжительность операций",
+                                      "description": "",
+                                      "$comment": "DURAT01",
+                                      "type": "string"
+                                    },
+                                    "standart_operations_duration": {
+                                      "title": "Нормативная продолжительность операций",
+                                      "description": "",
+                                      "$comment": "DURAT02",
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "brigada2": {
+              "title": "Технар. Бриг. ПЗР",
+              "description": "Оригинал: Бригада ПЗР (BRIGADA2)",
+              "type": "array",
+              "items": {
+                "$id": "/databases/owpbaza4/owpbaza4_brigada_2",
+                "title": "Технар. Бриг. ПЗР",
+                "description": "Бригада подготовительно-заключительных работ",
+                "type": "object",
+                "properties": {
+                  "brigade_shifts_number": {
+                    "title": "Номер бригады-вахты",
+                    "description": "",
+                    "$comment": "BRGWAXT",
+                    "type": "number"
+                  },
+                  "well2": {
+                    "title": "Скважина №",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/owpbaza4/owpbaza4_well_2",
+                      "title": "Скважина",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "well_number": {
+                          "title": "Номер скажины",
+                          "description": "",
+                          "$comment": "NAME",
+                          "type": "string"
+                        },
+                        "ogpd_number": {
+                          "title": "Номер ЦДНГ",
+                          "description": "Номер цеха по добыче нефти и газа",
+                          "$comment": "SHOP1",
+                          "type": "number"
+                        },
+                        "repair_work_type": {
+                          "title": "Вид работы",
+                          "description": "",
+                          "$comment": "FORMT70",
+                          "type": "number"
+                        },
+                        "lift_type": {
+                          "title": "Тип подъемника",
+                          "description": "",
+                          "$comment": "TYPE",
+                          "type": "number"
+                        },
+                        "work_start": {
+                          "title": "Начало работы",
+                          "description": "Начало работы  (год, мес, число, часы)",
+                          "$comment": "DATE71",
+                          "type": "number"
+                        },
+                        "work_end": {
+                          "title": "Конец  работы",
+                          "description": "Конец работы  (год, мес, число, часы)",
+                          "$comment": "DATE72",
+                          "type": "number"
+                        },
+                        "type_of_work2": {
+                          "title": "Вид работы",
+                          "description": "",
+                          "type": "array",
+                          "items": {
+                            "$id": "/databases/owpbaza4/owpbaza4_type_of_work_2",
+                            "title": "Вид работы",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "recording_code": {
+                                "title": "Код записи",
+                                "description": "",
+                                "$comment": "KODZAP",
+                                "type": "number"
+                              },
+                              "actual_operations_duration": {
+                                "title": "Фактическая продолжительность операций",
+                                "description": "",
+                                "$comment": "DURAT01",
+                                "type": "string"
+                              },
+                              "standart_operations_duration": {
+                                "title": "Нормативная продолжительность операций",
+                                "description": "",
+                                "$comment": "DURAT02",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "planned_information": {
+              "title": "Плановые сведения",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/owpbaza4/owpbaza4_planned_information",
+                "title": "Плановые сведения",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "brigade_number": {
+                    "title": "Номер бригады",
+                    "description": "",
+                    "$comment": "NUMBER7",
+                    "type": "number"
+                  },
+                  "brigade_work_schedule_code": {
+                    "title": "Код графика работы БТРС",
+                    "description": "Код графика работы бригады по текущему ремонту скважин",
+                    "$comment": "GRAFBRIG",
+                    "type": "number"
+                  },
+                  "lifts_number": {
+                    "title": "Количество подъемников",
+                    "description": "",
+                    "$comment": "QUANT147",
+                    "type": "number"
+                  },
+                  "shifts_quantity": {
+                    "title": "Количество вахт",
+                    "description": "",
+                    "$comment": "QUANT148",
+                    "type": "number"
+                  },
+                  "well_servicings": {
+                    "title": "Текущие ремонты",
+                    "description": "",
+                    "$comment": "QUANT149",
+                    "type": "number"
+                  },
+                  "workovers": {
+                    "title": "Капитальные ремонты",
+                    "description": "",
+                    "$comment": "QUANT150",
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "skwag3": {
+        "title": "Скважина переходящая №",
+        "description": "",
+        "type": "array",
+        "items": {
+          "$id": "/databases/owpbaza4/owpbaza4_well_3",
+          "title": "Скважина переходящая",
+          "description": "Скважина, которая проходит через несколько горизонтов или пластов с разными характеристиками",
+          "type": "object",
+          "properties": {
+            "well_number": {
+              "title": "Номер скажины",
+              "description": "",
+              "$comment": "NAME",
+              "type": "number"
+            },
+            "ogpd_number": {
+              "title": "Номер ЦДНГ",
+              "description": "Номер цеха по добыче нефти и газа",
+              "$comment": "SHOP1",
+              "type": "number"
+            },
+            "brigade_number": {
+              "title": "Номер бригады",
+              "description": "",
+              "$comment": "NUMBER7",
+              "type": "number"
+            },
+            "repair_type": {
+              "title": "Вид ремонта",
+              "description": "",
+              "$comment": "FORM6",
+              "type": "number"
+            },
+            "well_operation_before_repair": {
+              "title": "Способ эксплуатации до ремонта",
+              "description": "Способ эксплуатации скважины до ремонта",
+              "$comment": "WAY11",
+              "type": "number"
+            },
+            "repair_start": {
+              "title": "Начало ремонта",
+              "description": "Начало ремонта (год, мес, число, часы)",
+              "$comment": "DATE71",
+              "type": "number"
+            },
+            "repair_end": {
+              "title": "Конец  ремонта",
+              "description": "Конец ремонта (год, мес, число, часы)",
+              "$comment": "DATE72",
+              "type": "number"
+            },
+            "repair_repeat": {
+              "title": "Повторность ремонта",
+              "description": "Повторность ремонта скважины",
+              "$comment": "SIGN42",
+              "type": "number"
+            },
+            "repair_work_type": {
+              "title": "Вид работы",
+              "description": "",
+              "$comment": "FORMT70",
+              "type": "number"
+            },
+            "shifts_quantity": {
+              "title": "Количество вахт",
+              "description": "Количество вахт",
+              "$comment": "QUANT148",
+              "type": "number"
+            },
+            "lift_type": {
+              "title": "Тип подъемника",
+              "description": "",
+              "$comment": "TYPE",
+              "type": "number"
+            },
+            "type_of_work3": {
+              "title": "Вид работы",
+              "description": "",
+              "type": "array",
+              "items": {
+                "$id": "/databases/owpbaza4/owpbaza4_type_of_work_3",
+                "title": "Вид работы",
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "recording_code": {
+                    "title": "Код записи",
+                    "description": "",
+                    "$comment": "KODZAP",
+                    "type": "number"
+                  },
+                  "actual_operations_duration": {
+                    "title": "Фактическая продолжительность операций",
+                    "description": "",
+                    "$comment": "DURAT01",
+                    "type": "string"
+                  },
+                  "standart_operations_duration": {
+                    "title": "Нормативная продолжительность операций",
+                    "description": "",
+                    "$comment": "DURAT02",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

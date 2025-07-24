@@ -1,0 +1,111 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_rescheduling",
+    "title": "Период планирования",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "quarter_month": {
+            "title": "Квартал-месяц",
+            "description": "",
+            "$comment": "NVNAMES",
+            "type": "number"
+        },
+        "well_servicing_duration": {
+            "title": "Плановая продолжит. текущего ремонта",
+            "description": "",
+            "$comment": "DURAT03",
+            "type": "string"
+        },
+        "workover_duration": {
+            "title": "Плановая продолжит. кап-ремонта",
+            "description": "",
+            "$comment": "DURAT15",
+            "type": "string"
+        },
+        "well_servicing_stay_duration": {
+            "title": "Плановая продолжит. пребывания скважин в текущем ремонте",
+            "description": "",
+            "$comment": "DURAT04",
+            "type": "number"
+        },
+        "workover_stay_duration": {
+            "title": "Плановая продолжит. пребывания скважин в кап-ремонте",
+            "description": "Плановая продолжительность пребывания скважин в капитальном ремонте",
+            "$comment": "DURAT05",
+            "type": "number"
+        },
+        "oilwell_service_crew_quantity": {
+            "title": "Количество бригад по ТРС",
+            "description": "Количество бригад по текущему ремонту скважин",
+            "$comment": "QUANT151",
+            "type": "number"
+        },
+        "workover_crew_quantity": {
+            "title": "Количество бригад по КРС",
+            "description": "Количество бригад по капитальному ремонту скважин",
+            "$comment": "QUANT152",
+            "type": "number"
+        },
+        "well_servicing_prepost_works_crew_quantity": {
+            "title": "Количество бригад ПЗР по ТРС",
+            "description": "Количество бригад подготовительно-заключительных работ по текущему ремонту скважин",
+            "$comment": "QUANT153",
+            "type": "number"
+        },
+        "workover_prepost_works_crew_quantity": {
+            "title": "Количество бригад ПЗР по КРС",
+            "description": "Количество бригад подготовительно-заключительных работ по капитальному ремонту скважин",
+            "$comment": "QUANT154",
+            "type": "number"
+        },
+        "oilwell_service_crew_staff_number": {
+            "title": "Численность персонала бригад ТРС",
+            "description": "Численность персонала бригад текущему ремонту скважин",
+            "$comment": "NUMBER27",
+            "type": "number"
+        },
+        "workover_crew_staff_number": {
+            "title": "Численность персонала бригад КРС",
+            "description": "Численность персонала бригад капитальному ремонту скважин",
+            "$comment": "NUMBER29",
+            "type": "number"
+        },
+        "well_servicing_prepost_works_crew_staff_number": {
+            "title": "Численность персонала бригад ПЗР по ТРС",
+            "description": "Численность персонала бригад подготовительно-заключительных работ по текущему ремонту скважин",
+            "$comment": "NUMBER28",
+            "type": "number"
+        },
+        "workover_prepost_works_crew_staff_number": {
+            "title": "Численность персонала бригад ПЗР по КРС",
+            "description": "Численность персонала бригад подготовительно-заключительных работ по капитальному ремонту скважин",
+            "$comment": "NUMBER30",
+            "type": "number"
+        },
+        "type_of_repair":{
+            "title":"Вид ремонта",
+            "description":"",
+            "type":"array",
+            "items":{
+                "$ref": "/databases/owpbaza4/owpbaza4_type_of_repair"
+            }
+        },
+        "brigada2":{
+            "title":"Технар. Бриг. ПЗР",
+            "description":"Оригинал: Бригада ПЗР (BRIGADA2)",
+            "type":"array",
+            "items":{
+                "$ref": "/databases/owpbaza4/owpbaza4_brigada_2"
+            }
+        },
+        "planned_information":{
+            "title":"Плановые сведения",
+            "description":"",
+            "type":"array",
+            "items":{
+                "$ref": "/databases/owpbaza4/owpbaza4_planned_information"
+            }
+        }
+    }
+}

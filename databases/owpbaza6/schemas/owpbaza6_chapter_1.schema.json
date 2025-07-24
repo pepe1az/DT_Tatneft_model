@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_chapter_1",
+  "title": "Раздел 1",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "entry_code ":{
+        "title":"Код записи",
+        "description":"",
+        "type":"number"
+    },
+    "worker_grade":{
+        "title":"Разряд рабочего",
+        "description":"",
+        "type":"number"
+    },
+    "worker_id_number":{
+        "title":"Табличный номер рабочего",
+        "description":"",
+        "type":"number"
+    }
+  }
+}

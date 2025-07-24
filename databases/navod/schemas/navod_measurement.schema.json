@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_measurement",
+    "title": "Замер",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "measurement_date": {
+        "title": "Дата замера",
+        "description": "",
+        "type": "string"
+      },
+      "measured_injectivity": {
+        "title": "Приёмистость по замерам",
+        "description": "",
+        "type": "number"
+      },
+        "wellhead_injection_pressure": {
+        "title": "Давление на устье нагнетательной скважины",
+        "description": "",
+        "type": "number"
+      }
+    }
+  }

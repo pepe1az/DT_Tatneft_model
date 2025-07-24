@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/navod/navod_distribution",
+    "title": "Распределение",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "object": {
+        "title": "Объект",
+        "description": "(КНС, горизонт, месторождение, площадь, участок, блок, вид агента)",
+        "type": "string"
+      },
+      "injection_volume":{
+        "title":"Объём закачки",
+        "description":"",
+        "type":"number"
+      }
+    }
+  }

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/ovpbaza1/ovpbaza1_root",
+  "title": "БД OVPBAZA1",
+  "description": "Историческая информация по текущему ремонту скважин (ТРС), разбитая по месторождениям",
+  "type": "array",
+  "items": {
+    "$id": "/databases/ovpbaza1/ovpbaza1_ngdu",
+    "title": "НГДУ",
+    "description": "Административная единица, контролирующая ряд скважин",
+    "type": "object",
+    "properties": {
+      "ngdu": {
+        "title": "НГДУ",
+        "description": "Нефтегазодобывающее управление",
+        "$comment": "NGDU",
+        "type": "number"
+      },
+      "cdng": {
+        "$id": "/databases/ovpbaza1/ovpbaza1_cdng",
+        "title": "ЦДНГ",
+        "description": "Цех добычи нефти и газа",
+        "type": "object",
+        "properties": {
+          "cdng": {
+            "title": "ЦДНГ",
+            "description": "Цех добычи нефти и газа",
+            "$comment": "SUBDIV71",
+            "type": "number"
+          },
+          "well": {
+            "title": "Скважины",
+            "description": "",
+            "type": "array",
+            "items": {
+              "$id": "/databases/ovpbaza1/ovpbaza1_well",
+              "title": "Скважина",
+              "description": "",
+              "type": "object",
+              "properties": {
+                "well_number": {
+                  "title": "Номер скважины",
+                  "description": "",
+                  "$comment": "NAME",
+                  "type": "number"
+                },
+                "field": {
+                  "title": "Месторождение",
+                  "description": "",
+                  "type": "number"
+                },
+                "square": {
+                  "title": "Площадь",
+                  "description": "",
+                  "type": "number"
+                },
+                "repairs": {
+                  "title": "Ремонты",
+                  "description": "",
+                  "type": "array",
+                  "items": {
+                    "$id": "/databases/ovpbaza1/ovpbaza1_date_nach",
+                    "title": "Номер ремонта",
+                    "description": "",
+                    "type": "object",
+                    "properties": {
+                      "repair_start_date": {
+                        "title": "Дата начала ремонта",
+                        "description": "",
+                        "$comment": "DATE71",
+                        "type": "string"
+                      },
+                      "operation_mode_before_repair": {
+                        "title": "Способ эксплуатации до ремонта",
+                        "description": "",
+                        "$comment": "WAY11",
+                        "type": "number"
+                      },
+                      "operation_mode_after_repair": {
+                        "title": "Способ эксплуатации после ремонта",
+                        "description": "",
+                        "$comment": "WAY12",
+                        "type": "number"
+                      },
+                      "repair_end_date": {
+                        "title": "Дата завершения ремонта",
+                        "description": "",
+                        "$comment": "DATE72",
+                        "type": "string"
+                      },
+                      "operation_mode_after_repair_1": {
+                        "title": "Вид работы",
+                        "description": "",
+                        "$comment": "FORM71",
+                        "type": "number"
+                      },
+                      "operation_mode_after_repair_2": {
+                        "title": "Вид работы",
+                        "description": "",
+                        "$comment": "FORM72",
+                        "type": "number"
+                      },
+                      "operation_mode_after_repair_3": {
+                        "title": "Вид работы",
+                        "description": "",
+                        "$comment": "FORM73",
+                        "type": "number"
+                      },
+                      "repair_reason": {
+                        "title": "Причина ремонта",
+                        "description": "",
+                        "$comment": "CAUSE5",
+                        "type": "number"
+                      },
+                      "equipment_type": {
+                        "title": "Вид оборудования",
+                        "description": "",
+                        "type": "array",
+                        "items": {
+                          "$id": "/databases/ovpbaza1/ovpbaza1_equipment_type",
+                          "title": "Вид оборудования",
+                          "description": "",
+                          "type": "object",
+                          "properties": {
+                            "record_code": {
+                              "title": "Код записи",
+                              "description": "",
+                              "$comment": "KODZAP",
+                              "type": "number"
+                            },
+                            "code": {
+                              "title": "Код, значение",
+                              "description": "",
+                              "$comment": "KODZNACH",
+                              "type": "number"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

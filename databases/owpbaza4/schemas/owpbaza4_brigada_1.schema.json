@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_brigada_1",
+    "title": "Бригада",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "brigade_number": {
+            "title": "Номер бригады",
+            "description": "",
+            "$comment": "NUMBER7",
+            "type": "number"
+        },
+        "well1":{
+            "title": "Скважина №",
+            "description": "",
+            "type": "array",
+            "items": {
+                "$ref": "/databases/owpbaza4/owpbaza4_well_1"
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/databases/owpbaza4/owpbaza4_type_of_work_2",
+    "title": "Вид работы",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "recording_code": {
+            "title": "Код записи",
+            "description": "",
+            "$comment": "KODZAP",
+            "type": "number"
+        },
+        "actual_operations_duration": {
+            "title": "Фактическая продолжительность операций",
+            "description": "",
+            "$comment": "DURAT01",
+            "type": "string"
+        },
+        "standart_operations_duration": {
+            "title": "Нормативная продолжительность операций",
+            "description": "",
+            "$comment": "DURAT02",
+            "type": "string"
+        }
+    }
+}

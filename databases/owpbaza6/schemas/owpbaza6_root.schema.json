@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/owpbaza6/owpbaza6_root",
+  "title": "БД OWPBAZA6",
+  "description": "Учётно-отчётная информация по трудовым и материальным затратам выездных ремонтных бригад ПРЦЭО",
+  "type": "array",
+  "items": {
+    "$ref": "/databases/owpbaza6/owpbaza6_enterprise"
+  }
+}

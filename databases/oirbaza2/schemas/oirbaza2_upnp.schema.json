@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/oirbaza2/oirbaza2_upnp",
+  "title": "УТПНП",
+  "description": "Данные по УТПНП и КРС",
+  "type": "object",
+  "properties": {
+    "upnp_krs": {
+      "title": "УТПНП и КРС",
+      "description": "Управление техническим подъёмом нефти на поверхность и Капитальный ремонт скважин",
+      "$comment": "UPNP",
+      "type": "string"
+    },
+    "actseg": {
+      "title": "Акт ремонта скважины",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_well_repair_act"
+      }
+    },
+    "planseg": {
+      "title": "План ремонтов скважин",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_well_repair_plan"
+      }
+    },
+    "zakonseg": {
+      "title": "Завершённые ремонты скважин",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_completed_well_repairs"
+      }
+    },
+    "brigseg": {
+      "title": "Показатели мощности",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_capacity"
+      }
+    },
+    "brvseg": {
+      "title": "Баланс рабочего времени",
+      "description": "",
+      "type": "array",
+      "items": {
+      "$ref": "/databases/oirbaza2/oirbaza2_work_time_balance"
+      }
+    }
+  }
+}
+
