@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/databases/forms/forms_root",
+  "$comment": "",
+  "title": "Формы",
+  "description": "Отражает информацио о воходных/выходных формах",
+  "type": "array",
+  "properties": {
+    "ТН444_Ш80_Ш01": {
+      "title": "ТН444_Ш80_Ш01",
+      "type": "array"
+    },
+    "ТН444_Ш80_Ш02": {
+      "title": "ТН444_Ш80_Ш02",
+      "type": "array"
+    }
+  }
+}

@@ -472,6 +472,24 @@
         }
       }
     },
+    "forms": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "/databases/forms/forms_root",
+      "$comment": "",
+      "title": "Формы",
+      "description": "Отражает информацио о воходных/выходных формах",
+      "type": "array",
+      "properties": {
+        "ТН444_Ш80_Ш01": {
+          "title": "ТН444_Ш80_Ш01",
+          "type": "array"
+        },
+        "ТН444_Ш80_Ш02": {
+          "title": "ТН444_Ш80_Ш02",
+          "type": "array"
+        }
+      }
+    },
     "nakop": {
       "$schema": "https://json-schema.org/draft/2020-12/schema",
       "$id": "/databases/nakop/nakop_root",
@@ -1982,42 +2000,36 @@
                   "title": "Дата нанесения внутреннего покрытия",
                   "description": "",
                   "$comment": "DATE 82",
-                  "form": "ТН444 Ш80 ШО1",
                   "type": "number"
                 },
                 "operation_start_date": {
                   "title": "Дата начала эксплуатации",
                   "description": "",
                   "$comment": "DATE 83",
-                  "type": "number",
-                  "form": "ТН444 Ш80 ШО1"
+                  "type": "number"
                 },
                 "internal_coating_type": {
                   "title": "Вид покрытия внутренней поверхности",
                   "description": "",
                   "$comment": "FORM 40",
-                  "form": "ТН444 Ш80 ШО1",
                   "type": "number"
                 },
                 "coating_application_method": {
                   "title": "Способ нанесения покрытия",
                   "description": "",
                   "$comment": "WAY 14",
-                  "form": "ТН444 Ш80 ШО1",
                   "type": "number"
                 },
                 "coating_composition": {
                   "title": "Состав, схема покрытия",
                   "description": "",
                   "$comment": "COMPOS 01",
-                  "form": "ТН444 Ш80 ШО1",
                   "type": "number"
                 },
                 "coating_producer": {
                   "title": "Предприятие, производившее покрытие",
                   "description": "",
                   "$comment": "ENTERPR 8",
-                  "form": "ТН444 Ш80 ШО1",
                   "type": "number"
                 }
               }
@@ -2292,7 +2304,8 @@
                       "water_cut": {
                         "title": "Процент обводнённости",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН444_Ш80_Ш02 , ТН444_Ш80_Ш01"
                       }
                     }
                   }

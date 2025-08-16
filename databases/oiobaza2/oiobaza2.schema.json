@@ -99,7 +99,8 @@
                   "water_cut": {
                     "title": "Процент обводнённости",
                     "description": "",
-                    "type": "number"
+                    "type": "number",
+                    "form": "ТН444_Ш80_Ш02 , ТН444_Ш80_Ш01"
                   }
                 }
               }
