@@ -10,7 +10,7 @@
       "$id": "/databases/catalog/catalog_root",
       "title": "БД Каталог",
       "description": "Данные о конструкции скважин, геологических условиях, обработки пластов",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/catalog/catalog_ngdu",
         "title": "НГДУ",
@@ -20,7 +20,8 @@
           "ngdu": {
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "cdng_cppd": {
             "title": "ЦДНГ, ЦППД",
@@ -45,13 +46,15 @@
                 "field": {
                   "title": "Месторождение",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "area": {
                   "title": "Площадь",
                   "description": "",
-                  "$comment": "Корректен ли перевод?",
-                  "type": "string"
+                  "$comment": "",
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "enterprise_urb_ubr": {
                   "title": "Предприятие пробуренной скважины",
@@ -73,38 +76,45 @@
                 "area_nature": {
                   "title": "Характер местности",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "neighbour_drill_count": {
                   "title": "Количество соседних скважин",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "drilled_slaughter": {
                   "title": "Забой пробуренный",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "artificial_slaughter": {
                   "title": "Забой искусственный",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "slaughter_deviation": {
                   "title": "Отклонение забоя от устья",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "azimuth_deviation": {
                   "title": "Азимут отклонения",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "trunk_extension": {
                   "title": "Удлинение ствола до прод. горизонта",
                   "description": "",
                   "$comment": "уточнить название и ключ",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "x_coords": {
                   "title": "Координаты забоя X",
@@ -117,41 +127,48 @@
                   "type": "number"
                 },
                 "rotor_altitude": {
-                  "title": "Альтитуда от отопа ротора",
+                  "title": "Альтитуда от стола ротора",
                   "description": "",
-                  "$comment": "уточнить 'отоп'",
-                  "type": "number"
+                  "$comment": "'",
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "clutch_altitude": {
                   "title": "Альтитуда муфты",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "flange_altitude": {
                   "title": "Альтитуда фланца",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "drilled_wellbore_diameter": {
                   "title": "Диаметр пробуренного ствола скважины",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "fluid_name": {
                   "title": "Наименование жидкости на которой вскрыт горизонт",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "fluid_specific_weight": {
                   "title": "Удельный вес жидкости",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "water_loss": {
                   "title": "Водоотдача",
                   "description": "",
-                  "$comment": "уточнить корректность перевода",
-                  "type": "number"
+                  "$comment": "",
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "horizons": {
                   "title": "Горизонты",
@@ -183,17 +200,20 @@
                           "roof_depth": {
                             "title": "Глубина залегания кровли пластов",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "bottom_depth": {
                             "title": "Глубина залегания подошвы пластов",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "reservoir_type": {
                             "title": "Тип коллектора",
                             "description": "",
-                            "type": "string"
+                            "type": "string",
+                            "form": "ТН131 Ш81 Ш38"
                           },
                           "oil_saturation_thickness": {
                             "title": "Нефтенасыщенная мощность",
@@ -203,7 +223,8 @@
                           "water_saturation_thickness": {
                             "title": "Водонасыщенная мощность",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "initial_oil_water_contact": {
                             "title": "Абсол. отм. нач. верхней нефтеносной конструкции",
@@ -214,22 +235,26 @@
                           "porosity": {
                             "title": "Пористость",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "permeability": {
                             "title": "Проницаемость",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "hydraulic_conductivity": {
                             "title": "Гидропроводность",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "piezoconductivity": {
                             "title": "Пьезопроводность",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "carbonate_content": {
                             "title": "Карбонатность",
@@ -239,7 +264,8 @@
                           "reservoir_oil_saturation": {
                             "title": "Нефтенасыщенность пласта",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш39"
                           },
                           "water_breakthrough_date": {
                             "title": "Дата подвода воды",
@@ -289,12 +315,14 @@
                             "perforator_type": {
                               "title": "Тип перфоратора",
                               "description": "",
-                              "type": "string"
+                              "type": "string",
+                              "form": "ТН131 Ш81 Ш37"
                             },
                             "perforation_density": {
                               "title": "Плотность перфорации",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш37"
                             }
                           }
                         }
@@ -320,37 +348,44 @@
                       "casing_code": {
                         "title": "Код колонны",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "casing_diameter": {
                         "title": "Диаметр колонны",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "descent_depth": {
                         "title": "Глубина спуска",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "strength_category": {
                         "title": "Категория прочности",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "wall_thickness": {
                         "title": "Толщина стенки",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "casing_top_depth": {
                         "title": "Верх колонны-летучки",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "casing_material": {
                         "title": "Материал колонны-летучки",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "tubing_cementing": {
                         "$id": "/databases/catalog/catalog_tubing_cementing",
@@ -361,43 +396,51 @@
                           "cement_slurry_density": {
                             "title": "Удельный вес цементного раствора",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "spacer_fluid_density": {
                             "title": "Удельный вес продавочной жидкости",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "max_pressure_at_plug_seat": {
                             "title": "Максимальное давление в момент посадки пробки",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "cemented_bottom_position": {
                             "title": "Расположение зацементированного низа",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "cement_column_lift_height": {
                             "title": "Высота подъема цем. колонны за экспл. кол. от башмака",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "sealing_check_method": {
                             "title": "Способ определения герметичности вкопанной колонны",
                             "description": "",
                             "$comment": "CC6",
-                            "type": "string"
+                            "type": "string",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "pressure_test_value": {
-                            "title": "Давление опресовки",
+                            "title": "Давление опрессовки",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           },
                           "level_reduction_depth": {
                             "title": "Глубина снижения уровня",
                             "description": "",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН131 Ш81 Ш41"
                           }
                         }
                       }
@@ -417,27 +460,32 @@
                       "casing_code": {
                         "title": "Код колонны",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "casing_diameter": {
                         "title": "Диаметр колонны",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "setting_depth": {
                         "title": "Глубина спуска",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "wall_thickness": {
                         "title": "Толщина стенки",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш42"
                       },
                       "cement_ring_lift_height": {
                         "title": "Высота подъема цем. кольца от башмака колонны",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш41"
                       }
                     }
                   }
@@ -456,12 +504,14 @@
                       "curvature": {
                         "title": "Кривизна",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш43"
                       },
                       "curvature_depth": {
                         "title": "Глубина расположения",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш43"
                       }
                     }
                   }
@@ -477,12 +527,993 @@
       "$id": "/databases/forms/forms_root",
       "$comment": "",
       "title": "Формы",
-      "description": "Отражает информацио о воходных/выходных формах",
-      "type": "array",
+      "description": "Отражает информацио о входных/выходных формах",
+      "type": "",
       "properties": {
         "ТН444_Ш80_Ш01": {
           "title": "ТН444 Ш80 Ш01",
-          "type": "array"
+          "type": "array",
+          "items": {
+            "$id": "/databases/forms/forms_root/ТН444_Ш80_Ш01",
+            "comment": "",
+            "title": "ТН444 Ш80 Ш01",
+            "form": "СВЕДЕНИЯ о внутренних защитных покрытиях трубопроводов",
+            "type": "",
+            "properties": {
+              "start_trub_coords": {
+                "title": "Координаты т/п. в начале",
+                "description": "Координаты трубопровода в начале",
+                "type": "string"
+              },
+              "end_trub_coords": {
+                "title": "Координаты т/п. в конце",
+                "description": "Координаты трубопровода в конце",
+                "type": "string"
+              },
+              "internal_coating_application_date": {
+                "title": "Дата нанесения покрытия",
+                "description": "",
+                "type": "number"
+              },
+              "operation_start_date": {
+                "title": "Дата начала эксплуатации",
+                "description": "",
+                "type": "number"
+              },
+              "internal_coating_type": {
+                "title": "Вид покрытия",
+                "description": "",
+                "type": "number"
+              },
+              "coating_application_method": {
+                "title": "Способ нанесения",
+                "description": "",
+                "type": "number"
+              },
+              "coating_composition": {
+                "title": "Схема или материал покрытия",
+                "description": "",
+                "type": "number"
+              },
+              "coating_producer": {
+                "title": "Предприятие наносившее покрытие",
+                "description": "",
+                "type": "number"
+              }
+            }
+          }
+        },
+        "ТН131 Ш81": {
+          "title": "ТН131 Ш81",
+          "type": "array",
+          "items": {
+            "$id": "/databases/forms/forms_root/ТН131_Ш81",
+            "comment": "",
+            "title": "ТН131 Ш81",
+            "form": "Сведения о вводимой (переводимой, корректируемой) скважине",
+            "type": "",
+            "properties": {
+              "ТН131 Ш81 Ш31": {
+                "title": "ТН131_Ш81_Ш31",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш31",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш31",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "ceh_number": {
+                    "title": "Номер цеха",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "KNS_number": {
+                      "title": "Номер КНС",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "water_pipe_number": {
+                      "title": "Номер водовода",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "category": {
+                      "title": "Категория",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "condition": {
+                      "title": "Состояние",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "injection_type": {
+                      "title": "Способ закачки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "pick-up_rate": {
+                      "title": "Приемистость",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "well_downtime_reason": {
+                      "title": "Причина простоя скв-н",
+                      "description": "Причина простоя скважин(ы)",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш32": {
+                "title": "ТН131_Ш81_Ш32",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш32",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш32",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "ceh_number": {
+                    "title": "Номер цеха",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "water_pipe_number": {
+                      "title": "Номер водовода",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "KNS_type": {
+                      "title": "Тип КНС",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "KNS_id": {
+                      "title": "Условн. номер КНС",
+                      "description": "Условный номер КНС",
+                      "type": "number"
+                    },
+                    "water_pipe_id": {
+                      "title": "Условн. номер водовода",
+                      "description": "Условный номер водовода",
+                      "type": "number"
+                    },
+                    "water_pipe_downtime_reason": {
+                      "title": "Причина простоя водовода",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш33": {
+                "title": "ТН131_Ш81_Ш33",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш33",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш33",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "KNS_number": {
+                    "title": "Номер КНС",
+                    "description": "",
+                    "type": "string"
+                    },
+                    "water_pipe_number": {
+                      "title": "Номер водовода",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "flow_meter_type": {
+                      "title": "Тип расходом.",
+                      "description": "Тип расходомера",
+                      "type": "number"
+                    },
+                    "flow_meter_coefficient": {
+                      "title": "Коэффициент расходомера",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш34": {
+                "title": "ТН131_Ш81_Ш34",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш34",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш34",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "wellhead_condition": {
+                    "title": "Состояние устья",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "condition_of_the_production_column": {
+                      "title": "Состояние э/кол.",
+                      "description": "Состояние эксплуатационной колонны",
+                      "type": "number"
+                    },
+                    "plot_number": {
+                      "title": "Номер участка",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "PRS_team_number": {
+                      "title": "Номер бригады ПРС",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+                "ТН131 Ш81 Ш35": {
+                "title": "ТН131_Ш81_Ш35",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш35",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш35",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "horizon_code": {
+                    "title": "Код горизонта",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "flooding_type": {
+                      "title": "Вид заводнения",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "injection_row_code": {
+                      "title": "Код наг. ряда",
+                      "description": "Код нагнетательнго ряда",
+                      "type": "number"
+                    },
+                    "distribution_percentage": {
+                      "title": "% распределения в гор.",
+                      "description": "Процент распределения воды в горизонте",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш36": {
+                "title": "ТН131_Ш81_Ш36",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш36",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш36",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "horizon_code": {
+                    "title": "Код горизонта",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "field_code": {
+                      "title": "Код месторождения",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "square_code": {
+                      "title": "Код площади",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "site_code": {
+                      "title": "Код участка",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "block_number": {
+                      "title": "Номер блока",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "ngdu": {
+                      "title": "НГДУ",
+                      "description": "",
+                      "type": "number",
+                      "form": "ТН131 Ш81 Ш36"
+                    },
+                    "distribution_percentage": {
+                      "title": "% распределения в блок",
+                      "description": "Процент распределения в блок",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+                "ТН131 Ш81 Ш37": {
+                "title": "ТН131_Ш81_Ш37",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш37",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш37",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "reservoir_code": {
+                    "title": "Код пласта",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "perforation_interval_from": {
+                      "title": "Интервалы перфор. от",
+                      "description": "Интервалы перфорации от",
+                      "type": "number"
+                    },
+                    "perforation_interval_up_to": {
+                      "title": "Интервалы перфор. до",
+                      "description": "Интервалы перфорации до",
+                      "type": "number"
+                    },
+                    "perforation_density": {
+                      "title": "Плотность перфорац. кол/ПМ",
+                      "description": "Плотность перфорации кол/ПМ",
+                      "type": "number"
+                    },
+                    "perforator_type": {
+                      "title": "Тип перфорат.",
+                      "description": "Тип перфоратора",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+                "ТН131 Ш81 Ш38": {
+                "title": "ТН131_Ш81_Ш38",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш38",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш38",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "reservoir_code": {
+                    "title": "Код пласта",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "lens_number": {
+                      "title": "Номер линзы",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "collector_type": {
+                      "title": "Тип коллек.",
+                      "description": "Тип коллектора",
+                      "type": "number"
+                    },
+                    "distribution_percentage": {
+                      "title": "% распредел. в пласт",
+                      "description": "Процент распределения в пласте",
+                      "type": "number"
+                    },
+                    "reservoir_outflow_percentage": {
+                      "title": "% оттока в пласте",
+                      "description": "Процент оттока в пласте",
+                      "type": "number"
+                    },
+                    "fluid_migration_rate_to_another_horizon": {
+                      "title": "% ухода в другой гор-т",
+                      "description": "Процент ухода в другой горизонт",
+                      "type": "number"
+                    },
+                    "another_horizon_code": {
+                      "title": "Код другого горизонта",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reservoir_change_sign": {
+                      "title": "Признак изменения пласта",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "sign_top": {
+                      "title": "Признак верха",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш39": {
+                "title": "ТН131_Ш81_Ш39",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш39",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш39",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "reservoir_code": {
+                    "title": "Код пласта",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "roof_depth": {
+                      "title": "Глубина кровли, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "bottom_depth": {
+                      "title": "Глубина подошвы, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "oil_saturation_thickness": {
+                      "title": "Эффект нефтен. мощн., м",
+                      "description": "Эффект нефтенасыщенной мощности, м",
+                      "type": "number"
+                    },
+                    "water_saturation_thickness": {
+                      "title": "Водон. мощн., м",
+                      "description": "Водонасыщенная мощность, м",
+                      "type": "number"
+                    },
+                    "absolute_mark_original_VNK": {
+                      "title": "Абс. отметка первонач. ВНК, м",
+                      "description": "Абсолютная отметка первоначального ВНК",
+                      "type": "number"
+                    },
+                    "absolute_mark_current_VNK": {
+                      "title": "Абс. отметка ВНК текущ., м",
+                      "description": "Абсолютная отметка ВНК текущего, м",
+                      "type": "number"
+                    },
+                    "porosity": {
+                      "title": "Пористость, %",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "permeability": {
+                      "title": "Проницаем., млдарси",
+                      "description": "Проницаемость",
+                      "type": "number"
+                    },
+                    "hydraulic_conductivity": {
+                      "title": "Гидропроводность, д.см/СП",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "piezoconductivity": {
+                      "title": "Пьезопровод., см2/сек",
+                      "description": "Пьезопроводность",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш40": {
+                "title": "ТН131_Ш81_Ш40",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш40",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш40",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "ubr_urb": {
+                    "title": "УБР/УРБ",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "neighbour_well_count": {
+                      "title": "Количество соседних скважин",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "drilled_altitude": {
+                      "title": "Забой|Альтитуда пробур., м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "artificial_altitude": {
+                      "title": "Забой|Альтитуда искусств., м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "rotor_altitude": {
+                      "title": "Забой|Альтитуда от стола ротора, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "clutch_altitude": {
+                      "title": "Забой|Альтитуда муфты, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "flange_altitude": {
+                      "title": "Забой|Альтитуда фланца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "bottom_deviation_wellhead": {
+                      "title": "Отклонение забоя от устья, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "azimuth_deviation": {
+                      "title": "Азимут отклонения, град",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "lengthening_productive_horizon": {
+                      "title": "Удлинение ствола до продуктивн. горизонта, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "area_nature": {
+                      "title": "Характер местности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "drilled_wellbore_diameter": {
+                      "title": "Диаметр пробуренного ствола, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "horizon_exposed_liquid": {
+                      "title": "Жидкость на которой вскрыт горизонт",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "specific_gravity_of_liquid": {
+                      "title": "Уд. вес жидкости, г/см3",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "water_recovery": {
+                      "title": "Водоотдача",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш41": {
+                "title": "ТН131_Ш81_Ш41",
+                "description": "Цементирование эксплуатационной колонны",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш41",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш41",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "cement_specific_weight": {
+                    "title": "Уд. вес цементного раствора, г./см3",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "fluid_specific_weight": {
+                      "title": "Уд. вес продавочной жидкости, г./см3",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "stopper_max_pressure": {
+                      "title": "Макс. давление при посадке пробки _стоп_, кг/см2",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "height_cement_lift_behind_column": {
+                      "title": "Высота подъема цем. кольца за колонной, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "cement_ring_condition_below_reservoir_bottom": {
+                      "title": "Расположение зацем. низа колонны",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "method_determining_tightness": {
+                      "title": "Способ определения герметичности колонны",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "column_cremping_pressure": {
+                      "title": "Давление опресс. э/колонны, кг/см3",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "level_reduction_depth": {
+                      "title": "Глубина снижения уровня, м",
+                      "description": "",
+                      "type": "number"
+                    }
+                    }
+                  }
+                },
+                "ТН131 Ш81 Ш42": {
+                "title": "ТН131_Ш81_Ш42",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш42",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш42",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "column_code": {
+                    "title": "Код колонны",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "fly-column_diameter": {
+                      "title": "Колонна-летучка|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_depth": {
+                      "title": "Колонна-летучка|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_thickness": {
+                      "title": "Колонна-летучка|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_lift_height": {
+                      "title": "Колонна-летучка|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_endurance_category": {
+                      "title": "Колонна-летучка|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_material_fly": {
+                      "title": "Колонна-летучка|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "fly-column_top_fly": {
+                      "title": "Колонна-летучка|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_diameter": {
+                      "title": "Направление|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_depth": {
+                      "title": "Направление|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_thickness": {
+                      "title": "Направление|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_lift_height": {
+                      "title": "Направление|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_endurance_category": {
+                      "title": "Направление|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_material_fly": {
+                      "title": "Направление|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "direction_top_fly": {
+                      "title": "Направление|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_diameter": {
+                      "title": "Кондуктор|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_depth": {
+                      "title": "Кондуктор|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_thickness": {
+                      "title": "Кондуктор|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_lift_height": {
+                      "title": "Кондуктор|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_endurance_category": {
+                      "title": "Кондуктор|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_material_fly": {
+                      "title": "Кондуктор|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "conductor_top_fly": {
+                      "title": "Кондуктор|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_diameter": {
+                      "title": "Технич. колонна|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_depth": {
+                      "title": "Технич. колонна|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_thickness": {
+                      "title": "Технич. колонна|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_lift_height": {
+                      "title": "Технич. колонна|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_endurance_category": {
+                      "title": "Технич. колонна|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_material_fly": {
+                      "title": "Технич. колонна|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "technical_column_top_fly": {
+                      "title": "Технич. колонна|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_diameter": {
+                      "title": "Дополнительн. колонна|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_depth": {
+                      "title": "Дополнительн. колонна|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_thickness": {
+                      "title": "Дополнительн. колонна|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_lift_height": {
+                      "title": "Дополнительн. колонна|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_endurance_category": {
+                      "title": "Дополнительн. колонна|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_material_fly": {
+                      "title": "Дополнительн. колонна|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "additional_column_top_fly": {
+                      "title": "Дополнительн. колонна|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_diameter": {
+                      "title": "Эксплуатац. колонна 1|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_depth": {
+                      "title": "Эксплуатац. колонна 1|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_thickness": {
+                      "title": "Эксплуатац. колонна 1|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_lift_height": {
+                      "title": "Эксплуатац. колонна 1|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_endurance_category": {
+                      "title": "Эксплуатац. колонна 1|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_material_fly": {
+                      "title": "Эксплуатац. колонна 1|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_1_column_top_fly": {
+                      "title": "Эксплуатац. колонна 1|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_diameter": {
+                      "title": "Эксплуатац. колонна 2|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_depth": {
+                      "title": "Эксплуатац. колонна 2|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_thickness": {
+                      "title": "Эксплуатац. колонна 2|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_lift_height": {
+                      "title": "Эксплуатац. колонна 2|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_endurance_category": {
+                      "title": "Эксплуатац. колонна 2|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_material_fly": {
+                      "title": "Эксплуатац. колонна 2|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_2_column_top_fly": {
+                      "title": "Эксплуатац. колонна 2|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_diameter": {
+                      "title": "Эксплуатац. колонна 3|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_depth": {
+                      "title": "Эксплуатац. колонна 3|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_thickness": {
+                      "title": "Эксплуатац. колонна 3|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_lift_height": {
+                      "title": "Эксплуатац. колонна 3|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_endurance_category": {
+                      "title": "Эксплуатац. колонна 3|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_material_fly": {
+                      "title": "Эксплуатац. колонна 3|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_3_column_top_fly": {
+                      "title": "Эксплуатац. колонна 3|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_diameter": {
+                      "title": "Эксплуатац. колонна 4|Диаметр, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_depth": {
+                      "title": "Эксплуатац. колонна 4|Глубина спуска, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_thickness": {
+                      "title": "Эксплуатац. колонна 4|Толщина стенки, мм",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_lift_height": {
+                      "title": "Эксплуатац. колонна 4|Высота подъема цементного кольца, м",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_endurance_category": {
+                      "title": "Эксплуатац. колонна 4|Категория прочности",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_material_fly": {
+                      "title": "Эксплуатац. колонна 4|Материал колонны-летучки",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "expl_4_column_top_fly": {
+                      "title": "Эксплуатац. колонна 4|Верх колонны-летучки, м",
+                      "description": "",
+                      "type": "number"
+                    }
+                    
+                  }
+                }
+              },
+              "ТН131 Ш81 Ш43": {
+                "title": "ТН131_Ш81_Ш43",
+                "description": "",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН131_Ш81/ТН131_Ш81_Ш43",
+                  "$comment": "",
+                  "title": "ТН131 Ш81 Ш43",
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "curvature": {
+                    "title": "Кривизна",
+                    "description": "",
+                    "type": "number"
+                    },
+                    "curvature_depth": {
+                      "title": "Глубина расположения кривизны",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -491,7 +1522,7 @@
       "$id": "/databases/nakop/nakop_root",
       "title": "БД НАКОП",
       "description": "Сведения об историко-справочной информации по добыче нефти и закачке воды по месяцам с начала года и разработки, отражает состояние разработки нефтяных месторождении, площадей",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/nakop/nakop_ngdu",
         "title": "НГДУ",
@@ -501,7 +1532,8 @@
           "ngdu": {
             "title": "НГДУ",
             "description": "Нефтегазодобывающее  Управление",
-            "type": "integer"
+            "type": "integer",
+            "form": "ТН131 Ш81 Ш36"
           },
           "well_recovery": {
             "title": "Скважина, добыча",
@@ -532,12 +1564,14 @@
                 "category": {
                   "title": "Категория",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "status": {
                   "title": "Состояние",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "operation_method": {
                   "title": "Способ эксплуатации",
@@ -568,37 +1602,44 @@
                     "code": {
                       "title": "Код пласта",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                     },
                     "field": {
                       "title": "Месторождение",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "area": {
                       "title": "Площадь",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "zone": {
                       "title": "Участок",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "block": {
                       "title": "Блок",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "ngdu_code": {
                       "title": "Код НГДУ",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "lens_number": {
                       "title": "Номер линзы",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш38"
                     },
                     "reservoir_type_code": {
                       "title": "Код типа коллектора",
@@ -608,7 +1649,8 @@
                     "modification_flag": {
                       "title": "Признак изменения пласта",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш38"
                     },
                     "waterType": {
                       "title": "Вид добываемой воды",
@@ -753,7 +1795,8 @@
                     "reservoir_code": {
                       "title": "Код пласта (горизонта)",
                       "description": "",
-                      "type": "number"
+                      "type": "number",
+                      "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                     },
                     "end_date": {
                       "title": "Дата окончания ГТМ",
@@ -832,17 +1875,20 @@
                 "category": {
                   "title": "Категория",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "status": {
                   "title": "Состояние",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "injection_method": {
                   "title": "Способ закачки",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "drilling_start_date": {
                   "title": "Дата ввода скв. из бурения",
@@ -867,27 +1913,32 @@
                       "code": {
                         "title": "Код пласта",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                       },
                       "field": {
                         "title": "Месторождение",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "area": {
                         "title": "Площадь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "zone": {
                         "title": "Участок",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "block": {
                         "title": "Блок",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "agent_type": {
                         "title": "Вид агента",
@@ -897,7 +1948,8 @@
                       "ngdu_code": {
                         "title": "Код НГДУ",
                         "description": " Код нефтегазодобывающего  управления",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "agent_injection_start_date": {
                         "title": "Дата начала закачки агента",
@@ -907,7 +1959,8 @@
                       "lens_number": {
                         "title": "Номер линзы",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш38"
                       },
                       "reservoir_type_code": {
                         "title": "Код типа коллектора",
@@ -917,7 +1970,8 @@
                       "modification_flag": {
                         "title": "Признак изменения пласта",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш38"
                       },
                       "december_observation": {
                         "title": "Приемистость в декабре",
@@ -1102,7 +2156,8 @@
                       "reservoir_code": {
                         "title": "Код пласта (горизонта)",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                       },
                       "end_date": {
                         "title": "Дата окончания ГТМ",
@@ -1157,7 +2212,7 @@
       "$comment": "",
       "title": "БД НАВОД",
       "description": "Отражает работу нагнетательных скважин, дает сведения о закачке реагентов, простоях водоводов и проведенных технических мероприятиях",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/navod/navod_ngdu",
         "title": "НГДУ",
@@ -1167,7 +2222,8 @@
           "ngdu": {
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "date_of_last_calculation": {
             "title": "Дата последнего расчёта",
@@ -1187,17 +2243,20 @@
                 "monitoring_well_number": {
                   "title": "Номер КНС, водовода",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32, ТН131 Ш81 Ш33"
                 },
                 "monitoring_well_type": {
                   "title": "Тип КНС",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш32"
                 },
                 "conditional_number_monitoring_well": {
                   "title": "Условный номер КНС, водовода",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш32"
                 },
                 "date_of_last_adjustment": {
                   "title": "Дата последней корректировки",
@@ -1222,12 +2281,14 @@
                       "flow_meter_type": {
                         "title": "Тип расходомера",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш33"
                       },
                       "flow_meter_coefficient": {
                         "title": "Коэффициент расходомера",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш33"
                       }
                     }
                   }
@@ -1354,12 +2415,14 @@
                       "watere_pipeline_number": {
                         "title": "Номер водовода",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32, ТН131 Ш81 Ш33"
                       },
                       "sign_of_downtime_in_a_well_or_water_pipeline": {
                         "title": "Признак простоя по скважине или водовода",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш32"
                       }
                     }
                   }
@@ -1395,17 +2458,20 @@
                 "category": {
                   "title": "Категория",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "state": {
                   "title": "Состояние",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "download_method": {
                   "title": "Способ закачки",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "injectivity": {
                   "title": "Приёмистость",
@@ -1445,12 +2511,14 @@
                       "number_kns_and_water_pipeline": {
                         "title": "Номер КНС, водовода",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32, ТН131 Ш81 Ш33"
                       },
                       "injectivity": {
-                        "title": "Приёмистость",
+                        "title": "Приемистость",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш31"
                       },
                       "segment_closing_date": {
                         "title": "Дата закрытия сегмента",
@@ -1488,7 +2556,8 @@
                       "sign_for_water_pipe_downtime_kms": {
                         "title": "Признак простоя по водоводу КНС",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш32"
                       }
                     }
                   }
@@ -1529,17 +2598,20 @@
                       "horizon_code": {
                         "title": "Код горизонта",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш35, ТН131 Ш81 Ш36"
                       },
                       "flooding_type": {
                         "title": "Вид заводнения",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш35"
                       },
                       "injection_row_code": {
                         "title": "Код нагнетательнго ряда",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш35"
                       },
                       "horizont_acceptability": {
                         "title": "Приемлимость по горизонту",
@@ -1559,47 +2631,55 @@
                             "reservoir_code": {
                               "title": "Код пласта",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                             },
                             "lens_number": {
                               "title": "Номер линзы",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "collector_type": {
                               "title": "Тип коллектора",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "injectivity": {
-                              "title": "Приёмистость",
+                              "title": "Приемистость",
                               "description": "",
                               "type": "number"
                             },
                             "reservoir_outflow_percentage": {
                               "title": "Процент оттока в пласте",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "fluid_migration_rate_to_another_horizon": {
                               "title": "Процент ухода жидкости в другой горизонт",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "another_horizon_code": {
                               "title": "Код другого горизонта",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "reservoir_alteration_signature": {
                               "title": "Признак изменения пласта",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             },
                             "top_marker": {
                               "title": "Признак верха",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш38"
                             }
                           }
                         }
@@ -1646,7 +2726,8 @@
                             "ngdu": {
                               "title": "НГДУ",
                               "description": "Нефтегазодобывающее управление",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш36"
                             }
                           }
                         }
@@ -1756,7 +2837,8 @@
                       "wellhead_condition": {
                         "title": "Состояние устья скважины",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш34"
                       },
                       "object": {
                         "title": "Объект",
@@ -1771,7 +2853,8 @@
                       "condition_of_the_production_column": {
                         "title": "Состояние эксплуатационной колонны",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш34"
                       }
                     }
                   }
@@ -1810,7 +2893,7 @@
       "$id": "/databases/obptruba/obptruba_root",
       "title": "БД Трубопровод",
       "description": "База содержит информацию по учету, анализу и состоянию трубопроводов для задач планирования и проведения мероприятий по защите трубопроводов от коррозии, об их ликвидации или замене",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/obptruba/obptruba_ngdu",
         "title": "НГДУ",
@@ -2210,7 +3293,7 @@
       "$id": "/databases/oiobaza2/oiobaza2_root",
       "title": "БД Эксплуатация",
       "description": "Сведения об эксплуатации нефтяных и нагнетательных скважин",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/oiobaza2/oiobaza2_ngdu",
         "title": "НГДУ",
@@ -2220,7 +3303,8 @@
           "ngdu": {
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "cdng_cppd": {
             "title": "ЦДНГ, ЦППД",
@@ -2245,13 +3329,15 @@
                 "field": {
                   "title": "Месторождение",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "area": {
                   "title": "Площадь",
                   "description": "",
-                  "$comment": "Корректен ли перевод?",
-                  "type": "string"
+                  "$comment": "",
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "horizon": {
                   "title": "Горизонт",
@@ -2322,7 +3408,7 @@
       "$id": "/databases/oirbaza1/oirbaza1_root",
       "title": "БД OIRBAZA1",
       "description": "Данные для задач планирования ГТМ, оптимизации работ скважин, расчета оптимального забойного давления и управления разработкой",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/oirbaza1/oirbaza1_ngdu",
         "title": "НГДУ",
@@ -2332,7 +3418,8 @@
           "ngdu": {
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "areas": {
             "title": "Залежи",
@@ -2347,7 +3434,8 @@
                 "area": {
                   "title": "Залежь",
                   "description": "Месторождение / площадь / залежь",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "cdngs": {
                   "title": "ЦДНГ",
@@ -2392,17 +3480,20 @@
                             "wellbore_diameter": {
                               "title": "Диаметр пробуренного ствола, мм",
                               "description": "",
-                              "type": "integer"
+                              "type": "integer",
+                              "form": "ТН131 Ш81 Ш40"
                             },
                             "drilled_total_depth": {
                               "title": "Забой пробуренный, м",
                               "description": "",
-                              "type": "integer"
+                              "type": "integer",
+                              "form": "ТН131 Ш81 Ш40"
                             },
                             "artificial_bottom": {
                               "title": "Забой искусственный (текущий), м",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш40"
                             },
                             "maximum_wellbore_curvature": {
                               "title": "Максимальная кривизна по стволу скважины, градус",
@@ -2431,7 +3522,8 @@
                             "completion_fluid_filtration": {
                               "title": "Водоотдача жидкости, на которой был вскрыт пласт",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш40"
                             },
                             "cement_ring_condition_above_reservoir_top": {
                               "title": "Состояние цементного кольца выше кровли продуктивных пластов",
@@ -2451,12 +3543,14 @@
                             "casing_condition": {
                               "title": "Состояние эксплуатационной колонны",
                               "description": "",
-                              "type": "integer"
+                              "type": "integer",
+                              "form": "ТН131 Ш81 Ш34"
                             },
                             "wellhead_condition": {
                               "title": "Состояние устья скважины",
                               "description": "",
-                              "type": "integer"
+                              "type": "integer",
+                              "form": "ТН131 Ш81 Ш34"
                             },
                             "equivalent_wellbore_radius": {
                               "title": "Приведенный радиус скважины",
@@ -2606,31 +3700,36 @@
                                   "plast": {
                                     "title": "Код пласта",
                                     "description": "",
-                                    "type": "string"
+                                    "type": "string",
+                                    "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                                   },
                                   "top_depth": {
                                     "title": "Глубина залегания кровли, м",
                                     "description": "",
                                     "$comment": "DEPTH31",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш39"
                                   },
                                   "base_depth": {
                                     "title": "Глубина залегания подошвы, м",
                                     "description": "",
                                     "$comment": "DEPTH32",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш39"
                                   },
                                   "net_oil_saturated_thickness": {
                                     "title": "Мощность пласта эффективная, нефтенасыщенная, м",
                                     "description": "",
                                     "$comment": "POWER02",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш39"
                                   },
                                   "reservoir_type_code": {
                                     "title": "Тип коллектора, код",
                                     "description": "",
                                     "$comment": "TYPE18",
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "form": "ТН131 Ш81 Ш38"
                                   },
                                   "transmissibility": {
                                     "title": "Гидропроводность, дсм/сп",
@@ -2648,7 +3747,8 @@
                                     "title": "Пористость, %",
                                     "description": "",
                                     "$comment": "POROS",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш39"
                                   },
                                   "predicted_oil_rate_from_unperforated_zone": {
                                     "title": "Прогнозируемый дебит нефти с неперфорированного пласта, т/сут",
@@ -2672,13 +3772,15 @@
                                     "title": "Тип перфоратора, код",
                                     "description": "",
                                     "$comment": "TYPE71",
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "form": "ТН131 Ш81 Ш37"
                                   },
                                   "perforation_density": {
                                     "title": "Плотность перфорации, отв/м",
                                     "description": "",
                                     "$comment": "QUANT116",
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "form": "ТН131 Ш81 Ш37"
                                   },
                                   "distance_to_current_OGC": {
                                     "title": "Расстояние от скважины до текущего контура нефтеносности, м",
@@ -2690,7 +3792,8 @@
                                     "title": "Отметка, абсолютная, до текущего положения ВНК, м",
                                     "description": "",
                                     "$comment": "NOTE01",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш39"
                                   },
                                   "oil_production_rate": {
                                     "title": "Дебит нефти, т/сут",
@@ -2803,7 +3906,7 @@
       "$id": "/databases/oirbaza2/oirbaza2_root",
       "title": "БД OIRBAZA2",
       "description": "Отдел инженерных расчетов для комплекса задач'Учет и отчетность в капитальном ремонте скважин'",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/oirbaza2/oirbaza2_upnp",
         "title": "УТПНП",
@@ -2962,7 +4065,8 @@
                   "title": "Альтитуда стола ротора",
                   "description": "",
                   "$comment": "ALITIT1",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "clutch_altitude_after_repair": {
                   "title": "Альтитуда муфты после ремонта",
@@ -3014,7 +4118,8 @@
                         "title": "Плотность перфорации",
                         "description": "",
                         "$comment": "QUANTI16",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш37"
                       },
                       "horizon": {
                         "title": "Горизонт",
@@ -3147,7 +4252,8 @@
                   "title": "Категория",
                   "description": "",
                   "$comment": "CATEGOR1",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "work_type": {
                   "title": "Вид работы",
@@ -3189,7 +4295,8 @@
                   "title": "НГДУ или заказчик",
                   "description": "",
                   "$comment": "NGDU",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш36"
                 }
               }
             }
@@ -3269,7 +4376,8 @@
                   "title": "НГДУ",
                   "description": "Нефтегазодобывающее управление",
                   "$comment": "NGDU",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш36"
                 },
                 "krs_team_number": {
                   "title": "Номер бригады КРС",
@@ -3318,7 +4426,7 @@
       "$id": "/databases/ovpbaza1/ovpbaza1_root",
       "title": "БД OVPBAZA1",
       "description": "Историческая информация по текущему ремонту скважин (ТРС), разбитая по месторождениям",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/ovpbaza1/ovpbaza1_ngdu",
         "title": "НГДУ",
@@ -3329,7 +4437,8 @@
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
             "$comment": "NGDU",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "cdng": {
             "$id": "/databases/ovpbaza1/ovpbaza1_cdng",
@@ -3362,12 +4471,14 @@
                     "field": {
                       "title": "Месторождение",
                       "description": "",
-                      "type": "number"
+                      "type": "number",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "square": {
                       "title": "Площадь",
                       "description": "",
-                      "type": "number"
+                      "type": "number",
+                      "form": "ТН131 Ш81 Ш36"
                     },
                     "repairs": {
                       "title": "Ремонты",
@@ -3468,7 +4579,7 @@
       "$id": "/databases/ovpbaza2/ovpbaza2_root",
       "title": "БД OVPBAZA2",
       "description": "Историческая информация по текущему ремонту скважин (ТРС) с разбиением на месяца",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/ovpbaza2/ovpbaza2_ngdu",
         "title": "НГДУ",
@@ -3479,7 +4590,8 @@
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
             "$comment": "NGDU",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "cdng": {
             "title": "ЦДНГ",
@@ -3672,7 +4784,7 @@
       "$id": "/databases/ovpbaza3/ovpbaza3_root",
       "title": "БД OVPBAZA3",
       "description": "Историческая информация по текущему ремонту скважин (ТРС) с разбиением по скважинам",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/ovpbaza3/ovpbaza3_ngdu",
         "title": "НГДУ",
@@ -3683,7 +4795,8 @@
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
             "$comment": "NGDU",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "cdng": {
             "$id": "/databases/ovpbaza3/ovpbaza3_cdng",
@@ -3825,7 +4938,7 @@
       "$comment": "Оригинал: OWPBAZA4",
       "title": "БД OWPBAZA4",
       "description": "Месячные сведения о трудозатратах в текущем и капитальном ремонтах скважин",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/owpbaza4/owpbaza4_ngdu",
         "title": "НГДУ",
@@ -3836,7 +4949,8 @@
             "title": "НГДУ",
             "description": "Нефтегазодобывающее управление",
             "$comment": "НГДУ",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "periplan": {
             "title": "Квартал месяц",
@@ -3978,7 +5092,8 @@
                                     "title": "Номер ЦДНГ",
                                     "description": "Номер цеха по добыче нефти и газа",
                                     "$comment": "SHOP1",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32"
                                   },
                                   "well_operation_before_repair": {
                                     "title": "Способ эксплуатации до ремонта",
@@ -4098,7 +5213,8 @@
                               "title": "Номер ЦДНГ",
                               "description": "Номер цеха по добыче нефти и газа",
                               "$comment": "SHOP1",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32"
                             },
                             "repair_work_type": {
                               "title": "Вид работы",
@@ -4233,7 +5349,8 @@
                   "title": "Номер ЦДНГ",
                   "description": "Номер цеха по добыче нефти и газа",
                   "$comment": "SHOP1",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31, ТН131 Ш81 Ш32"
                 },
                 "brigade_number": {
                   "title": "Номер бригады",
@@ -4331,7 +5448,7 @@
       "$id": "/databases/owpbaza6/owpbaza6_root",
       "title": "БД OWPBAZA6",
       "description": "Учётно-отчётная информация по трудовым и материальным затратам выездных ремонтных бригад ПРЦЭО",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/owpbaza6/owpbaza6_enterprise",
         "title": "Предприятие",
@@ -4609,7 +5726,7 @@
       "$comment": "Оригинал: owpbaza8",
       "title": "БД OWPBAZA8",
       "description": "Отключенияя основного электрооборудования по объектам с указанием причин отключений",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/owpbaza8/owpbaza8_enterprise",
         "title": "Предприятие",
@@ -4755,7 +5872,7 @@
       "$id": "/databases/passport/passport_root",
       "title": "БД ПАСПОРТ",
       "description": "Свойства флюидов и пород, запасы нефти и темпы отбора",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/passport/passport_object",
         "$comment": "",
@@ -4766,17 +5883,20 @@
           "field": {
             "title": "Месторождение",
             "description": "",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "area": {
             "title": "Площадь",
             "description": "",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "horizon": {
             "title": "Горизонт",
             "description": "",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "discovery_date": {
             "title": "Дата открытия",
@@ -4822,7 +5942,8 @@
                 "reservoir_base_average_depth": {
                   "title": "Средняя глубина залегания подошвы пласта",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш39"
                 },
                 "average_power_general": {
                   "title": "Средняя мощность общая",
@@ -4837,22 +5958,26 @@
                 "average_power_oil_saturated": {
                   "title": "Средняя мощность нефтенасыщенная",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш39"
                 },
                 "water_oil_contact_initial": {
                   "title": "Начальная отметка водно-нефтяного контакта",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш39"
                 },
                 "porosity": {
-                  "title": "Проницаемость",
+                  "title": "Пористость",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш39"
                 },
                 "permeability": {
                   "title": "Проницаемость",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш39"
                 },
                 "area_oil_bearing": {
                   "title": "Площадь нефтеносная",
@@ -4892,7 +6017,8 @@
                 "collector_type": {
                   "title": "Тип коллектора",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН131 Ш81 Ш38"
                 },
                 "oil_conversion_factor": {
                   "title": "Переводной коэффициент нефти",
@@ -5803,7 +6929,7 @@
       "$id": "/databases/priss/priss_root",
       "title": "БД PRISS",
       "description": "",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/priss/priss_ngdu",
         "title": "НГДУ",
@@ -5813,7 +6939,8 @@
           "ngdu_cex": {
             "title": "НГДУ, Цех",
             "description": "нефтегазодобывающее управление",
-            "type": "number"
+            "type": "number",
+            "form": "ТН131 Ш81 Ш36"
           },
           "last_update_date": {
             "title": "Дата последней корректировки",
@@ -5848,12 +6975,14 @@
                 "category": {
                   "title": "Категория",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "state": {
                   "title": "Состояние",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш31"
                 },
                 "type": {
                   "title": "Разновидность",
@@ -5863,7 +6992,8 @@
                 "rotary_table_altitude": {
                   "title": "Алтитуда стола ротора",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН131 Ш81 Ш40"
                 },
                 "coordinate_x": {
                   "title": "Координата X",
@@ -5908,7 +7038,8 @@
                       "wellbore_extension_to_horizon": {
                         "title": "Удлинение ствола скважины до продуктивного горизонта",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш40"
                       },
                       "segment_close_date": {
                         "title": "Дата закрытия сегмента",
@@ -5928,22 +7059,26 @@
                             "field": {
                               "title": "Месторождение",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш36"
                             },
                             "area": {
                               "title": "Площадь",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш36"
                             },
                             "section": {
                               "title": "Участок",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш36"
                             },
                             "block": {
-                              "title": "блок",
+                              "title": "Блок",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш36"
                             }
                           }
                         }
@@ -5966,7 +7101,8 @@
                             "casing_diameter": {
                               "title": "Диаметр эксплуатационной колонны",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш42"
                             },
                             "tubing_avg_diameter": {
                               "title": "Диаметр НКТ (средний)",
@@ -6037,32 +7173,37 @@
                             "roof_depth": {
                               "title": "Глубина залегания кровли пласта",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "base_depth": {
                               "title": "Глубина залегания подошвы пласта",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "effective_thickness": {
                               "title": "Эффективная мощность пласта",
                               "description": "",
                               "type": "number"
                             },
-                            "perf_interval_from": {
+                            "perforation_interval_from": {
                               "title": "Интервал перфорации от",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш37"
                             },
-                            "perf_interval_to": {
+                            "perforation_interval_up_to": {
                               "title": "Интервал перфорации до",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш37"
                             },
                             "porosity": {
                               "title": "Пористость",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "segment_close_date": {
                               "title": "Дата закрытия сегмента",
@@ -6384,7 +7525,8 @@
                       "liquid_rate": {
                         "title": "Дебит жидкости при исследовании",
                         "description": "Приемистость",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш31"
                       },
                       "water_cut": {
                         "title": "Процент обводненности (объем)",
@@ -6507,17 +7649,20 @@
                             "conductivity": {
                               "title": "Гидропроводность",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "permeability": {
                               "title": "Проницаемость",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "diffusivity": {
                               "title": "Пьезопроводность",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "effective_radius": {
                               "title": "Приведенный радиус скважины",
@@ -6583,7 +7728,8 @@
                       "oil_rate": {
                         "title": "Дебит нефти (приемистость)",
                         "$comment": "Оригинал: Дебит нефти (приемистость), U7, 9(4)т9",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш31"
                       },
                       "buffer_pressure": {
                         "title": "Давление на устье буферное замеренное при исследовании",
@@ -6661,17 +7807,20 @@
                             "conductivity": {
                               "title": "Гидропроводность",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "permeability": {
                               "title": "Проницаемость",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш39"
                             },
                             "productivity_index": {
                               "title": "Коэффициент продуктивности (приемистость)",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН131 Ш81 Ш31"
                             },
                             "fluid_density": {
                               "title": "Плотность жидкости по горизонту",
@@ -6739,7 +7888,7 @@
       "$comment": "Оригинал: СОДОН",
       "title": "БД СОДОН",
       "description": "Информация по эксплуатации нефтяных скважин, сведения о простоях и мероприятиях",
-      "type": "array",
+      "type": "",
       "items": {
         "$id": "/databases/sodon/sodon_ngdu",
         "title": "НГДУ",
@@ -6749,7 +7898,8 @@
           "ngdu_cdng_field_area": {
             "title": "НГДУ, ЦДНГ, месторождение, площадь. ЦДНГ",
             "description": "Нефтегазодобывающее управление, цех добычи нефти и газа",
-            "type": "string"
+            "type": "string",
+            "form": "ТН131 Ш81 Ш36"
           },
           "date_of_last_update": {
             "title": "Дата последней корректировки",
@@ -6775,7 +7925,8 @@
               "category": {
                 "title": "Категория",
                 "description": "",
-                "type": "string"
+                "type": "string",
+                "form": "ТН131 Ш81 Ш31"
               },
               "state": {
                 "title": "Состояния",
@@ -6838,10 +7989,11 @@
                       "description": "",
                       "type": "string"
                     },
-                    "downtime_reason": {
+                    "well_downtime_reason": {
                       "title": "Причина простоя скважины",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш31"
                     },
                     "well_stop_indicator": {
                       "title": "Признак останова по скважине",
@@ -6869,7 +8021,8 @@
                     "layer_code": {
                       "title": "Код пласта/горизонта/",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш37, ТН131 Ш81 Ш38, ТН131 Ш81 Ш39"
                     }
                   }
                 }
@@ -6912,17 +8065,20 @@
                     "cdng_team_number": {
                       "title": "Номер участка, бригады ЦДНГ",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш34"
                     },
                     "wellhead_state": {
                       "title": "Состояние устья скважины",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш34"
                     },
                     "casing_state": {
                       "title": "Состояние эксплуатационной колонны скважины",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш34"
                     },
                     "polished_rod_stroke_length": {
                       "title": "Длины хода полированного штока",
@@ -6938,7 +8094,8 @@
                     "prs_team_number": {
                       "title": "Номер бригады ПРС",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН131 Ш81 Ш34"
                     },
                     "vrb_grb_number": {
                       "title": "Номер ВРБ или ГРБ",
@@ -6985,7 +8142,8 @@
                   "horizon_code": {
                     "title": "Код горизонта",
                     "description": "",
-                    "type": "number"
+                    "type": "number",
+                    "form": "ТН131 Ш81 Ш35, ТН131 Ш81 Ш36"
                   },
                   "oil_density_horizon": {
                     "title": "Плотность нефти по горизонт",
@@ -7056,17 +8214,21 @@
                       "object_name": {
                         "title": "Объект (месторождение, площадь, участок, блок)",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "ngdu": {
                         "title": "НГДУ",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш36"
                       },
                       "liquid_distribution_percentage": {
                         "title": "Процент распределения жидкости из блока в данном горизонте",
                         "description": "Процент распределения жидкости из блока (участка, площади, месторождения) в данном горизонте",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН131 Ш81 Ш35"
+                        
                       }
                     }
                   },
@@ -7089,7 +8251,8 @@
                       "reservoir_type": {
                         "title": "Тип коллектора",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш38"
                       },
                       "formation_fluid_flow_rate": {
                         "title": "Дебит жидкости пласта",
@@ -7114,7 +8277,8 @@
                       "reservoir_change_sign": {
                         "title": "Признак изменения пласта",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН131 Ш81 Ш38"
                       }
                     }
                   },

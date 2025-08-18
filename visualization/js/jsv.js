@@ -862,7 +862,21 @@ if (typeof JSV === 'undefined') {
             }
             
             console.log(s);
+            if (s && s.type === 'array') {
+                var childName = (s.title || name || 'item');
+                var inheritedForm = schema.form || s.form;
 
+                if (items && Object.prototype.toString.call(items) === '[object Object]') {
+                    if (inheritedForm != null && items.form == null) items.form = inheritedForm;
+                    JSV.compileData(items, parent, childName, /*real=*/false, depth + 1);
+                } else if (Array.isArray(items)) {
+                    items.forEach(function (itm, idx) {
+                    if (itm && inheritedForm != null && itm.form == null) itm.form = inheritedForm;
+                    JSV.compileData(itm, parent, childName + '[' + idx + ']', /*real=*/false, depth + 1);
+                    });
+                }
+                return;
+                }
             node = {
                 description: schema.description || s.description,
                 name: (schema.$ref && real ? name : false) || s.title || name || 'schema',
@@ -1088,8 +1102,8 @@ if (typeof JSV === 'undefined') {
                 if (d3.event && d3.event.defaultPrevented) {return;} // click suppressed
                 var panel = $( '#info-panel' );
                 if (d && d.form != null && d.form !== '') {
-                    var target = JSV.expandToForms(d.form); // расплитим по запятым внутри
-                    if (target) { d = target; } // дальше фокус/панель — уже на целевой
+                    var target = JSV.expandToForms(d.form);
+                    if (target) { d = target; }
                 }
 
                 if(JSV.focusNode) {
