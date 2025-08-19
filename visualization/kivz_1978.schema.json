@@ -530,22 +530,13 @@
       "description": "Отражает информацио о входных/выходных формах",
       "type": "",
       "properties": {
-        "DB_forms": {
-          "title": "Базы данных",
-          "type": "array",
-          "items": {
-            "$id": "/databases/forms/forms_root/DB_forms",
-            "comment": "",
-            "title": "Базы данных",
-            "type": "",
-            "properties": {
-              "catalog_form": {
+        "catalog_form": {
           "title": "Каталог формы",
           "type": "array",
           "items": {
             "$id": "/databases/forms/forms_root/catalog_form",
             "comment": "",
-            "title": "Каталог формы",
+            "title": "Каталог",
             "type": "",
             "properties": {
             }
@@ -811,11 +802,7 @@
             "properties": {
             }
           }
-        }
-            }
-          }
         },
-        
         "implicit_form": {
           "title": "Формы без явного определения",
           "type": "array",
