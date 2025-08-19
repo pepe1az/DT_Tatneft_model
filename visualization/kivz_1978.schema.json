@@ -561,15 +561,43 @@
             "form": "СВЕДЕНИЯ о внутренних защитных покрытиях трубопроводов",
             "type": "",
             "properties": {
-              "start_trub_coords": {
+              "ТН444_Ш80_Ш01_header_attributes": {
+                "title": "Атрибуты заголовка",
+                "type": "string",
+                "properties": {
+                  "1_level":{
+                    "title": "ТН444; Предприятие; Поздразделение"
+                  },
+                  "2_level":{
+                    "title":"Ш80; Дата; Код первфорат.; ШО1"
+                  }
+                }
+              },
+              "start_pipe_coords": {
                 "title": "Координаты т/п. в начале",
                 "description": "Координаты трубопровода в начале",
-                "type": "string"
+                "type": "string",
+                "properties":{
+                  "kat_tip":{
+                    "title": "Кат.тип"
+                  },
+                  "number":{
+                    "title":"Номер"
+                  }
+                }
               },
-              "end_trub_coords": {
+              "end_pipe_coords": {
                 "title": "Координаты т/п. в конце",
-                "description": "Координаты трубопровода в конце",
-                "type": "string"
+                "description": "Координаты трубопровода в начале",
+                "type": "string",
+                "properties":{
+                  "kat_tip":{
+                    "title": "Кат.тип"
+                  },
+                  "number":{
+                    "title":"Номер"
+                  }
+                }
               },
               "internal_coating_application_date": {
                 "title": "Дата нанесения покрытия",
@@ -581,18 +609,33 @@
                 "description": "",
                 "type": "number"
               },
-              "internal_coating_type": {
-                "title": "Вид покрытия",
+              "internal_coating_type_description": {
+                "title": "Описание вида покрытия",
                 "description": "",
                 "type": "number"
               },
-              "coating_application_method": {
-                "title": "Способ нанесения",
+              "internal_coating_code": {
+                "title": "Код вида покрытия",
                 "description": "",
                 "type": "number"
               },
-              "coating_composition": {
-                "title": "Схема или материал покрытия",
+              "coating_application_method_description": {
+                "title": "Описание cпособа нанесения",
+                "description": "",
+                "type": "number"
+              },
+              "coating_application_code": {
+                "title": "Код cпособа нанесения",
+                "description": "",
+                "type": "number"
+              },
+              "coating_composition_description": {
+                "title": "Описание схемы или материал покрытия",
+                "description": "",
+                "type": "number"
+              },
+              "coating_composition_code": {
+                "title": "Код схемы или материал покрытия",
                 "description": "",
                 "type": "number"
               },
@@ -822,6 +865,16 @@
                   "form": "Сведения о вводимой (переводимой, корректируемой) скважине",
                   "type": "",
                   "properties": {
+                    "ТН131_Ш81_Ш31_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties":{
+                              "1_level":{
+                                "title":"ТН131; НГДУ; ЦЕХ; Ш81; Номер скважины; Дата Признак ввода, перевода, коррекции"
+                              }
+                            }
+                          },
                     "ТН131 Ш81 Ш31": {
                       "title": "ТН131_Ш81_Ш31",
                       "description": "",
@@ -1393,329 +1446,412 @@
                         "description": "",
                         "type": "object",
                         "properties": {
-                          "column_code": {
-                          "title": "Код колонны",
-                          "description": "",
-                          "type": "number"
+                          "fly-column":{
+                             "title":"Колонна-летучка",
+                             "properties":{
+                            "column_code": {
+                              "title": "Код колонны",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_diameter": {
+                              "title": "Диаметр, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_depth": {
+                              "title": "Глубина спуска, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_thickness": {
+                              "title": "Толщина стенки, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_lift_height": {
+                              "title": "Высота подъема цементного кольца, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_endurance_category": {
+                              "title": "Категория прочности",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_material_fly": {
+                              "title": "Материал колонны-летучки",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "fly-column_top_fly": {
+                              "title": "Верх колонны-летучки, м",
+                              "description": "",
+                              "type": "number"
+                            }
+                          }
                           },
-                          "fly-column_diameter": {
-                            "title": "Колонна-летучка|Диаметр, мм",
+                          "direction":{
+                            "title": "Направление",
+                            "properties":{
+                            "column_code": {
+                            "title": "Код колонны",
                             "description": "",
                             "type": "number"
+                            },
+                              "direction_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                            },
+                          "conductor":{
+                            "title": "Кондуктор",
+                            "properties":{
+                            "column_code": {
+                              "title": "Код колонны",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_diameter": {
+                              "title": "Диаметр, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_depth": {
+                              "title": "Глубина спуска, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_thickness": {
+                              "title": "Толщина стенки, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_lift_height": {
+                              "title": "Высота подъема цементного кольца, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_endurance_category": {
+                              "title": "Категория прочности",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_material_fly": {
+                              "title": "Материал колонны-летучки",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "conductor_top_fly": {
+                              "title": "Верх колонны-летучки, м",
+                              "description": "",
+                              "type": "number"
+                          }
+                        }
+                        },
+                          "technical_column":{
+                            "title": "Технич. колонна",
+                            "properties":{
+                            "column_code": {
+                              "title": "Код колонны",
+                              "description": "",
+                              "type": "number"
+                            },
+                              "technical_column_diameter": {
+                              "title": "Диаметр, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_depth": {
+                              "title": "Глубина спуска, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_thickness": {
+                              "title": "Толщина стенки, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_lift_height": {
+                              "title": "Высота подъема цементного кольца, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_endurance_category": {
+                              "title": "Категория прочности",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_material_fly": {
+                              "title": "Материал колонны-летучки",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "technical_column_top_fly": {
+                              "title": "Верх колонны-летучки, м",
+                              "description": "",
+                              "type": "number"
+                            }
+                          }
                           },
-                          "fly-column_depth": {
-                            "title": "Колонна-летучка|Глубина спуска, м",
+                          "additional_column":{
+                            "title": "Дополнительная колонна",
+                            "properties":{
+                            "column_code": {
+                            "title": "Код колонны",
                             "description": "",
                             "type": "number"
-                          },
-                          "fly-column_thickness": {
-                            "title": "Колонна-летучка|Толщина стенки, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fly-column_lift_height": {
-                            "title": "Колонна-летучка|Высота подъема цементного кольца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fly-column_endurance_category": {
-                            "title": "Колонна-летучка|Категория прочности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fly-column_material_fly": {
-                            "title": "Колонна-летучка|Материал колонны-летучки",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fly-column_top_fly": {
-                            "title": "Колонна-летучка|Верх колонны-летучки, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_diameter": {
-                            "title": "Направление|Диаметр, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_depth": {
-                            "title": "Направление|Глубина спуска, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_thickness": {
-                            "title": "Направление|Толщина стенки, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_lift_height": {
-                            "title": "Направление|Высота подъема цементного кольца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_endurance_category": {
-                            "title": "Направление|Категория прочности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_material_fly": {
-                            "title": "Направление|Материал колонны-летучки",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "direction_top_fly": {
-                            "title": "Направление|Верх колонны-летучки, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_diameter": {
-                            "title": "Кондуктор|Диаметр, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_depth": {
-                            "title": "Кондуктор|Глубина спуска, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_thickness": {
-                            "title": "Кондуктор|Толщина стенки, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_lift_height": {
-                            "title": "Кондуктор|Высота подъема цементного кольца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_endurance_category": {
-                            "title": "Кондуктор|Категория прочности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_material_fly": {
-                            "title": "Кондуктор|Материал колонны-летучки",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "conductor_top_fly": {
-                            "title": "Кондуктор|Верх колонны-летучки, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_diameter": {
-                            "title": "Технич. колонна|Диаметр, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_depth": {
-                            "title": "Технич. колонна|Глубина спуска, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_thickness": {
-                            "title": "Технич. колонна|Толщина стенки, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_lift_height": {
-                            "title": "Технич. колонна|Высота подъема цементного кольца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_endurance_category": {
-                            "title": "Технич. колонна|Категория прочности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_material_fly": {
-                            "title": "Технич. колонна|Материал колонны-летучки",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "technical_column_top_fly": {
-                            "title": "Технич. колонна|Верх колонны-летучки, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "additional_column_diameter": {
-                            "title": "Дополнительн. колонна|Диаметр, мм",
+                            },
+                            "additional_column_diameter": {
+                            "title": "Диаметр, мм",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_depth": {
-                            "title": "Дополнительн. колонна|Глубина спуска, м",
+                            "title": "Глубина спуска, м",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_thickness": {
-                            "title": "Дополнительн. колонна|Толщина стенки, мм",
+                            "title": "Толщина стенки, мм",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_lift_height": {
-                            "title": "Дополнительн. колонна|Высота подъема цементного кольца, м",
+                            "title": "Высота подъема цементного кольца, м",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_endurance_category": {
-                            "title": "Дополнительн. колонна|Категория прочности",
+                            "title": "Категория прочности",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_material_fly": {
-                            "title": "Дополнительн. колонна|Материал колонны-летучки",
+                            "title": "Материал колонны-летучки",
                             "description": "",
                             "type": "number"
                           },
                           "additional_column_top_fly": {
-                            "title": "Дополнительн. колонна|Верх колонны-летучки, м",
+                            "title": "Верх колонны-летучки, м",
                             "description": "",
                             "type": "number"
+                          }
+                        }
                           },
-                          "expl_1_column_diameter": {
-                            "title": "Эксплуатац. колонна 1|Диаметр, мм",
+                          "expl_1_column":{
+                            "title": "Эксплуатац. колонна 1",
+                            "properties":{
+                            "column_code": {
+                            "title": "Код колонны",
+                            "description": "",
+                            "type": "number"
+                            },
+                            "expl_1_column_diameter": {
+                            "title": "Диаметр, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_depth": {
-                            "title": "Эксплуатац. колонна 1|Глубина спуска, м",
+                            "title": "Глубина спуска, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_thickness": {
-                            "title": "Эксплуатац. колонна 1|Толщина стенки, мм",
+                            "title": "Толщина стенки, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_lift_height": {
-                            "title": "Эксплуатац. колонна 1|Высота подъема цементного кольца, м",
+                            "title": "Высота подъема цементного кольца, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_endurance_category": {
-                            "title": "Эксплуатац. колонна 1|Категория прочности",
+                            "title": "Категория прочности",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_material_fly": {
-                            "title": "Эксплуатац. колонна 1|Материал колонны-летучки",
+                            "title": "Материал колонны-летучки",
                             "description": "",
                             "type": "number"
                           },
                           "expl_1_column_top_fly": {
-                            "title": "Эксплуатац. колонна 1|Верх колонны-летучки, м",
+                            "title": "Верх колонны-летучки, м",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                          },
+                          
+                          "expl_2_column":{
+                            "title": "Эксплуатац. колонна 2",
+                            "properties":{
+                            "column_code": {
+                            "title": "Код колонны",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_diameter": {
-                            "title": "Эксплуатац. колонна 2|Диаметр, мм",
+                            "title": "Диаметр, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_depth": {
-                            "title": "Эксплуатац. колонна 2|Глубина спуска, м",
+                            "title": "Глубина спуска, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_thickness": {
-                            "title": "Эксплуатац. колонна 2|Толщина стенки, мм",
+                            "title": "Толщина стенки, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_lift_height": {
-                            "title": "Эксплуатац. колонна 2|Высота подъема цементного кольца, м",
+                            "title": "Высота подъема цементного кольца, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_endurance_category": {
-                            "title": "Эксплуатац. колонна 2|Категория прочности",
+                            "title": "Категория прочности",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_material_fly": {
-                            "title": "Эксплуатац. колонна 2|Материал колонны-летучки",
+                            "title": "Материал колонны-летучки",
                             "description": "",
                             "type": "number"
                           },
                           "expl_2_column_top_fly": {
-                            "title": "Эксплуатац. колонна 2|Верх колонны-летучки, м",
+                            "title": "Верх колонны-летучки, м",
                             "description": "",
                             "type": "number"
-                          },
-                          "expl_3_column_diameter": {
-                            "title": "Эксплуатац. колонна 3|Диаметр, мм",
+                          }
+                        }
+                      },
+                          "expl_3_column":{
+                            "title": "Эксплуатац. колонна 3",
+                            "properties":{
+                            "column_code": {
+                            "title": "Код колонны",
+                            "description": "",
+                            "type": "number"
+                            },
+                            "expl_3_column_diameter": {
+                            "title": "Диаметр, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_depth": {
-                            "title": "Эксплуатац. колонна 3|Глубина спуска, м",
+                            "title": "Глубина спуска, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_thickness": {
-                            "title": "Эксплуатац. колонна 3|Толщина стенки, мм",
+                            "title": "Толщина стенки, мм",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_lift_height": {
-                            "title": "Эксплуатац. колонна 3|Высота подъема цементного кольца, м",
+                            "title": "Высота подъема цементного кольца, м",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_endurance_category": {
-                            "title": "Эксплуатац. колонна 3|Категория прочности",
+                            "title": "Категория прочности",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_material_fly": {
-                            "title": "Эксплуатац. колонна 3|Материал колонны-летучки",
+                            "title": "Материал колонны-летучки",
                             "description": "",
                             "type": "number"
                           },
                           "expl_3_column_top_fly": {
-                            "title": "Эксплуатац. колонна 3|Верх колонны-летучки, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_diameter": {
-                            "title": "Эксплуатац. колонна 4|Диаметр, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_depth": {
-                            "title": "Эксплуатац. колонна 4|Глубина спуска, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_thickness": {
-                            "title": "Эксплуатац. колонна 4|Толщина стенки, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_lift_height": {
-                            "title": "Эксплуатац. колонна 4|Высота подъема цементного кольца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_endurance_category": {
-                            "title": "Эксплуатац. колонна 4|Категория прочности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_material_fly": {
-                            "title": "Эксплуатац. колонна 4|Материал колонны-летучки",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expl_4_column_top_fly": {
-                            "title": "Эксплуатац. колонна 4|Верх колонны-летучки, м",
+                            "title": "Верх колонны-летучки, м",
                             "description": "",
                             "type": "number"
                           }
-                          
                         }
-                      }
+                      },
+                          "expl_4_column":{
+                            "title": "Эксплуатац. колонна 4",
+                            "properties":{
+                              "column_code": {
+                              "title": "Код колонны",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "expl_4_column_diameter": {
+                              "title": "Диаметр, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_depth": {
+                              "title": "Глубина спуска, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_thickness": {
+                              "title": "Толщина стенки, мм",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_lift_height": {
+                              "title": "Высота подъема цементного кольца, м",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_endurance_category": {
+                              "title": "Категория прочности",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_material_fly": {
+                              "title": "Материал колонны-летучки",
+                              "description": "",
+                              "type": "number"
+                            },
+                            "expl_4_column_top_fly": {
+                              "title": "Верх колонны-летучки, м",
+                              "description": "",
+                              "type": "number"
+                            }
+                          }
+                        }
                     },
                     "ТН131 Ш81 Ш43": {
                       "title": "ТН131_Ш81_Ш43",
@@ -1747,8 +1883,9 @@
             }
           }
         }
-        
       }
+    }
+    }
     },
     "nakop": {
       "$schema": "https://json-schema.org/draft/2020-12/schema",

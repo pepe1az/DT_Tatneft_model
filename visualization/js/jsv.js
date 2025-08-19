@@ -1250,7 +1250,7 @@ if (typeof JSV === 'undefined') {
             return n && n.getComputedTextLength ? n.getComputedTextLength()
                                                 : String(s || '').length * 7;
         },
-        DB_PATH:     ['КИВЦ 1978', 'Входные документы', 'Базы данных'],
+        DB_PATH:     ['КИВЦ 1978', 'Входные документы'],
         FORMS_PATH:  ['КИВЦ 1978', 'Входные документы', 'Формы без явного определения'],
 
         _normName: function (s) {
