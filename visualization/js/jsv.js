@@ -1238,17 +1238,32 @@ if (typeof JSV === 'undefined') {
 
         measureTextEl: null,
         measureText: function (s) {
+            // грубая оценка, если svg ещё не создан
             if (!JSV.baseSvg) return String(s || '').length * 7;
+
+            // если измеритель отсутствует, оторван от DOM или принадлежит старому svg — пересоздаём
+            var needNew = false;
             if (!JSV.measureTextEl) {
+                needNew = true;
+            } else {
+                var n = JSV.measureTextEl.node && JSV.measureTextEl.node();
+                if (!n || !document.documentElement.contains(n) ||
+                    (n.ownerSVGElement !== (JSV.baseSvg && JSV.baseSvg.node && JSV.baseSvg.node()))) {
+                    needNew = true;
+                }
+            }
+            if (needNew) {
                 JSV.measureTextEl = JSV.baseSvg.append('text')
                     .attr('class', 'node-text')
                     .attr('visibility', 'hidden')
                     .attr('x', -9999).attr('y', -9999);
             }
+
+            // измеряем
             JSV.measureTextEl.text(String(s || ''));
-            var n = JSV.measureTextEl.node();
-            return n && n.getComputedTextLength ? n.getComputedTextLength()
-                                                : String(s || '').length * 7;
+            var node = JSV.measureTextEl.node();
+            return node && node.getComputedTextLength ? node.getComputedTextLength()
+                                                    : String(s || '').length * 7;
         },
         DB_PATH:     ['КИВЦ 1978', 'Входные документы'],
         FORMS_PATH:  ['КИВЦ 1978', 'Входные документы', 'Формы без явного определения'],
@@ -1521,7 +1536,7 @@ if (typeof JSV === 'undefined') {
                 var viewerHeight = JSV.viewerHeight ? JSV.viewerHeight : '100%';
 
                 JSV.zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on('zoom', JSV.zoom);
-
+                JSV.measureTextEl = null;
                 JSV.baseSvg = d3.select('#main-body').append('svg')
                     .attr('id', 'jsv-tree')
                     .attr('class', 'overlay')
