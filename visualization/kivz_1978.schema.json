@@ -526,17 +526,26 @@
       "$schema": "https://json-schema.org/draft/2020-12/schema",
       "$id": "/databases/forms/forms_root",
       "$comment": "",
-      "title": "Формы",
+      "title": "Входные документы",
       "description": "Отражает информацио о входных/выходных формах",
       "type": "",
       "properties": {
-        "catalog_form": {
+        "DB_forms": {
+          "title": "Базы данных",
+          "type": "array",
+          "items": {
+            "$id": "/databases/forms/forms_root/DB_forms",
+            "comment": "",
+            "title": "Базы данных",
+            "type": "",
+            "properties": {
+              "catalog_form": {
           "title": "Каталог формы",
           "type": "array",
           "items": {
             "$id": "/databases/forms/forms_root/catalog_form",
             "comment": "",
-            "title": "Каталог",
+            "title": "Каталог формы",
             "type": "",
             "properties": {
             }
@@ -802,7 +811,11 @@
             "properties": {
             }
           }
+        }
+            }
+          }
         },
+        
         "implicit_form": {
           "title": "Формы без явного определения",
           "type": "array",

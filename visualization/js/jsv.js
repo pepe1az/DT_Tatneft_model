@@ -409,7 +409,7 @@ if (typeof JSV === 'undefined') {
                 scrollTop: $('#validation-results').offset().top + 20
             }, 1000);
 
-            cont.fadeTo(350, 1);
+            cont.fadeTo(700, 1);
         },
 
         /**
@@ -621,7 +621,15 @@ if (typeof JSV === 'undefined') {
 
             return node;
         },
-         expandToForms: function(formValue) {
+        _expandAll: function(d) {
+            if (!d) return;
+            if (d._children) JSV.expand(d);
+            var kids = d.children || [];
+            for (var i = 0; i < kids.length; i++) {
+                JSV._expandAll(kids[i]);
+            }
+        },
+        expandToForms: function(formValue) {
             var targets = JSV._normalizeFormTargets(formValue);
             var found = [];
             var lastNode = null;
@@ -657,9 +665,13 @@ if (typeof JSV === 'undefined') {
             }
 
             if (touched) {
+                for (i = 0; i < found.length; i++) {
+                    JSV._expandAll(found[i]);
+                }
                 JSV.update(JSV.treeData);
                 var centerTarget = found[found.length - 1] || lastNode;
                 if (centerTarget) JSV.centerNode(centerTarget);
+
                 var hasFlash = typeof JSV.flashNode === 'function';
                 for (i = 0; i < found.length; i++) {
                     (function(n, delay){
@@ -670,7 +682,7 @@ if (typeof JSV === 'undefined') {
                                 d3.select('#n-' + n.id).classed('form-hit', true);
                                 setTimeout(function(){
                                     d3.select('#n-' + n.id).classed('form-hit', false);
-                                }, 800);
+                                }, 7000);
                             }
                         }, delay);
                     })(found[i], i * 180);
@@ -793,12 +805,17 @@ if (typeof JSV === 'undefined') {
         /**
          * Flash node text
          */
-        flashNode: function(node, times) {
-            var t = times || 4,
-            text = $('#n-' + node.id + ' text');
-            //flash node text
-            while (t--) {
-                text.fadeTo(350, 0).fadeTo(350, 1);
+        flashNode: function(node, totalMs) {
+            var STEP = 350;                          // один fadeTo
+            var TOTAL = typeof totalMs === 'number' ? totalMs : 7000;
+            var cycles = Math.max(1, Math.round(TOTAL / (STEP * 2)));
+
+            var $text = $('#n-' + node.id + ' text');
+            // сбросим возможные прошлые анимации, чтобы не накапливать очередь
+            $text.stop(true, true);
+
+            for (var i = 0; i < cycles; i++) {
+                $text.fadeTo(STEP, 0).fadeTo(STEP, 1);
             }
         },
 
@@ -1233,6 +1250,65 @@ if (typeof JSV === 'undefined') {
             return n && n.getComputedTextLength ? n.getComputedTextLength()
                                                 : String(s || '').length * 7;
         },
+        DB_PATH:     ['КИВЦ 1978', 'Входные документы', 'Базы данных'],
+        FORMS_PATH:  ['КИВЦ 1978', 'Входные документы', 'Формы без явного определения'],
+
+        _normName: function (s) {
+          return String(s || '')
+            .toLowerCase()
+            .replace(/[_\s]+/g, ' ')
+            .replace(/[{}[\]:]/g, '')
+            .trim();
+        },
+
+        _normTargetsReady: false,
+        _DB_N: null,
+        _FORMS_N: null,
+        _ensureNormTargets: function () {
+          if (!JSV._normTargetsReady) {
+            JSV._DB_N    = JSV.DB_PATH.map(JSV._normName);
+            JSV._FORMS_N = JSV.FORMS_PATH.map(JSV._normName);
+            JSV._normTargetsReady = true;
+          }
+        },
+
+        _pathOf: function (d) {
+          var p = [], cur = d;
+          while (cur) { p.unshift(JSV._normName(cur.name)); cur = cur.parent; }
+          return p;
+        },
+
+        _pathEq: function (a, b) {
+          if (!a || !b || a.length !== b.length) return false;
+          for (var i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+          return true;
+        },
+
+        _parentPathEq: function (d, target) {
+          if (!d || !d.parent) return false;
+          var p = JSV._pathOf(d.parent);
+          return JSV._pathEq(p, target);
+        },
+
+        _childCount: function (d) {
+          var kids = (d.children || d._children) || [];
+          return kids.length;
+        },
+
+        getDisplayName: function (d) {
+          JSV._ensureNormTargets();
+          var base = d.name || '';
+          if (JSV._pathEq(JSV._pathOf(d), JSV._FORMS_N)) {
+            var nF = JSV._childCount(d);
+            return nF ? (base + '(' + nF + ')') : base;
+          }
+          if (JSV._parentPathEq(d, JSV._DB_N)) {
+            var nD = JSV._childCount(d);
+            return nD ? (base + '(' + nD + ')') : base;
+          }
+
+          return base;
+        },
         update: function (source) {
             var duration = JSV.duration;
             var root = JSV.treeData;
@@ -1262,8 +1338,9 @@ if (typeof JSV === 'undefined') {
             var maxDepth = 0;
             nodes.forEach(function(d) {
                 maxDepth = Math.max(maxDepth, d.depth || 0);
-                var label = (d.name || '') + (d.require ? '*' : '');
+                var label = JSV.getDisplayName(d) + (d.require ? '*' : '');
                 var w = JSV.measureText(label);
+
                 if (!maxW[d.depth] || w > maxW[d.depth]) maxW[d.depth] = w;
             });
                 var offsets = [0]; 
@@ -1317,7 +1394,7 @@ if (typeof JSV === 'undefined') {
                     return 'start';
                 })
                 .text(function(d) {
-                    return d.name + (d.require ? '*' : '');
+                    return JSV.getDisplayName(d) + (d.require ? '*' : '');
                 })
                 .style('fill-opacity', 0)
                 .on('click', JSV.clickTitle)
