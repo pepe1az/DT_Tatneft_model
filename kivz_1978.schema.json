@@ -526,7 +526,7 @@
       "$schema": "https://json-schema.org/draft/2020-12/schema",
       "$id": "/databases/forms/forms_root",
       "$comment": "",
-      "title": "Формы",
+      "title": "Входные документы",
       "description": "Отражает информацио о входных/выходных формах",
       "type": "",
       "properties": {
