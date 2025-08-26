@@ -166,6 +166,626 @@
             "title": "oirbaza2 формы",
             "type": "",
             "properties": {
+              "ТН244 Ш80": {
+                "title": "ТН244_Ш80",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН244_Ш80",
+                  "comment": "",
+                  "title": "ТН244 Ш80",
+                  "form": "",
+                  "type": "",
+                  "properties": {
+                    "ТН244_Ш80_Ш02_header_attributes": {
+                      "title": "Атрибуты заголовка",
+                      "description": "",
+                      "type": "object",
+                      "properties":{
+                        "1_level":{
+                          "title":"ТН244; Ш80"
+                        }
+                      }
+                    },
+                    "ТН244 Ш80 Ш02": {
+                      "title": "ТН244_Ш80_Ш02",
+                      "description": "ТЕХНИКО-ЭКОНОМИЧЕСКИЕ ПОКАЗАТЕЛИ ПО ЗАКОНЧЕННЫМ СКВАЖИНАМ",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН244_Ш80/ТН244_Ш80_Ш02",
+                        "$comment": "",
+                        "title": "ТН244 Ш80 Ш02",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "well_number": {
+                          "title": "Номер скважины",
+                          "description": "",
+                          "type": "number"
+                          },
+                          "repair_type_code":{
+                             "title":"Шифр ремонта",
+                             "properties":{
+                              "well_category": {
+                                "title": "Категория скважины",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "work_type": {
+                                "title": "Вид работы",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "repair_method": {
+                                "title": "Способ ремонта",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "repair_materials": {
+                                "title": "Материалы ремонта",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "repair_duration":{
+                             "title":"Продолжительность ремонта, час",
+                             "properties":{
+                              "plan": {
+                                "title": "План",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "actual": {
+                                "title": "Факт",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "actual_repair_cost": {
+                          "title": "Фактическая стоимость ремонта, руб.",
+                          "description": "",
+                          "type": "number"
+                          },
+                          "ngdu_or_customer":{
+                             "title":"НГДУ или Заказчик",
+                             "properties":{
+                              "name": {
+                                "title": "Наименование",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "id": {
+                                "title": "Код",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "ТН244 Ш80 Ш03": {
+                      "title": "ТН244_Ш80_Ш03",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН244_Ш80/ТН244_Ш80_Ш03",
+                        "$comment": "",
+                        "title": "ТН244 Ш80 Ш03",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "all_team_count":{
+                             "title":"1. Количество бригад - всего",
+                             "properties":{
+                              "a_one_days": {
+                                "title": "в том числе: 1. а/односменных с двумя выходными днями в неделю",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "b_one_days": {
+                                "title": "1. б/односменных без выходных(по непрерывному графику)",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "v_two_days": {
+                                "title": "1. в/двухсменных с двумя выходными днями в неделю",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "g_two_days": {
+                                "title": "1. г/двухсменных без выходных(по непрерывному графику)",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "d_three_days": {
+                                "title": "1. д/трехсменных с двумя выходными днями в неделю",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "e_three days": {
+                                "title": "1. е/трёхсменных без выходных(по непрерывному графику)",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              }
+                              
+                            }
+                          },
+                          "count_vaht": {
+                            "title": "2. Количество вахт (В)",
+                            "properties": {
+                              "code": {
+                              "title": "Код",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "indicators": {
+                              "title": "Показатели",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          },
+                          "lift_count": {
+                            "title": "3. Количество подъемников, постоянно находящихся в работе (П)",
+                            "properties": {
+                              "code": {
+                              "title": "Код",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "indicators": {
+                              "title": "Показатели",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          },
+                          "worker_count": {
+                            "title": "4. Количество рабочих - всего",
+                            "properties": {
+                              "a_lift": {
+                                "title": "в том числе: 4. а/машинистов подъёмников",
+                                "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "b_main_work_team": {
+                              "title": "4. б/рабочих основных бригад",
+                              "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              },
+                              "v_help_workers": {
+                              "title": "4. в/вспомогательных рабочих",
+                              "properties": {
+                                  "code": {
+                                  "title": "Код",
+                                  "description": "",
+                                  "type": "number"
+                                  },
+                                  "indicators": {
+                                  "title": "Показатели",
+                                  "description": "",
+                                  "type": "number"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "preparation_team_count": {
+                            "title": "5. Количество подготовительных бригад",
+                            "properties": {
+                              "code": {
+                              "title": "Код",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "indicators": {
+                              "title": "Показатели",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          },
+                          "preparation_team_size": {
+                            "title": "6. Численность подготовительных бригад",
+                            "properties": {
+                              "code": {
+                              "title": "Код",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "indicators": {
+                              "title": "Показатели",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ТН245 Ш80": {
+                "title": "ТН245_Ш80",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН245_Ш80",
+                  "comment": "",
+                  "title": "ТН245 Ш80",
+                  "form": "",
+                  "type": "",
+                  "properties": {
+                    "ТН245_Ш80_header_attributes": {
+                      "title": "Атрибуты заголовка",
+                      "description": "",
+                      "type": "object",
+                      "properties":{
+                        "1_level":{
+                          "title":"Форма 143245"
+                        },
+                        "2_level":{
+                          "title":"ТН 245; НГДУ; Ш80; ЦВХ ПНП и КРС"
+                        },
+                        "3_level":{
+                          "title":"Тип подъемника; Бригада № ; Скважина №;"
+                        },
+                        "4_level":{
+                          "title":"Вид Работы; Ремонт №; Оснастка"
+                        },
+                        "5_level":{
+                          "title":"Искусственный забой м ; Картограмма № ; Категория сложности АПР работает, не работает"
+                        },
+                        "6_level":{
+                          "title":"Ш 01"
+                        }
+                      }
+                    },
+                    "ТН245 Ш80 Ш01": {
+                      "title": "ТН245_Ш80_Ш01",
+                      "description": "ТЕХНИКО-ЭКОНОМИЧЕСКИЕ ПОКАЗАТЕЛИ ПО ЗАКОНЧЕННЫМ СКВАЖИНАМ",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН245_Ш80/ТН245_Ш80_Ш01",
+                        "$comment": "",
+                        "title": "ТН245 Ш80 Ш01",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "task_number": {
+                              "title": "№ пункта наряд - задания",
+                              "description": "",
+                              "type": "number"
+                          },
+                          "ENV": {
+                              "title": "ЕНВ",
+                              "description": "",
+                              "type": "number"
+                          },
+                          "work_title": {
+                              "title": "Описание производимых работ",
+                              "description": "",
+                              "type": "number"
+                          },
+                          "code": {
+                              "title": "Код",
+                              "description": "",
+                              "type": "number"
+                          },
+                          "actual_operations_duration": {
+                              "title": "Фактич. затрач. время, (час, доля часа)",
+                              "description": "",
+                              "type": "number"
+                          },
+                          "standart_operations_duration": {
+                            "title": "Нормативное время",
+                            "properties": {
+                              "sdelno": {
+                              "title": "Сдельно",
+                              "properties": {
+                                "actual": {
+                                "title": "Факт",
+                                "description": "",
+                                "type": "number"
+                                },
+                                "base": {
+                                "title": "Норма",
+                                "description": "",
+                                "type": "number"
+                                }
+                                }
+                              },
+                              "same_time": {
+                              "title": "Повременно",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }  
+                          },
+                          "duration_not_in_naryad": {
+                              "title": "Время, не включенное в наряд",
+                              "properties": {
+                                "same_time": {
+                                "title": "Поврем.",
+                                "description": "",
+                                "type": "number"
+                                },
+                                "prostoi": {
+                                "title": "Простой",
+                                "description": "",
+                                "type": "number"
+                                }
+                              }
+                          }
+                        }
+                      }
+                    },
+                    "ТН245 Ш80 Ш02": {
+                      "title": "ТН245_Ш80_Ш02",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН245_Ш80/ТН245_Ш80_Ш02",
+                        "$comment": "",
+                        "title": "ТН245 Ш80 Ш02",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ТН245_Ш80_header_attributes": {
+                            "title": "Атрибуты заголовка - таблица",
+                            "description": "",
+                            "type": "object",
+                            "properties":{
+                              "cpnp_krs":{
+                                "title":"ЦПНП и КРС",
+                                "properties": {
+                                  "debet": {
+                                  "title": "Дебет",
+                                  "properties": {
+                                    "krs_team_number": {
+                                    "title": "Номер бригады",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "item_cost": {
+                                    "title": "Статья затрат",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "account_balance": {
+                                    "title": "Баланс. счёт",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "analytic_account_code": {
+                                    "title": "Шифр аналит. учёта",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "category": {
+                                    "title": "Категория",
+                                    "description": "",
+                                    "type": "number"
+                                    }
+                                  }
+                                  }
+                                }
+                              },
+                              "utt":{
+                                "title":"УТТ",
+                                "properties": {
+                                  "debet": {
+                                  "title": "Дебет",
+                                  "properties": {
+                                    "krs_team_number": {
+                                    "title": "Номер бригады",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "item_cost": {
+                                    "title": "Статья затрат",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "account_balance": {
+                                    "title": "Баланс. счёт",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "analytic_account_code": {
+                                    "title": "Шифр аналит. учёта",
+                                    "description": "",
+                                    "type": "number"
+                                    },
+                                    "category": {
+                                    "title": "Категория",
+                                    "description": "",
+                                    "type": "number"
+                                    }
+                                  }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "vahta": {
+                            "title": "Вахта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "last_name": {
+                            "title": "Фамилия И.О",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "profession": {
+                            "title": "Профессия",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "profession_code": {
+                            "title": "Код профессии",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "taridd_shedule_number": {
+                            "title": "Номер тарифной сетки",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "worker_category": {
+                            "title": "Разряд рабочего",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "work_category": {
+                            "title": "Разряд Работы",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "service_number": {
+                            "title": "Табельный номер",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "piecework_times": {
+                            "title": "Сдельные работы, часы",
+                            "properties": {
+                              "actual": {
+                              "title": "Факт",
+                              "description": "",
+                              "type": "number"
+                              },
+                            "norm": {
+                              "title": "Норма",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          },
+                          "shift_work": {
+                            "title": "Повременные работы, часы",
+                            "properties": {
+                              "technological_nature": {
+                              "title": "Технологического характера",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "not_technological_nature": {
+                              "title": "Нетехнологического характера",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          },
+                          "night_hours": {
+                            "title": "Ночные часы",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "downtime_hours": {
+                            "title": "Простой, часы",
+                            "properties": {
+                              "whole_shift": {
+                              "title": "Целосменный",
+                              "description": "",
+                              "type": "number"
+                              },
+                              "in_shift": {
+                              "title": "Внутрисменный",
+                              "description": "",
+                              "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -264,7 +884,7 @@
             "properties": {
               "ТН211_Ш87_Ш12": {
                       "title": "ТН211_Ш87_Ш12",
-                      "description": "",
+                      "description": "Замеры дистанционными приборами и определение герметичности нкт и колонны",
                       "type": "array",
                       "items": {
                         "$id": "/databases/forms/forms_root/ТН211_Ш87_Ш12",
@@ -273,12 +893,41 @@
                         "description": "форма 12D",
                         "type": "object",
                         "properties": {
+                          "ТН211_Ш87_Ш12_header_attributes": {
+                          "title": "Атрибуты заголовка",
+                          "description": "",
+                          "type": "object",
+                          "properties":{
+                            "1_level":{
+                              "title":"ТН211; НГДУ; ЦЕХ"
+                            },
+                            "2_level":{
+                              "title":"Ш87; Дата иссл.(м-ц,число); Вид исследования"
+                            },
+                            "3_level":{
+                              "title":"№ скв; Коэф. прибора; Тип прибора"
+                            },
+                            "4_level":{
+                              "title":"Примечание; Исследователь; Ш12"
+                            }
+                          }
+                        },
+                          "measurement_depth": {
+                          "title": "Глубина замера, м",
+                          "description": "",
+                          "type": "number"
+                          },
+                          "impulse_count": {
+                          "title": "Кол-во импульсов, имп/мин (Температура, °C)",
+                          "description": "",
+                          "type": "number"
+                          }
                         }
                       }
                     },
                     "ТН211 Ш85 Ш17": {
                       "title": "ТН211_Ш85_Ш17",
-                      "description": "",
+                      "description": "Отбивка забоя отбор глубинных проб",
                       "type": "array",
                       "items": {
                         "$id": "/databases/forms/forms_root/ТН211_Ш85_Ш17",
@@ -287,12 +936,108 @@
                         "description": "форма 17",
                         "type": "object",
                         "properties": {
+                          "ТН211_Ш85_Ш17_header_attributes": {
+                          "title": "Атрибуты заголовка",
+                          "description": "",
+                          "type": "object",
+                          "properties":{
+                            "1_level":{
+                              "title":"ТН211; НГДУ; ЦЕХ"
+                            },
+                            "2_level":{
+                              "title":"Ш85; Ш17"
+                            }
+                          }
+                        },
+                        "measurement_date": {
+                          "title": "Дата замера; месяц, число",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "research_type": {
+                          "title": "Вид исследования",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "well_number": {
+                          "title": "Номер скважины",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "measurement_depth": {
+                          "title": "Глубина замера, м",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pattern_diameter": {
+                          "title": "Диаметр шаблона, мм",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "note": {
+                          "title": "Примечание",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "researcher": {
+                          "title": "Исследователь",
+                          "description": "",
+                          "type": "number"
                         }
                       }
                     }
+                },
+                "ТН211_Ш86_Ш14": {
+                    "title": "ТН211_Ш86_Ш14",
+                    "description": "Кривые восстановления давления или уровня",
+                    "type": "array",
+                    "items": {
+                      "$id": "/databases/forms/forms_root/ТН211_Ш86_Ш14",
+                      "$comment": "",
+                      "title": "ТН211 Ш86 Ш14",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "ТН211_Ш87_Ш12_header_attributes": {
+                        "title": "Атрибуты заголовка",
+                        "description": "",
+                        "type": "object",
+                        "properties":{
+                          "1_level":{
+                            "title":"ТН211; НГДУ; ЦЕХ"
+                          },
+                          "2_level":{
+                            "title":"Ш86; Дата иссл.(м-ц,число); Вид иссл.; № скв"
+                          },
+                          "3_level":{
+                            "title":"Дебит жидк (прием) т/сут; % обводн.; В.; Мощность;"
+                          },
+                          "4_level":{
+                            "title":"№ прибора;Прим.; Иссл.; Ш14"
+                          }
+                        } 
+                        },
+                        "measurement_interval": {
+                        "title": "Интервал замера, мин. (сут.)",
+                        "description": "",
+                        "type": "number"
+                        },
+                        "pressure": {
+                        "title": "Давление, кг/см2 (уровень) м",
+                        "description": "",
+                        "type": "number"
+                        },
+                        "pressure_frontal": {
+                        "title": "P затр. кг/см2",
+                        "description": "",
+                        "type": "number"
+                        } 
+                      }
+                    }
                   }
-                }
-              },
+              }
+            }  
+        },
         "sodon_form": {
           "title": "СОДОН формы",
           "type": "array",
@@ -1409,7 +2154,8 @@
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "field": {
                   "title": "Месторождение",
@@ -1434,7 +2180,8 @@
                   "title": "Категория скважины",
                   "description": "",
                   "$comment": "СК5",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "entry_date": {
                   "title": "Дата ввода в эксплуатацию",
@@ -1927,7 +2674,8 @@
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "variety": {
                   "title": "Разновидность",
@@ -2143,7 +2891,8 @@
                         "downtime_Duration": {
                           "title": "Время простоя по данной причине",
                           "description": "",
-                          "type": "number"
+                          "type": "number",
+                          "form": "ТН245 Ш80 Ш02"
                         },
                         "downtime_end_date": {
                           "title": "Дата конца простоя",
@@ -2238,7 +2987,8 @@
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "variety": {
                   "title": "Разновидность",
@@ -3146,7 +3896,8 @@
                             "measurement_date": {
                               "title": "Дата замера",
                               "description": "",
-                              "type": "string"
+                              "type": "string",
+                              "form": "ТН211 Ш85 Ш17"
                             },
                             "measured_injectivity": {
                               "title": "Приёмистость по замерам",
@@ -3221,7 +3972,8 @@
                       "well_category": {
                         "title": "Категория скважины",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН244 Ш80 Ш02"
                       },
                       "condition_of_the_production_column": {
                         "title": "Состояние эксплуатационной колонны",
@@ -3697,7 +4449,8 @@
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "field": {
                   "title": "Месторождение",
@@ -3838,7 +4591,8 @@
                             "well": {
                               "title": "Номер скважины",
                               "description": "",
-                              "type": "string"
+                              "type": "string",
+                              "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                             },
                             "bottom_hole_x": {
                               "title": "Координата забоя – X, м",
@@ -4290,7 +5044,8 @@
             "title": "УТПНП и КРС",
             "description": "Управление техническим подъёмом нефти на поверхность и Капитальный ремонт скважин",
             "$comment": "UPNP",
-            "type": "string"
+            "type": "string",
+            "form": "ТН245 Ш80 Ш02"
           },
           "actseg": {
             "title": "Акт ремонта скважины",
@@ -4312,19 +5067,22 @@
                   "title": "Цех ППН и КРС (ЦТРС)",
                   "description": "",
                   "$comment": "SHOP2",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
                   "$comment": "NAME",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "work_type": {
                   "title": "Вид работы",
                   "description": "",
                   "$comment": "FORM70",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "repair_start_year": {
                   "title": "Год начала ремонта",
@@ -4564,13 +5322,15 @@
                   "title": "Цех ППН и КРС (ЦТРС)",
                   "description": "код",
                   "$comment": "Оригинал: Цех ППН и КРС (ЦТРС), SHOP2, X(2), 2",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "work_type": {
                   "title": "Вид работы",
                   "description": "код",
                   "$comment": "Оригинал: Вид работы, FORM7Ø, 9(3), 2",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "planned_repairs_oil_wells": {
                   "title": "Плановое кол-во ремонтов по нефтяным скважинам",
@@ -4613,63 +5373,71 @@
                   "title": "Цех ППН и КРС (ЦТРС)",
                   "description": "",
                   "$comment": "SHOP2",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
                   "$comment": "NAME",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "category": {
-                  "title": "Категория",
+                  "title": "Категория скажины",
                   "description": "",
                   "$comment": "CATEGOR1",
                   "type": "number",
-                  "form": "ТН131 Ш81 Ш31"
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "work_type": {
                   "title": "Вид работы",
                   "description": "",
                   "$comment": "FORM70",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "repair_method": {
                   "title": "Способ ремонта",
                   "description": "",
                   "$comment": "WAY06",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "repair_materials": {
                   "title": "Материалы ремонта",
                   "description": "",
                   "$comment": "FORM76",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "planned_repair_duration": {
                   "title": "Плановая продолжительность ремонта",
                   "description": "",
                   "$comment": "DURAT15",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "actual_repair_duration": {
                   "title": "Фактическая продолжительность ремонта",
                   "description": "",
                   "$comment": "DURAT16",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "actual_repair_cost": {
                   "title": "Фактическая стоимость ремонта",
                   "description": "",
                   "$comment": "COST24",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "ngdu_or_customer": {
                   "title": "НГДУ или заказчик",
                   "description": "",
                   "$comment": "NGDU",
                   "type": "string",
-                  "form": "ТН131 Ш81 Ш36"
+                  "form": "ТН131 Ш81 Ш36, ТН244 Ш80 Ш02" 
                 }
               }
             }
@@ -4700,7 +5468,8 @@
                   "title": "Цех ПНП и КРС (ЦТРС)",
                   "description": "Цех подъёма нефти на поверхность и капитального ремонта скважин (цех технического ремонта скважин)",
                   "$comment": "SHOP2",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "capacity_ppnp_krs": {
                   "title": "Мощность цеха ПНП и КРС (ЦТРС)",
@@ -4737,7 +5506,8 @@
                   "title": "Цех ПНП и КРС",
                   "description": "",
                   "$comment": "SHOP2",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "hoist_type": {
                   "title": "Подъемник (тип)",
@@ -4756,13 +5526,15 @@
                   "title": "Номер бригады КРС",
                   "description": "Номер бригады капитального ремонта скважин",
                   "$comment": "NUMBER07 ",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
                   "$comment": "NAME",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "krs_work_type": {
                   "title": "Вид работ при КРС",
@@ -4786,7 +5558,8 @@
                   "title": "Время, затраченное на операцию",
                   "description": "",
                   "$comment": "TIME35",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН245 Ш80 Ш01"
                 }
               }
             }
@@ -4839,7 +5612,8 @@
                       "title": "Номер скважины",
                       "description": "",
                       "$comment": "NAME",
-                      "type": "number"
+                      "type": "number",
+                      "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                     },
                     "field": {
                       "title": "Месторождение",
@@ -4891,19 +5665,22 @@
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM71",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "operation_mode_after_repair_2": {
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM72",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "operation_mode_after_repair_3": {
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM73",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "repair_reason": {
                             "title": "Причина ремонта",
@@ -4996,7 +5773,8 @@
                         "title": "Номер скважины",
                         "description": "",
                         "$comment": "NAME",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                       },
                       "operation_mode_before_repair": {
                         "title": "Способ эксплуатации до ремонта",
@@ -5026,19 +5804,22 @@
                         "title": "Вид работы",
                         "description": "",
                         "$comment": "FORM71",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН244 Ш80 Ш02"
                       },
                       "operation_mode_after_repair_2": {
                         "title": "Вид работы",
                         "description": "",
                         "$comment": "FORM72",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН244 Ш80 Ш02"
                       },
                       "operation_mode_after_repair_3": {
                         "title": "Вид работы",
                         "description": "",
                         "$comment": "FORM73",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН244 Ш80 Ш02"
                       },
                       "repair_reason": {
                         "title": "Причина ремонта",
@@ -5197,7 +5978,8 @@
                       "title": "Номер скважины",
                       "description": "",
                       "$comment": "NAME",
-                      "type": "number"
+                      "type": "number",
+                      "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                     },
                     "repairs_count": {
                       "title": "Количество ремонтов",
@@ -5249,19 +6031,22 @@
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM71",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "operation_mode_after_repair_2": {
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM72",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "operation_mode_after_repair_3": {
                             "title": "Вид работы",
                             "description": "",
                             "$comment": "FORM73",
-                            "type": "number"
+                            "type": "number",
+                            "form": "ТН244 Ш80 Ш02"
                           },
                           "repair_reason": {
                             "title": "Причина ремонта",
@@ -5443,7 +6228,8 @@
                               "title": "Номер бригады",
                               "description": "",
                               "$comment": "NUMBER7",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН245 Ш80 Ш02"
                             },
                             "well1": {
                               "title": "Скважина №",
@@ -5459,7 +6245,8 @@
                                     "title": "Номер скажины",
                                     "description": "",
                                     "$comment": "NAME",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН244 Ш80 Ш02"
                                   },
                                   "ogpd_number": {
                                     "title": "Номер ЦДНГ",
@@ -5496,7 +6283,8 @@
                                     "title": "Вид работы",
                                     "description": "",
                                     "$comment": "FORMT70",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН244 Ш80 Ш02"
                                   },
                                   "shifts_quantity": {
                                     "title": "Количество вахт",
@@ -5524,19 +6312,22 @@
                                           "title": "Код записи",
                                           "description": "",
                                           "$comment": "KODZAP",
-                                          "type": "number"
+                                          "type": "number",
+                                          "form": "ТН245 Ш80 Ш01"
                                         },
                                         "actual_operations_duration": {
                                           "title": "Фактическая продолжительность операций",
                                           "description": "",
                                           "$comment": "DURAT01",
-                                          "type": "string"
+                                          "type": "string",
+                                          "form": "ТН245 Ш80 Ш01"
                                         },
                                         "standart_operations_duration": {
                                           "title": "Нормативная продолжительность операций",
                                           "description": "",
                                           "$comment": "DURAT02",
-                                          "type": "string"
+                                          "type": "string",
+                                          "form": "ТН245 Ш80 Ш01"
                                         }
                                       }
                                     }
@@ -5564,7 +6355,8 @@
                         "title": "Номер бригады-вахты",
                         "description": "",
                         "$comment": "BRGWAXT",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН245 Ш80 Ш02"
                       },
                       "well2": {
                         "title": "Скважина №",
@@ -5580,7 +6372,8 @@
                               "title": "Номер скажины",
                               "description": "",
                               "$comment": "NAME",
-                              "type": "string"
+                              "type": "string",
+                              "form": "ТН244 Ш80 Ш02"
                             },
                             "ogpd_number": {
                               "title": "Номер ЦДНГ",
@@ -5593,7 +6386,8 @@
                               "title": "Вид работы",
                               "description": "",
                               "$comment": "FORMT70",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН244 Ш80 Ш02"
                             },
                             "lift_type": {
                               "title": "Тип подъемника",
@@ -5627,19 +6421,22 @@
                                     "title": "Код записи",
                                     "description": "",
                                     "$comment": "KODZAP",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН245 Ш80 Ш01"
                                   },
                                   "actual_operations_duration": {
                                     "title": "Фактическая продолжительность операций",
                                     "description": "",
                                     "$comment": "DURAT01",
-                                    "type": "string"
+                                    "type": "string",
+                                    "form": "ТН245 Ш80 Ш01"
                                   },
                                   "standart_operations_duration": {
                                     "title": "Нормативная продолжительность операций",
                                     "description": "",
                                     "$comment": "DURAT02",
-                                    "type": "string"
+                                    "type": "string",
+                                    "form": "ТН245 Ш80 Ш01"
                                   }
                                 }
                               }
@@ -5664,7 +6461,8 @@
                         "title": "Номер бригады",
                         "description": "",
                         "$comment": "NUMBER7",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН245 Ш80 Ш02"
                       },
                       "brigade_work_schedule_code": {
                         "title": "Код графика работы БТРС",
@@ -5716,7 +6514,8 @@
                   "title": "Номер скажины",
                   "description": "",
                   "$comment": "NAME",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "ogpd_number": {
                   "title": "Номер ЦДНГ",
@@ -5729,7 +6528,8 @@
                   "title": "Номер бригады",
                   "description": "",
                   "$comment": "NUMBER7",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН245 Ш80 Ш02"
                 },
                 "repair_type": {
                   "title": "Вид ремонта",
@@ -5765,7 +6565,8 @@
                   "title": "Вид работы",
                   "description": "",
                   "$comment": "FORMT70",
-                  "type": "number"
+                  "type": "number",
+                  "form": "ТН244 Ш80 Ш02"
                 },
                 "shifts_quantity": {
                   "title": "Количество вахт",
@@ -5799,13 +6600,15 @@
                         "title": "Фактическая продолжительность операций",
                         "description": "",
                         "$comment": "DURAT01",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН245 Ш80 Ш01"
                       },
                       "standart_operations_duration": {
                         "title": "Нормативная продолжительность операций",
                         "description": "",
                         "$comment": "DURAT02",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН245 Ш80 Ш01"
                       }
                     }
                   }
@@ -5951,17 +6754,20 @@
                                   "entry_code ": {
                                     "title": "Код записи",
                                     "description": "",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН245 Ш80 Ш02"
                                   },
                                   "worker_grade": {
                                     "title": "Разряд рабочего",
                                     "description": "",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН245 Ш80 Ш02"
                                   },
                                   "worker_id_number": {
                                     "title": "Табличный номер рабочего",
                                     "description": "",
-                                    "type": "number"
+                                    "type": "number",
+                                    "form": "ТН245 Ш80 Ш02"
                                   }
                                 }
                               }
@@ -7333,7 +8139,8 @@
                 "well_number": {
                   "title": "Номер скважины",
                   "description": "",
-                  "type": "string"
+                  "type": "string",
+                  "form": "ТН244 Ш80 Ш02, ТН211 Ш85 Ш17"
                 },
                 "segment_open_date": {
                   "title": "Дата открытия сегмента",
@@ -7602,7 +8409,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -7617,7 +8425,8 @@
                       "measurement_depth": {
                         "title": "Глубина замера при исследовании",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш87 Ш12, ТН211 Ш85 Ш17"
                       },
                       "depth_pressure": {
                         "title": "Давление на глубине замера",
@@ -7632,7 +8441,8 @@
                       "annulus_pressure": {
                         "title": "Давление на устье затрубное замеренное при исследовании",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш86 Ш14"
                       },
                       "device_number": {
                         "title": "Номер прибора при исследовании",
@@ -7642,12 +8452,14 @@
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "form11R": {
                         "title": "Форма 11R",
@@ -7698,7 +8510,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -7718,12 +8531,14 @@
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "form12D": {
                         "title": "Форма 12D",
@@ -7738,12 +8553,14 @@
                             "measurement_depth": {
                               "title": "Глубина замера при исследовании",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН211 Ш87 Ш12, ТН211 Ш85 Ш17"
                             },
                             "pulse_count": {
                               "title": "Количество импульсов прибора при исследовании",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН211 Ш87 Ш12"
                             }
                           }
                         }
@@ -7787,7 +8604,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -7817,17 +8635,20 @@
                       "annulus_pressure": {
                         "title": "Давление затрубное, замеренное при исследовании",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш86 Ш14"
                       },
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "form13R": {
                         "title": "Форма 13R",
@@ -7888,7 +8709,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -7924,12 +8746,14 @@
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "form14D": {
                         "title": "Форма 14D",
@@ -7944,17 +8768,20 @@
                             "measurement_interval": {
                               "title": "Интервал замера во времени",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН211 Ш86 Ш14"
                             },
                             "depth_pressure": {
                               "title": "Давление на глубине замера (уровень)",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН211 Ш86 Ш14"
                             },
                             "annulus_pressure": {
                               "title": "Давление затрубное при исследовании",
                               "description": "",
-                              "type": "number"
+                              "type": "number",
+                              "form": "ТН211 Ш86 Ш14"
                             }
                           }
                         }
@@ -8071,7 +8898,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -8086,7 +8914,8 @@
                       "measurement_depth": {
                         "title": "Глубина замера при исследовании",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш87 Ш12, ТН211 Ш85 Ш17"
                       },
                       "measured_level": {
                         "title": "Уровень, замеренный при исследовании",
@@ -8112,7 +8941,8 @@
                       "annulus_pressure": {
                         "title": "Давление на устье затрубное замеренное при исследовании",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш86 Ш14"
                       },
                       "choke_diameter": {
                         "title": "Диаметр штуцера",
@@ -8127,12 +8957,14 @@
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "form15R": {
                         "title": "Форма 15R",
@@ -8219,7 +9051,8 @@
                       "research_type_date": {
                         "title": "Вид исследования, дата исследования скважины",
                         "description": "",
-                        "type": "string"
+                        "type": "string",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "info_receipt_date": {
                         "title": "Дата поступления информации",
@@ -8229,22 +9062,26 @@
                       "measurement_depth": {
                         "title": "Глубина замера",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш87 Ш12, ТН211 Ш85 Ш17"
                       },
                       "template_diameter": {
                         "title": "Диаметр шаблона",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "note": {
                         "title": "Примечание",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       },
                       "researcher": {
                         "title": "Исследователь",
                         "description": "",
-                        "type": "number"
+                        "type": "number",
+                        "form": "ТН211 Ш85 Ш17"
                       }
                     }
                   }
@@ -8413,7 +9250,8 @@
                     "parameter_measurement_date": {
                       "title": "Дата замера параметра",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН211 Ш85 Ш17"
                     },
                     "well_id": {
                       "title": "Условный номер скважины",
@@ -8668,7 +9506,8 @@
                         "measurement_date": {
                           "title": "Дата замера",
                           "description": "",
-                          "type": "string"
+                          "type": "string",
+                          "form": "ТН211 Ш85 Ш17"
                         },
                         "liquid_flow_rate": {
                           "title": "Дебит жидкости",
@@ -8691,7 +9530,8 @@
                         "measurement_date": {
                           "title": "Дата замера",
                           "description": "",
-                          "type": "string"
+                          "type": "string",
+                          "form": "ТН211 Ш85 Ш17"
                         },
                         "water_cut_percentage": {
                           "title": "Процент обводненности",
@@ -8719,7 +9559,8 @@
                         "measurement_date": {
                           "title": "Дата замера",
                           "description": "",
-                          "type": "string"
+                          "type": "string",
+                          "form": "ТН211 Ш85 Ш17"
                         },
                         "working_agent_flow_rate": {
                           "title": "Расход рабочего агента по замеру",
@@ -8749,7 +9590,8 @@
                     "measurement_date": {
                       "title": "Дата замера",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН211 Ш85 Ш17"
                     },
                     "liquid_flow_rate": {
                       "title": "Дебит жидкости",
@@ -8772,7 +9614,8 @@
                     "measurement_date": {
                       "title": "Дата замера",
                       "description": "",
-                      "type": "string"
+                      "type": "string",
+                      "form": "ТН211 Ш85 Ш17"
                     },
                     "volumetric_water_cut": {
                       "title": "Процент обводненности объемный",
