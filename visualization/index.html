@@ -65,10 +65,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tv4/1.2.7/tv4.min.js"></script>
     <script src="js/jsv.js"></script>
+    <script src="databases_else_mapping.js"></script>
+<script>
+  (function () {
+    if (window.JSV && typeof JSV.setElseMapping === 'function' && window.DATABASES_ELSE_MAPPING) {
+      JSV.setElseMapping(window.DATABASES_ELSE_MAPPING);
+    } else {
+      console.warn('Нет JSV.setElseMapping или DATABASES_ELSE_MAPPING');
+    }
+  })();
+</script>
     <script src="js/ref-parser.min.js"></script>
     <script src="js/app.js"></script>
     <script>
       NProgress.done();
     </script>
+    
   </body>
 </html>

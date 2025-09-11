@@ -2956,6 +2956,63 @@ if (typeof JSV === 'undefined') {
           var lab = JSV._normLabel(d && d.name);
           return !!(lab && set[lab]);
         },
+        _synAdj: null,  
+        _mapNorms: function (s) {
+          var out = [];
+          function add(x){
+            var n = JSV._normLabel(x);
+            if (n && out.indexOf(n) === -1) out.push(n);
+          }
+          var str = String(s == null ? '' : s);
+          add(str);
+          var pipe = str.split('|');
+          if (pipe.length > 1) add(pipe[pipe.length - 1]);
+          str.split(';').forEach(function(part){ add(part); });
+          return out;
+        },
+
+        _buildSynAdj: function (mapObj) {
+        var adj = Object.create(null);
+        function connect(a, b){
+            if (!a || !b || a === b) return;
+            (adj[a] || (adj[a] = Object.create(null)))[b] = 1;
+            (adj[b] || (adj[b] = Object.create(null)))[a] = 1;
+        }
+
+        if (!mapObj || typeof mapObj !== 'object') return adj;
+        if (Array.isArray(mapObj)) {
+            for (var i = 0; i < mapObj.length; i++) {
+            var pair = mapObj[i];
+            if (!pair) continue;
+            var L = JSV._mapNorms(pair[0]);
+            var R = JSV._mapNorms(pair[1]);
+            for (var a = 0; a < L.length; a++)
+                for (var b = 0; b < R.length; b++)
+                connect(L[a], R[b]);
+            }
+            return adj;
+        }
+        Object.keys(mapObj).forEach(function(key){
+            var L = JSV._mapNorms(key);
+            var val = mapObj[key];
+            var arr = Array.isArray(val) ? val : [val];
+            for (var i = 0; i < arr.length; i++) {
+            var R = JSV._mapNorms(arr[i]);
+            for (var a = 0; a < L.length; a++)
+                for (var b = 0; b < R.length; b++)
+                connect(L[a], R[b]);
+            }
+        });
+
+        return adj;
+        },
+
+        setElseMapping: function(mapObj){
+          JSV._synAdj = JSV._buildSynAdj(mapObj);
+          if (JSV.treeData && typeof JSV.update === 'function') {
+            JSV.update(JSV.treeData);
+          }
+        },
         update: function (source) {
             var duration = JSV.duration;
             var root = JSV.treeData;
@@ -2977,14 +3034,69 @@ if (typeof JSV === 'undefined') {
             childCount(0, root);
             var newHeight = d3.max(levelWidth) * 45; // 25 pixels per line
             JSV.tree.size([newHeight, JSV.viewerWidth]);
-
             var nodes = JSV.tree.nodes(root).reverse(),
-                links = JSV.tree.links(nodes);
-            JSV._ensureTermSet();
+               links = JSV.tree.links(nodes);
+
+           // 1) базовые флаги
             nodes.forEach(function (d) {
             d._isLeafNode = JSV._isLeaf(d);
-            d._dictHit = d._isLeafNode ? JSV._leafMatchesDict(d) : null;
+            d._synLinked  = false; // по умолчанию нет связки
             });
+
+            // 2) ищем пары по графу синонимов (если загружен)
+            (function resolveSynonymLinks () {
+            var adj = JSV._synAdj;
+            if (!adj) return; // словарь ещё не загружен — пропускаем
+
+            // индекс: НОРМАЛИЗОВАННАЯ_МЕТКА -> [узлы с этой меткой]
+            var index = Object.create(null);
+
+            function put(label, node) {
+                var key = JSV._normLabel(label);
+                if (!key) return;
+                (index[key] || (index[key] = [])).push(node);
+            }
+
+            // собираем листья по их именам/лейблам
+            nodes.forEach(function (d) {
+                if (!d._isLeafNode) return;
+                if (d.plainName) put(d.plainName, d);
+                if (d.name && d.name !== d.plainName) put(d.name, d);
+            });
+
+            // помечаем связанные пары по графу синонимов
+            Object.keys(index).forEach(function (lbl) {
+    var neigh = adj[lbl];
+    if (!neigh) return;
+    var nodesA = index[lbl];
+
+    
+    if (Object.keys(neigh).length > 0) {
+      nodesA.forEach(function (n) { n._synLinked = true; });
+    }
+
+    
+    Object.keys(neigh).forEach(function (nb) {
+      var nodesB = index[nb];
+      if (!nodesB) return;
+      nodesA.forEach(function (n) { n._synLinked = true; });
+      nodesB.forEach(function (n) { n._synLinked = true; });
+    });
+  });
+            })(); // end resolveSynonymLinks
+
+            // 3) окраска листьев: зелёный если есть связка, иначе красный
+            function leafFill(d) {
+            if (d && d._isLeafNode) return d._synLinked ? '#059669' : '#dc2626';
+            return null;
+            }
+
+
+            // 3) окраска листьев: зелёный если есть связка, иначе красный
+            function leafFill(d){
+              if (d && d._isLeafNode) return d._synLinked ? '#059669' : '#dc2626';
+              return null;
+            }
             var maxW = {};
             var maxDepth = 0;
             nodes.forEach(function(d) {
@@ -3048,12 +3160,7 @@ if (typeof JSV === 'undefined') {
                     return JSV.getDisplayName(d) + (d.require ? '*' : '');
                 })
                 .style('fill-opacity', 0)
-                .style('fill', function(d){
-                if (d._isLeafNode) {
-                    return d._dictHit ? '#059669': '#dc2626';
-                }
-                return null;
-                })
+                .style('fill', leafFill)
                 .on('click', JSV.clickTitle)
                 .on('dblclick', function(d) {
                     JSV.click(d);
@@ -3091,12 +3198,7 @@ if (typeof JSV === 'undefined') {
             // Fade the text in
             nodeUpdate.select('text')
                 .style('fill-opacity', function(d){ return d.opacity || 1; })
-                .style('fill', function(d){
-                    if (d._isLeafNode) {
-                    return d._dictHit ? '#059669' : '#dc2626';
-                    }
-                    return null;
-                });
+                .style('fill', leafFill);
 
             // Transition exiting nodes to the parent's new position.
             var nodeExit = node.exit().transition()
