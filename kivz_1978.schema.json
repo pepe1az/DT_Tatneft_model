@@ -19,7 +19,7 @@
           "items": {
             "$id": "/databases/forms/forms_root/catalog_form",
             "comment": "",
-            "title": "Каталог",
+            "title": "Каталог формы",
             "type": "",
             "properties": {
             }
@@ -9728,8 +9728,7 @@
                     "drilled_slaughter": {
                       "title": "Забой пробуренный",
                       "description": "",
-                      "type": "string",
-                      "form": "ТН131 Ш81 Ш40, ТН231 Ш81 Ш40"
+                      "type": "string"
                     },
                     "artificial_slaughter": {
                       "title": "Забой искусственный",
@@ -10004,8 +10003,7 @@
                           "casing_diameter": {
                             "title": "Диаметр колонны",
                             "description": "",
-                            "type": "number",
-                            "form": "ТН131 Ш81 Ш42, ТН231 Ш81 Ш42"
+                            "type": "number"
                           },
                           "descent_depth": {
                             "title": "Глубина спуска",
@@ -10116,8 +10114,7 @@
                           "casing_diameter": {
                             "title": "Диаметр колонны",
                             "description": "",
-                            "type": "number",
-                            "form": "ТН131 Ш81 Ш42, ТН231 Ш81 Ш42"
+                            "type": "number"
                           },
                           "setting_depth": {
                             "title": "Глубина спуска",
@@ -10197,7 +10194,7 @@
                 "items": {
                   "$id": "/databases/nakop/nakop_well_recovery",
                   "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
-                  "title": "Скважина",
+                  "title": "Скважина, добыча",
                   "description": "",
                   "type": "object",
                   "properties": {
@@ -10521,7 +10518,7 @@
                 "items": {
                   "$id": "/databases/nakop/nakop_well_injection",
                   "$comment": "Оригинал: SKWAG (СКВАЖИНА);",
-                  "title": "Скважина",
+                  "title": "Скважина, закачка",
                   "description": "",
                   "type": "object",
                   "properties": {
@@ -12233,8 +12230,7 @@
                                 "drilled_total_depth": {
                                   "title": "Забой пробуренный, м",
                                   "description": "",
-                                  "type": "integer",
-                                  "form": "ТН131 Ш81 Ш40, ТН231 Ш81 Ш40"
+                                  "type": "integer"
                                 },
                                 "artificial_bottom": {
                                   "title": "Забой искусственный (текущий), м",
