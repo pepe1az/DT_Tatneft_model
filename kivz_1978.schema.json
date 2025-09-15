@@ -2599,6 +2599,605 @@
             "title": "priss формы",
             "type": "",
             "properties": {
+              "ТН211 Ш85": {
+                "title": "ТН211 Ш85",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН211_Ш85",
+                  "comment": "",
+                  "title": "ТН211 Ш85",
+                  "form": "",
+                  "type": "object",
+                  "properties": {
+                    "ТН211 Ш85 Ш11": {
+                      "title": "ТН211_Ш85_Ш11",
+                      "form": "Замеры давлений",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН131_Ш82/ТН131_Ш82_Ш44",
+                        "$comment": "",
+                        "title": "ТН211 Ш85 Ш11",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "О14": {
+                "title": "О14",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/О14",
+                  "comment": "",
+                  "title": "О14 (Документ)",
+                  "form": "",
+                  "type": "",
+                  "properties": {
+                    "О14_header_attributes": {
+                      "title": "Атрибуты заголовка",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "1_level": {
+                          "title": "Форма № О14"
+                        },
+                        "2_level": {
+                          "title": "НГДУ; РИТС; МЕСТОРОЖДЕНИЕ; ПЛОЩАДЬ; СКВАЖИНА №; Индекс СКВ."
+                        }
+                      }
+                    },
+                    "horizon": {
+                      "title": "ГОРИЗОНТ",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir": {
+                      "title": "ПЛАСТ",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "top_depth": {
+                      "title": "Глубина залегания кровли пласта, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "top_ифыу": {
+                      "title": "Глубина залегания подошвы пласта, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "collector_type": {
+                      "title": "Тип коллектора",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_effective_power": {
+                      "title": "Эффективная мощность пласта, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_oil_effective_power": {
+                      "title": "Эффективная нефтенас. мощность пласта, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_water_effective": {
+                      "title": "Водонасыщенная мощность пласта, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "absolute_mark_original_VNK": {
+                      "title": "Абс. отметка начального положения ВНК, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "absolute_mark_current_VNK": {
+                      "title": "Абс. отметка текущего положения ВНК, м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "perforation_interval": {
+                      "title": "Интервал перфорации, м",
+                      "properties": {
+                        "from": {
+                          "title": "От",
+                          "properties": {
+                            "description": {
+                              "title": "Описание"
+                            },
+                            "code": {
+                              "title": "Код"
+                            }
+                          }
+                        },
+                        "to": {
+                          "title": "До",
+                          "properties": {
+                            "description": {
+                              "title": "Описание"
+                            },
+                            "code": {
+                              "title": "Код"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "reservoir_open_type": {
+                      "title": "Характер вскрытия пласта",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "perforation_density": {
+                      "title": "Плотность перфорации,отв./п.м.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "perforator_type": {
+                      "title": "Тип перфоратора",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_porosity": {
+                      "title": "Пористость пласта, %",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_permeability": {
+                      "title": "Проницаемость пласта, мд.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_water_phase_permeability": {
+                      "title": "Гидропроводность пласта, дсм/сп.",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_piezo_conductivity": {
+                      "title": "Пьезопроводность пласта, см2/сек",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_carbonate": {
+                      "title": "Карбонатность пласта, %",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_saturation": {
+                      "title": "Насыщенность пласта",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "reservoir_oil_saturation": {
+                      "title": "Нефтенасыщенность пласта, %",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "oil_separated_density": {
+                      "title": "Плотность сепарированной нефти, г/см³",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "oil_associated_gas_density": {
+                      "title": "Плотность попутного нефтяного газа, г/см³",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "gas_factor": {
+                      "title": "Газовый фактор м³/т",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "water_appearance_date": {
+                      "title": "Дата появления воды, (месяц, год)",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    },
+                    "water_nature": {
+                      "title": "Характер воды",
+                      "properties": {
+                        "description": {
+                          "title": "Описание"
+                        },
+                        "code": {
+                          "title": "Код"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+                          "ТН211_Ш85_Ш11_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "1_level": {
+                                "title": "Форма № 153211"
+                              },
+                              "2_level": {
+                                "title": "ТН211; НГДУ; ЦЕХ"
+                              },
+                              "3_level": {
+                                "title": "Ш85; Ш11"
+                              }
+                            }
+                          },
+                          "well_number": {
+                            "title": "Дата замера, месяц, число",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "date": {
+                            "title": "Вид исследования",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "horizon_code": {
+                            "title": "Номер скважины",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "agent_code": {
+                            "title": "Время простоя, час, мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "measurement_depth": {
+                            "title": "Глубина замера,м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "depth_pressure": {
+                            "title": "Давление на глубине замера, кг/см",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "buffer_pressure": {
+                            "title": "Давление на устье буферное замеренное при исследовании",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "annulus_pressure": {
+                            "title": "Давление на устье затрубное замеренное при исследовании",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "device_number": {
+                            "title": "Номер прибора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "note": {
+                            "title": "Примечание",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "researcher": {
+                            "title": "Исследователь",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН211 Ш85 Ш13": {
+                      "title": "ТН211_Ш85_Ш13",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН211_Ш85/ТН211_Ш85_Ш13",
+                        "$comment": "",
+                        "title": "ТН211 Ш85 Ш13",
+                        "form": "Сведения о замерах уровней",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ТН211_Ш85_Ш13_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "1_level": {
+                                "title": "Форма № 153211"
+                              },
+                              "2_level": {
+                                "title": "ТН211; НГДУ; ЦЕХ"
+                              },
+                              "3_level": {
+                                "title": "Ш85; Ш13"
+                              }
+                            }
+                          },
+                          "measurement_date": {
+                            "title": "Дата замера, месяц, число",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "research_type": {
+                            "title": "Вид исследования",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "well_number": {
+                            "title": "Номер скважины",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "monthly_downtime_hours": {
+                            "title": "Время простоя, час, мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "pump_strokes": {
+                            "title": "Число качаний кач/мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "polished_rod_stroke_length": {
+                            "title": "Длина хода полиров. штока, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "measured_level": {
+                            "title": "Уровень, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "annulus_pressure": {
+                            "title": "Давление затрубленное",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "note": {
+                            "title": "Примечание",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "researcher": {
+                            "title": "Исследователь",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН211 Ш85 Ш15": {
+                      "title": "ТН211_Ш85_Ш15",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН211_Ш85/ТН211_Ш85_Ш15",
+                        "$comment": "",
+                        "title": "ТН211 Ш85 Ш15",
+                        "form": "Индикаторные кривые",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ТН131_Ш81_Ш47_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "1_level": {
+                                "title": "Форма 153211"
+                              },
+                              "2_level": {
+                                "title": "ТН211; НГДУ; ЦЕХ"
+                              },
+                              "3_level": {
+                                "title": "Ш85; Ш15"
+                              }
+                            }
+                          },
+                          "measurement_date": {
+                            "title": "Дата замера, месяц, число",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "research_type": {
+                            "title": "Вид исследования",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "well_number": {
+                            "title": "Номер скважины",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "monthly_downtime_hours": {
+                            "title": "Время простоя, час, мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "measurement_depth": {
+                            "title": "Глубина замера, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "depth_pressure": {
+                            "title": "Давление на глубине замера, кг/см3",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "oil_production_rate": {
+                            "title": "Дебит нефти, т/сут (прием м/сут)",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "moutn_pressure": {
+                            "title": "Давление на устье",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "fitting_diameter": {
+                            "title": "Диаметр штуцера, мм",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "device_number": {
+                            "title": "Номер прибора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "note": {
+                            "title": "Примечание",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "researcher": {
+                            "title": "Исследователь",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "ТН211_Ш87_Ш12": {
                 "title": "ТН211_Ш87_Ш12",
                 "description": "Замеры дистанционными приборами и определение герметичности нкт и колонны",
@@ -2764,6 +3363,1082 @@
             "title": "СОДОН формы",
             "type": "",
             "properties": {
+              "ТН231 Ш81": {
+                "title": "ТН231 Ш81",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН231_Ш81",
+                  "comment": "",
+                  "title": "ТН231 Ш81",
+                  "form": "Сведения о вводимой, переводимой, корректируемой скважине",
+                  "type": "",
+                  "properties": {
+                    "ТН231_Ш81_header_attributes": {
+                      "title": "Атрибуты заголовка",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "1_level": {
+                          "title": "Форма № 153231"
+                        },
+                        "2_level": {
+                          "title": "ТН231; НГДУ; ЦЕХ; Ш81; № скважины; Дата Признак ввода, перевода, коррекции"
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш31": {
+                      "title": "ТН231_Ш81_Ш31",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш31",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш31",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ceh_number": {
+                            "title": "Номер цеха",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "category": {
+                            "title": "Категория",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "condition": {
+                            "title": "Состояние",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "expluatation_type": {
+                            "title": "Способ эксплуатации",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "pump_type": {
+                            "title": "Тип насоса",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "work_time_hour_min": {
+                            "title": "Время работы, часы, мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "downtime_reason_code": {
+                            "title": "Код причины простоя",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш32": {
+                      "title": "ТН231_Ш81_Ш32",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш32",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш32",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "conditional_well_number": {
+                            "title": "Условный номер скважины",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "feeder_number": {
+                            "title": "Номер фидера",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "collect_object_type": {
+                            "title": "Тип объекта сбора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "collect_object_number": {
+                            "title": "Номер объекта сбора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "area_number": {
+                            "title": "Номер участка",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "prs_team_number": {
+                            "title": "Номер бригады ПРС",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "motion_length_polished_stem": {
+                            "title": "Длина хода полированного штока, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "swings_number_balancer_head": {
+                            "title": "Число качаний головки балансира, кач/мин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "well_mouth_condition": {
+                            "title": "Состояние устья скважины",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "well_expl_colimn_condition": {
+                            "title": "Состояние э/колонны скважины",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш35": {
+                      "title": "ТН231_Ш81_Ш35",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш35",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш35",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "horizon_code": {
+                            "title": "Код горизонта",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "oil_horizon_density": {
+                            "title": "Плотность нефти горизонта, г/см³",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "mountain_water_density": {
+                            "title": "Плотность воды горизонта, г/см³",
+                            "description": "",
+                            "type": "number",
+                            "form": "ТН231 Ш81 Ш35"
+                          },
+                          "water_cut_percentage_by_horizon": {
+                            "title": "% обводненности по горизонту",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "liquid_yield_horizon": {
+                            "title": "Дебит жидкости из горизонта, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "gas_factor": {
+                            "title": "Газовый фактор, м³/т",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш36": {
+                      "title": "ТН231_Ш81_Ш36",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш36",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш36",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "horizon_code": {
+                            "title": "Код горизонта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "field_code": {
+                            "title": "Код месторождения",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "ara_code": {
+                            "title": "Код площади",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "region_code": {
+                            "title": "Код участка",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "block_number": {
+                            "title": "Номер блока",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "ngdu": {
+                            "title": "НГДУ",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "distribution_percentage_block": {
+                            "title": "% Распределения в блок",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш37": {
+                      "title": "ТН231_Ш81_Ш37",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш37",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш37",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "reservoir_code": {
+                            "title": "Код пласта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "lens_number": {
+                            "title": "Номер линзы",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "collector_type": {
+                            "title": "Тип коллектора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reservoir_liquid_yeld": {
+                            "title": "Дебит жидкости пласта, м³",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reservoir_water_cut_percentage": {
+                            "title": "% Обводненности пласта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_extraction_type": {
+                            "title": "Вид добываемой воды",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_density": {
+                            "title": "Плотность воды, г/см³",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reservoir_change_sign": {
+                            "title": "Признак изменения пласта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_appearance_date": {
+                            "title": "Дата появления воды, год, месяц",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш38": {
+                      "title": "ТН231_Ш81_Ш38",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш38",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш38",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "reservoir_code": {
+                            "title": "Код пласта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "depth": {
+                            "title": "Глубина",
+                            "description": "",
+                            "type": "number",
+                            "properties": {
+                              "top": {
+                                "title": "Кровли, м",
+                                "type": "number"
+                              },
+                              "bottom": {
+                                "title": "Подошвы, м",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "reservoir_oil_effective_power": {
+                            "title": "Эффектив. нефтенас. мощность",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_production_power": {
+                            "title": "Водонасыщенная мощность",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "absolute_mark_original_VNK": {
+                            "title": "Абсол. ВНК первонач, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "porosity": {
+                            "title": "Пористость, %",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "permeability": {
+                            "title": "Проницаемость",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "hydroconductivity": {
+                            "title": "Гидропроводность",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "piezo_conductivity": {
+                            "title": "Пьезопроводность см/сек",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "carbonate_content": {
+                            "title": "Карбонатность, %",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reservoir_oil_saturation": {
+                            "title": "Нефте насыщенность пласта",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш39": {
+                      "title": "ТН231_Ш81_Ш39",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш39",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш39",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "reservoir_code": {
+                            "title": "Код пласта",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "perforation_interval": {
+                            "title": "Интервалы перфорации",
+                            "description": "",
+                            "type": "number",
+                            "properties": {
+                              "from": {
+                                "title": "От",
+                                "type": "number"
+                              },
+                              "to": {
+                                "title": "До",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "perforation_density": {
+                            "title": "Плотность перфорации",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "perforator_type": {
+                            "title": "Тип перфоратора",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "carried_work_type": {
+                            "title": "Вид проводимых работ",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш40": {
+                      "title": "ТН231_Ш81_Ш40",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш40",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш40",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ubr_urb": {
+                            "title": "УБР/УРБ",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "neighbour_well_count": {
+                            "title": "Количество соседних скважин",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "drilled_altitude": {
+                            "title": "Забой|Альтитуда пробур., м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "artificial_altitude": {
+                            "title": "Забой|Альтитуда искусств., м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "rotor_altitude": {
+                            "title": "Забой|Альтитуда от стола ротора, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "clutch_altitude": {
+                            "title": "Забой|Альтитуда муфты, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "flange_altitude": {
+                            "title": "Забой|Альтитуда фланца, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "bottom_deviation_wellhead": {
+                            "title": "Отклонение забоя от устья, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "azimuth_deviation": {
+                            "title": "Азимут отклонения, град",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "lengthening_productive_horizon": {
+                            "title": "Удлинение ствола до продуктивн. горизонта, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "area_nature": {
+                            "title": "Характер местности",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "drilled_wellbore_diameter": {
+                            "title": "Диаметр пробуренного ствола, мм",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "horizon_exposed_liquid": {
+                            "title": "Жидкость на которой вскрыт горизонт",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "specific_gravity_of_liquid": {
+                            "title": "Уд. вес жидкости, г/см3",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_recovery": {
+                            "title": "Водоотдача",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш41": {
+                      "title": "ТН231_Ш81_Ш41",
+                      "description": "Цементирование эксплуатационной колонны",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/Т2131_Ш81/ТН231_Ш81_Ш41",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш41",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "cement_specific_weight": {
+                            "title": "Удельный вес цементного раствора, г./см3",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "fluid_specific_weight": {
+                            "title": "Удельный вес продавочной жидкости, г./см3",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "stopper_max_pressure": {
+                            "title": "Максимальное давление при посадке пробки _стоп_, кг/см2",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "height_cement_lift_behind_column": {
+                            "title": "Высота подъема цементного кольца за колонной, м",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "cement_ring_condition_below_reservoir_bottom": {
+                            "title": "Расположение зацементированного низа колонны",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "method_determining_tightness": {
+                            "title": "Способ определения герметичности колонны",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "column_cremping_pressure": {
+                            "title": "Давление опресс. э/колонны, кг/см3",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "level_reduction_depth": {
+                            "title": "Глубина снижения уровня, м",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш42": {
+                      "title": "ТН231_Ш81_Ш42",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш42",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш42",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "fly-column": {
+                            "title": "Колонна-летучка",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "fly-column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "direction": {
+                            "title": "Направление",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "direction_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "conductor": {
+                            "title": "Кондуктор",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "conductor_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "technical_column": {
+                            "title": "Технич. колонна",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "technical_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "additional_column": {
+                            "title": "Дополнительная колонна",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "additional_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "expl_1_column": {
+                            "title": "Эксплуатац. колонна 1",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_1_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "expl_2_column": {
+                            "title": "Эксплуатац. колонна 2",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_2_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "expl_3_column": {
+                            "title": "Эксплуатац. колонна 3",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_3_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "expl_4_column": {
+                            "title": "Эксплуатац. колонна 4",
+                            "properties": {
+                              "column_code": {
+                                "title": "Код колонны (Описание, код)",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_diameter": {
+                                "title": "Диаметр, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_depth": {
+                                "title": "Глубина спуска, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_thickness": {
+                                "title": "Толщина стенки, мм",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_lift_height": {
+                                "title": "Высота подъема цементного кольца, м",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_endurance_category": {
+                                "title": "Категория прочности",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_material_fly": {
+                                "title": "Материал колонны-летучки",
+                                "description": "",
+                                "type": "number"
+                              },
+                              "expl_4_column_top_fly": {
+                                "title": "Верх колонны-летучки, м",
+                                "description": "",
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш43": {
+                      "title": "ТН231_Ш81_Ш43",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш43",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш43",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "curvature": {
+                            "title": "Кривизна",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "curvature_depth": {
+                            "title": "Глубина расположения кривизны",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "ТН231 Ш81 Ш61": {
+                      "title": "ТН231_Ш81_Ш61",
+                      "description": "",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш61",
+                        "$comment": "",
+                        "title": "ТН231 Ш81 Ш61",
+                        "description": "",
+                        "type": "object",
+                        "properties": {
+                          "ТН231_Ш81_Ш61_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "1_level": {
+                                "title": "Форма № 255231"
+                              },
+                              "2_level": {
+                                "title": "ТН231; НГДУ; ЦДНГ;"
+                              },
+                              "3_level": {
+                                "title": "Ш81; Ш61"
+                              }
+                            }
+                          },
+                          "horizon": {
+                            "title": "Горизонт",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "field": {
+                            "title": "Месторождение",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "area": {
+                            "title": "Площадь",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "zone": {
+                            "title": "Участок",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "block": {
+                            "title": "Блок",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "area_number": {
+                            "title": "Номер участка",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "oil_production": {
+                            "title": "Добыча нефти т.",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "water_production_volume": {
+                            "title": "Добыча воды м³",
+                            "description": "",
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -2787,6 +4462,72 @@
                   "description": "",
                   "type": "object",
                   "properties": {
+                    "ТН231 Ш82 Ш48": {
+                "title": "ТН231 Ш82 Ш48",
+                "type": "array",
+                "items": {
+                  "$id": "/databases/forms/forms_root/ТН231_Ш82_Ш48",
+                  "comment": "",
+                  "title": "ТН231 Ш82 Ш48",
+                  "form": "Сведения о закачке реагентов",
+                  "type": "",
+                  "properties": {
+                    "ТН231_Ш82_Ш48_header_attributes": {
+                      "title": "Атрибуты заголовка",
+                      "description": "",
+                      "type": "object",
+                      "properties": {
+                        "1_level": {
+                          "title": "ТН231; НГДУ; ЦЕХ"
+                        },
+                        "2_level": {
+                          "title": "Ш82; Ш48"
+                        }
+                      }
+                    },
+                    "KNS_number": {
+                      "title": "Номер КНС",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "pipeline_number": {
+                      "title": "Номер водовода",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "agent_type": {
+                      "title": "Вид агента",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reagent_type": {
+                      "title": "Вид реагента",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reagent_concentration": {
+                      "title": "Концетрация %",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reagent_density": {
+                      "title": "Плотность реагента г/см³",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reagent_download_start_date": {
+                      "title": "Дата начала закачки реагента, число, часы, мин.",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "reagent_download_end_date": {
+                      "title": "Дата конца закачки реагента, число, часы, мин.",
+                      "description": "",
+                      "type": "number"
+                    }
+                  }
+                }
+              },
                     "ТН131_Ш82_Ш52_header_attributes": {
                       "title": "Атрибуты заголовка",
                       "description": "",
@@ -4310,1419 +6051,9 @@
             "title": "Формы без явного определения",
             "type": "",
             "properties": {
-              "ТН211 Ш85": {
-                "title": "ТН211 Ш85",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/ТН211_Ш85",
-                  "comment": "",
-                  "title": "ТН211 Ш85",
-                  "form": "",
-                  "type": "object",
-                  "properties": {
-                    "ТН211 Ш85 Ш11": {
-                      "title": "ТН211_Ш85_Ш11",
-                      "form": "Замеры давлений",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН131_Ш82/ТН131_Ш82_Ш44",
-                        "$comment": "",
-                        "title": "ТН211 Ш85 Ш11",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ТН211_Ш85_Ш11_header_attributes": {
-                            "title": "Атрибуты заголовка",
-                            "description": "",
-                            "type": "object",
-                            "properties": {
-                              "1_level": {
-                                "title": "Форма № 153211"
-                              },
-                              "2_level": {
-                                "title": "ТН211; НГДУ; ЦЕХ"
-                              },
-                              "3_level": {
-                                "title": "Ш85; Ш11"
-                              }
-                            }
-                          },
-                          "well_number": {
-                            "title": "Дата замера, месяц, число",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "date": {
-                            "title": "Вид исследования",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "horizon_code": {
-                            "title": "Номер скважины",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "agent_code": {
-                            "title": "Время простоя, час, мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "measurement_depth": {
-                            "title": "Глубина замера,м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "depth_pressure": {
-                            "title": "Давление на глубине замера, кг/см",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "buffer_pressure": {
-                            "title": "Давление на устье буферное замеренное при исследовании",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "annulus_pressure": {
-                            "title": "Давление на устье затрубное замеренное при исследовании",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "device_number": {
-                            "title": "Номер прибора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "note": {
-                            "title": "Примечание",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "researcher": {
-                            "title": "Исследователь",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН211 Ш85 Ш13": {
-                      "title": "ТН211_Ш85_Ш13",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН211_Ш85/ТН211_Ш85_Ш13",
-                        "$comment": "",
-                        "title": "ТН211 Ш85 Ш13",
-                        "form": "Сведения о замерах уровней",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ТН211_Ш85_Ш13_header_attributes": {
-                            "title": "Атрибуты заголовка",
-                            "description": "",
-                            "type": "object",
-                            "properties": {
-                              "1_level": {
-                                "title": "Форма № 153211"
-                              },
-                              "2_level": {
-                                "title": "ТН211; НГДУ; ЦЕХ"
-                              },
-                              "3_level": {
-                                "title": "Ш85; Ш13"
-                              }
-                            }
-                          },
-                          "measurement_date": {
-                            "title": "Дата замера, месяц, число",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "research_type": {
-                            "title": "Вид исследования",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "well_number": {
-                            "title": "Номер скважины",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "monthly_downtime_hours": {
-                            "title": "Время простоя, час, мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "pump_strokes": {
-                            "title": "Число качаний кач/мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "polished_rod_stroke_length": {
-                            "title": "Длина хода полиров. штока, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "measured_level": {
-                            "title": "Уровень, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "annulus_pressure": {
-                            "title": "Давление затрубленное",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "note": {
-                            "title": "Примечание",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "researcher": {
-                            "title": "Исследователь",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН211 Ш85 Ш15": {
-                      "title": "ТН211_Ш85_Ш15",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН211_Ш85/ТН211_Ш85_Ш15",
-                        "$comment": "",
-                        "title": "ТН211 Ш85 Ш15",
-                        "form": "Индикаторные кривые",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ТН131_Ш81_Ш47_header_attributes": {
-                            "title": "Атрибуты заголовка",
-                            "description": "",
-                            "type": "object",
-                            "properties": {
-                              "1_level": {
-                                "title": "Форма 153211"
-                              },
-                              "2_level": {
-                                "title": "ТН211; НГДУ; ЦЕХ"
-                              },
-                              "3_level": {
-                                "title": "Ш85; Ш15"
-                              }
-                            }
-                          },
-                          "measurement_date": {
-                            "title": "Дата замера, месяц, число",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "research_type": {
-                            "title": "Вид исследования",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "well_number": {
-                            "title": "Номер скважины",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "monthly_downtime_hours": {
-                            "title": "Время простоя, час, мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "measurement_depth": {
-                            "title": "Глубина замера, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "depth_pressure": {
-                            "title": "Давление на глубине замера, кг/см3",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "oil_production_rate": {
-                            "title": "Дебит нефти, т/сут (прием м/сут)",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "moutn_pressure": {
-                            "title": "Давление на устье",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fitting_diameter": {
-                            "title": "Диаметр штуцера, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "device_number": {
-                            "title": "Номер прибора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "note": {
-                            "title": "Примечание",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "researcher": {
-                            "title": "Исследователь",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "ТН231 Ш81": {
-                "title": "ТН231 Ш81",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/ТН231_Ш81",
-                  "comment": "",
-                  "title": "ТН231 Ш81",
-                  "form": "Сведения о вводимой, переводимой, корректируемой скважине",
-                  "type": "",
-                  "properties": {
-                    "ТН231_Ш81_header_attributes": {
-                      "title": "Атрибуты заголовка",
-                      "description": "",
-                      "type": "object",
-                      "properties": {
-                        "1_level": {
-                          "title": "Форма № 153231"
-                        },
-                        "2_level": {
-                          "title": "ТН231; НГДУ; ЦЕХ; Ш81; № скважины; Дата Признак ввода, перевода, коррекции"
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш31": {
-                      "title": "ТН231_Ш81_Ш31",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш31",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш31",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ceh_number": {
-                            "title": "Номер цеха",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "category": {
-                            "title": "Категория",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "condition": {
-                            "title": "Состояние",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "expluatation_type": {
-                            "title": "Способ эксплуатации",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "pump_type": {
-                            "title": "Тип насоса",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "work_time_hour_min": {
-                            "title": "Время работы, часы, мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "downtime_reason_code": {
-                            "title": "Код причины простоя",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш32": {
-                      "title": "ТН231_Ш81_Ш32",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш32",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш32",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "conditional_well_number": {
-                            "title": "Условный номер скважины",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "feeder_number": {
-                            "title": "Номер фидера",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "collect_object_type": {
-                            "title": "Тип объекта сбора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "collect_object_number": {
-                            "title": "Номер объекта сбора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "area_number": {
-                            "title": "Номер участка",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "prs_team_number": {
-                            "title": "Номер бригады ПРС",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "motion_length_polished_stem": {
-                            "title": "Длина хода полированного штока, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "swings_number_balancer_head": {
-                            "title": "Число качаний головки балансира, кач/мин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "well_mouth_condition": {
-                            "title": "Состояние устья скважины",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "well_expl_colimn_condition": {
-                            "title": "Состояние э/колонны скважины",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш35": {
-                      "title": "ТН231_Ш81_Ш35",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш35",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш35",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "horizon_code": {
-                            "title": "Код горизонта",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "oil_horizon_density": {
-                            "title": "Плотность нефти горизонта, г/см³",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "mountain_water_density": {
-                            "title": "Плотность воды горизонта, г/см³",
-                            "description": "",
-                            "type": "number",
-                            "form": "ТН231 Ш81 Ш35"
-                          },
-                          "water_cut_percentage_by_horizon": {
-                            "title": "% обводненности по горизонту",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "liquid_yield_horizon": {
-                            "title": "Дебит жидкости из горизонта, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "gas_factor": {
-                            "title": "Газовый фактор, м³/т",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш36": {
-                      "title": "ТН231_Ш81_Ш36",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш36",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш36",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "horizon_code": {
-                            "title": "Код горизонта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "field_code": {
-                            "title": "Код месторождения",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "ara_code": {
-                            "title": "Код площади",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "region_code": {
-                            "title": "Код участка",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "block_number": {
-                            "title": "Номер блока",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "ngdu": {
-                            "title": "НГДУ",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "distribution_percentage_block": {
-                            "title": "% Распределения в блок",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш37": {
-                      "title": "ТН231_Ш81_Ш37",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш37",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш37",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "reservoir_code": {
-                            "title": "Код пласта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "lens_number": {
-                            "title": "Номер линзы",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "collector_type": {
-                            "title": "Тип коллектора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "reservoir_liquid_yeld": {
-                            "title": "Дебит жидкости пласта, м³",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "reservoir_water_cut_percentage": {
-                            "title": "% Обводненности пласта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_extraction_type": {
-                            "title": "Вид добываемой воды",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_density": {
-                            "title": "Плотность воды, г/см³",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "reservoir_change_sign": {
-                            "title": "Признак изменения пласта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_appearance_date": {
-                            "title": "Дата появления воды, год, месяц",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш38": {
-                      "title": "ТН231_Ш81_Ш38",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш38",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш38",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "reservoir_code": {
-                            "title": "Код пласта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "depth": {
-                            "title": "Глубина",
-                            "description": "",
-                            "type": "number",
-                            "properties": {
-                              "top": {
-                                "title": "Кровли, м",
-                                "type": "number"
-                              },
-                              "bottom": {
-                                "title": "Подошвы, м",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "reservoir_oil_effective_power": {
-                            "title": "Эффектив. нефтенас. мощность",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_production_power": {
-                            "title": "Водонасыщенная мощность",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "absolute_mark_original_VNK": {
-                            "title": "Абсол. ВНК первонач, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "porosity": {
-                            "title": "Пористость, %",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "permeability": {
-                            "title": "Проницаемость",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "hydroconductivity": {
-                            "title": "Гидропроводность",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "piezo_conductivity": {
-                            "title": "Пьезопроводность см/сек",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "carbonate_content": {
-                            "title": "Карбонатность, %",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "reservoir_oil_saturation": {
-                            "title": "Нефте насыщенность пласта",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш39": {
-                      "title": "ТН231_Ш81_Ш39",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш39",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш39",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "reservoir_code": {
-                            "title": "Код пласта",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "perforation_interval": {
-                            "title": "Интервалы перфорации",
-                            "description": "",
-                            "type": "number",
-                            "properties": {
-                              "from": {
-                                "title": "От",
-                                "type": "number"
-                              },
-                              "to": {
-                                "title": "До",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "perforation_density": {
-                            "title": "Плотность перфорации",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "perforator_type": {
-                            "title": "Тип перфоратора",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "carried_work_type": {
-                            "title": "Вид проводимых работ",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш40": {
-                      "title": "ТН231_Ш81_Ш40",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш40",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш40",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ubr_urb": {
-                            "title": "УБР/УРБ",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "neighbour_well_count": {
-                            "title": "Количество соседних скважин",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "drilled_altitude": {
-                            "title": "Забой|Альтитуда пробур., м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "artificial_altitude": {
-                            "title": "Забой|Альтитуда искусств., м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "rotor_altitude": {
-                            "title": "Забой|Альтитуда от стола ротора, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "clutch_altitude": {
-                            "title": "Забой|Альтитуда муфты, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "flange_altitude": {
-                            "title": "Забой|Альтитуда фланца, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "bottom_deviation_wellhead": {
-                            "title": "Отклонение забоя от устья, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "azimuth_deviation": {
-                            "title": "Азимут отклонения, град",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "lengthening_productive_horizon": {
-                            "title": "Удлинение ствола до продуктивн. горизонта, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "area_nature": {
-                            "title": "Характер местности",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "drilled_wellbore_diameter": {
-                            "title": "Диаметр пробуренного ствола, мм",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "horizon_exposed_liquid": {
-                            "title": "Жидкость на которой вскрыт горизонт",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "specific_gravity_of_liquid": {
-                            "title": "Уд. вес жидкости, г/см3",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_recovery": {
-                            "title": "Водоотдача",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш41": {
-                      "title": "ТН231_Ш81_Ш41",
-                      "description": "Цементирование эксплуатационной колонны",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/Т2131_Ш81/ТН231_Ш81_Ш41",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш41",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "cement_specific_weight": {
-                            "title": "Удельный вес цементного раствора, г./см3",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "fluid_specific_weight": {
-                            "title": "Удельный вес продавочной жидкости, г./см3",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "stopper_max_pressure": {
-                            "title": "Максимальное давление при посадке пробки _стоп_, кг/см2",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "height_cement_lift_behind_column": {
-                            "title": "Высота подъема цементного кольца за колонной, м",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "cement_ring_condition_below_reservoir_bottom": {
-                            "title": "Расположение зацементированного низа колонны",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "method_determining_tightness": {
-                            "title": "Способ определения герметичности колонны",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "column_cremping_pressure": {
-                            "title": "Давление опресс. э/колонны, кг/см3",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "level_reduction_depth": {
-                            "title": "Глубина снижения уровня, м",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш42": {
-                      "title": "ТН231_Ш81_Ш42",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш42",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш42",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "fly-column": {
-                            "title": "Колонна-летучка",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "fly-column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "direction": {
-                            "title": "Направление",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "direction_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "conductor": {
-                            "title": "Кондуктор",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "conductor_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "technical_column": {
-                            "title": "Технич. колонна",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "technical_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "additional_column": {
-                            "title": "Дополнительная колонна",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "additional_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "expl_1_column": {
-                            "title": "Эксплуатац. колонна 1",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_1_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "expl_2_column": {
-                            "title": "Эксплуатац. колонна 2",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_2_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "expl_3_column": {
-                            "title": "Эксплуатац. колонна 3",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_3_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          },
-                          "expl_4_column": {
-                            "title": "Эксплуатац. колонна 4",
-                            "properties": {
-                              "column_code": {
-                                "title": "Код колонны (Описание, код)",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_diameter": {
-                                "title": "Диаметр, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_depth": {
-                                "title": "Глубина спуска, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_thickness": {
-                                "title": "Толщина стенки, мм",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_lift_height": {
-                                "title": "Высота подъема цементного кольца, м",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_endurance_category": {
-                                "title": "Категория прочности",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_material_fly": {
-                                "title": "Материал колонны-летучки",
-                                "description": "",
-                                "type": "number"
-                              },
-                              "expl_4_column_top_fly": {
-                                "title": "Верх колонны-летучки, м",
-                                "description": "",
-                                "type": "number"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш43": {
-                      "title": "ТН231_Ш81_Ш43",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш43",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш43",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "curvature": {
-                            "title": "Кривизна",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "curvature_depth": {
-                            "title": "Глубина расположения кривизны",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    },
-                    "ТН231 Ш81 Ш61": {
-                      "title": "ТН231_Ш81_Ш61",
-                      "description": "",
-                      "type": "array",
-                      "items": {
-                        "$id": "/databases/forms/forms_root/ТН231_Ш81/ТН231_Ш81_Ш61",
-                        "$comment": "",
-                        "title": "ТН231 Ш81 Ш61",
-                        "description": "",
-                        "type": "object",
-                        "properties": {
-                          "ТН231_Ш81_Ш61_header_attributes": {
-                            "title": "Атрибуты заголовка",
-                            "description": "",
-                            "type": "object",
-                            "properties": {
-                              "1_level": {
-                                "title": "Форма № 255231"
-                              },
-                              "2_level": {
-                                "title": "ТН231; НГДУ; ЦДНГ;"
-                              },
-                              "3_level": {
-                                "title": "Ш81; Ш61"
-                              }
-                            }
-                          },
-                          "horizon": {
-                            "title": "Горизонт",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "field": {
-                            "title": "Месторождение",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "area": {
-                            "title": "Площадь",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "zone": {
-                            "title": "Участок",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "block": {
-                            "title": "Блок",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "area_number": {
-                            "title": "Номер участка",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "oil_production": {
-                            "title": "Добыча нефти т.",
-                            "description": "",
-                            "type": "number"
-                          },
-                          "water_production_volume": {
-                            "title": "Добыча воды м³",
-                            "description": "",
-                            "type": "number"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "ТН231 Ш82 Ш48": {
-                "title": "ТН231 Ш82 Ш48",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/ТН231_Ш82_Ш48",
-                  "comment": "",
-                  "title": "ТН231 Ш82 Ш48",
-                  "form": "Сведения о закачке реагентов",
-                  "type": "",
-                  "properties": {
-                    "ТН231_Ш82_Ш48_header_attributes": {
-                      "title": "Атрибуты заголовка",
-                      "description": "",
-                      "type": "object",
-                      "properties": {
-                        "1_level": {
-                          "title": "ТН231; НГДУ; ЦЕХ"
-                        },
-                        "2_level": {
-                          "title": "Ш82; Ш48"
-                        }
-                      }
-                    },
-                    "KNS_number": {
-                      "title": "Номер КНС",
-                      "description": "",
-                      "type": "string"
-                    },
-                    "pipeline_number": {
-                      "title": "Номер водовода",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "agent_type": {
-                      "title": "Вид агента",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_type": {
-                      "title": "Вид реагента",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_concentration": {
-                      "title": "Концетрация %",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_density": {
-                      "title": "Плотность реагента г/см³",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_download_start_date": {
-                      "title": "Дата начала закачки реагента, число, часы, мин.",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_download_end_date": {
-                      "title": "Дата конца закачки реагента, число, часы, мин.",
-                      "description": "",
-                      "type": "number"
-                    }
-                  }
-                }
-              },
+              
+              
+              
               "ТН231 Ш82 Ш45": {
                 "title": "ТН231 Ш82 Ш45",
                 "type": "array",
@@ -6057,334 +6388,7 @@
                   }
                 }
               },
-              "О14": {
-                "title": "О14",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/О14",
-                  "comment": "",
-                  "title": "О14 (Документ)",
-                  "form": "",
-                  "type": "",
-                  "properties": {
-                    "О14_header_attributes": {
-                      "title": "Атрибуты заголовка",
-                      "description": "",
-                      "type": "object",
-                      "properties": {
-                        "1_level": {
-                          "title": "Форма № О14"
-                        },
-                        "2_level": {
-                          "title": "НГДУ; РИТС; МЕСТОРОЖДЕНИЕ; ПЛОЩАДЬ; СКВАЖИНА №; Индекс СКВ."
-                        }
-                      }
-                    },
-                    "horizon": {
-                      "title": "ГОРИЗОНТ",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir": {
-                      "title": "ПЛАСТ",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "top_depth": {
-                      "title": "Глубина залегания кровли пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "top_ифыу": {
-                      "title": "Глубина залегания подошвы пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "collector_type": {
-                      "title": "Тип коллектора",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_effective_power": {
-                      "title": "Эффективная мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_oil_effective_power": {
-                      "title": "Эффективная нефтенас. мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_water_effective": {
-                      "title": "Водонасыщенная мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "absolute_mark_original_VNK": {
-                      "title": "Абс. отметка начального положения ВНК, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "absolute_mark_current_VNK": {
-                      "title": "Абс. отметка текущего положения ВНК, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforation_interval": {
-                      "title": "Интервал перфорации, м",
-                      "properties": {
-                        "from": {
-                          "title": "От",
-                          "properties": {
-                            "description": {
-                              "title": "Описание"
-                            },
-                            "code": {
-                              "title": "Код"
-                            }
-                          }
-                        },
-                        "to": {
-                          "title": "До",
-                          "properties": {
-                            "description": {
-                              "title": "Описание"
-                            },
-                            "code": {
-                              "title": "Код"
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "reservoir_open_type": {
-                      "title": "Характер вскрытия пласта",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforation_density": {
-                      "title": "Плотность перфорации,отв./п.м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforator_type": {
-                      "title": "Тип перфоратора",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_porosity": {
-                      "title": "Пористость пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_permeability": {
-                      "title": "Проницаемость пласта, мд.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_water_phase_permeability": {
-                      "title": "Гидропроводность пласта, дсм/сп.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_piezo_conductivity": {
-                      "title": "Пьезопроводность пласта, см2/сек",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_carbonate": {
-                      "title": "Карбонатность пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_saturation": {
-                      "title": "Насыщенность пласта",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_oil_saturation": {
-                      "title": "Нефтенасыщенность пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "oil_separated_density": {
-                      "title": "Плотность сепарированной нефти, г/см³",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "oil_associated_gas_density": {
-                      "title": "Плотность попутного нефтяного газа, г/см³",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "gas_factor": {
-                      "title": "Газовый фактор м³/т",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "water_appearance_date": {
-                      "title": "Дата появления воды, (месяц, год)",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "water_nature": {
-                      "title": "Характер воды",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    }
-                  }
-                }
-              },
+              
               "155573": {
                 "title": "155573",
                 "type": "array",
@@ -9655,8 +9659,7 @@
               "ngdu": {
                 "title": "НГДУ",
                 "description": "Нефтегазодобывающее управление",
-                "type": "string",
-                "form": "ТН131 Ш81 Ш36"
+                "type": "string"
               },
               "cdng_cppd": {
                 "title": "ЦДНГ, ЦППД",
