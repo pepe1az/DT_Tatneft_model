@@ -1185,7 +1185,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 143245"
+                          "title": "Форма № 143245"
                         },
                         "2_level": {
                           "title": "ТН 245; НГДУ; Ш80; ЦВХ ПНП и КРС"
@@ -1891,7 +1891,7 @@
                       "type": "string",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 169277"
+                          "title": "Форма № 169277"
                         },
                         "2_level": {
                           "title": "77; Месторождение; Площадь; Горизонт"
@@ -2077,7 +2077,7 @@
                       "type": "string",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 165282"
+                          "title": "Форма № 165282"
                         },
                         "2_level": {
                           "title": "82; Месторождение; Площадь; Горизонт; Год"
@@ -2167,7 +2167,7 @@
                       "type": "string",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 167283"
+                          "title": "Форма № 167283"
                         },
                         "2_level": {
                           "title": "83; Месторождение; Площадь; Горизонт"
@@ -2253,7 +2253,7 @@
                       "type": "string",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 166284"
+                          "title": "Форма № 166284"
                         },
                         "2_level": {
                           "title": "84; Месторождение; Площадь; Горизонт"
@@ -3122,7 +3122,7 @@
                             "type": "object",
                             "properties": {
                               "1_level": {
-                                "title": "Форма 153211"
+                                "title": "Форма № 153211"
                               },
                               "2_level": {
                                 "title": "ТН211; НГДУ; ЦЕХ"
@@ -3206,7 +3206,7 @@
                   "$id": "/databases/forms/forms_root/ТН211_Ш87_Ш12",
                   "$comment": "",
                   "title": "ТН211 Ш87 Ш12",
-                  "description": "форма 12D",
+                  "description": "форма № 12D",
                   "type": "object",
                   "properties": {
                     "ТН211_Ш87_Ш12_header_attributes": {
@@ -3249,7 +3249,7 @@
                   "$id": "/databases/forms/forms_root/ТН211_Ш85_Ш17",
                   "$comment": "",
                   "title": "ТН211 Ш85 Ш17",
-                  "description": "форма 17",
+                  "description": "Форма № 17",
                   "type": "object",
                   "properties": {
                     "ТН211_Ш85_Ш17_header_attributes": {
@@ -4534,7 +4534,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 153135"
+                          "title": "Форма № 153135"
                         },
                         "2_level": {
                           "title": "ТН 131; НГДУ; ЦЕХ"
@@ -5900,7 +5900,7 @@
                             "type": "object",
                             "properties": {
                               "1_level": {
-                                "title": "Форма № 259_52"
+                                "title": "Форма № 259 52"
                               },
                               "2_level": {
                                 "title": "ТН131; НГДУ; ЦЕХ"
@@ -6067,7 +6067,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма №153231"
+                          "title": "Форма № 153231"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6116,7 +6116,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 153231"
+                          "title": "Форма № 153231"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6170,7 +6170,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 153231"
+                          "title": "Форма № 153231"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6224,7 +6224,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 153231"
+                          "title": "Форма № 153231"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6278,7 +6278,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 153231"
+                          "title": "Форма № 153231"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6332,7 +6332,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 259262"
+                          "title": "Форма № 259262"
                         },
                         "2_level": {
                           "title": "ТН231; НГДУ; ЦДНГ"
@@ -6462,7 +6462,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 122511"
+                          "title": "Форма № 122511"
                         },
                         "2_level": {
                           "title": "ТН511; НГДУ; Подразделение"
@@ -6588,7 +6588,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 122511"
+                          "title": "Форма № 122511"
                         },
                         "2_level": {
                           "title": "ТН511; НГДУ; Подразделение"
@@ -6679,7 +6679,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 159589 Э1; Предприятие НГДУ"
+                          "title": "Форма № 159589 Э1; Предприятие НГДУ"
                         },
                         "2_level": {
                           "title": "Дата отключения(год, месяц, число)"
@@ -6993,7 +6993,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 159575"
+                          "title": "Форма № 159575"
                         },
                         "2_level": {
                           "title": "ТН575 НГДУ ЦТРС 26"
@@ -7621,7 +7621,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 155442"
+                          "title": "Форма № 155442"
                         },
                         "2_level": {
                           "title": "Макет 442; Предприятие; Подразделение; Дата"
@@ -7727,7 +7727,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 155441"
+                          "title": "Форма № 155441"
                         },
                         "2_level": {
                           "title": "Макет 441; Предприятие; Подразделение; Дата"
@@ -7971,7 +7971,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 155440"
+                          "title": "Форма № 155440"
                         },
                         "2_level": {
                           "title": "Макет 440; Предприятие; Подразделение; Дата"
@@ -8156,7 +8156,7 @@
                       "type": "object",
                       "properties": {
                         "1_level": {
-                          "title": "Форма 155244"
+                          "title": "Форма № 155244"
                         },
                         "2_level": {
                           "title": "ТН244; УПНП и КРС или НГДУ; Цех ремонта"
@@ -9072,7 +9072,7 @@
                   "properties": {
                     "76_header_attributes": {
                       "1_level": {
-                        "title": "Форма 169276"
+                        "title": "Форма № 169276"
                       },
                       "2_level": {
                         "title": "76; Месторождение; Площадь; Горизонт"
@@ -9217,7 +9217,7 @@
                   "properties": {
                     "78_header_attributes": {
                       "1_level": {
-                        "title": "Форма 169278"
+                        "title": "Форма № 169278"
                       },
                       "2_level": {
                         "title": "78; Месторождение; Площадь; Горизонт"
@@ -9319,7 +9319,7 @@
                   "properties": {
                     "80_header_attributes": {
                       "1_level": {
-                        "title": "Форма 169280"
+                        "title": "Форма № 169280"
                       },
                       "2_level": {
                         "title": "80; Месторождение; Площадь; Горизонт"
@@ -9442,7 +9442,7 @@
                   "properties": {
                     "75_header_attributes": {
                       "1_level": {
-                        "title": "Форма 169275"
+                        "title": "Форма № 169275"
                       },
                       "2_level": {
                         "title": "75; Месторождение; Площадь; Горизонт"
@@ -16135,7 +16135,7 @@
                       }
                     },
                     "form11": {
-                      "title": "Форма 11",
+                      "title": "Форма № 11",
                       "description": "",
                       "type": "array",
                       "items": {
@@ -16200,7 +16200,7 @@
                             "form": "ТН211 Ш85 Ш17"
                           },
                           "form11R": {
-                            "title": "Форма 11R",
+                            "title": "Форма № 11R",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16237,7 +16237,7 @@
                       }
                     },
                     "form12": {
-                      "title": "Форма 12",
+                      "title": "Форма № 12",
                       "description": "",
                       "type": "array",
                       "items": {
@@ -16280,7 +16280,7 @@
                             "form": "ТН211 Ш85 Ш17"
                           },
                           "form12D": {
-                            "title": "Форма 12D",
+                            "title": "Форма № 12D",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16305,7 +16305,7 @@
                             }
                           },
                           "form12R": {
-                            "title": "Форма 12R",
+                            "title": "Форма № 12R",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16332,7 +16332,7 @@
                       }
                     },
                     "form13": {
-                      "title": "Форма 13",
+                      "title": "Форма № 13",
                       "description": "",
                       "type": "array",
                       "items": {
@@ -16391,7 +16391,7 @@
                             "form": "ТН211 Ш85 Ш17"
                           },
                           "form13R": {
-                            "title": "Форма 13R",
+                            "title": "Форма № 13R",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16438,7 +16438,7 @@
                       }
                     },
                     "form14": {
-                      "title": "Форма 14",
+                      "title": "Форма № 14",
                       "description": "",
                       "type": "array",
                       "items": {
@@ -16499,7 +16499,7 @@
                             "form": "ТН211 Ш85 Ш17"
                           },
                           "form14D": {
-                            "title": "Форма 14D",
+                            "title": "Форма № 14D",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16530,7 +16530,7 @@
                             }
                           },
                           "form14A": {
-                            "title": "Форма 14A",
+                            "title": "Форма № 14A",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16630,7 +16630,7 @@
                       }
                     },
                     "form15": {
-                      "title": "Форма 15",
+                      "title": "Форма № 15",
                       "description": "",
                       "type": "array",
                       "items": {
@@ -16711,7 +16711,7 @@
                             "form": "ТН211 Ш85 Ш17"
                           },
                           "form15R": {
-                            "title": "Форма 15R",
+                            "title": "Форма № 15R",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16745,7 +16745,7 @@
                             }
                           },
                           "form15D": {
-                            "title": "Форма 15D",
+                            "title": "Форма № 15D",
                             "description": "",
                             "type": "array",
                             "items": {
@@ -16784,7 +16784,7 @@
                       }
                     },
                     "form17": {
-                      "title": "Форма 17",
+                      "title": "Форма № 17",
                       "description": "",
                       "type": "array",
                       "items": {
