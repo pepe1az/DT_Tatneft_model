@@ -2622,333 +2622,333 @@
                         "type": "object",
                         "properties": {
                           "О14": {
-                "title": "О14",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/О14",
-                  "comment": "",
-                  "title": "О14 (Документ)",
-                  "form": "",
-                  "type": "",
-                  "properties": {
-                    "О14_header_attributes": {
-                      "title": "Атрибуты заголовка",
-                      "description": "",
-                      "type": "object",
-                      "properties": {
-                        "1_level": {
-                          "title": "Форма № О14"
-                        },
-                        "2_level": {
-                          "title": "НГДУ; РИТС; МЕСТОРОЖДЕНИЕ; ПЛОЩАДЬ; СКВАЖИНА №; Индекс СКВ."
-                        }
-                      }
-                    },
-                    "horizon": {
-                      "title": "ГОРИЗОНТ",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir": {
-                      "title": "ПЛАСТ",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "top_depth": {
-                      "title": "Глубина залегания кровли пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "top_ифыу": {
-                      "title": "Глубина залегания подошвы пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "collector_type": {
-                      "title": "Тип коллектора",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_effective_power": {
-                      "title": "Эффективная мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_oil_effective_power": {
-                      "title": "Эффективная нефтенас. мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_water_effective": {
-                      "title": "Водонасыщенная мощность пласта, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "absolute_mark_original_VNK": {
-                      "title": "Абс. отметка начального положения ВНК, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "absolute_mark_current_VNK": {
-                      "title": "Абс. отметка текущего положения ВНК, м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforation_interval": {
-                      "title": "Интервал перфорации, м",
-                      "properties": {
-                        "from": {
-                          "title": "От",
-                          "properties": {
-                            "description": {
-                              "title": "Описание"
-                            },
-                            "code": {
-                              "title": "Код"
+                            "title": "О14",
+                            "type": "array",
+                            "items": {
+                              "$id": "/databases/forms/forms_root/О14",
+                              "comment": "",
+                              "title": "О14 (Документ)",
+                              "form": "",
+                              "type": "",
+                              "properties": {
+                                "О14_header_attributes": {
+                                  "title": "Атрибуты заголовка",
+                                  "description": "",
+                                  "type": "object",
+                                  "properties": {
+                                    "1_level": {
+                                      "title": "Форма № О14"
+                                    },
+                                    "2_level": {
+                                      "title": "НГДУ; РИТС; МЕСТОРОЖДЕНИЕ; ПЛОЩАДЬ; СКВАЖИНА №; Индекс СКВ."
+                                    }
+                                  }
+                                },
+                                "horizon": {
+                                  "title": "ГОРИЗОНТ",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir": {
+                                  "title": "ПЛАСТ",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "top_depth": {
+                                  "title": "Глубина залегания кровли пласта, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "top_ифыу": {
+                                  "title": "Глубина залегания подошвы пласта, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "collector_type": {
+                                  "title": "Тип коллектора",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_effective_power": {
+                                  "title": "Эффективная мощность пласта, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_oil_effective_power": {
+                                  "title": "Эффективная нефтенас. мощность пласта, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_water_effective": {
+                                  "title": "Водонасыщенная мощность пласта, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "absolute_mark_original_VNK": {
+                                  "title": "Абс. отметка начального положения ВНК, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "absolute_mark_current_VNK": {
+                                  "title": "Абс. отметка текущего положения ВНК, м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "perforation_interval": {
+                                  "title": "Интервал перфорации, м",
+                                  "properties": {
+                                    "from": {
+                                      "title": "От",
+                                      "properties": {
+                                        "description": {
+                                          "title": "Описание"
+                                        },
+                                        "code": {
+                                          "title": "Код"
+                                        }
+                                      }
+                                    },
+                                    "to": {
+                                      "title": "До",
+                                      "properties": {
+                                        "description": {
+                                          "title": "Описание"
+                                        },
+                                        "code": {
+                                          "title": "Код"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "reservoir_open_type": {
+                                  "title": "Характер вскрытия пласта",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "perforation_density": {
+                                  "title": "Плотность перфорации,отв./п.м.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "perforator_type": {
+                                  "title": "Тип перфоратора",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_porosity": {
+                                  "title": "Пористость пласта, %",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_permeability": {
+                                  "title": "Проницаемость пласта, мд.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_water_phase_permeability": {
+                                  "title": "Гидропроводность пласта, дсм/сп.",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_piezo_conductivity": {
+                                  "title": "Пьезопроводность пласта, см2/сек",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_carbonate": {
+                                  "title": "Карбонатность пласта, %",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_saturation": {
+                                  "title": "Насыщенность пласта",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "reservoir_oil_saturation": {
+                                  "title": "Нефтенасыщенность пласта, %",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "oil_separated_density": {
+                                  "title": "Плотность сепарированной нефти, г/см³",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "oil_associated_gas_density": {
+                                  "title": "Плотность попутного нефтяного газа, г/см³",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "gas_factor": {
+                                  "title": "Газовый фактор м³/т",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "water_appearance_date": {
+                                  "title": "Дата появления воды, (месяц, год)",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                },
+                                "water_nature": {
+                                  "title": "Характер воды",
+                                  "properties": {
+                                    "description": {
+                                      "title": "Описание"
+                                    },
+                                    "code": {
+                                      "title": "Код"
+                                    }
+                                  }
+                                }
+                              }
                             }
-                          }
-                        },
-                        "to": {
-                          "title": "До",
-                          "properties": {
-                            "description": {
-                              "title": "Описание"
-                            },
-                            "code": {
-                              "title": "Код"
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "reservoir_open_type": {
-                      "title": "Характер вскрытия пласта",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforation_density": {
-                      "title": "Плотность перфорации,отв./п.м.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "perforator_type": {
-                      "title": "Тип перфоратора",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_porosity": {
-                      "title": "Пористость пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_permeability": {
-                      "title": "Проницаемость пласта, мд.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_water_phase_permeability": {
-                      "title": "Гидропроводность пласта, дсм/сп.",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_piezo_conductivity": {
-                      "title": "Пьезопроводность пласта, см2/сек",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_carbonate": {
-                      "title": "Карбонатность пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_saturation": {
-                      "title": "Насыщенность пласта",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "reservoir_oil_saturation": {
-                      "title": "Нефтенасыщенность пласта, %",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "oil_separated_density": {
-                      "title": "Плотность сепарированной нефти, г/см³",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "oil_associated_gas_density": {
-                      "title": "Плотность попутного нефтяного газа, г/см³",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "gas_factor": {
-                      "title": "Газовый фактор м³/т",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "water_appearance_date": {
-                      "title": "Дата появления воды, (месяц, год)",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    },
-                    "water_nature": {
-                      "title": "Характер воды",
-                      "properties": {
-                        "description": {
-                          "title": "Описание"
-                        },
-                        "code": {
-                          "title": "Код"
-                        }
-                      }
-                    }
-                  }
-                }
-              },
+                          },
                           "ТН211_Ш85_Ш11_header_attributes": {
                             "title": "Атрибуты заголовка",
                             "description": "",
@@ -4463,71 +4463,71 @@
                   "type": "object",
                   "properties": {
                     "ТН231 Ш82 Ш48": {
-                "title": "ТН231 Ш82 Ш48",
-                "type": "array",
-                "items": {
-                  "$id": "/databases/forms/forms_root/ТН231_Ш82_Ш48",
-                  "comment": "",
-                  "title": "ТН231 Ш82 Ш48",
-                  "form": "Сведения о закачке реагентов",
-                  "type": "",
-                  "properties": {
-                    "ТН231_Ш82_Ш48_header_attributes": {
-                      "title": "Атрибуты заголовка",
-                      "description": "",
-                      "type": "object",
-                      "properties": {
-                        "1_level": {
-                          "title": "ТН231; НГДУ; ЦЕХ"
-                        },
-                        "2_level": {
-                          "title": "Ш82; Ш48"
+                      "title": "ТН231 Ш82 Ш48",
+                      "type": "array",
+                      "items": {
+                        "$id": "/databases/forms/forms_root/ТН231_Ш82_Ш48",
+                        "comment": "",
+                        "title": "ТН231 Ш82 Ш48",
+                        "form": "Сведения о закачке реагентов",
+                        "type": "",
+                        "properties": {
+                          "ТН231_Ш82_Ш48_header_attributes": {
+                            "title": "Атрибуты заголовка",
+                            "description": "",
+                            "type": "object",
+                            "properties": {
+                              "1_level": {
+                                "title": "ТН231; НГДУ; ЦЕХ"
+                              },
+                              "2_level": {
+                                "title": "Ш82; Ш48"
+                              }
+                            }
+                          },
+                          "KNS_number": {
+                            "title": "Номер КНС",
+                            "description": "",
+                            "type": "string"
+                          },
+                          "pipeline_number": {
+                            "title": "Номер водовода",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "agent_type": {
+                            "title": "Вид агента",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reagent_type": {
+                            "title": "Вид реагента",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reagent_concentration": {
+                            "title": "Концетрация %",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reagent_density": {
+                            "title": "Плотность реагента г/см³",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reagent_download_start_date": {
+                            "title": "Дата начала закачки реагента, число, часы, мин.",
+                            "description": "",
+                            "type": "number"
+                          },
+                          "reagent_download_end_date": {
+                            "title": "Дата конца закачки реагента, число, часы, мин.",
+                            "description": "",
+                            "type": "number"
+                          }
                         }
                       }
                     },
-                    "KNS_number": {
-                      "title": "Номер КНС",
-                      "description": "",
-                      "type": "string"
-                    },
-                    "pipeline_number": {
-                      "title": "Номер водовода",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "agent_type": {
-                      "title": "Вид агента",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_type": {
-                      "title": "Вид реагента",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_concentration": {
-                      "title": "Концетрация %",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_density": {
-                      "title": "Плотность реагента г/см³",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_download_start_date": {
-                      "title": "Дата начала закачки реагента, число, часы, мин.",
-                      "description": "",
-                      "type": "number"
-                    },
-                    "reagent_download_end_date": {
-                      "title": "Дата конца закачки реагента, число, часы, мин.",
-                      "description": "",
-                      "type": "number"
-                    }
-                  }
-                }
-              },
                     "ТН131_Ш82_Ш52_header_attributes": {
                       "title": "Атрибуты заголовка",
                       "description": "",
@@ -6051,9 +6051,6 @@
             "title": "Формы без явного определения",
             "type": "",
             "properties": {
-              
-              
-              
               "ТН231 Ш82 Ш45": {
                 "title": "ТН231 Ш82 Ш45",
                 "type": "array",
@@ -6388,7 +6385,6 @@
                   }
                 }
               },
-              
               "155573": {
                 "title": "155573",
                 "type": "array",
@@ -7981,162 +7977,162 @@
                           "title": "Макет 440; Предприятие; Подразделение; Дата"
                         }
                       }
-                    }
-                  },
-                  "koordinaty_truboprovoda": {
-                    "title": "Координаты трубопровода: в начале (категория, тип, номер объекта), в конце (категория, тип, номер объекта)",
-                    "description": "",
-                    "type": "string",
-                    "items": {
-                      "start_pipe_coords": {
-                        "title": "в начале",
-                        "description": "",
-                        "type": "string",
-                        "items": {
-                          "category": {
-                            "title": "категория",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "type": {
-                            "title": "тип",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "number": {
-                            "title": "номер объекта",
-                            "description": "",
-                            "type": "string"
+                    },
+                    "koordinaty_truboprovoda": {
+                      "title": "Координаты трубопровода: в начале (категория, тип, номер объекта), в конце (категория, тип, номер объекта)",
+                      "description": "",
+                      "type": "string",
+                      "items": {
+                        "start_pipe_coords": {
+                          "title": "в начале",
+                          "description": "",
+                          "type": "string",
+                          "items": {
+                            "category": {
+                              "title": "категория",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "type": {
+                              "title": "тип",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "number": {
+                              "title": "номер объекта",
+                              "description": "",
+                              "type": "string"
+                            }
                           }
-                        }
-                      },
-                      "end_pipe_coords": {
-                        "title": "в конце",
-                        "description": "",
-                        "type": "string",
-                        "items": {
-                          "category": {
-                            "title": "категория",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "type": {
-                            "title": "тип",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "number": {
-                            "title": "номер объекта",
-                            "description": "",
-                            "type": "string"
+                        },
+                        "end_pipe_coords": {
+                          "title": "в конце",
+                          "description": "",
+                          "type": "string",
+                          "items": {
+                            "category": {
+                              "title": "категория",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "type": {
+                              "title": "тип",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "number": {
+                              "title": "номер объекта",
+                              "description": "",
+                              "type": "string"
+                            }
                           }
                         }
                       }
-                    }
-                  },
-                  "pipeline_number": {
-                    "title": "Номер трубопровода",
-                    "description": "",
-                    "type": "string"
-                  },
-                  "inventory_number": {
-                    "title": "Инвентарный номер",
-                    "description": "",
-                    "type": "number"
-                  },
-                  "pipeline_work_condition": {
-                    "title": "Условия работы трубопровода",
-                    "description": "",
-                    "type": "string"
-                  },
-                  "pipeline_commissioning_date": {
-                    "title": "Дата ввода в эксплуатацию",
-                    "description": "",
-                    "type": "string",
-                    "items": {
-                      "month": {
-                        "title": "м-ц",
-                        "description": "",
-                        "type": "string"
-                      },
-                      "year": {
-                        "title": "год",
-                        "description": "",
-                        "type": "number"
-                      }
-                    }
-                  },
-                  "pipeline_carrying_amount": {
-                    "title": "Балансовая стоимость , руб",
-                    "description": "",
-                    "type": "number"
-                  },
-                  "harakteristika_uchastka_truboprovoda": {
-                    "title": "Характеристика участка трубопровода",
-                    "description": "",
-                    "type": "string",
-                    "items": {
-                      "pipeline_lenght": {
-                        "title": "длина, м",
-                        "description": "",
-                        "type": "number"
-                      },
-                      "pipeline_diameter": {
-                        "title": "диаметр, мм",
-                        "description": "",
-                        "type": "number"
-                      },
-                      "pipeline_wall_thickness": {
-                        "title": "толщина стенки, мм",
-                        "description": "",
-                        "type": "number"
-                      },
-                      "pipeline_geodetic_markers": {
-                        "title": "геодезические отметки, м",
-                        "description": "",
-                        "type": "number"
-                      },
-                      "pipeline_laying_depth": {
-                        "title": "глубина укладки, см",
-                        "description": "",
-                        "type": "number"
-                      },
-                      "pipeline_material": {
-                        "title": "материал труб",
-                        "description": "",
-                        "type": "string",
-                        "items": {
-                          "material_title": {
-                            "title": "описание",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "material_code": {
-                            "title": "код",
-                            "description": "",
-                            "type": "string"
-                          }
+                    },
+                    "pipeline_number": {
+                      "title": "Номер трубопровода",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "inventory_number": {
+                      "title": "Инвентарный номер",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "pipeline_work_condition": {
+                      "title": "Условия работы трубопровода",
+                      "description": "",
+                      "type": "string"
+                    },
+                    "pipeline_commissioning_date": {
+                      "title": "Дата ввода в эксплуатацию",
+                      "description": "",
+                      "type": "string",
+                      "items": {
+                        "month": {
+                          "title": "м-ц",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "year": {
+                          "title": "год",
+                          "description": "",
+                          "type": "number"
                         }
-                      },
-                      "pipeline_connection_type": {
-                        "title": "тип соединения",
-                        "description": "",
-                        "type": "string"
-                      },
-                      "pipeline_corrosion_outside_protection": {
-                        "title": "наружная защита от коррозии",
-                        "description": "",
-                        "type": "string",
-                        "items": {
-                          "protection_title": {
-                            "title": "описание",
-                            "description": "",
-                            "type": "string"
-                          },
-                          "protection_code": {
-                            "title": "код",
-                            "description": "",
-                            "type": "string"
+                      }
+                    },
+                    "pipeline_carrying_amount": {
+                      "title": "Балансовая стоимость , руб",
+                      "description": "",
+                      "type": "number"
+                    },
+                    "harakteristika_uchastka_truboprovoda": {
+                      "title": "Характеристика участка трубопровода",
+                      "description": "",
+                      "type": "string",
+                      "items": {
+                        "pipeline_lenght": {
+                          "title": "длина, м",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pipeline_diameter": {
+                          "title": "диаметр, мм",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pipeline_wall_thickness": {
+                          "title": "толщина стенки, мм",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pipeline_geodetic_markers": {
+                          "title": "геодезические отметки, м",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pipeline_laying_depth": {
+                          "title": "глубина укладки, см",
+                          "description": "",
+                          "type": "number"
+                        },
+                        "pipeline_material": {
+                          "title": "материал труб",
+                          "description": "",
+                          "type": "string",
+                          "items": {
+                            "material_title": {
+                              "title": "описание",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "material_code": {
+                              "title": "код",
+                              "description": "",
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "pipeline_connection_type": {
+                          "title": "тип соединения",
+                          "description": "",
+                          "type": "string"
+                        },
+                        "pipeline_corrosion_outside_protection": {
+                          "title": "наружная защита от коррозии",
+                          "description": "",
+                          "type": "string",
+                          "items": {
+                            "protection_title": {
+                              "title": "описание",
+                              "description": "",
+                              "type": "string"
+                            },
+                            "protection_code": {
+                              "title": "код",
+                              "description": "",
+                              "type": "string"
+                            }
                           }
                         }
                       }
